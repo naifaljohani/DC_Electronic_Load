@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 16F1779 ]
 [d frameptr 6 ]
-"151 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\ELECTRONIC_LOAD_2020.X\LOAD20210.c
+"151 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\DC_Electronic_load\Firmware\LOAD20210.c
 [e E17242 . `uc
 channel_AN5 5
 channel_Switched_AN1 33
@@ -20,7 +20,7 @@ channel_Temp 61
 channel_DAC1_Output 62
 channel_FVRBuffer1 63
 ]
-"89 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\ELECTRONIC_LOAD_2020.X\ADC_INIT.c
+"89 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\DC_Electronic_load\Firmware\ADC_INIT.c
 [e E17242 . `uc
 channel_AN5 5
 channel_Switched_AN1 33
@@ -81,7 +81,7 @@ channel_FVRBuffer1 63
 [v ___lwtoft __lwtoft `(f  1 e 3 0 ]
 "15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
 [v ___wmul __wmul `(ui  1 e 2 0 ]
-"259 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\ELECTRONIC_LOAD_2020.X\LDC_ROT.h
+"259 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\DC_Electronic_load\Firmware\LDC_ROT.h
 [v _DAC_CONFIG DAC_CONFIG `(v  1 e 1 0 ]
 "265
 [v _DAC1_Load10bitInputData DAC1_Load10bitInputData `(v  1 e 1 0 ]
@@ -105,7 +105,7 @@ channel_FVRBuffer1 63
 [v _LCD_FillScreenGraphics LCD_FillScreenGraphics `(v  1 e 1 0 ]
 "526
 [v _LCD_ClearGraphics LCD_ClearGraphics `(v  1 e 1 0 ]
-"58 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\ELECTRONIC_LOAD_2020.X\LOAD20210.c
+"58 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\DC_Electronic_load\Firmware\LOAD20210.c
 [v _isr isr `II(v  1 e 1 0 ]
 "72
 [v _keypad_scanner keypad_scanner `(uc  1 e 1 0 ]
@@ -113,7 +113,7 @@ channel_FVRBuffer1 63
 [v _InitKeypad InitKeypad `(v  1 e 1 0 ]
 "108
 [v _main main `(v  1 e 1 0 ]
-"246
+"247
 [v _switch_press_scan switch_press_scan `(uc  1 e 1 0 ]
 [s S256 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
@@ -315,13 +315,13 @@ channel_FVRBuffer1 63
 [v __powers_ _powers_ `DC[13]d  1 e 39 0 ]
 "39
 [v __npowers_ _npowers_ `DC[13]d  1 e 39 0 ]
-"17 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\ELECTRONIC_LOAD_2020.X\LDC_ROT.h
+"17 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\DC_Electronic_load\Firmware\LDC_ROT.h
 [v _Alpha1 Alpha1 `DC[250]uc  1 s 250 Alpha1 ]
 "69
 [v _Alpha2 Alpha2 `DC[230]uc  1 s 230 Alpha2 ]
 "189
 [v _des des `DC[1024]uc  1 e 1024 0 ]
-"39 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\ELECTRONIC_LOAD_2020.X\LOAD20210.c
+"39 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\DC_Electronic_load\Firmware\LOAD20210.c
 [v _naif naif `[17]uc  1 e 17 0 ]
 "40
 [v _UPDOWN UPDOWN `[17]uc  1 e 17 0 ]
@@ -336,14 +336,14 @@ channel_FVRBuffer1 63
 "108
 [v _main main `(v  1 e 1 0 ]
 {
-"238
+"239
 } 0
-"246
+"247
 [v _switch_press_scan switch_press_scan `(uc  1 e 1 0 ]
 {
-"248
+"249
 [v switch_press_scan@key key `uc  1 a 1 4 ]
-"252
+"253
 } 0
 "72
 [v _keypad_scanner keypad_scanner `(uc  1 e 1 0 ]
@@ -568,7 +568,7 @@ channel_FVRBuffer1 63
 [v ___ftpack@sign sign `uc  1 p 1 5 ]
 "86
 } 0
-"277 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\ELECTRONIC_LOAD_2020.X\LDC_ROT.h
+"277 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\DC_Electronic_load\Firmware\LDC_ROT.h
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "288
@@ -647,12 +647,12 @@ channel_FVRBuffer1 63
 [v LCD_WriteByte@command command `uc  1 a 1 3 ]
 "347
 } 0
-"100 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\ELECTRONIC_LOAD_2020.X\LOAD20210.c
+"100 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\DC_Electronic_load\Firmware\LOAD20210.c
 [v _InitKeypad InitKeypad `(v  1 e 1 0 ]
 {
 "107
 } 0
-"259 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\ELECTRONIC_LOAD_2020.X\LDC_ROT.h
+"259 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\DC_Electronic_load\Firmware\LDC_ROT.h
 [v _DAC_CONFIG DAC_CONFIG `(v  1 e 1 0 ]
 {
 "263
@@ -663,7 +663,7 @@ channel_FVRBuffer1 63
 [v DAC1_Load10bitInputData@input16BitData input16BitData `ui  1 p 2 1 ]
 "276
 } 0
-"67 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\ELECTRONIC_LOAD_2020.X\ADC_INIT.c
+"67 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\DC_Electronic_load\Firmware\ADC_INIT.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
 {
 "86
@@ -677,7 +677,7 @@ channel_FVRBuffer1 63
 [v ADC_GetConversion@channel channel `E17242  1 a 1 4 ]
 "136
 } 0
-"58 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\ELECTRONIC_LOAD_2020.X\LOAD20210.c
+"58 C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\DC_Electronic_load\Firmware\LOAD20210.c
 [v _isr isr `II(v  1 e 1 0 ]
 {
 "70

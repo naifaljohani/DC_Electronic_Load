@@ -21343,7 +21343,7 @@ adc_result_t adcResult2;
 # 95
 typedef enum
 {
-channel_AN7 = 0x7,
+channel_AN5 = 0b000101,
 channel_Switched_AN1 = 0x21,
 channel_Switched_AN10 = 0x2A,
 channel_Switched_AN18 = 0x32,
@@ -21858,7 +21858,7 @@ const unsigned char des [] = {
 void DAC_CONFIG(void)
 {
 DAC1CON0 = 0b10100000;
-DACLD = 0b00000001;
+DACLD = 0xff;
 }
 
 void DAC1_Load10bitInputData(uint16_t input16BitData)
@@ -22152,7 +22152,7 @@ char Key = 'n';
 uint16_t dac_out =0;
 
 int16_t count = 520;
-uint16_t current = 0;
+float current = 0;
 unsigned char print_line = 3;
 int currentStateCLK;
 int previousStateCLK;
@@ -22257,9 +22257,15 @@ previousStateCLK = PORTAbits.RA1;
 
 while(1)
 {
-current= ( ADC_GetConversion(channel_AN7)*5)-140;
+current= (ADC_GetConversion(channel_AN5)* 0.004882812);
+
+
+
 naif[3]=' ';
-sprintf(naif,"%d", current);
+
+
+
+sprintf(naif,"%.2f", (current-0.11));
 
 LCD_TextDisplayString( 3, "Current   in mA:");
 LCD_TextDisplayString( 4, naif);
@@ -22331,14 +22337,14 @@ count--;
 UPDOWN[1]=' ';
 }
 
-# 229
+# 235
 }
 
 
 
 }
 
-# 241
+# 247
 char switch_press_scan(void)
 {
 char key = 'n';

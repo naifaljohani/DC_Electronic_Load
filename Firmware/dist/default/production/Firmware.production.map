@@ -3,11 +3,11 @@ Microchip MPLAB XC8 Compiler V1.45 ()
 Linker command line:
 
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.45\dat\en_msgs.txt -cs \
-  -h+dist/default/production\ELECTRONIC_LOAD_2020.X.production.sym \
-  --cmf=dist/default/production\ELECTRONIC_LOAD_2020.X.production.cmf -z \
-  -Q16F1779 -oC:\Users\user\AppData\Local\Temp\sdt0.2 \
-  -Mdist/default/production/ELECTRONIC_LOAD_2020.X.production.map -E1 \
-  -ver=XC8 -ASTACK=020B9h-027efh -pstack=STACK -ACODE=00h-07FFhx8 \
+  -h+dist/default/production\Firmware.production.sym \
+  --cmf=dist/default/production\Firmware.production.cmf -z -Q16F1779 \
+  -oC:\Users\user\AppData\Local\Temp\sbn4.2 \
+  -Mdist/default/production/Firmware.production.map -E1 -ver=XC8 \
+  -ASTACK=020B9h-027efh -pstack=STACK -ACODE=00h-07FFhx8 \
   -ASTRCODE=00h-03FFFh -ASTRING=00h-0FFhx64 -ACONST=00h-0FFhx64 \
   -AENTRY=00h-0FFhx64 -ACOMMON=070h-07Fh -ABANK0=020h-06Fh \
   -ABANK1=0A0h-0EFh -ABANK2=0120h-016Fh -ABANK3=01A0h-01EFh \
@@ -35,8 +35,8 @@ Linker command line:
   -ppowerup=CODE -pcinit=CODE -pfunctab=ENTRY -ACONFIG=08007h-08008h \
   -pconfig=CONFIG -DCONFIG=2 -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 \
   -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\user\AppData\Local\Temp\sdt0.obj \
-  dist/default/production\ELECTRONIC_LOAD_2020.X.production.obj 
+  C:\Users\user\AppData\Local\Temp\sbn4.obj \
+  dist/default/production\Firmware.production.obj 
 
 Object code version is 3.11
 
@@ -45,11 +45,11 @@ Machine type is 16F1779
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\user\AppData\Local\Temp\sdt0.obj
+C:\Users\user\AppData\Local\Temp\sbn4.obj
                 end_init                             15       15        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2    1000E       0
-dist/default/production\ELECTRONIC_LOAD_2020.X.production.obj
+dist/default/production\Firmware.production.obj
                 cinit                                17       17       37        8       0
                 intentry                              4        4       11        8       0
                 text37                             1A65     1A65       19     34CA       0

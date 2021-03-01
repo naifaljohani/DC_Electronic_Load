@@ -131,8 +131,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 "444
 [v _PORTAbits `VS28 ~T0 @X0 0 e@12 ]
 "151 LOAD20210.c
-[c E17242 7 33 42 50 54 55 56 57 58 59 60 61 62 63 .. ]
-[n E17242 . channel_AN7 channel_Switched_AN1 channel_Switched_AN10 channel_Switched_AN18 channel_DAC8_Output channel_DAC7_Output channel_DAC6_Output channel_DAC5_Output channel_DAC4_Output channel_DAC3_Output channel_DAC2_Output channel_Temp channel_DAC1_Output channel_FVRBuffer1  ]
+[c E17242 5 33 42 50 54 55 56 57 58 59 60 61 62 63 .. ]
+[n E17242 . channel_AN5 channel_Switched_AN1 channel_Switched_AN10 channel_Switched_AN18 channel_DAC8_Output channel_DAC7_Output channel_DAC6_Output channel_DAC5_Output channel_DAC4_Output channel_DAC3_Output channel_DAC2_Output channel_Temp channel_DAC1_Output channel_FVRBuffer1  ]
 "298 ADC.h
 [v _ADC_GetConversion `(ui ~T0 @X0 0 ef1`E17242 ]
 "194 C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdio.h
@@ -16641,7 +16641,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;ADC.h: 81: } adc_sync_double_result_t;
 [; ;ADC.h: 95: typedef enum
 [; ;ADC.h: 96: {
-[; ;ADC.h: 97: channel_AN7 = 0x7,
+[; ;ADC.h: 97: channel_AN5 = 0b000101,
 [; ;ADC.h: 98: channel_Switched_AN1 = 0x21,
 [; ;ADC.h: 99: channel_Switched_AN10 = 0x2A,
 [; ;ADC.h: 100: channel_Switched_AN18 = 0x32,
@@ -19841,9 +19841,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;LDC_ROT.h: 261: DAC1CON0 = 0b10100000;
 "261
 [e = _DAC1CON0 -> -> 160 `i `uc ]
-[; ;LDC_ROT.h: 262: DACLD = 0b00000001;
+[; ;LDC_ROT.h: 262: DACLD = 0xff;
 "262
-[e = _DACLD -> -> 1 `i `uc ]
+[e = _DACLD -> -> 255 `i `uc ]
 [; ;LDC_ROT.h: 263: }
 "263
 [e :UE 2098 ]
@@ -20828,11 +20828,11 @@ Version 3.2 HI-TECH Software Intermediate Code
 ]
 [; ;LOAD20210.c: 45: int16_t count = 520;
 "46
-[v _current `ui ~T0 @X0 1 e ]
+[v _current `f ~T0 @X0 1 e ]
 [i _current
--> -> 0 `i `ui
+-> -> 0 `i `f
 ]
-[; ;LOAD20210.c: 46: uint16_t current = 0;
+[; ;LOAD20210.c: 46: float current = 0;
 "47
 [v _print_line `uc ~T0 @X0 1 e ]
 [i _print_line
@@ -21261,192 +21261,192 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;LOAD20210.c: 150: {
 "150
 {
-[; ;LOAD20210.c: 151: current= ( ADC_GetConversion(channel_AN7)*5)-140;
+[; ;LOAD20210.c: 151: current= (ADC_GetConversion(channel_AN5)* 0.004882812);
 "151
-[e = _current - * ( _ADC_GetConversion (1 . `E17242 0 -> -> 5 `i `ui -> -> 140 `i `ui ]
-[; ;LOAD20210.c: 152: naif[3]=' ';
-"152
-[e = *U + &U _naif * -> -> -> 3 `i `ui `ux -> -> # *U &U _naif `ui `ux -> -> 32 `ui `uc ]
-[; ;LOAD20210.c: 153: sprintf(naif,"%d", current);
-"153
-[e ( _sprintf (1 , (. , &U _naif :s 1C _current ]
-[; ;LOAD20210.c: 155: LCD_TextDisplayString( 3, "Current   in mA:");
+[e = _current -> * -> ( _ADC_GetConversion (1 . `E17242 0 `d .0.004882812 `f ]
+[; ;LOAD20210.c: 155: naif[3]=' ';
 "155
-[e ( _LCD_TextDisplayString (2 , -> -> 3 `i `uc -> :s 2C `*uc ]
-[; ;LOAD20210.c: 156: LCD_TextDisplayString( 4, naif);
-"156
-[e ( _LCD_TextDisplayString (2 , -> -> 4 `i `uc &U _naif ]
-[; ;LOAD20210.c: 160: if(PORTAbits.RA3==0)
-"160
-[e $ ! == -> . . _PORTAbits 0 3 `i -> 0 `i 2235  ]
-[; ;LOAD20210.c: 161: {
+[e = *U + &U _naif * -> -> -> 3 `i `ui `ux -> -> # *U &U _naif `ui `ux -> -> 32 `ui `uc ]
+[; ;LOAD20210.c: 159: sprintf(naif,"%.2f", (current-0.11));
+"159
+[e ( _sprintf (1 , (. , &U _naif :s 1C - -> _current `d .0.11 ]
+[; ;LOAD20210.c: 161: LCD_TextDisplayString( 3, "Current   in mA:");
 "161
-{
-[; ;LOAD20210.c: 162: count =520;
+[e ( _LCD_TextDisplayString (2 , -> -> 3 `i `uc -> :s 2C `*uc ]
+[; ;LOAD20210.c: 162: LCD_TextDisplayString( 4, naif);
 "162
+[e ( _LCD_TextDisplayString (2 , -> -> 4 `i `uc &U _naif ]
+[; ;LOAD20210.c: 166: if(PORTAbits.RA3==0)
+"166
+[e $ ! == -> . . _PORTAbits 0 3 `i -> 0 `i 2235  ]
+[; ;LOAD20210.c: 167: {
+"167
+{
+[; ;LOAD20210.c: 168: count =520;
+"168
 [e = _count -> 520 `i ]
-"165
+"171
 }
 [e :U 2235 ]
-[; ;LOAD20210.c: 165: }
-[; ;LOAD20210.c: 167: if (PORTAbits.RA1 == 0)
-"167
+[; ;LOAD20210.c: 171: }
+[; ;LOAD20210.c: 173: if (PORTAbits.RA1 == 0)
+"173
 [e $ ! == -> . . _PORTAbits 0 1 `i -> 0 `i 2236  ]
-[; ;LOAD20210.c: 168: {
-"168
+[; ;LOAD20210.c: 174: {
+"174
 {
-[; ;LOAD20210.c: 169: _delay((unsigned long)((10)*(16000000/4000.0)));
-"169
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[; ;LOAD20210.c: 170: currentStateCLK = PORTAbits.RA1;
-"170
-[e = _currentStateCLK -> . . _PORTAbits 0 1 `i ]
-[; ;LOAD20210.c: 175: if (PORTAbits.RA0 != currentStateCLK) {
+[; ;LOAD20210.c: 175: _delay((unsigned long)((10)*(16000000/4000.0)));
 "175
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+[; ;LOAD20210.c: 176: currentStateCLK = PORTAbits.RA1;
+"176
+[e = _currentStateCLK -> . . _PORTAbits 0 1 `i ]
+[; ;LOAD20210.c: 181: if (PORTAbits.RA0 != currentStateCLK) {
+"181
 [e $ ! != -> . . _PORTAbits 0 0 `i _currentStateCLK 2237  ]
 {
-[; ;LOAD20210.c: 176: count --;
-"176
+[; ;LOAD20210.c: 182: count --;
+"182
 [e -- _count -> 1 `i ]
-[; ;LOAD20210.c: 177: if (count <520)
-"177
+[; ;LOAD20210.c: 183: if (count <520)
+"183
 [e $ ! < _count -> 520 `i 2238  ]
-[; ;LOAD20210.c: 178: {
-"178
+[; ;LOAD20210.c: 184: {
+"184
 {
-[; ;LOAD20210.c: 179: count =520;
-"179
+[; ;LOAD20210.c: 185: count =520;
+"185
 [e = _count -> 520 `i ]
-"180
+"186
 }
 [e :U 2238 ]
-[; ;LOAD20210.c: 180: }
-[; ;LOAD20210.c: 181: LATDbits.LATD0= 0;
-"181
+[; ;LOAD20210.c: 186: }
+[; ;LOAD20210.c: 187: LATDbits.LATD0= 0;
+"187
 [e = . . _LATDbits 0 0 -> -> 0 `i `uc ]
-[; ;LOAD20210.c: 182: LATDbits.LATD1= 1;
-"182
+[; ;LOAD20210.c: 188: LATDbits.LATD1= 1;
+"188
 [e = . . _LATDbits 0 1 -> -> 1 `i `uc ]
-"184
+"190
 }
-[; ;LOAD20210.c: 184: } else {
+[; ;LOAD20210.c: 190: } else {
 [e $U 2239  ]
 [e :U 2237 ]
 {
-[; ;LOAD20210.c: 186: count ++;
-"186
+[; ;LOAD20210.c: 192: count ++;
+"192
 [e ++ _count -> 1 `i ]
-[; ;LOAD20210.c: 188: LATDbits.LATD0= 1;
-"188
+[; ;LOAD20210.c: 194: LATDbits.LATD0= 1;
+"194
 [e = . . _LATDbits 0 0 -> -> 1 `i `uc ]
-[; ;LOAD20210.c: 189: LATDbits.LATD1= 0;
-"189
+[; ;LOAD20210.c: 195: LATDbits.LATD1= 0;
+"195
 [e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
-"191
+"197
 }
 [e :U 2239 ]
-[; ;LOAD20210.c: 191: }
-[; ;LOAD20210.c: 192: previousStateCLK = currentStateCLK;
-"192
+[; ;LOAD20210.c: 197: }
+[; ;LOAD20210.c: 198: previousStateCLK = currentStateCLK;
+"198
 [e = _previousStateCLK _currentStateCLK ]
-"194
+"200
 }
 [e :U 2236 ]
-[; ;LOAD20210.c: 194: }
-[; ;LOAD20210.c: 197: naif[3]=' ';
-"197
+[; ;LOAD20210.c: 200: }
+[; ;LOAD20210.c: 203: naif[3]=' ';
+"203
 [e = *U + &U _naif * -> -> -> 3 `i `ui `ux -> -> # *U &U _naif `ui `ux -> -> 32 `ui `uc ]
-[; ;LOAD20210.c: 198: sprintf(naif,"%d", (count *5)+1);
-"198
-[e ( _sprintf (1 , (. , &U _naif :s 3C + * _count -> 5 `i -> 1 `i ]
-[; ;LOAD20210.c: 199: LCD_TextDisplayString( 1, "DAC out   in mv:");
-"199
-[e ( _LCD_TextDisplayString (2 , -> -> 1 `i `uc -> :s 4C `*uc ]
-[; ;LOAD20210.c: 200: LCD_TextDisplayString( 2, naif);
-"200
-[e ( _LCD_TextDisplayString (2 , -> -> 2 `i `uc &U _naif ]
-[; ;LOAD20210.c: 204: UPDOWN[1]=switch_press_scan();
+[; ;LOAD20210.c: 204: sprintf(naif,"%d", (count *5)+1);
 "204
+[e ( _sprintf (1 , (. , &U _naif :s 3C + * _count -> 5 `i -> 1 `i ]
+[; ;LOAD20210.c: 205: LCD_TextDisplayString( 1, "DAC out   in mv:");
+"205
+[e ( _LCD_TextDisplayString (2 , -> -> 1 `i `uc -> :s 4C `*uc ]
+[; ;LOAD20210.c: 206: LCD_TextDisplayString( 2, naif);
+"206
+[e ( _LCD_TextDisplayString (2 , -> -> 2 `i `uc &U _naif ]
+[; ;LOAD20210.c: 210: UPDOWN[1]=switch_press_scan();
+"210
 [e = *U + &U _UPDOWN * -> -> -> 1 `i `ui `ux -> -> # *U &U _UPDOWN `ui `ux ( _switch_press_scan ..  ]
-[; ;LOAD20210.c: 209: DAC1_Load10bitInputData(count*64);
-"209
-[e ( _DAC1_Load10bitInputData (1 -> * _count -> 64 `i `ui ]
-[; ;LOAD20210.c: 214: if ( UPDOWN[1] == 'A')
-"214
-[e $ ! == -> *U + &U _UPDOWN * -> -> -> 1 `i `ui `ux -> -> # *U &U _UPDOWN `ui `ux `ui -> 65 `ui 2240  ]
-[; ;LOAD20210.c: 215: {
+[; ;LOAD20210.c: 215: DAC1_Load10bitInputData(count*64);
 "215
+[e ( _DAC1_Load10bitInputData (1 -> * _count -> 64 `i `ui ]
+[; ;LOAD20210.c: 220: if ( UPDOWN[1] == 'A')
+"220
+[e $ ! == -> *U + &U _UPDOWN * -> -> -> 1 `i `ui `ux -> -> # *U &U _UPDOWN `ui `ux `ui -> 65 `ui 2240  ]
+[; ;LOAD20210.c: 221: {
+"221
 {
-[; ;LOAD20210.c: 216: count++;
-"216
+[; ;LOAD20210.c: 222: count++;
+"222
 [e ++ _count -> 1 `i ]
-[; ;LOAD20210.c: 217: UPDOWN[1]=' ';
-"217
+[; ;LOAD20210.c: 223: UPDOWN[1]=' ';
+"223
 [e = *U + &U _UPDOWN * -> -> -> 1 `i `ui `ux -> -> # *U &U _UPDOWN `ui `ux -> -> 32 `ui `uc ]
-"218
+"224
 }
 [e :U 2240 ]
-[; ;LOAD20210.c: 218: }
-[; ;LOAD20210.c: 219: if (UPDOWN[1] == 'B')
-"219
+[; ;LOAD20210.c: 224: }
+[; ;LOAD20210.c: 225: if (UPDOWN[1] == 'B')
+"225
 [e $ ! == -> *U + &U _UPDOWN * -> -> -> 1 `i `ui `ux -> -> # *U &U _UPDOWN `ui `ux `ui -> 66 `ui 2241  ]
-[; ;LOAD20210.c: 220: {
-"220
+[; ;LOAD20210.c: 226: {
+"226
 {
-[; ;LOAD20210.c: 221: count--;
-"221
+[; ;LOAD20210.c: 227: count--;
+"227
 [e -- _count -> 1 `i ]
-[; ;LOAD20210.c: 222: UPDOWN[1]=' ';
-"222
+[; ;LOAD20210.c: 228: UPDOWN[1]=' ';
+"228
 [e = *U + &U _UPDOWN * -> -> -> 1 `i `ui `ux -> -> # *U &U _UPDOWN `ui `ux -> -> 32 `ui `uc ]
-"223
+"229
 }
 [e :U 2241 ]
-"229
+"235
 }
 [e :U 2232 ]
 "149
 [e $U 2233  ]
 [e :U 2234 ]
-[; ;LOAD20210.c: 223: }
 [; ;LOAD20210.c: 229: }
-[; ;LOAD20210.c: 233: }
-"233
+[; ;LOAD20210.c: 235: }
+[; ;LOAD20210.c: 239: }
+"239
 [e :UE 2231 ]
 }
-"241
+"247
 [v _switch_press_scan `(uc ~T0 @X0 1 ef ]
-"242
+"248
 {
-[; ;LOAD20210.c: 241: char switch_press_scan(void)
-[; ;LOAD20210.c: 242: {
+[; ;LOAD20210.c: 247: char switch_press_scan(void)
+[; ;LOAD20210.c: 248: {
 [e :U _switch_press_scan ]
 [f ]
-"243
+"249
 [v _key `uc ~T0 @X0 1 a ]
-[; ;LOAD20210.c: 243: char key = 'n';
+[; ;LOAD20210.c: 249: char key = 'n';
 [e = _key -> -> 110 `ui `uc ]
-[; ;LOAD20210.c: 244: while(key=='n')
-"244
+[; ;LOAD20210.c: 250: while(key=='n')
+"250
 [e $U 2243  ]
 [e :U 2244 ]
-[; ;LOAD20210.c: 245: key = keypad_scanner();
-"245
+[; ;LOAD20210.c: 251: key = keypad_scanner();
+"251
 [e = _key ( _keypad_scanner ..  ]
 [e :U 2243 ]
-"244
+"250
 [e $ == -> _key `ui -> 110 `ui 2244  ]
 [e :U 2245 ]
-[; ;LOAD20210.c: 246: return key;
-"246
+[; ;LOAD20210.c: 252: return key;
+"252
 [e ) _key ]
 [e $UE 2242  ]
-[; ;LOAD20210.c: 247: }
-"247
+[; ;LOAD20210.c: 253: }
+"253
 [e :UE 2242 ]
 }
-[p f _sprintf 8388736 ]
-[a 1C 37 100 0 ]
+[p f _sprintf 8462464 ]
+[a 1C 37 46 50 102 0 ]
 [a 3C 37 100 0 ]
 [a 4C 68 65 67 32 111 117 116 32 32 32 105 110 32 109 118 58 0 ]
 [a 2C 67 117 114 114 101 110 116 32 32 32 105 110 32 109 65 58 0 ]

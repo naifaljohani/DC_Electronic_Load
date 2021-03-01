@@ -11,8 +11,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 "12385
 [v _ADCON0 `Vuc ~T0 @X0 0 e@1168 ]
 "89 ADC_INIT.c
-[c E17242 7 33 42 50 54 55 56 57 58 59 60 61 62 63 .. ]
-[n E17242 . channel_AN7 channel_Switched_AN1 channel_Switched_AN10 channel_Switched_AN18 channel_DAC8_Output channel_DAC7_Output channel_DAC6_Output channel_DAC5_Output channel_DAC4_Output channel_DAC3_Output channel_DAC2_Output channel_Temp channel_DAC1_Output channel_FVRBuffer1  ]
+[c E17242 5 33 42 50 54 55 56 57 58 59 60 61 62 63 .. ]
+[n E17242 . channel_AN5 channel_Switched_AN1 channel_Switched_AN10 channel_Switched_AN18 channel_DAC8_Output channel_DAC7_Output channel_DAC6_Output channel_DAC5_Output channel_DAC4_Output channel_DAC3_Output channel_DAC2_Output channel_Temp channel_DAC1_Output channel_FVRBuffer1  ]
 "12391 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
 [s S587 :1 `uc 1 :1 `uc 1 :6 `uc 1 ]
 [n S587 . ADON GO CHS ]
@@ -16519,7 +16519,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;adc.h: 81: } adc_sync_double_result_t;
 [; ;adc.h: 95: typedef enum
 [; ;adc.h: 96: {
-[; ;adc.h: 97: channel_AN7 = 0x7,
+[; ;adc.h: 97: channel_AN5 = 0b000101,
 [; ;adc.h: 98: channel_Switched_AN1 = 0x21,
 [; ;adc.h: 99: channel_Switched_AN10 = 0x2A,
 [; ;adc.h: 100: channel_Switched_AN18 = 0x32,
@@ -16552,9 +16552,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;ADC_INIT.c: 68: {
 [e :U _ADC_Initialize ]
 [f ]
-[; ;ADC_INIT.c: 72: ADCON1 = 0xF0;
+[; ;ADC_INIT.c: 72: ADCON1 = 11010001 ;
 "72
-[e = _ADCON1 -> -> 240 `i `uc ]
+[e = _ADCON1 -> -> 11010001 `l `uc ]
 [; ;ADC_INIT.c: 75: ADCON2 = 0x00;
 "75
 [e = _ADCON2 -> -> 0 `i `uc ]

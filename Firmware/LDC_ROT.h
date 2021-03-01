@@ -259,7 +259,7 @@ const unsigned char des [] = {
 void DAC_CONFIG(void)
 {
     DAC1CON0 =  0b10100000;
-    DACLD    =  0b00000001;
+    DACLD    = 0xff;
 }
 
 void DAC1_Load10bitInputData(uint16_t input16BitData)

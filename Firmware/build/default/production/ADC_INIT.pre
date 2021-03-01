@@ -21343,7 +21343,7 @@ adc_result_t adcResult2;
 # 95
 typedef enum
 {
-channel_AN7 = 0x7,
+channel_AN5 = 0b000101,
 channel_Switched_AN1 = 0x21,
 channel_Switched_AN10 = 0x2A,
 channel_Switched_AN18 = 0x32,
@@ -21389,7 +21389,7 @@ void ADC_Initialize(void)
 
 
 
-ADCON1 = 0xF0;
+ADCON1 = 11010001 ;
 
 
 ADCON2 = 0x00;

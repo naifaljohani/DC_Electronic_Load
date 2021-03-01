@@ -42,8 +42,8 @@ unsigned char hello[25]="naif hamdi aljohani   ";
 char Key = 'n';
  uint16_t dac_out =0;
 
- int16_t  count = 520;
-uint16_t   current = 0;
+  int16_t  count = 520;
+  float   current = 0;
  unsigned char print_line = 3;
  int currentStateCLK;
  int previousStateCLK;
@@ -148,9 +148,15 @@ void main(void)
    
   while(1)
   {
-    current= ( ADC_GetConversion(channel_AN7)*5)-140; 
+   current=  (ADC_GetConversion(channel_AN5)* 0.004882812);  
+   
+   
+  ///  current= ( ADC_GetConversion(channel_AN5)*5)-230; 
     naif[3]=' ';
-    sprintf(naif,"%d", current);
+    
+    // sprintf(naif, "%.5f", current);
+   
+    sprintf(naif,"%.2f", (current-0.11));   // convert float to string to print on GLCD "eating 20% of code space"
     
     LCD_TextDisplayString( 3, "Current   in mA:");
     LCD_TextDisplayString( 4, naif);   
