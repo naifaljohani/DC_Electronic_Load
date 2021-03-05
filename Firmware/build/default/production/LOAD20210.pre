@@ -21857,19 +21857,19 @@ const unsigned char des [] = {
 
 void DAC_CONFIG(void)
 {
-DAC1CON0 = 0b10100000;
+DAC5CON0 = 0b10100000;
 DACLD = 0xff;
 }
 
-void DAC1_Load10bitInputData(uint16_t input16BitData)
+void DAC5_Load10bitInputData(uint16_t input16BitData)
 {
 
 
 DAC1CON0bits.DAC1FM = 1;
 
 
-DAC1REFL = (uint8_t) input16BitData;
-DAC1REFH = (uint8_t)(input16BitData >> 8);
+DAC5REFL = (uint8_t) input16BitData;
+DAC5REFH = (uint8_t)(input16BitData >> 8);
 
 (DACLDbits.DAC1LD = 1);
 }
@@ -22142,20 +22142,73 @@ LCD_WriteData(0x00);
 }
 
 # 36 "LOAD20210.c"
-void InitKeypad(void);
-char switch_press_scan(void);
-
 char naif[17]={' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','\0'};
 char UPDOWN[17]={' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','\0'};
 unsigned char hello[25]="naif hamdi aljohani   ";
 char Key = 'n';
+
 uint16_t dac_out =0;
 
 int16_t count = 520;
 float current = 0;
+
 unsigned char print_line = 3;
+
 int currentStateCLK;
 int previousStateCLK;
+
+
+void InitKeypad(void);
+char switch_press_scan(void);
+
+char keypad_scanner(void)
+{
+LATDbits.LATD0 = 0; LATDbits.LATD1 = 1; LATDbits.LATD2 = 1; LATDbits.LATD3 = 1;
+if (PORTDbits.RD4 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD4==0); return '1'; }
+if (PORTDbits.RD5 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD5==0); return '2'; }
+if (PORTDbits.RD6 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD6==0); return '3'; }
+if (PORTDbits.RD7 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD7==0); return 'A'; }
+
+LATDbits.LATD0 = 1; LATDbits.LATD1 = 0; LATDbits.LATD2 = 1; LATDbits.LATD3 = 1;
+if (PORTDbits.RD4 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD4==0); return '4'; }
+if (PORTDbits.RD5 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD5==0); return '5'; }
+if (PORTDbits.RD6 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD6==0); return '6'; }
+if (PORTDbits.RD7 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD7==0); return 'B'; }
+
+LATDbits.LATD0 = 1; LATDbits.LATD1 = 1; LATDbits.LATD2 = 0; LATDbits.LATD3 = 1;
+if (PORTDbits.RD4 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD4==0); return '7'; }
+if (PORTDbits.RD5 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD5==0); return '8'; }
+if (PORTDbits.RD6 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD6==0); return '9'; }
+if (PORTDbits.RD7 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD7==0); return 'C'; }
+
+LATDbits.LATD0 = 1; LATDbits.LATD1 = 1; LATDbits.LATD2 = 1; LATDbits.LATD3 = 0;
+if (PORTDbits.RD4 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD4==0); return '*'; }
+if (PORTDbits.RD5 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD5==0); return '0'; }
+if (PORTDbits.RD6 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD6==0); return '#'; }
+if (PORTDbits.RD7 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD7==0); return 'D'; }
+
+return ;
+}
+void InitKeypad(void)
+{
+
+OPTION_REGbits.nWPUEN =0;
+TRISD = 0b11110000;
+WPUD = 0b11110000;
+ANSELD=0;
+}
+
+void OP_AMP_init()
+{
+
+OPA3CON = 0x90;
+
+OPA3ORS = 0x00;
+
+OPA3NCHS = 0x00;
+
+OPA3PCHS = 0x02;
+}
 
 
 void interrupt_init()
@@ -22178,50 +22231,17 @@ count=0;
 
 }
 
-char keypad_scanner(void)
-{
-LATCbits.LATC0 = 0; LATCbits.LATC1 = 1; LATCbits.LATC2 = 1; LATCbits.LATC3 = 1;
-if (PORTCbits.RC4 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC4==0); return '1'; }
-if (PORTCbits.RC5 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC5==0); return '2'; }
-if (PORTCbits.RC6 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC6==0); return '3'; }
-if (PORTCbits.RC7 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC7==0); return 'A'; }
 
-LATCbits.LATC0 = 1; LATCbits.LATC1 = 0; LATCbits.LATC2 = 1; LATCbits.LATC3 = 1;
-if (PORTCbits.RC4 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC4==0); return '4'; }
-if (PORTCbits.RC5 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC5==0); return '5'; }
-if (PORTCbits.RC6 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC6==0); return '6'; }
-if (PORTCbits.RC7 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC7==0); return 'B'; }
-
-LATCbits.LATC0 = 1; LATCbits.LATC1 = 1; LATCbits.LATC2 = 0; LATCbits.LATC3 = 1;
-if (PORTCbits.RC4 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC4==0); return '7'; }
-if (PORTCbits.RC5 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC5==0); return '8'; }
-if (PORTCbits.RC6 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC6==0); return '9'; }
-if (PORTCbits.RC7 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC7==0); return 'C'; }
-
-LATCbits.LATC0 = 1; LATCbits.LATC1 = 1; LATCbits.LATC2 = 1; LATCbits.LATC3 = 0;
-if (PORTCbits.RC4 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC4==0); return '*'; }
-if (PORTCbits.RC5 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC5==0); return '0'; }
-if (PORTCbits.RC6 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC6==0); return '#'; }
-if (PORTCbits.RC7 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC7==0); return 'D'; }
-
-return ;
-}
-void InitKeypad(void)
-{
-
-OPTION_REGbits.nWPUEN =0;
-TRISC = 0b11110000;
-WPUC = 0b11110000;
-ANSELC=0;
-}
 void main(void)
 {
 
 OSCILLATOR_Initialize();
 
 DAC_CONFIG();
+OP_AMP_init();
 
-
+TRISC = 0xBF;
+ANSELC = 0xFC;
 
 
 TRISA=0b00001011;
@@ -22230,8 +22250,6 @@ INLVLA=0;
 
 ADC_Initialize();
 
-TRISD=0;
-ANSELD=0;
 
 
 TRISB=0;
@@ -22293,15 +22311,13 @@ if (count <520)
 {
 count =520;
 }
-LATDbits.LATD0= 0;
-LATDbits.LATD1= 1;
+
 
 } else {
 
 count ++;
 
-LATDbits.LATD0= 1;
-LATDbits.LATD1= 0;
+
 
 }
 previousStateCLK = currentStateCLK;
@@ -22321,7 +22337,7 @@ UPDOWN[1]=switch_press_scan();
 
 
 
-DAC1_Load10bitInputData(count*64);
+DAC5_Load10bitInputData(count*64);
 
 
 
@@ -22337,14 +22353,14 @@ count--;
 UPDOWN[1]=' ';
 }
 
-# 235
+# 251
 }
 
 
 
 }
 
-# 247
+# 263
 char switch_press_scan(void)
 {
 char key = 'n';

@@ -10,7 +10,7 @@
 #include <stdbool.h>
 #define _XTAL_FREQ          16000000
 
-#define DAC1_DoubleBufferLatch() \
+#define DAC5_DoubleBufferLatch() \
     (DACLDbits.DAC1LD = 1)
 
 
@@ -258,21 +258,21 @@ const unsigned char des [] = {
 
 void DAC_CONFIG(void)
 {
-    DAC1CON0 =  0b10100000;
+    DAC5CON0 = 0b10100000;
     DACLD    = 0xff;
 }
 
-void DAC1_Load10bitInputData(uint16_t input16BitData)
+void DAC5_Load10bitInputData(uint16_t input16BitData)
 {
     //DAC input reference range should be 16bit.
     //Input data left justified.
     DAC1CON0bits.DAC1FM = 1;
     
     //Loading 16bit data to DAC1
-    DAC1REFL  = (uint8_t) input16BitData;  
-    DAC1REFH  = (uint8_t)(input16BitData >> 8);
+    DAC5REFL  = (uint8_t) input16BitData;  
+    DAC5REFH  = (uint8_t)(input16BitData >> 8);
     //Loading DAC1 double buffer data to latch.
-    DAC1_DoubleBufferLatch();
+    DAC5_DoubleBufferLatch();
 }
 void OSCILLATOR_Initialize(void)
 {

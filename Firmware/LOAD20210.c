@@ -18,56 +18,39 @@
 #define DOWN                   PORTAbits.RA5
 
 
-#define LED0                   LATDbits.LATD0 
-#define LED1                   LATDbits.LATD1 
 
-#define X_1    LATCbits.LATC0
-#define X_2    LATCbits.LATC1
-#define X_3    LATCbits.LATC2
-#define X_4    LATCbits.LATC3
-#define Y_1    PORTCbits.RC4
-#define Y_2    PORTCbits.RC5
-#define Y_3    PORTCbits.RC6
-#define Y_4    PORTCbits.RC7
 
-//#define Keypad_PORT               LATC
-#define Keypad_PORT_Direction     TRISC 
+#define X_1    LATDbits.LATD0
+#define X_2    LATDbits.LATD1
+#define X_3    LATDbits.LATD2
+#define X_4    LATDbits.LATD3
+#define Y_1    PORTDbits.RD4
+#define Y_2    PORTDbits.RD5
+#define Y_3    PORTDbits.RD6
+#define Y_4    PORTDbits.RD7
 
-void InitKeypad(void);
-char switch_press_scan(void);
+///#define Keypad_PORT               LATD
+#define Keypad_PORT_Direction     TRISD 
+
 
 char naif[17]={' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','\0'};
 char UPDOWN[17]={' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','\0'};
 unsigned char hello[25]="naif hamdi aljohani   ";
 char Key = 'n';
- uint16_t dac_out =0;
+
+  uint16_t dac_out =0;
 
   int16_t  count = 520;
   float   current = 0;
+  
  unsigned char print_line = 3;
+ 
  int currentStateCLK;
  int previousStateCLK;
  
  
-void interrupt_init()
-{
-  GIE   = 1  ; 
-  IOCIE = 1 ;
-  IOCAP3=1;
-}
-void interrupt isr()
-{
-   
-   if (IOCAF3 == 1) // button pressed 
-   {
-     IOCAF3 =0;    //  clear flag   
-    
-     count=0;
-   
-     
-   }
-     
-}
+void InitKeypad(void);
+char switch_press_scan(void);
 
 char keypad_scanner(void)  
 {           
@@ -102,28 +85,63 @@ void InitKeypad(void)
             //Keypad_PORT                = 0x00;        // Set Keypad port pin values zero       
             OPTION_REGbits.nWPUEN =0;
             Keypad_PORT_Direction = 0b11110000;      // Last 4 pins input, First 4 pins output 
-            WPUC = 0b11110000;
-            ANSELC=0;
+            WPUD = 0b11110000;
+            ANSELD=0;
 }
+
+void OP_AMP_init()
+{
+    // OPA3ORPOL not inverted; OPA3EN enabled; OPA3UG OPA_Output; OPA3ORM disabled; 
+    OPA3CON = 0x90;
+    // ORS CCP1_out; 
+    OPA3ORS = 0x00;
+    // NCH OPA3IN0-; 
+    OPA3NCHS = 0x00;
+    // PCH DAC5_out; 
+    OPA3PCHS = 0x02;
+}
+ 
+ 
+void interrupt_init()
+{
+  GIE   = 1  ; 
+  IOCIE = 1 ;
+  IOCAP3=1;
+}
+void interrupt isr()
+{
+   
+   if (IOCAF3 == 1) // button pressed 
+   {
+     IOCAF3 =0;    //  clear flag   
+    
+     count=0;
+   
+     
+   }
+     
+}
+
+
 void main(void)
 {
   ///  IOCIF  , IOCAFx            ///Interrupt-on-Change Interrupt Flag bit  
   OSCILLATOR_Initialize();  
   //interrupt_init();
   DAC_CONFIG();                  // DAC ON PIN RA2 !
+  OP_AMP_init();
   
-  
-  
-  
+  TRISC = 0xBF;
+  ANSELC = 0xFC;
+   
+   
   TRISA=0b00001011;
   ANSELA=0;
   INLVLA=0;
   
   ADC_Initialize();
   
-  TRISD=0;
-  ANSELD=0;
-  // WPUD =0XFF;
+  
  
   TRISB=0;
   ANSELB=0; 
@@ -184,15 +202,13 @@ void main(void)
      {
          count  =520;
      }
-       LED0= 0;
-       LED1= 1;
+       
        
      } else {
        // Encoder is rotating clockwise
        count  ++;
       
-        LED0= 1;
-        LED1= 0;
+        
        
      }
      previousStateCLK = currentStateCLK;   // Update previousStateCLK with the current state
@@ -212,7 +228,7 @@ void main(void)
      
       //////////////////////////////
     
-     DAC1_Load10bitInputData(count*64);
+     DAC5_Load10bitInputData(count*64);
       
     //  DAC1_Load10bitInputData ((naif[1]-48)*5120);
       

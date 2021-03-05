@@ -1,6 +1,6 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"14335 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
-[v _DAC1CON0 `Vuc ~T0 @X0 0 e@1422 ]
+"17599 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
+[v _DAC5CON0 `Vuc ~T0 @X0 0 e@1432 ]
 "14296
 [v _DACLD `Vuc ~T0 @X0 0 e@1421 ]
 "14341
@@ -26,10 +26,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S710 . . . . . . . ]
 "14388
 [v _DAC1CON0bits `VS710 ~T0 @X0 0 e@1422 ]
-"14560
-[v _DAC1REFL `Vuc ~T0 @X0 0 e@1423 ]
-"14982
-[v _DAC1REFH `Vuc ~T0 @X0 0 e@1424 ]
+"17824
+[v _DAC5REFL `Vuc ~T0 @X0 0 e@1433 ]
+"18246
+[v _DAC5REFH `Vuc ~T0 @X0 0 e@1434 ]
 "14302
 [s S709 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S709 . DAC1LD DAC2LD . DAC5LD DAC6LD ]
@@ -60,30 +60,22 @@ Version 3.2 HI-TECH Software Intermediate Code
 [p i __delay ]
 "47 GLCD.h
 [v _LCD_WriteCommand `(v ~T0 @X0 0 ef1`uc ]
-"48379 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
-[v _GIE `Vb ~T0 @X0 0 e@95 ]
-"48619
-[v _IOCIE `Vb ~T0 @X0 0 e@91 ]
-"48507
-[v _IOCAP3 `Vb ~T0 @X0 0 e@7307 ]
-"48475
-[v _IOCAF3 `Vb ~T0 @X0 0 e@7323 ]
-"3015
-[s S131 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S131 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
-"3014
-[u S130 `S131 1 ]
-[n S130 . . ]
-"3026
-[v _LATCbits `VS130 ~T0 @X0 0 e@270 ]
-"557
-[s S33 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S33 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
-"556
-[u S32 `S33 1 ]
-[n S32 . . ]
-"568
-[v _PORTCbits `VS32 ~T0 @X0 0 e@14 ]
+"3077 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
+[s S133 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S133 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
+"3076
+[u S132 `S133 1 ]
+[n S132 . . ]
+"3088
+[v _LATDbits `VS132 ~T0 @X0 0 e@271 ]
+"619
+[s S35 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S35 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
+"618
+[u S34 `S35 1 ]
+[n S34 . . ]
+"630
+[v _PORTDbits `VS34 ~T0 @X0 0 e@15 ]
 "2371
 [s S105 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S105 . PS PSA TMR0SE TMR0CS INTEDG nWPUEN ]
@@ -95,13 +87,33 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S104 . . . ]
 "2388
 [v _OPTION_REGbits `VS104 ~T0 @X0 0 e@151 ]
+"1926
+[v _TRISD `Vuc ~T0 @X0 0 e@143 ]
+"5507
+[v _WPUD `Vuc ~T0 @X0 0 e@527 ]
+"4191
+[v _ANSELD `Vuc ~T0 @X0 0 e@399 ]
+"13984
+[v _OPA3CON `Vuc ~T0 @X0 0 e@1305 ]
+"14092
+[v _OPA3ORS `Vuc ~T0 @X0 0 e@1306 ]
+"13928
+[v _OPA3NCHS `Vuc ~T0 @X0 0 e@1303 ]
+"13956
+[v _OPA3PCHS `Vuc ~T0 @X0 0 e@1304 ]
+"48379
+[v _GIE `Vb ~T0 @X0 0 e@95 ]
+"48619
+[v _IOCIE `Vb ~T0 @X0 0 e@91 ]
+"48507
+[v _IOCAP3 `Vb ~T0 @X0 0 e@7307 ]
+"48475
+[v _IOCAF3 `Vb ~T0 @X0 0 e@7323 ]
+[p mainexit ]
 "1864
 [v _TRISC `Vuc ~T0 @X0 0 e@142 ]
-"5445
-[v _WPUC `Vuc ~T0 @X0 0 e@526 ]
 "4140
 [v _ANSELC `Vuc ~T0 @X0 0 e@398 ]
-[p mainexit ]
 "1740
 [v _TRISA `Vuc ~T0 @X0 0 e@140 ]
 "4040
@@ -110,11 +122,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _INLVLA `Vuc ~T0 @X0 0 e@908 ]
 "146 ADC.h
 [v _ADC_Initialize `(v ~T0 @X0 0 ef ]
-"1926 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
-[v _TRISD `Vuc ~T0 @X0 0 e@143 ]
-"4191
-[v _ANSELD `Vuc ~T0 @X0 0 e@399 ]
-"1802
+"1802 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
 [v _TRISB `Vuc ~T0 @X0 0 e@141 ]
 "4090
 [v _ANSELB `Vuc ~T0 @X0 0 e@397 ]
@@ -130,22 +138,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S28 . . ]
 "444
 [v _PORTAbits `VS28 ~T0 @X0 0 e@12 ]
-"151 LOAD20210.c
+"169 LOAD20210.c
 [c E17242 5 33 42 50 54 55 56 57 58 59 60 61 62 63 .. ]
 [n E17242 . channel_AN5 channel_Switched_AN1 channel_Switched_AN10 channel_Switched_AN18 channel_DAC8_Output channel_DAC7_Output channel_DAC6_Output channel_DAC5_Output channel_DAC4_Output channel_DAC3_Output channel_DAC2_Output channel_Temp channel_DAC1_Output channel_FVRBuffer1  ]
 "298 ADC.h
 [v _ADC_GetConversion `(ui ~T0 @X0 0 ef1`E17242 ]
 "194 C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdio.h
 [v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
-"3077 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
-[s S133 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S133 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
-"3076
-[u S132 `S133 1 ]
-[n S132 . . ]
-"3088
-[v _LATDbits `VS132 ~T0 @X0 0 e@271 ]
-"37 LOAD20210.c
+"53 LOAD20210.c
 [v _switch_press_scan `(uc ~T0 @X0 0 ef ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
@@ -19838,9 +19838,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;LDC_ROT.h: 260: {
 [e :U _DAC_CONFIG ]
 [f ]
-[; ;LDC_ROT.h: 261: DAC1CON0 = 0b10100000;
+[; ;LDC_ROT.h: 261: DAC5CON0 = 0b10100000;
 "261
-[e = _DAC1CON0 -> -> 160 `i `uc ]
+[e = _DAC5CON0 -> -> 160 `i `uc ]
 [; ;LDC_ROT.h: 262: DACLD = 0xff;
 "262
 [e = _DACLD -> -> 255 `i `uc ]
@@ -19849,12 +19849,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :UE 2098 ]
 }
 "265
-[v _DAC1_Load10bitInputData `(v ~T0 @X0 1 ef1`ui ]
+[v _DAC5_Load10bitInputData `(v ~T0 @X0 1 ef1`ui ]
 "266
 {
-[; ;LDC_ROT.h: 265: void DAC1_Load10bitInputData(uint16_t input16BitData)
+[; ;LDC_ROT.h: 265: void DAC5_Load10bitInputData(uint16_t input16BitData)
 [; ;LDC_ROT.h: 266: {
-[e :U _DAC1_Load10bitInputData ]
+[e :U _DAC5_Load10bitInputData ]
 "265
 [v _input16BitData `ui ~T0 @X0 1 r1 ]
 "266
@@ -19862,12 +19862,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;LDC_ROT.h: 269: DAC1CON0bits.DAC1FM = 1;
 "269
 [e = . . _DAC1CON0bits 4 4 -> -> 1 `i `uc ]
-[; ;LDC_ROT.h: 272: DAC1REFL = (uint8_t) input16BitData;
+[; ;LDC_ROT.h: 272: DAC5REFL = (uint8_t) input16BitData;
 "272
-[e = _DAC1REFL -> _input16BitData `uc ]
-[; ;LDC_ROT.h: 273: DAC1REFH = (uint8_t)(input16BitData >> 8);
+[e = _DAC5REFL -> _input16BitData `uc ]
+[; ;LDC_ROT.h: 273: DAC5REFH = (uint8_t)(input16BitData >> 8);
 "273
-[e = _DAC1REFH -> >> _input16BitData -> 8 `i `uc ]
+[e = _DAC5REFH -> >> _input16BitData -> 8 `i `uc ]
 [; ;LDC_ROT.h: 275: (DACLDbits.DAC1LD = 1);
 "275
 [e = . . _DACLDbits 0 0 -> -> 1 `i `uc ]
@@ -20729,9 +20729,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "549
 [e :UE 2153 ]
 }
-[; ;LOAD20210.c: 36: void InitKeypad(void);
-[; ;LOAD20210.c: 37: char switch_press_scan(void);
-"39 LOAD20210.c
+"36 LOAD20210.c
 [v _naif `uc ~T0 @X0 -> 17 `i e ]
 [i _naif
 :U ..
@@ -20754,8 +20752,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> 0 `ui `uc
 ..
 ]
-[; ;LOAD20210.c: 39: char naif[17]={' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','\0'};
-"40
+[; ;LOAD20210.c: 36: char naif[17]={' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','\0'};
+"37
 [v _UPDOWN `uc ~T0 @X0 -> 17 `i e ]
 [i _UPDOWN
 :U ..
@@ -20778,8 +20776,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> 0 `ui `uc
 ..
 ]
-[; ;LOAD20210.c: 40: char UPDOWN[17]={' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','\0'};
-"41
+[; ;LOAD20210.c: 37: char UPDOWN[17]={' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ','\0'};
+"38
 [v _hello `uc ~T0 @X0 -> 25 `i e ]
 [i _hello
 :U ..
@@ -20808,642 +20806,659 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-[; ;LOAD20210.c: 41: unsigned char hello[25]="naif hamdi aljohani   ";
-"42
+[; ;LOAD20210.c: 38: unsigned char hello[25]="naif hamdi aljohani   ";
+"39
 [v _Key `uc ~T0 @X0 1 e ]
 [i _Key
 -> -> 110 `ui `uc
 ]
-[; ;LOAD20210.c: 42: char Key = 'n';
-"43
+[; ;LOAD20210.c: 39: char Key = 'n';
+"41
 [v _dac_out `ui ~T0 @X0 1 e ]
 [i _dac_out
 -> -> 0 `i `ui
 ]
-[; ;LOAD20210.c: 43: uint16_t dac_out =0;
-"45
+[; ;LOAD20210.c: 41: uint16_t dac_out =0;
+"43
 [v _count `i ~T0 @X0 1 e ]
 [i _count
 -> 520 `i
 ]
-[; ;LOAD20210.c: 45: int16_t count = 520;
-"46
+[; ;LOAD20210.c: 43: int16_t count = 520;
+"44
 [v _current `f ~T0 @X0 1 e ]
 [i _current
 -> -> 0 `i `f
 ]
-[; ;LOAD20210.c: 46: float current = 0;
-"47
+[; ;LOAD20210.c: 44: float current = 0;
+"46
 [v _print_line `uc ~T0 @X0 1 e ]
 [i _print_line
 -> -> 3 `i `uc
 ]
-[; ;LOAD20210.c: 47: unsigned char print_line = 3;
+[; ;LOAD20210.c: 46: unsigned char print_line = 3;
 "48
 [v _currentStateCLK `i ~T0 @X0 1 e ]
 [; ;LOAD20210.c: 48: int currentStateCLK;
 "49
 [v _previousStateCLK `i ~T0 @X0 1 e ]
 [; ;LOAD20210.c: 49: int previousStateCLK;
-"52
-[v _interrupt_init `(v ~T0 @X0 1 ef ]
-"53
-{
-[; ;LOAD20210.c: 52: void interrupt_init()
-[; ;LOAD20210.c: 53: {
-[e :U _interrupt_init ]
-[f ]
-[; ;LOAD20210.c: 54: GIE = 1 ;
-"54
-[e = _GIE -> -> 1 `i `b ]
-[; ;LOAD20210.c: 55: IOCIE = 1 ;
+[; ;LOAD20210.c: 52: void InitKeypad(void);
+[; ;LOAD20210.c: 53: char switch_press_scan(void);
 "55
-[e = _IOCIE -> -> 1 `i `b ]
-[; ;LOAD20210.c: 56: IOCAP3=1;
-"56
-[e = _IOCAP3 -> -> 1 `i `b ]
-[; ;LOAD20210.c: 57: }
-"57
-[e :UE 2162 ]
-}
-[v $root$_isr `(v ~T0 @X0 0 e ]
-[v F17648 `(v ~T0 @X0 1 tf ]
-"58
-[v _isr `IF17648 ~T0 @X0 1 e ]
-"59
-{
-[; ;LOAD20210.c: 58: void interrupt isr()
-[; ;LOAD20210.c: 59: {
-[e :U _isr ]
-[f ]
-[; ;LOAD20210.c: 61: if (IOCAF3 == 1)
-"61
-[e $ ! == -> _IOCAF3 `i -> 1 `i 2164  ]
-[; ;LOAD20210.c: 62: {
-"62
-{
-[; ;LOAD20210.c: 63: IOCAF3 =0;
-"63
-[e = _IOCAF3 -> -> 0 `i `b ]
-[; ;LOAD20210.c: 65: count=0;
-"65
-[e = _count -> 0 `i ]
-"68
-}
-[e :U 2164 ]
-[; ;LOAD20210.c: 68: }
-[; ;LOAD20210.c: 70: }
-"70
-[e :UE 2163 ]
-}
-"72
 [v _keypad_scanner `(uc ~T0 @X0 1 ef ]
-"73
+"56
 {
-[; ;LOAD20210.c: 72: char keypad_scanner(void)
-[; ;LOAD20210.c: 73: {
+[; ;LOAD20210.c: 55: char keypad_scanner(void)
+[; ;LOAD20210.c: 56: {
 [e :U _keypad_scanner ]
 [f ]
-[; ;LOAD20210.c: 74: LATCbits.LATC0 = 0; LATCbits.LATC1 = 1; LATCbits.LATC2 = 1; LATCbits.LATC3 = 1;
-"74
-[e = . . _LATCbits 0 0 -> -> 0 `i `uc ]
-[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
-[e = . . _LATCbits 0 2 -> -> 1 `i `uc ]
-[e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
-[; ;LOAD20210.c: 75: if (PORTCbits.RC4 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC4==0); return '1'; }
-"75
-[e $ ! == -> . . _PORTCbits 0 4 `i -> 0 `i 2166  ]
+[; ;LOAD20210.c: 57: LATDbits.LATD0 = 0; LATDbits.LATD1 = 1; LATDbits.LATD2 = 1; LATDbits.LATD3 = 1;
+"57
+[e = . . _LATDbits 0 0 -> -> 0 `i `uc ]
+[e = . . _LATDbits 0 1 -> -> 1 `i `uc ]
+[e = . . _LATDbits 0 2 -> -> 1 `i `uc ]
+[e = . . _LATDbits 0 3 -> -> 1 `i `uc ]
+[; ;LOAD20210.c: 58: if (PORTDbits.RD4 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD4==0); return '1'; }
+"58
+[e $ ! == -> . . _PORTDbits 0 4 `i -> 0 `i 2163  ]
 {
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[e $U 2167  ]
-[e :U 2168 ]
-[e :U 2167 ]
-[e $ == -> . . _PORTCbits 0 4 `i -> 0 `i 2168  ]
-[e :U 2169 ]
-[e ) -> -> 49 `ui `uc ]
-[e $UE 2165  ]
-}
+[e $U 2164  ]
+[e :U 2165 ]
+[e :U 2164 ]
+[e $ == -> . . _PORTDbits 0 4 `i -> 0 `i 2165  ]
 [e :U 2166 ]
-[; ;LOAD20210.c: 76: if (PORTCbits.RC5 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC5==0); return '2'; }
-"76
-[e $ ! == -> . . _PORTCbits 0 5 `i -> 0 `i 2170  ]
+[e ) -> -> 49 `ui `uc ]
+[e $UE 2162  ]
+}
+[e :U 2163 ]
+[; ;LOAD20210.c: 59: if (PORTDbits.RD5 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD5==0); return '2'; }
+"59
+[e $ ! == -> . . _PORTDbits 0 5 `i -> 0 `i 2167  ]
 {
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[e $U 2171  ]
-[e :U 2172 ]
-[e :U 2171 ]
-[e $ == -> . . _PORTCbits 0 5 `i -> 0 `i 2172  ]
-[e :U 2173 ]
-[e ) -> -> 50 `ui `uc ]
-[e $UE 2165  ]
-}
+[e $U 2168  ]
+[e :U 2169 ]
+[e :U 2168 ]
+[e $ == -> . . _PORTDbits 0 5 `i -> 0 `i 2169  ]
 [e :U 2170 ]
-[; ;LOAD20210.c: 77: if (PORTCbits.RC6 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC6==0); return '3'; }
-"77
-[e $ ! == -> . . _PORTCbits 0 6 `i -> 0 `i 2174  ]
+[e ) -> -> 50 `ui `uc ]
+[e $UE 2162  ]
+}
+[e :U 2167 ]
+[; ;LOAD20210.c: 60: if (PORTDbits.RD6 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD6==0); return '3'; }
+"60
+[e $ ! == -> . . _PORTDbits 0 6 `i -> 0 `i 2171  ]
 {
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[e $U 2175  ]
-[e :U 2176 ]
-[e :U 2175 ]
-[e $ == -> . . _PORTCbits 0 6 `i -> 0 `i 2176  ]
-[e :U 2177 ]
-[e ) -> -> 51 `ui `uc ]
-[e $UE 2165  ]
-}
+[e $U 2172  ]
+[e :U 2173 ]
+[e :U 2172 ]
+[e $ == -> . . _PORTDbits 0 6 `i -> 0 `i 2173  ]
 [e :U 2174 ]
-[; ;LOAD20210.c: 78: if (PORTCbits.RC7 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC7==0); return 'A'; }
-"78
-[e $ ! == -> . . _PORTCbits 0 7 `i -> 0 `i 2178  ]
+[e ) -> -> 51 `ui `uc ]
+[e $UE 2162  ]
+}
+[e :U 2171 ]
+[; ;LOAD20210.c: 61: if (PORTDbits.RD7 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD7==0); return 'A'; }
+"61
+[e $ ! == -> . . _PORTDbits 0 7 `i -> 0 `i 2175  ]
 {
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[e $U 2179  ]
-[e :U 2180 ]
-[e :U 2179 ]
-[e $ == -> . . _PORTCbits 0 7 `i -> 0 `i 2180  ]
-[e :U 2181 ]
-[e ) -> -> 65 `ui `uc ]
-[e $UE 2165  ]
-}
+[e $U 2176  ]
+[e :U 2177 ]
+[e :U 2176 ]
+[e $ == -> . . _PORTDbits 0 7 `i -> 0 `i 2177  ]
 [e :U 2178 ]
-[; ;LOAD20210.c: 80: LATCbits.LATC0 = 1; LATCbits.LATC1 = 0; LATCbits.LATC2 = 1; LATCbits.LATC3 = 1;
-"80
-[e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
-[e = . . _LATCbits 0 1 -> -> 0 `i `uc ]
-[e = . . _LATCbits 0 2 -> -> 1 `i `uc ]
-[e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
-[; ;LOAD20210.c: 81: if (PORTCbits.RC4 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC4==0); return '4'; }
-"81
-[e $ ! == -> . . _PORTCbits 0 4 `i -> 0 `i 2182  ]
+[e ) -> -> 65 `ui `uc ]
+[e $UE 2162  ]
+}
+[e :U 2175 ]
+[; ;LOAD20210.c: 63: LATDbits.LATD0 = 1; LATDbits.LATD1 = 0; LATDbits.LATD2 = 1; LATDbits.LATD3 = 1;
+"63
+[e = . . _LATDbits 0 0 -> -> 1 `i `uc ]
+[e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
+[e = . . _LATDbits 0 2 -> -> 1 `i `uc ]
+[e = . . _LATDbits 0 3 -> -> 1 `i `uc ]
+[; ;LOAD20210.c: 64: if (PORTDbits.RD4 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD4==0); return '4'; }
+"64
+[e $ ! == -> . . _PORTDbits 0 4 `i -> 0 `i 2179  ]
 {
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[e $U 2183  ]
-[e :U 2184 ]
-[e :U 2183 ]
-[e $ == -> . . _PORTCbits 0 4 `i -> 0 `i 2184  ]
-[e :U 2185 ]
-[e ) -> -> 52 `ui `uc ]
-[e $UE 2165  ]
-}
+[e $U 2180  ]
+[e :U 2181 ]
+[e :U 2180 ]
+[e $ == -> . . _PORTDbits 0 4 `i -> 0 `i 2181  ]
 [e :U 2182 ]
-[; ;LOAD20210.c: 82: if (PORTCbits.RC5 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC5==0); return '5'; }
-"82
-[e $ ! == -> . . _PORTCbits 0 5 `i -> 0 `i 2186  ]
+[e ) -> -> 52 `ui `uc ]
+[e $UE 2162  ]
+}
+[e :U 2179 ]
+[; ;LOAD20210.c: 65: if (PORTDbits.RD5 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD5==0); return '5'; }
+"65
+[e $ ! == -> . . _PORTDbits 0 5 `i -> 0 `i 2183  ]
 {
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[e $U 2187  ]
-[e :U 2188 ]
-[e :U 2187 ]
-[e $ == -> . . _PORTCbits 0 5 `i -> 0 `i 2188  ]
-[e :U 2189 ]
-[e ) -> -> 53 `ui `uc ]
-[e $UE 2165  ]
-}
+[e $U 2184  ]
+[e :U 2185 ]
+[e :U 2184 ]
+[e $ == -> . . _PORTDbits 0 5 `i -> 0 `i 2185  ]
 [e :U 2186 ]
-[; ;LOAD20210.c: 83: if (PORTCbits.RC6 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC6==0); return '6'; }
-"83
-[e $ ! == -> . . _PORTCbits 0 6 `i -> 0 `i 2190  ]
+[e ) -> -> 53 `ui `uc ]
+[e $UE 2162  ]
+}
+[e :U 2183 ]
+[; ;LOAD20210.c: 66: if (PORTDbits.RD6 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD6==0); return '6'; }
+"66
+[e $ ! == -> . . _PORTDbits 0 6 `i -> 0 `i 2187  ]
 {
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[e $U 2191  ]
-[e :U 2192 ]
-[e :U 2191 ]
-[e $ == -> . . _PORTCbits 0 6 `i -> 0 `i 2192  ]
-[e :U 2193 ]
-[e ) -> -> 54 `ui `uc ]
-[e $UE 2165  ]
-}
+[e $U 2188  ]
+[e :U 2189 ]
+[e :U 2188 ]
+[e $ == -> . . _PORTDbits 0 6 `i -> 0 `i 2189  ]
 [e :U 2190 ]
-[; ;LOAD20210.c: 84: if (PORTCbits.RC7 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC7==0); return 'B'; }
-"84
-[e $ ! == -> . . _PORTCbits 0 7 `i -> 0 `i 2194  ]
+[e ) -> -> 54 `ui `uc ]
+[e $UE 2162  ]
+}
+[e :U 2187 ]
+[; ;LOAD20210.c: 67: if (PORTDbits.RD7 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD7==0); return 'B'; }
+"67
+[e $ ! == -> . . _PORTDbits 0 7 `i -> 0 `i 2191  ]
 {
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[e $U 2195  ]
-[e :U 2196 ]
-[e :U 2195 ]
-[e $ == -> . . _PORTCbits 0 7 `i -> 0 `i 2196  ]
-[e :U 2197 ]
-[e ) -> -> 66 `ui `uc ]
-[e $UE 2165  ]
-}
+[e $U 2192  ]
+[e :U 2193 ]
+[e :U 2192 ]
+[e $ == -> . . _PORTDbits 0 7 `i -> 0 `i 2193  ]
 [e :U 2194 ]
-[; ;LOAD20210.c: 86: LATCbits.LATC0 = 1; LATCbits.LATC1 = 1; LATCbits.LATC2 = 0; LATCbits.LATC3 = 1;
-"86
-[e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
-[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
-[e = . . _LATCbits 0 2 -> -> 0 `i `uc ]
-[e = . . _LATCbits 0 3 -> -> 1 `i `uc ]
-[; ;LOAD20210.c: 87: if (PORTCbits.RC4 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC4==0); return '7'; }
-"87
-[e $ ! == -> . . _PORTCbits 0 4 `i -> 0 `i 2198  ]
+[e ) -> -> 66 `ui `uc ]
+[e $UE 2162  ]
+}
+[e :U 2191 ]
+[; ;LOAD20210.c: 69: LATDbits.LATD0 = 1; LATDbits.LATD1 = 1; LATDbits.LATD2 = 0; LATDbits.LATD3 = 1;
+"69
+[e = . . _LATDbits 0 0 -> -> 1 `i `uc ]
+[e = . . _LATDbits 0 1 -> -> 1 `i `uc ]
+[e = . . _LATDbits 0 2 -> -> 0 `i `uc ]
+[e = . . _LATDbits 0 3 -> -> 1 `i `uc ]
+[; ;LOAD20210.c: 70: if (PORTDbits.RD4 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD4==0); return '7'; }
+"70
+[e $ ! == -> . . _PORTDbits 0 4 `i -> 0 `i 2195  ]
 {
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[e $U 2199  ]
-[e :U 2200 ]
-[e :U 2199 ]
-[e $ == -> . . _PORTCbits 0 4 `i -> 0 `i 2200  ]
-[e :U 2201 ]
-[e ) -> -> 55 `ui `uc ]
-[e $UE 2165  ]
-}
+[e $U 2196  ]
+[e :U 2197 ]
+[e :U 2196 ]
+[e $ == -> . . _PORTDbits 0 4 `i -> 0 `i 2197  ]
 [e :U 2198 ]
-[; ;LOAD20210.c: 88: if (PORTCbits.RC5 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC5==0); return '8'; }
-"88
-[e $ ! == -> . . _PORTCbits 0 5 `i -> 0 `i 2202  ]
+[e ) -> -> 55 `ui `uc ]
+[e $UE 2162  ]
+}
+[e :U 2195 ]
+[; ;LOAD20210.c: 71: if (PORTDbits.RD5 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD5==0); return '8'; }
+"71
+[e $ ! == -> . . _PORTDbits 0 5 `i -> 0 `i 2199  ]
 {
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[e $U 2203  ]
-[e :U 2204 ]
-[e :U 2203 ]
-[e $ == -> . . _PORTCbits 0 5 `i -> 0 `i 2204  ]
-[e :U 2205 ]
-[e ) -> -> 56 `ui `uc ]
-[e $UE 2165  ]
-}
+[e $U 2200  ]
+[e :U 2201 ]
+[e :U 2200 ]
+[e $ == -> . . _PORTDbits 0 5 `i -> 0 `i 2201  ]
 [e :U 2202 ]
-[; ;LOAD20210.c: 89: if (PORTCbits.RC6 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC6==0); return '9'; }
-"89
-[e $ ! == -> . . _PORTCbits 0 6 `i -> 0 `i 2206  ]
+[e ) -> -> 56 `ui `uc ]
+[e $UE 2162  ]
+}
+[e :U 2199 ]
+[; ;LOAD20210.c: 72: if (PORTDbits.RD6 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD6==0); return '9'; }
+"72
+[e $ ! == -> . . _PORTDbits 0 6 `i -> 0 `i 2203  ]
 {
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[e $U 2207  ]
-[e :U 2208 ]
-[e :U 2207 ]
-[e $ == -> . . _PORTCbits 0 6 `i -> 0 `i 2208  ]
-[e :U 2209 ]
-[e ) -> -> 57 `ui `uc ]
-[e $UE 2165  ]
-}
+[e $U 2204  ]
+[e :U 2205 ]
+[e :U 2204 ]
+[e $ == -> . . _PORTDbits 0 6 `i -> 0 `i 2205  ]
 [e :U 2206 ]
-[; ;LOAD20210.c: 90: if (PORTCbits.RC7 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC7==0); return 'C'; }
-"90
-[e $ ! == -> . . _PORTCbits 0 7 `i -> 0 `i 2210  ]
+[e ) -> -> 57 `ui `uc ]
+[e $UE 2162  ]
+}
+[e :U 2203 ]
+[; ;LOAD20210.c: 73: if (PORTDbits.RD7 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD7==0); return 'C'; }
+"73
+[e $ ! == -> . . _PORTDbits 0 7 `i -> 0 `i 2207  ]
 {
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[e $U 2211  ]
-[e :U 2212 ]
-[e :U 2211 ]
-[e $ == -> . . _PORTCbits 0 7 `i -> 0 `i 2212  ]
-[e :U 2213 ]
-[e ) -> -> 67 `ui `uc ]
-[e $UE 2165  ]
-}
+[e $U 2208  ]
+[e :U 2209 ]
+[e :U 2208 ]
+[e $ == -> . . _PORTDbits 0 7 `i -> 0 `i 2209  ]
 [e :U 2210 ]
-[; ;LOAD20210.c: 92: LATCbits.LATC0 = 1; LATCbits.LATC1 = 1; LATCbits.LATC2 = 1; LATCbits.LATC3 = 0;
-"92
-[e = . . _LATCbits 0 0 -> -> 1 `i `uc ]
-[e = . . _LATCbits 0 1 -> -> 1 `i `uc ]
-[e = . . _LATCbits 0 2 -> -> 1 `i `uc ]
-[e = . . _LATCbits 0 3 -> -> 0 `i `uc ]
-[; ;LOAD20210.c: 93: if (PORTCbits.RC4 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC4==0); return '*'; }
-"93
-[e $ ! == -> . . _PORTCbits 0 4 `i -> 0 `i 2214  ]
+[e ) -> -> 67 `ui `uc ]
+[e $UE 2162  ]
+}
+[e :U 2207 ]
+[; ;LOAD20210.c: 75: LATDbits.LATD0 = 1; LATDbits.LATD1 = 1; LATDbits.LATD2 = 1; LATDbits.LATD3 = 0;
+"75
+[e = . . _LATDbits 0 0 -> -> 1 `i `uc ]
+[e = . . _LATDbits 0 1 -> -> 1 `i `uc ]
+[e = . . _LATDbits 0 2 -> -> 1 `i `uc ]
+[e = . . _LATDbits 0 3 -> -> 0 `i `uc ]
+[; ;LOAD20210.c: 76: if (PORTDbits.RD4 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD4==0); return '*'; }
+"76
+[e $ ! == -> . . _PORTDbits 0 4 `i -> 0 `i 2211  ]
 {
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[e $U 2215  ]
-[e :U 2216 ]
-[e :U 2215 ]
-[e $ == -> . . _PORTCbits 0 4 `i -> 0 `i 2216  ]
-[e :U 2217 ]
-[e ) -> -> 42 `ui `uc ]
-[e $UE 2165  ]
-}
+[e $U 2212  ]
+[e :U 2213 ]
+[e :U 2212 ]
+[e $ == -> . . _PORTDbits 0 4 `i -> 0 `i 2213  ]
 [e :U 2214 ]
-[; ;LOAD20210.c: 94: if (PORTCbits.RC5 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC5==0); return '0'; }
-"94
-[e $ ! == -> . . _PORTCbits 0 5 `i -> 0 `i 2218  ]
+[e ) -> -> 42 `ui `uc ]
+[e $UE 2162  ]
+}
+[e :U 2211 ]
+[; ;LOAD20210.c: 77: if (PORTDbits.RD5 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD5==0); return '0'; }
+"77
+[e $ ! == -> . . _PORTDbits 0 5 `i -> 0 `i 2215  ]
 {
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[e $U 2219  ]
-[e :U 2220 ]
-[e :U 2219 ]
-[e $ == -> . . _PORTCbits 0 5 `i -> 0 `i 2220  ]
-[e :U 2221 ]
-[e ) -> -> 48 `ui `uc ]
-[e $UE 2165  ]
-}
+[e $U 2216  ]
+[e :U 2217 ]
+[e :U 2216 ]
+[e $ == -> . . _PORTDbits 0 5 `i -> 0 `i 2217  ]
 [e :U 2218 ]
-[; ;LOAD20210.c: 95: if (PORTCbits.RC6 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC6==0); return '#'; }
-"95
-[e $ ! == -> . . _PORTCbits 0 6 `i -> 0 `i 2222  ]
+[e ) -> -> 48 `ui `uc ]
+[e $UE 2162  ]
+}
+[e :U 2215 ]
+[; ;LOAD20210.c: 78: if (PORTDbits.RD6 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD6==0); return '#'; }
+"78
+[e $ ! == -> . . _PORTDbits 0 6 `i -> 0 `i 2219  ]
 {
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[e $U 2223  ]
-[e :U 2224 ]
-[e :U 2223 ]
-[e $ == -> . . _PORTCbits 0 6 `i -> 0 `i 2224  ]
-[e :U 2225 ]
-[e ) -> -> 35 `ui `uc ]
-[e $UE 2165  ]
-}
+[e $U 2220  ]
+[e :U 2221 ]
+[e :U 2220 ]
+[e $ == -> . . _PORTDbits 0 6 `i -> 0 `i 2221  ]
 [e :U 2222 ]
-[; ;LOAD20210.c: 96: if (PORTCbits.RC7 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTCbits.RC7==0); return 'D'; }
-"96
-[e $ ! == -> . . _PORTCbits 0 7 `i -> 0 `i 2226  ]
+[e ) -> -> 35 `ui `uc ]
+[e $UE 2162  ]
+}
+[e :U 2219 ]
+[; ;LOAD20210.c: 79: if (PORTDbits.RD7 == 0) { _delay((unsigned long)((100)*(16000000/4000.0))); while (PORTDbits.RD7==0); return 'D'; }
+"79
+[e $ ! == -> . . _PORTDbits 0 7 `i -> 0 `i 2223  ]
 {
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[e $U 2227  ]
-[e :U 2228 ]
-[e :U 2227 ]
-[e $ == -> . . _PORTCbits 0 7 `i -> 0 `i 2228  ]
-[e :U 2229 ]
-[e ) -> -> 68 `ui `uc ]
-[e $UE 2165  ]
-}
+[e $U 2224  ]
+[e :U 2225 ]
+[e :U 2224 ]
+[e $ == -> . . _PORTDbits 0 7 `i -> 0 `i 2225  ]
 [e :U 2226 ]
-[; ;LOAD20210.c: 98: return ;
-"98
-[e $UE 2165  ]
-[; ;LOAD20210.c: 99: }
-"99
-[e :UE 2165 ]
+[e ) -> -> 68 `ui `uc ]
+[e $UE 2162  ]
 }
-"100
+[e :U 2223 ]
+[; ;LOAD20210.c: 81: return ;
+"81
+[e $UE 2162  ]
+[; ;LOAD20210.c: 82: }
+"82
+[e :UE 2162 ]
+}
+"83
 [v _InitKeypad `(v ~T0 @X0 1 ef ]
-"101
+"84
 {
-[; ;LOAD20210.c: 100: void InitKeypad(void)
-[; ;LOAD20210.c: 101: {
+[; ;LOAD20210.c: 83: void InitKeypad(void)
+[; ;LOAD20210.c: 84: {
 [e :U _InitKeypad ]
 [f ]
-[; ;LOAD20210.c: 103: OPTION_REGbits.nWPUEN =0;
-"103
+[; ;LOAD20210.c: 86: OPTION_REGbits.nWPUEN =0;
+"86
 [e = . . _OPTION_REGbits 0 5 -> -> 0 `i `uc ]
-[; ;LOAD20210.c: 104: TRISC = 0b11110000;
-"104
-[e = _TRISC -> -> 240 `i `uc ]
-[; ;LOAD20210.c: 105: WPUC = 0b11110000;
+[; ;LOAD20210.c: 87: TRISD = 0b11110000;
+"87
+[e = _TRISD -> -> 240 `i `uc ]
+[; ;LOAD20210.c: 88: WPUD = 0b11110000;
+"88
+[e = _WPUD -> -> 240 `i `uc ]
+[; ;LOAD20210.c: 89: ANSELD=0;
+"89
+[e = _ANSELD -> -> 0 `i `uc ]
+[; ;LOAD20210.c: 90: }
+"90
+[e :UE 2227 ]
+}
+"92
+[v _OP_AMP_init `(v ~T0 @X0 1 ef ]
+"93
+{
+[; ;LOAD20210.c: 92: void OP_AMP_init()
+[; ;LOAD20210.c: 93: {
+[e :U _OP_AMP_init ]
+[f ]
+[; ;LOAD20210.c: 95: OPA3CON = 0x90;
+"95
+[e = _OPA3CON -> -> 144 `i `uc ]
+[; ;LOAD20210.c: 97: OPA3ORS = 0x00;
+"97
+[e = _OPA3ORS -> -> 0 `i `uc ]
+[; ;LOAD20210.c: 99: OPA3NCHS = 0x00;
+"99
+[e = _OPA3NCHS -> -> 0 `i `uc ]
+[; ;LOAD20210.c: 101: OPA3PCHS = 0x02;
+"101
+[e = _OPA3PCHS -> -> 2 `i `uc ]
+[; ;LOAD20210.c: 102: }
+"102
+[e :UE 2228 ]
+}
 "105
-[e = _WPUC -> -> 240 `i `uc ]
-[; ;LOAD20210.c: 106: ANSELC=0;
+[v _interrupt_init `(v ~T0 @X0 1 ef ]
 "106
-[e = _ANSELC -> -> 0 `i `uc ]
-[; ;LOAD20210.c: 107: }
+{
+[; ;LOAD20210.c: 105: void interrupt_init()
+[; ;LOAD20210.c: 106: {
+[e :U _interrupt_init ]
+[f ]
+[; ;LOAD20210.c: 107: GIE = 1 ;
 "107
+[e = _GIE -> -> 1 `i `b ]
+[; ;LOAD20210.c: 108: IOCIE = 1 ;
+"108
+[e = _IOCIE -> -> 1 `i `b ]
+[; ;LOAD20210.c: 109: IOCAP3=1;
+"109
+[e = _IOCAP3 -> -> 1 `i `b ]
+[; ;LOAD20210.c: 110: }
+"110
+[e :UE 2229 ]
+}
+[v $root$_isr `(v ~T0 @X0 0 e ]
+[v F17668 `(v ~T0 @X0 1 tf ]
+"111
+[v _isr `IF17668 ~T0 @X0 1 e ]
+"112
+{
+[; ;LOAD20210.c: 111: void interrupt isr()
+[; ;LOAD20210.c: 112: {
+[e :U _isr ]
+[f ]
+[; ;LOAD20210.c: 114: if (IOCAF3 == 1)
+"114
+[e $ ! == -> _IOCAF3 `i -> 1 `i 2231  ]
+[; ;LOAD20210.c: 115: {
+"115
+{
+[; ;LOAD20210.c: 116: IOCAF3 =0;
+"116
+[e = _IOCAF3 -> -> 0 `i `b ]
+[; ;LOAD20210.c: 118: count=0;
+"118
+[e = _count -> 0 `i ]
+"121
+}
+[e :U 2231 ]
+[; ;LOAD20210.c: 121: }
+[; ;LOAD20210.c: 123: }
+"123
 [e :UE 2230 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"108
+"126
 [v _main `(v ~T0 @X0 1 ef ]
-"109
+"127
 {
-[; ;LOAD20210.c: 108: void main(void)
-[; ;LOAD20210.c: 109: {
+[; ;LOAD20210.c: 126: void main(void)
+[; ;LOAD20210.c: 127: {
 [e :U _main ]
 [f ]
-[; ;LOAD20210.c: 111: OSCILLATOR_Initialize();
-"111
-[e ( _OSCILLATOR_Initialize ..  ]
-[; ;LOAD20210.c: 113: DAC_CONFIG();
-"113
-[e ( _DAC_CONFIG ..  ]
-[; ;LOAD20210.c: 118: TRISA=0b00001011;
-"118
-[e = _TRISA -> -> 11 `i `uc ]
-[; ;LOAD20210.c: 119: ANSELA=0;
-"119
-[e = _ANSELA -> -> 0 `i `uc ]
-[; ;LOAD20210.c: 120: INLVLA=0;
-"120
-[e = _INLVLA -> -> 0 `i `uc ]
-[; ;LOAD20210.c: 122: ADC_Initialize();
-"122
-[e ( _ADC_Initialize ..  ]
-[; ;LOAD20210.c: 124: TRISD=0;
-"124
-[e = _TRISD -> -> 0 `i `uc ]
-[; ;LOAD20210.c: 125: ANSELD=0;
-"125
-[e = _ANSELD -> -> 0 `i `uc ]
-[; ;LOAD20210.c: 128: TRISB=0;
-"128
-[e = _TRISB -> -> 0 `i `uc ]
-[; ;LOAD20210.c: 129: ANSELB=0;
+[; ;LOAD20210.c: 129: OSCILLATOR_Initialize();
 "129
-[e = _ANSELB -> -> 0 `i `uc ]
-[; ;LOAD20210.c: 130: ODCONB=0;
-"130
-[e = _ODCONB -> -> 0 `i `uc ]
-[; ;LOAD20210.c: 131: SLRCONB=0;
+[e ( _OSCILLATOR_Initialize ..  ]
+[; ;LOAD20210.c: 131: DAC_CONFIG();
 "131
-[e = _SLRCONB -> -> 0 `i `uc ]
-[; ;LOAD20210.c: 134: InitKeypad();
+[e ( _DAC_CONFIG ..  ]
+[; ;LOAD20210.c: 132: OP_AMP_init();
+"132
+[e ( _OP_AMP_init ..  ]
+[; ;LOAD20210.c: 134: TRISC = 0xBF;
 "134
-[e ( _InitKeypad ..  ]
-[; ;LOAD20210.c: 136: LCD_Init( );
-"136
-[e ( _LCD_Init ..  ]
-[; ;LOAD20210.c: 137: LCD_EnableGraphics();
-"137
-[e ( _LCD_EnableGraphics ..  ]
-[; ;LOAD20210.c: 138: LCD_ClearGraphics();
+[e = _TRISC -> -> 191 `i `uc ]
+[; ;LOAD20210.c: 135: ANSELC = 0xFC;
+"135
+[e = _ANSELC -> -> 252 `i `uc ]
+[; ;LOAD20210.c: 138: TRISA=0b00001011;
 "138
-[e ( _LCD_ClearGraphics ..  ]
-[; ;LOAD20210.c: 139: LCD_FillScreenGraphics(des);
+[e = _TRISA -> -> 11 `i `uc ]
+[; ;LOAD20210.c: 139: ANSELA=0;
 "139
-[e ( _LCD_FillScreenGraphics (1 &U _des ]
-[; ;LOAD20210.c: 140: _delay((unsigned long)((1000)*(16000000/4000.0)));
+[e = _ANSELA -> -> 0 `i `uc ]
+[; ;LOAD20210.c: 140: INLVLA=0;
 "140
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[; ;LOAD20210.c: 141: LCD_ClearGraphics();
-"141
-[e ( _LCD_ClearGraphics ..  ]
-[; ;LOAD20210.c: 142: LCD_DisableGraphics();
+[e = _INLVLA -> -> 0 `i `uc ]
+[; ;LOAD20210.c: 142: ADC_Initialize();
 "142
-[e ( _LCD_DisableGraphics ..  ]
-[; ;LOAD20210.c: 145: previousStateCLK = PORTAbits.RA1;
-"145
-[e = _previousStateCLK -> . . _PORTAbits 0 1 `i ]
-[; ;LOAD20210.c: 149: while(1)
+[e ( _ADC_Initialize ..  ]
+[; ;LOAD20210.c: 146: TRISB=0;
+"146
+[e = _TRISB -> -> 0 `i `uc ]
+[; ;LOAD20210.c: 147: ANSELB=0;
+"147
+[e = _ANSELB -> -> 0 `i `uc ]
+[; ;LOAD20210.c: 148: ODCONB=0;
+"148
+[e = _ODCONB -> -> 0 `i `uc ]
+[; ;LOAD20210.c: 149: SLRCONB=0;
 "149
-[e :U 2233 ]
-[; ;LOAD20210.c: 150: {
-"150
-{
-[; ;LOAD20210.c: 151: current= (ADC_GetConversion(channel_AN5)* 0.004882812);
-"151
-[e = _current -> * -> ( _ADC_GetConversion (1 . `E17242 0 `d .0.004882812 `f ]
-[; ;LOAD20210.c: 155: naif[3]=' ';
+[e = _SLRCONB -> -> 0 `i `uc ]
+[; ;LOAD20210.c: 152: InitKeypad();
+"152
+[e ( _InitKeypad ..  ]
+[; ;LOAD20210.c: 154: LCD_Init( );
+"154
+[e ( _LCD_Init ..  ]
+[; ;LOAD20210.c: 155: LCD_EnableGraphics();
 "155
-[e = *U + &U _naif * -> -> -> 3 `i `ui `ux -> -> # *U &U _naif `ui `ux -> -> 32 `ui `uc ]
-[; ;LOAD20210.c: 159: sprintf(naif,"%.2f", (current-0.11));
+[e ( _LCD_EnableGraphics ..  ]
+[; ;LOAD20210.c: 156: LCD_ClearGraphics();
+"156
+[e ( _LCD_ClearGraphics ..  ]
+[; ;LOAD20210.c: 157: LCD_FillScreenGraphics(des);
+"157
+[e ( _LCD_FillScreenGraphics (1 &U _des ]
+[; ;LOAD20210.c: 158: _delay((unsigned long)((1000)*(16000000/4000.0)));
+"158
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+[; ;LOAD20210.c: 159: LCD_ClearGraphics();
 "159
-[e ( _sprintf (1 , (. , &U _naif :s 1C - -> _current `d .0.11 ]
-[; ;LOAD20210.c: 161: LCD_TextDisplayString( 3, "Current   in mA:");
-"161
-[e ( _LCD_TextDisplayString (2 , -> -> 3 `i `uc -> :s 2C `*uc ]
-[; ;LOAD20210.c: 162: LCD_TextDisplayString( 4, naif);
-"162
-[e ( _LCD_TextDisplayString (2 , -> -> 4 `i `uc &U _naif ]
-[; ;LOAD20210.c: 166: if(PORTAbits.RA3==0)
-"166
-[e $ ! == -> . . _PORTAbits 0 3 `i -> 0 `i 2235  ]
-[; ;LOAD20210.c: 167: {
+[e ( _LCD_ClearGraphics ..  ]
+[; ;LOAD20210.c: 160: LCD_DisableGraphics();
+"160
+[e ( _LCD_DisableGraphics ..  ]
+[; ;LOAD20210.c: 163: previousStateCLK = PORTAbits.RA1;
+"163
+[e = _previousStateCLK -> . . _PORTAbits 0 1 `i ]
+[; ;LOAD20210.c: 167: while(1)
 "167
-{
-[; ;LOAD20210.c: 168: count =520;
+[e :U 2234 ]
+[; ;LOAD20210.c: 168: {
 "168
-[e = _count -> 520 `i ]
-"171
-}
-[e :U 2235 ]
-[; ;LOAD20210.c: 171: }
-[; ;LOAD20210.c: 173: if (PORTAbits.RA1 == 0)
+{
+[; ;LOAD20210.c: 169: current= (ADC_GetConversion(channel_AN5)* 0.004882812);
+"169
+[e = _current -> * -> ( _ADC_GetConversion (1 . `E17242 0 `d .0.004882812 `f ]
+[; ;LOAD20210.c: 173: naif[3]=' ';
 "173
-[e $ ! == -> . . _PORTAbits 0 1 `i -> 0 `i 2236  ]
-[; ;LOAD20210.c: 174: {
-"174
-{
-[; ;LOAD20210.c: 175: _delay((unsigned long)((10)*(16000000/4000.0)));
-"175
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-[; ;LOAD20210.c: 176: currentStateCLK = PORTAbits.RA1;
-"176
-[e = _currentStateCLK -> . . _PORTAbits 0 1 `i ]
-[; ;LOAD20210.c: 181: if (PORTAbits.RA0 != currentStateCLK) {
-"181
-[e $ ! != -> . . _PORTAbits 0 0 `i _currentStateCLK 2237  ]
-{
-[; ;LOAD20210.c: 182: count --;
-"182
-[e -- _count -> 1 `i ]
-[; ;LOAD20210.c: 183: if (count <520)
-"183
-[e $ ! < _count -> 520 `i 2238  ]
-[; ;LOAD20210.c: 184: {
+[e = *U + &U _naif * -> -> -> 3 `i `ui `ux -> -> # *U &U _naif `ui `ux -> -> 32 `ui `uc ]
+[; ;LOAD20210.c: 177: sprintf(naif,"%.2f", (current-0.11));
+"177
+[e ( _sprintf (1 , (. , &U _naif :s 1C - -> _current `d .0.11 ]
+[; ;LOAD20210.c: 179: LCD_TextDisplayString( 3, "Current   in mA:");
+"179
+[e ( _LCD_TextDisplayString (2 , -> -> 3 `i `uc -> :s 2C `*uc ]
+[; ;LOAD20210.c: 180: LCD_TextDisplayString( 4, naif);
+"180
+[e ( _LCD_TextDisplayString (2 , -> -> 4 `i `uc &U _naif ]
+[; ;LOAD20210.c: 184: if(PORTAbits.RA3==0)
 "184
-{
-[; ;LOAD20210.c: 185: count =520;
+[e $ ! == -> . . _PORTAbits 0 3 `i -> 0 `i 2236  ]
+[; ;LOAD20210.c: 185: {
 "185
-[e = _count -> 520 `i ]
-"186
-}
-[e :U 2238 ]
-[; ;LOAD20210.c: 186: }
-[; ;LOAD20210.c: 187: LATDbits.LATD0= 0;
-"187
-[e = . . _LATDbits 0 0 -> -> 0 `i `uc ]
-[; ;LOAD20210.c: 188: LATDbits.LATD1= 1;
-"188
-[e = . . _LATDbits 0 1 -> -> 1 `i `uc ]
-"190
-}
-[; ;LOAD20210.c: 190: } else {
-[e $U 2239  ]
-[e :U 2237 ]
 {
-[; ;LOAD20210.c: 192: count ++;
-"192
-[e ++ _count -> 1 `i ]
-[; ;LOAD20210.c: 194: LATDbits.LATD0= 1;
-"194
-[e = . . _LATDbits 0 0 -> -> 1 `i `uc ]
-[; ;LOAD20210.c: 195: LATDbits.LATD1= 0;
-"195
-[e = . . _LATDbits 0 1 -> -> 0 `i `uc ]
-"197
-}
-[e :U 2239 ]
-[; ;LOAD20210.c: 197: }
-[; ;LOAD20210.c: 198: previousStateCLK = currentStateCLK;
-"198
-[e = _previousStateCLK _currentStateCLK ]
-"200
+[; ;LOAD20210.c: 186: count =520;
+"186
+[e = _count -> 520 `i ]
+"189
 }
 [e :U 2236 ]
-[; ;LOAD20210.c: 200: }
-[; ;LOAD20210.c: 203: naif[3]=' ';
-"203
-[e = *U + &U _naif * -> -> -> 3 `i `ui `ux -> -> # *U &U _naif `ui `ux -> -> 32 `ui `uc ]
-[; ;LOAD20210.c: 204: sprintf(naif,"%d", (count *5)+1);
-"204
-[e ( _sprintf (1 , (. , &U _naif :s 3C + * _count -> 5 `i -> 1 `i ]
-[; ;LOAD20210.c: 205: LCD_TextDisplayString( 1, "DAC out   in mv:");
-"205
-[e ( _LCD_TextDisplayString (2 , -> -> 1 `i `uc -> :s 4C `*uc ]
-[; ;LOAD20210.c: 206: LCD_TextDisplayString( 2, naif);
-"206
-[e ( _LCD_TextDisplayString (2 , -> -> 2 `i `uc &U _naif ]
-[; ;LOAD20210.c: 210: UPDOWN[1]=switch_press_scan();
-"210
-[e = *U + &U _UPDOWN * -> -> -> 1 `i `ui `ux -> -> # *U &U _UPDOWN `ui `ux ( _switch_press_scan ..  ]
-[; ;LOAD20210.c: 215: DAC1_Load10bitInputData(count*64);
-"215
-[e ( _DAC1_Load10bitInputData (1 -> * _count -> 64 `i `ui ]
-[; ;LOAD20210.c: 220: if ( UPDOWN[1] == 'A')
-"220
-[e $ ! == -> *U + &U _UPDOWN * -> -> -> 1 `i `ui `ux -> -> # *U &U _UPDOWN `ui `ux `ui -> 65 `ui 2240  ]
-[; ;LOAD20210.c: 221: {
-"221
+[; ;LOAD20210.c: 189: }
+[; ;LOAD20210.c: 191: if (PORTAbits.RA1 == 0)
+"191
+[e $ ! == -> . . _PORTAbits 0 1 `i -> 0 `i 2237  ]
+[; ;LOAD20210.c: 192: {
+"192
 {
-[; ;LOAD20210.c: 222: count++;
-"222
+[; ;LOAD20210.c: 193: _delay((unsigned long)((10)*(16000000/4000.0)));
+"193
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+[; ;LOAD20210.c: 194: currentStateCLK = PORTAbits.RA1;
+"194
+[e = _currentStateCLK -> . . _PORTAbits 0 1 `i ]
+[; ;LOAD20210.c: 199: if (PORTAbits.RA0 != currentStateCLK) {
+"199
+[e $ ! != -> . . _PORTAbits 0 0 `i _currentStateCLK 2238  ]
+{
+[; ;LOAD20210.c: 200: count --;
+"200
+[e -- _count -> 1 `i ]
+[; ;LOAD20210.c: 201: if (count <520)
+"201
+[e $ ! < _count -> 520 `i 2239  ]
+[; ;LOAD20210.c: 202: {
+"202
+{
+[; ;LOAD20210.c: 203: count =520;
+"203
+[e = _count -> 520 `i ]
+"204
+}
+[e :U 2239 ]
+"207
+}
+[; ;LOAD20210.c: 204: }
+[; ;LOAD20210.c: 207: } else {
+[e $U 2240  ]
+[e :U 2238 ]
+{
+[; ;LOAD20210.c: 209: count ++;
+"209
 [e ++ _count -> 1 `i ]
-[; ;LOAD20210.c: 223: UPDOWN[1]=' ';
-"223
-[e = *U + &U _UPDOWN * -> -> -> 1 `i `ui `ux -> -> # *U &U _UPDOWN `ui `ux -> -> 32 `ui `uc ]
-"224
+"213
 }
 [e :U 2240 ]
-[; ;LOAD20210.c: 224: }
-[; ;LOAD20210.c: 225: if (UPDOWN[1] == 'B')
-"225
-[e $ ! == -> *U + &U _UPDOWN * -> -> -> 1 `i `ui `ux -> -> # *U &U _UPDOWN `ui `ux `ui -> 66 `ui 2241  ]
-[; ;LOAD20210.c: 226: {
+[; ;LOAD20210.c: 213: }
+[; ;LOAD20210.c: 214: previousStateCLK = currentStateCLK;
+"214
+[e = _previousStateCLK _currentStateCLK ]
+"216
+}
+[e :U 2237 ]
+[; ;LOAD20210.c: 216: }
+[; ;LOAD20210.c: 219: naif[3]=' ';
+"219
+[e = *U + &U _naif * -> -> -> 3 `i `ui `ux -> -> # *U &U _naif `ui `ux -> -> 32 `ui `uc ]
+[; ;LOAD20210.c: 220: sprintf(naif,"%d", (count *5)+1);
+"220
+[e ( _sprintf (1 , (. , &U _naif :s 3C + * _count -> 5 `i -> 1 `i ]
+[; ;LOAD20210.c: 221: LCD_TextDisplayString( 1, "DAC out   in mv:");
+"221
+[e ( _LCD_TextDisplayString (2 , -> -> 1 `i `uc -> :s 4C `*uc ]
+[; ;LOAD20210.c: 222: LCD_TextDisplayString( 2, naif);
+"222
+[e ( _LCD_TextDisplayString (2 , -> -> 2 `i `uc &U _naif ]
+[; ;LOAD20210.c: 226: UPDOWN[1]=switch_press_scan();
 "226
+[e = *U + &U _UPDOWN * -> -> -> 1 `i `ui `ux -> -> # *U &U _UPDOWN `ui `ux ( _switch_press_scan ..  ]
+[; ;LOAD20210.c: 231: DAC5_Load10bitInputData(count*64);
+"231
+[e ( _DAC5_Load10bitInputData (1 -> * _count -> 64 `i `ui ]
+[; ;LOAD20210.c: 236: if ( UPDOWN[1] == 'A')
+"236
+[e $ ! == -> *U + &U _UPDOWN * -> -> -> 1 `i `ui `ux -> -> # *U &U _UPDOWN `ui `ux `ui -> 65 `ui 2241  ]
+[; ;LOAD20210.c: 237: {
+"237
 {
-[; ;LOAD20210.c: 227: count--;
-"227
-[e -- _count -> 1 `i ]
-[; ;LOAD20210.c: 228: UPDOWN[1]=' ';
-"228
+[; ;LOAD20210.c: 238: count++;
+"238
+[e ++ _count -> 1 `i ]
+[; ;LOAD20210.c: 239: UPDOWN[1]=' ';
+"239
 [e = *U + &U _UPDOWN * -> -> -> 1 `i `ui `ux -> -> # *U &U _UPDOWN `ui `ux -> -> 32 `ui `uc ]
-"229
+"240
 }
 [e :U 2241 ]
-"235
-}
-[e :U 2232 ]
-"149
-[e $U 2233  ]
-[e :U 2234 ]
-[; ;LOAD20210.c: 229: }
-[; ;LOAD20210.c: 235: }
-[; ;LOAD20210.c: 239: }
-"239
-[e :UE 2231 ]
-}
-"247
-[v _switch_press_scan `(uc ~T0 @X0 1 ef ]
-"248
+[; ;LOAD20210.c: 240: }
+[; ;LOAD20210.c: 241: if (UPDOWN[1] == 'B')
+"241
+[e $ ! == -> *U + &U _UPDOWN * -> -> -> 1 `i `ui `ux -> -> # *U &U _UPDOWN `ui `ux `ui -> 66 `ui 2242  ]
+[; ;LOAD20210.c: 242: {
+"242
 {
-[; ;LOAD20210.c: 247: char switch_press_scan(void)
-[; ;LOAD20210.c: 248: {
+[; ;LOAD20210.c: 243: count--;
+"243
+[e -- _count -> 1 `i ]
+[; ;LOAD20210.c: 244: UPDOWN[1]=' ';
+"244
+[e = *U + &U _UPDOWN * -> -> -> 1 `i `ui `ux -> -> # *U &U _UPDOWN `ui `ux -> -> 32 `ui `uc ]
+"245
+}
+[e :U 2242 ]
+"251
+}
+[e :U 2233 ]
+"167
+[e $U 2234  ]
+[e :U 2235 ]
+[; ;LOAD20210.c: 245: }
+[; ;LOAD20210.c: 251: }
+[; ;LOAD20210.c: 255: }
+"255
+[e :UE 2232 ]
+}
+"263
+[v _switch_press_scan `(uc ~T0 @X0 1 ef ]
+"264
+{
+[; ;LOAD20210.c: 263: char switch_press_scan(void)
+[; ;LOAD20210.c: 264: {
 [e :U _switch_press_scan ]
 [f ]
-"249
+"265
 [v _key `uc ~T0 @X0 1 a ]
-[; ;LOAD20210.c: 249: char key = 'n';
+[; ;LOAD20210.c: 265: char key = 'n';
 [e = _key -> -> 110 `ui `uc ]
-[; ;LOAD20210.c: 250: while(key=='n')
-"250
-[e $U 2243  ]
-[e :U 2244 ]
-[; ;LOAD20210.c: 251: key = keypad_scanner();
-"251
-[e = _key ( _keypad_scanner ..  ]
-[e :U 2243 ]
-"250
-[e $ == -> _key `ui -> 110 `ui 2244  ]
+[; ;LOAD20210.c: 266: while(key=='n')
+"266
+[e $U 2244  ]
 [e :U 2245 ]
-[; ;LOAD20210.c: 252: return key;
-"252
+[; ;LOAD20210.c: 267: key = keypad_scanner();
+"267
+[e = _key ( _keypad_scanner ..  ]
+[e :U 2244 ]
+"266
+[e $ == -> _key `ui -> 110 `ui 2245  ]
+[e :U 2246 ]
+[; ;LOAD20210.c: 268: return key;
+"268
 [e ) _key ]
-[e $UE 2242  ]
-[; ;LOAD20210.c: 253: }
-"253
-[e :UE 2242 ]
+[e $UE 2243  ]
+[; ;LOAD20210.c: 269: }
+"269
+[e :UE 2243 ]
 }
 [p f _sprintf 8462464 ]
 [a 1C 37 46 50 102 0 ]
