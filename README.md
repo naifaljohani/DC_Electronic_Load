@@ -10,6 +10,6 @@ Progress:
 
 
 
-![](Hardware/controlboard.jpg)![](Hardware/Mosfet circuit.JPG)
+![](Hardware/controlboard.jpg)   ![](Hardware/Mosfet circuit.JPG)
 
 
