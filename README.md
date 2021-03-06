@@ -4,12 +4,12 @@ This is a proof of concept for a basic implementation using PIC16F1779 MCU from 
 
 Progress:
 
-![](Hardware/Mosfet circuit.JPG)
 
 
 
 
 
-![](Hardware/controlboard.jpg)
+
+![](Hardware/controlboard.jpg)![](Hardware/Mosfet circuit.JPG)
 
 
