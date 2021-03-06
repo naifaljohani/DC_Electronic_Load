@@ -2,14 +2,6 @@ This is a proof of concept for a basic implementation using PIC16F1779 MCU from 
 
 ![](Hardware/BLOCK_DIAGRAM.jpg)
 
-Progress:
 
-
-
-
-
-
-
-![](Hardware/controlboard.jpg)   ![](Hardware/Mosfet circuit.JPG)
 
 
