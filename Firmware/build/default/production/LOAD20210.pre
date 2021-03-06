@@ -21857,21 +21857,27 @@ const unsigned char des [] = {
 
 void DAC_CONFIG(void)
 {
-DAC5CON0 = 0b10100000;
-DACLD = 0xff;
+
+DAC5CON0 = 0x80;
+
+DAC5REFH = 0x00;
+
+DAC5REFL = 0xCD;
+
+(DACLDbits.DAC5LD = 1);
 }
 
 void DAC5_Load10bitInputData(uint16_t input16BitData)
 {
 
 
-DAC1CON0bits.DAC1FM = 1;
+DAC5CON0bits.DAC5FM = 1;
 
 
 DAC5REFL = (uint8_t) input16BitData;
 DAC5REFH = (uint8_t)(input16BitData >> 8);
 
-(DACLDbits.DAC1LD = 1);
+(DACLDbits.DAC5LD = 1);
 }
 void OSCILLATOR_Initialize(void)
 {
@@ -21886,7 +21892,7 @@ OSCTUNE = 0x00;
 BORCON = 0x00;
 }
 
-# 297
+# 303
 void LCD_Init(void)
 {
 LATBbits.LATB2=1;
@@ -22242,6 +22248,10 @@ OP_AMP_init();
 
 TRISC = 0xBF;
 ANSELC = 0xFC;
+WPUC = 0x00;
+ODCONC = 0x00;
+SLRCONC = 0xFF;
+INLVLC = 0xFF;
 
 
 TRISA=0b00001011;
@@ -22326,8 +22336,8 @@ previousStateCLK = currentStateCLK;
 
 
 naif[3]=' ';
-sprintf(naif,"%d", (count *5)+1);
-LCD_TextDisplayString( 1, "DAC out   in mv:");
+sprintf(naif,"%.2f", (count*0.004882812) );
+LCD_TextDisplayString( 1, "DAC out       V:");
 LCD_TextDisplayString( 2, naif);
 
 
@@ -22353,14 +22363,14 @@ count--;
 UPDOWN[1]=' ';
 }
 
-# 251
+# 255
 }
 
 
 
 }
 
-# 263
+# 267
 char switch_press_scan(void)
 {
 char key = 'n';

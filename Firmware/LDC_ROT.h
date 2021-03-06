@@ -11,7 +11,7 @@
 #define _XTAL_FREQ          16000000
 
 #define DAC5_DoubleBufferLatch() \
-    (DACLDbits.DAC1LD = 1)
+    (DACLDbits.DAC5LD = 1)
 
 
 static const char Alpha1[] = {
@@ -258,15 +258,21 @@ const unsigned char des [] = {
 
 void DAC_CONFIG(void)
 {
-    DAC5CON0 = 0b10100000;
-    DACLD    = 0xff;
+     // DAC5FM right justified; DACEN enabled; DACNSS VSS; DACPSS VDD; DACOE1 disabled; DACOE2 disabled; 
+    DAC5CON0 = 0x80;
+    // 
+    DAC5REFH = 0x00;
+    // 
+    DAC5REFL = 0xCD;
+    //Loading DAC5 double buffer data to latch.
+    DAC5_DoubleBufferLatch();
 }
 
 void DAC5_Load10bitInputData(uint16_t input16BitData)
 {
     //DAC input reference range should be 16bit.
     //Input data left justified.
-    DAC1CON0bits.DAC1FM = 1;
+    DAC5CON0bits.DAC5FM = 1;
     
     //Loading 16bit data to DAC1
     DAC5REFL  = (uint8_t) input16BitData;  

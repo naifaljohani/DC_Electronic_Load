@@ -133,6 +133,10 @@ void main(void)
   
   TRISC = 0xBF;
   ANSELC = 0xFC;
+  WPUC = 0x00;
+  ODCONC = 0x00;
+   SLRCONC = 0xFF;
+    INLVLC = 0xFF;
    
    
   TRISA=0b00001011;
@@ -217,8 +221,8 @@ void main(void)
     
     
     naif[3]=' ';
-    sprintf(naif,"%d", (count *5)+1);
-    LCD_TextDisplayString( 1, "DAC out   in mv:");
+    sprintf(naif,"%.2f", (count*0.004882812) );
+    LCD_TextDisplayString( 1, "DAC out       V:");
     LCD_TextDisplayString( 2, naif); 
     
            
