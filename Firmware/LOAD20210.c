@@ -135,8 +135,8 @@ void main(void)
   ANSELC = 0xFC;
   WPUC = 0x00;
   ODCONC = 0x00;
-   SLRCONC = 0xFF;
-    INLVLC = 0xFF;
+  SLRCONC = 0xFF;
+  INLVLC = 0xFF;
    
    
   TRISA=0b00001011;

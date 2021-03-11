@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\user\AppData\Local\Temp\sg0c.obj
+$C:\Users\user\AppData\Local\Temp\sg8s.obj
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 15 15 2 2
 config CONFIG 0 8007 8007 2 2
@@ -198,50 +198,50 @@ STRING 208C-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\Firmware.production.obj
-17 cinit CODE >5813:C:\Users\user\AppData\Local\Temp\sg0c.
-17 cinit CODE >5816:C:\Users\user\AppData\Local\Temp\sg0c.
-17 cinit CODE >5894:C:\Users\user\AppData\Local\Temp\sg0c.
-1A cinit CODE >5895:C:\Users\user\AppData\Local\Temp\sg0c.
-1B cinit CODE >5899:C:\Users\user\AppData\Local\Temp\sg0c.
-1E cinit CODE >5900:C:\Users\user\AppData\Local\Temp\sg0c.
-1F cinit CODE >5901:C:\Users\user\AppData\Local\Temp\sg0c.
-22 cinit CODE >5902:C:\Users\user\AppData\Local\Temp\sg0c.
-23 cinit CODE >5906:C:\Users\user\AppData\Local\Temp\sg0c.
-24 cinit CODE >5907:C:\Users\user\AppData\Local\Temp\sg0c.
-25 cinit CODE >5908:C:\Users\user\AppData\Local\Temp\sg0c.
-26 cinit CODE >5909:C:\Users\user\AppData\Local\Temp\sg0c.
-27 cinit CODE >5910:C:\Users\user\AppData\Local\Temp\sg0c.
-28 cinit CODE >5911:C:\Users\user\AppData\Local\Temp\sg0c.
-29 cinit CODE >5912:C:\Users\user\AppData\Local\Temp\sg0c.
-2A cinit CODE >5913:C:\Users\user\AppData\Local\Temp\sg0c.
-2B cinit CODE >5914:C:\Users\user\AppData\Local\Temp\sg0c.
-2C cinit CODE >5915:C:\Users\user\AppData\Local\Temp\sg0c.
-2F cinit CODE >5919:C:\Users\user\AppData\Local\Temp\sg0c.
-30 cinit CODE >5920:C:\Users\user\AppData\Local\Temp\sg0c.
-31 cinit CODE >5921:C:\Users\user\AppData\Local\Temp\sg0c.
-32 cinit CODE >5922:C:\Users\user\AppData\Local\Temp\sg0c.
-33 cinit CODE >5923:C:\Users\user\AppData\Local\Temp\sg0c.
-34 cinit CODE >5924:C:\Users\user\AppData\Local\Temp\sg0c.
-35 cinit CODE >5925:C:\Users\user\AppData\Local\Temp\sg0c.
-36 cinit CODE >5926:C:\Users\user\AppData\Local\Temp\sg0c.
-37 cinit CODE >5927:C:\Users\user\AppData\Local\Temp\sg0c.
-38 cinit CODE >5928:C:\Users\user\AppData\Local\Temp\sg0c.
-3A cinit CODE >5933:C:\Users\user\AppData\Local\Temp\sg0c.
-3B cinit CODE >5934:C:\Users\user\AppData\Local\Temp\sg0c.
-3C cinit CODE >5935:C:\Users\user\AppData\Local\Temp\sg0c.
-3D cinit CODE >5936:C:\Users\user\AppData\Local\Temp\sg0c.
-3E cinit CODE >5937:C:\Users\user\AppData\Local\Temp\sg0c.
-3F cinit CODE >5938:C:\Users\user\AppData\Local\Temp\sg0c.
-40 cinit CODE >5939:C:\Users\user\AppData\Local\Temp\sg0c.
-41 cinit CODE >5940:C:\Users\user\AppData\Local\Temp\sg0c.
-42 cinit CODE >5941:C:\Users\user\AppData\Local\Temp\sg0c.
-43 cinit CODE >5942:C:\Users\user\AppData\Local\Temp\sg0c.
-44 cinit CODE >5943:C:\Users\user\AppData\Local\Temp\sg0c.
-45 cinit CODE >5944:C:\Users\user\AppData\Local\Temp\sg0c.
-46 cinit CODE >5950:C:\Users\user\AppData\Local\Temp\sg0c.
-46 cinit CODE >5952:C:\Users\user\AppData\Local\Temp\sg0c.
-47 cinit CODE >5953:C:\Users\user\AppData\Local\Temp\sg0c.
-48 cinit CODE >5954:C:\Users\user\AppData\Local\Temp\sg0c.
+17 cinit CODE >5813:C:\Users\user\AppData\Local\Temp\sg8s.
+17 cinit CODE >5816:C:\Users\user\AppData\Local\Temp\sg8s.
+17 cinit CODE >5894:C:\Users\user\AppData\Local\Temp\sg8s.
+1A cinit CODE >5895:C:\Users\user\AppData\Local\Temp\sg8s.
+1B cinit CODE >5899:C:\Users\user\AppData\Local\Temp\sg8s.
+1E cinit CODE >5900:C:\Users\user\AppData\Local\Temp\sg8s.
+1F cinit CODE >5901:C:\Users\user\AppData\Local\Temp\sg8s.
+22 cinit CODE >5902:C:\Users\user\AppData\Local\Temp\sg8s.
+23 cinit CODE >5906:C:\Users\user\AppData\Local\Temp\sg8s.
+24 cinit CODE >5907:C:\Users\user\AppData\Local\Temp\sg8s.
+25 cinit CODE >5908:C:\Users\user\AppData\Local\Temp\sg8s.
+26 cinit CODE >5909:C:\Users\user\AppData\Local\Temp\sg8s.
+27 cinit CODE >5910:C:\Users\user\AppData\Local\Temp\sg8s.
+28 cinit CODE >5911:C:\Users\user\AppData\Local\Temp\sg8s.
+29 cinit CODE >5912:C:\Users\user\AppData\Local\Temp\sg8s.
+2A cinit CODE >5913:C:\Users\user\AppData\Local\Temp\sg8s.
+2B cinit CODE >5914:C:\Users\user\AppData\Local\Temp\sg8s.
+2C cinit CODE >5915:C:\Users\user\AppData\Local\Temp\sg8s.
+2F cinit CODE >5919:C:\Users\user\AppData\Local\Temp\sg8s.
+30 cinit CODE >5920:C:\Users\user\AppData\Local\Temp\sg8s.
+31 cinit CODE >5921:C:\Users\user\AppData\Local\Temp\sg8s.
+32 cinit CODE >5922:C:\Users\user\AppData\Local\Temp\sg8s.
+33 cinit CODE >5923:C:\Users\user\AppData\Local\Temp\sg8s.
+34 cinit CODE >5924:C:\Users\user\AppData\Local\Temp\sg8s.
+35 cinit CODE >5925:C:\Users\user\AppData\Local\Temp\sg8s.
+36 cinit CODE >5926:C:\Users\user\AppData\Local\Temp\sg8s.
+37 cinit CODE >5927:C:\Users\user\AppData\Local\Temp\sg8s.
+38 cinit CODE >5928:C:\Users\user\AppData\Local\Temp\sg8s.
+3A cinit CODE >5933:C:\Users\user\AppData\Local\Temp\sg8s.
+3B cinit CODE >5934:C:\Users\user\AppData\Local\Temp\sg8s.
+3C cinit CODE >5935:C:\Users\user\AppData\Local\Temp\sg8s.
+3D cinit CODE >5936:C:\Users\user\AppData\Local\Temp\sg8s.
+3E cinit CODE >5937:C:\Users\user\AppData\Local\Temp\sg8s.
+3F cinit CODE >5938:C:\Users\user\AppData\Local\Temp\sg8s.
+40 cinit CODE >5939:C:\Users\user\AppData\Local\Temp\sg8s.
+41 cinit CODE >5940:C:\Users\user\AppData\Local\Temp\sg8s.
+42 cinit CODE >5941:C:\Users\user\AppData\Local\Temp\sg8s.
+43 cinit CODE >5942:C:\Users\user\AppData\Local\Temp\sg8s.
+44 cinit CODE >5943:C:\Users\user\AppData\Local\Temp\sg8s.
+45 cinit CODE >5944:C:\Users\user\AppData\Local\Temp\sg8s.
+46 cinit CODE >5950:C:\Users\user\AppData\Local\Temp\sg8s.
+46 cinit CODE >5952:C:\Users\user\AppData\Local\Temp\sg8s.
+47 cinit CODE >5953:C:\Users\user\AppData\Local\Temp\sg8s.
+48 cinit CODE >5954:C:\Users\user\AppData\Local\Temp\sg8s.
 4 intentry CODE >136:C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\DC_Electronic_load\Firmware\ADC_INIT.c
 4 intentry CODE >111:C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\DC_Electronic_load\Firmware\LOAD20210.c
 9 intentry CODE >114:C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\DC_Electronic_load\Firmware\LOAD20210.c
@@ -878,14 +878,14 @@ FA text3 CODE >831:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\dop
 17F5 maintext CODE >247:C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\DC_Electronic_load\Firmware\LOAD20210.c
 17FA maintext CODE >248:C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\DC_Electronic_load\Firmware\LOAD20210.c
 17FF maintext CODE >171:C:\Users\user\Desktop\st7920\mplab\ELECTRONIC_LOAD_2020\DC_Electronic_load\Firmware\LOAD20210.c
-1A92 inittext CODE >5883:C:\Users\user\AppData\Local\Temp\sg0c.
-1A92 inittext CODE >5884:C:\Users\user\AppData\Local\Temp\sg0c.
-1A93 inittext CODE >5885:C:\Users\user\AppData\Local\Temp\sg0c.
-1A93 inittext CODE >5886:C:\Users\user\AppData\Local\Temp\sg0c.
-1A94 inittext CODE >5887:C:\Users\user\AppData\Local\Temp\sg0c.
-1A95 inittext CODE >5888:C:\Users\user\AppData\Local\Temp\sg0c.
-1A96 inittext CODE >5889:C:\Users\user\AppData\Local\Temp\sg0c.
-1A97 inittext CODE >5890:C:\Users\user\AppData\Local\Temp\sg0c.
+1A92 inittext CODE >5883:C:\Users\user\AppData\Local\Temp\sg8s.
+1A92 inittext CODE >5884:C:\Users\user\AppData\Local\Temp\sg8s.
+1A93 inittext CODE >5885:C:\Users\user\AppData\Local\Temp\sg8s.
+1A93 inittext CODE >5886:C:\Users\user\AppData\Local\Temp\sg8s.
+1A94 inittext CODE >5887:C:\Users\user\AppData\Local\Temp\sg8s.
+1A95 inittext CODE >5888:C:\Users\user\AppData\Local\Temp\sg8s.
+1A96 inittext CODE >5889:C:\Users\user\AppData\Local\Temp\sg8s.
+1A97 inittext CODE >5890:C:\Users\user\AppData\Local\Temp\sg8s.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -923,7 +923,7 @@ _OP_AMP_init 357A 0 CODE 0 text25 dist/default/production\Firmware.production.ob
 __Hstrings 0 0 ABS 0 strings -
 _WPUC 20E 0 ABS 0 - dist/default/production\Firmware.production.obj
 _WPUD 20F 0 ABS 0 - dist/default/production\Firmware.production.obj
-___sp 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\sg0c.obj
+___sp 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\sg8s.obj
 _main 2CB8 0 CODE 0 maintext dist/default/production\Firmware.production.obj
 _naif B2 0 BANK1 1 dataBANK1 dist/default/production\Firmware.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\Firmware.production.obj
@@ -932,7 +932,7 @@ LCD_FillScreenGraphics@x 78 0 COMMON 1 cstackCOMMON dist/default/production\Firm
 LCD_FillScreenGraphics@y 77 0 COMMON 1 cstackCOMMON dist/default/production\Firmware.production.obj
 ___ftadd@f1 49 0 BANK0 1 cstackBANK0 dist/default/production\Firmware.production.obj
 ___ftadd@f2 4C 0 BANK0 1 cstackBANK0 dist/default/production\Firmware.production.obj
-start 2A 0 CODE 0 init C:\Users\user\AppData\Local\Temp\sg0c.obj
+start 2A 0 CODE 0 init C:\Users\user\AppData\Local\Temp\sg8s.obj
 __end_of_LCD_WriteByte 3E98 0 CODE 0 text34 dist/default/production\Firmware.production.obj
 __end_of_LCD_WriteData 354C 0 CODE 0 text32 dist/default/production\Firmware.production.obj
 __size_of___awdiv 0 0 ABS 0 - dist/default/production\Firmware.production.obj
@@ -968,12 +968,12 @@ __end_of__npowers_ 40EC 0 STRCODE 0 stringtext6 dist/default/production\Firmware
 __HdataCOMMON 0 0 ABS 0 dataCOMMON -
 _sprintf$921 C3 0 BANK1 1 cstackBANK1 dist/default/production\Firmware.production.obj
 __end_of_LCD_Init 3C60 0 CODE 0 text27 dist/default/production\Firmware.production.obj
-intlevel0 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\sg0c.obj
-intlevel1 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\sg0c.obj
-intlevel2 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\sg0c.obj
-intlevel3 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\sg0c.obj
-intlevel4 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\sg0c.obj
-intlevel5 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\sg0c.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\sg8s.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\sg8s.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\sg8s.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\sg8s.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\sg8s.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\sg8s.obj
 __size_of__div_to_l_ 0 0 ABS 0 - dist/default/production\Firmware.production.obj
 __size_of_ADC_Initialize 0 0 ABS 0 - dist/default/production\Firmware.production.obj
 LCD_WriteData@data 74 0 COMMON 1 cstackCOMMON dist/default/production\Firmware.production.obj
@@ -1073,7 +1073,7 @@ __tdiv_to_l_@f2 74 0 COMMON 1 cstackCOMMON dist/default/production\Firmware.prod
 ___ftpack@arg 71 0 COMMON 1 cstackCOMMON dist/default/production\Firmware.production.obj
 ___ftpack@exp 74 0 COMMON 1 cstackCOMMON dist/default/production\Firmware.production.obj
 _isdigit$696 71 0 COMMON 1 cstackCOMMON dist/default/production\Firmware.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\sg0c.obj
+___int_sp 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\sg8s.obj
 __end_of___ftpack 1B78 0 CODE 0 text23 dist/default/production\Firmware.production.obj
 LCD_TextDisplayString@i 79 0 COMMON 1 cstackCOMMON dist/default/production\Firmware.production.obj
 __Hbank0 0 0 ABS 0 bank0 -
@@ -1258,7 +1258,7 @@ __end_of_LCD_WriteCommand 353E 0 CODE 0 text33 dist/default/production\Firmware.
 __size_of_InitKeypad 0 0 ABS 0 - dist/default/production\Firmware.production.obj
 __Lintentry 8 0 CODE 0 intentry -
 ___lldiv@divisor 71 0 COMMON 1 cstackCOMMON dist/default/production\Firmware.production.obj
-reset_vec 0 0 CODE 0 reset_vec C:\Users\user\AppData\Local\Temp\sg0c.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\user\AppData\Local\Temp\sg8s.obj
 __powers_ 4050 0 STRCODE 0 stringtext5 dist/default/production\Firmware.production.obj
 LCD_WriteCommand@command 74 0 COMMON 1 cstackCOMMON dist/default/production\Firmware.production.obj
 __pdataBANK0 69 0 BANK0 1 dataBANK0 dist/default/production\Firmware.production.obj
@@ -1370,8 +1370,8 @@ _LCD_FillScreenGraphics 2196 0 CODE 0 text28 dist/default/production\Firmware.pr
 _OPA3CON 519 0 ABS 0 - dist/default/production\Firmware.production.obj
 _OPA3ORS 51A 0 ABS 0 - dist/default/production\Firmware.production.obj
 ___lwtoft@c 79 0 COMMON 1 cstackCOMMON dist/default/production\Firmware.production.obj
-stackhi 27EF 0 ABS 0 - C:\Users\user\AppData\Local\Temp\sg0c.obj
-stacklo 20B9 0 ABS 0 - C:\Users\user\AppData\Local\Temp\sg0c.obj
+stackhi 27EF 0 ABS 0 - C:\Users\user\AppData\Local\Temp\sg8s.obj
+stacklo 20B9 0 ABS 0 - C:\Users\user\AppData\Local\Temp\sg8s.obj
 ?___lltoft 20 0 BANK0 1 cstackBANK0 dist/default/production\Firmware.production.obj
 _OSCSTAT 9C 0 ABS 0 - dist/default/production\Firmware.production.obj
 _OSCTUNE 9A 0 ABS 0 - dist/default/production\Firmware.production.obj
