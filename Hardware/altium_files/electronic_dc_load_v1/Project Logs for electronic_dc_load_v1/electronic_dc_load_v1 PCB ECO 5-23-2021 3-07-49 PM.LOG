@@ -1,0 +1,84 @@
+Added Component: Designator=D2(Diode_Through hole)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Taiwan Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "MMBD4148 RFG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.22000, 10=0.19000, 50=0.19000, 100=0.12600, 1000=0.04200, 10000=0.02700 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "5996"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "821-MMBD4148RFG"; VariantName = "[No Variations]"
+Added Component: Designator=D3(Diode_Through hole)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Taiwan Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "MMBD4148 RFG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.22000, 10=0.19000, 50=0.19000, 100=0.12600, 1000=0.04200, 10000=0.02700 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "5996"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "821-MMBD4148RFG"; VariantName = "[No Variations]"
+Added Component: Designator=D4(Diode_Through hole)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Taiwan Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "MMBD4148 RFG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.22000, 10=0.19000, 50=0.19000, 100=0.12600, 1000=0.04200, 10000=0.02700 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "5996"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "821-MMBD4148RFG"; VariantName = "[No Variations]"
+Added Component: Designator=D5(Diode_Through hole)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Taiwan Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "MMBD4148 RFG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.22000, 10=0.19000, 50=0.19000, 100=0.12600, 1000=0.04200, 10000=0.02700 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "5996"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "821-MMBD4148RFG"; VariantName = "[No Variations]"
+Added Component: Designator=D6(Diode_Through hole)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Taiwan Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "MMBD4148 RFG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.22000, 10=0.19000, 50=0.19000, 100=0.12600, 1000=0.04200, 10000=0.02700 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "5996"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "821-MMBD4148RFG"; VariantName = "[No Variations]"
+Added Component: Designator=D7(Diode_Through hole)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Taiwan Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "MMBD4148 RFG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.22000, 10=0.19000, 50=0.19000, 100=0.12600, 1000=0.04200, 10000=0.02700 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "5996"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "821-MMBD4148RFG"; VariantName = "[No Variations]"
+Added Component: Designator=D8(Diode_Through hole)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Taiwan Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "MMBD4148 RFG"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.22000, 10=0.19000, 50=0.19000, 100=0.12600, 1000=0.04200, 10000=0.02700 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "5996"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "821-MMBD4148RFG"; VariantName = "[No Variations]"
+Added Component: Designator=U16(DS1307-Tiny RTC Modul)
+Added Pin To Net: NetName=NetP9_2 Pin=U16-1
+Added Pin To Net: NetName=GND Pin=U16-2
+Added Pin To Net: NetName=+5 Pin=U16-3
+Added Pin To Net: NetName=NetR49_1 Pin=U16-4
+Added Pin To Net: NetName=NetR50_1 Pin=U16-5
+Added Pin To Net: NetName=NetU11_15 Pin=U16-6
+Added Pin To Net: NetName=NetP9_6 Pin=U16-7
+Added Pin To Net: NetName=NetP9_5 Pin=U16-8
+Added Pin To Net: NetName=NetP9_4 Pin=U16-9
+Added Pin To Net: NetName=NetP9_3 Pin=U16-10
+Added Pin To Net: NetName=+5 Pin=U16-11
+Added Pin To Net: NetName=GND Pin=U16-12
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component D2 D
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component D3 D
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component D4 D
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component D5 D
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component D6 D
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component D7 D
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component D8 D
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U16 DS1307-Tiny RTC Modul

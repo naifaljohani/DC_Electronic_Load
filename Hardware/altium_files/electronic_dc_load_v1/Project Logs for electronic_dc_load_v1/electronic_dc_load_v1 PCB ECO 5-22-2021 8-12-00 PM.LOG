@@ -1,0 +1,12 @@
+Added Component: Designator=J1(DC jack)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Kycon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "KLDHCX-0202-AC-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.82000, 10=0.71900, 25=0.67680, 50=0.64860, 100=0.62040, 250=0.56400, 500=0.50760, 1000=0.45120, 2500=0.40890 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "484"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2092-KLDHCX-0202-AC-1-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-1
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J1-3
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component J1 Power jack
