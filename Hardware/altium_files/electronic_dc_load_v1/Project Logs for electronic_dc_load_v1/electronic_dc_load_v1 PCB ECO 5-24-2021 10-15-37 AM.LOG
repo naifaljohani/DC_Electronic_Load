@@ -1,0 +1,4 @@
+Added Component: Designator=R43(RESC1418X06N)
+Added Pin To Net: NetName=Net1_13 Pin=R43-1
+Added Pin To Net: NetName=NetC21_1 Pin=R43-2
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R43 100R
