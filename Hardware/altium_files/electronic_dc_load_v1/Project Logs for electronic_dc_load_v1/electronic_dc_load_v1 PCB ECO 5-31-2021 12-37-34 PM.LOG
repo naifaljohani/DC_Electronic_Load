@@ -1,0 +1,67 @@
+Added Pin To Net: NetName=+12 Pin=D3-K
+Added Pin To Net: NetName=NetC18_1 Pin=D4-K
+Added Pin To Net: NetName=NetC21_1 Pin=D5-K
+Added Pin To Net: NetName=NetC22_1 Pin=D6-K
+Added Pin To Net: NetName=NetD7_1 Pin=D7-A
+Added Pin To Net: NetName=GND Pin=D7-K
+Added Pin To Net: NetName=GND Pin=D8-A
+Added Pin To Net: NetName=NetC23_2 Pin=D8-K
+Change Net Name : Old Net Name=NetD7_1 New Net Name=NetD7_A
+Added Pin To Net: NetName=NetD2_A Pin=D2-A
+Added Pin To Net: NetName=NetD2_A Pin=R12-2
+Added Pin To Net: NetName=NetD2_A Pin=U7-1
+Added Net: Name=NetD2_A
+Added Pin To Net: NetName=NetD2_K Pin=D2-K
+Added Pin To Net: NetName=NetD2_K Pin=P5-1
+Added Pin To Net: NetName=NetD2_K Pin=U7-2
+Added Net: Name=NetD2_K
+Added Pin To Net: NetName=NetD3_A Pin=D3-A
+Added Pin To Net: NetName=NetD3_A Pin=P6-2
+Added Pin To Net: NetName=NetD3_A Pin=Q1-2
+Added Net: Name=NetD3_A
+Added Pin To Net: NetName=NetD4_A Pin=D4-A
+Added Pin To Net: NetName=NetD4_A Pin=R28-1
+Added Pin To Net: NetName=NetD4_A Pin=U12-1
+Added Net: Name=NetD4_A
+Added Pin To Net: NetName=NetD5_A Pin=D5-A
+Added Pin To Net: NetName=NetD5_A Pin=R36-1
+Added Pin To Net: NetName=NetD5_A Pin=U12-2
+Added Net: Name=NetD5_A
+Added Pin To Net: NetName=NetD6_A Pin=D6-A
+Added Pin To Net: NetName=NetD6_A Pin=R41-1
+Added Pin To Net: NetName=NetD6_A Pin=U12-3
+Added Net: Name=NetD6_A
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component 4 031-71052
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C3 0.1uF
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C4 0.1uF
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C14 1nf
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C15 0.1uF
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C17 0.1uF
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C20 22pF
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C22 100uF Elect.
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component J2 TSW-101-24-T-S
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R7 20k
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R9 10kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R10 10k
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R11 10k
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R14 500k
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R16 2.2KR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R18 20k
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R19 4.7M
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R20 1kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R21 1kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R23 10k
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R24 2.2KR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R29 1kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R31 200R
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R36 1kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R38 270KR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R39 270KR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R41 1kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R42 1M
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R43 1M
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R46 0.1R
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R47 10kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R48 10kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R50 330KR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U9 MBR41H100CTG
