@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=NetB1_1 Pin=F1-2
+Change Component Footprint: Designator=F1 Old Footprint=PIN-W2/E2.8 New Footprint=Fuse holder 5mm*20mm
+Change Component Comment : Designator=F1 Old Comment=Fuse 2 New Comment=Fuse holder 20mm*5mm
+Change component parameters: Designator = "F1" ("F1"); Footprint = "PIN-W2/E2.8"; UniqueID = "\EYYCEGUQ" ("\EYYCEGUQ")
+Added Pin To Net: NetName=NetF1_1 Pin=F1-2
+Added Pin To Net: NetName=NetB1_1 Pin=F1-3
+Added Pin To Net: NetName=NetB1_1 Pin=F1-4
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component B1 BANANA JACK
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component F1 Fuse holder 20mm*5mm
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R56 10kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R57 10kR

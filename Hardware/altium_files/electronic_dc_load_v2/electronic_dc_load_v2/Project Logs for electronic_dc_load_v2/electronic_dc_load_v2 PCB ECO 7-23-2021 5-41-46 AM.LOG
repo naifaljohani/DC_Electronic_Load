@@ -1,0 +1,10 @@
+Change Component Description : Designator=Y1 Old Description=Crystal 22.1184MHz Â±20ppm (Tol) Â±30ppm (Stability) 18pF FUND 50Ohm 2-Pin Mini-CSMD T/R New Description=Crystal 22.1184MHz Â±20ppm (Tol) Â±30ppm (Stability) 18pF FUND 50Ohm 2-Pin Mini-CSMD T/R 
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U12 SMD_PIN1
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U14 SMD_PIN1
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U15 SMD_PIN1
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U16 SMD_PIN1
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U17 SMD_PIN1
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U19 SMD_PIN1
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U20 SMD_PIN1
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U21 SMD_PIN1
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U27 SMD_PIN1

@@ -1,0 +1,70 @@
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component B3 BANANA JACK
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C13 1uF
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C15 1uF
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C16 1nf
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C17 0.1uF
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C18 100uF Elect.
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C19 0.1uF
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C20 100uF Elect.
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C21 22pF
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C22 22pF
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C23 100uF Elect.
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C24 100uF Elect.
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component C26 0.1uF
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component J3 TSW-101-24-T-S
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component J5 TSW-101-24-T-S
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R9 20k
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R10 1kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R12 10kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R14 10k
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R15 10k
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R16 100R
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R17 47KR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R18 500k
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R20 1kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R21 10k
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R22 20k
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R23 4.7M
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R24 1kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R26 100R
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R27 10k
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R28 2.2KR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R29 2.2KR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R30 2.2KR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R31 2.2KR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R32 1kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R33 1kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R34 10kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R35 200R
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R36 1R
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R37 1R
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R38 1R
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R39 1R
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R40 1kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R41 270KR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R42 270KR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R43 270KR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R44 270KR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R45 1kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R46 1M
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R47 1M
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R48 10k
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R49 100R
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R50 0.1R
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R51 10kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R53 10kR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R54 330KR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R55 100KR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U6 REF5040AID
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U8 Optoisolator1
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U11 MBR41H100CTG
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U12 SMD_PIN1
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U14 SMD_PIN1
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U15 SMD_PIN1
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U16 SMD_PIN1
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U17 SMD_PIN1
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U18 PIC16F1779
+PCB-ECO: Change Pad Pin/Pkg Length: Old=0.5mm New=0mm
+PCB-ECO: Change Pad Pin/Pkg Length: Old=0mm New=0.5mm
+PCB-ECO: Change Pad Pin/Pkg Length: Old=0mm New=0.5mm
+PCB-ECO: Change Pad Pin/Pkg Length: Old=0mm New=0.5mm

@@ -1,0 +1,19 @@
+Added Component: Designator=U12(TP_SMD)
+Added Component: Designator=U14(TP_SMD)
+Added Component: Designator=U15(TP_SMD)
+Added Component: Designator=U16(TP_SMD)
+Added Component: Designator=U17(TP_SMD)
+Added Component: Designator=U19(TP_SMD)
+Added Component: Designator=U20(TP_SMD)
+Added Component: Designator=U21(TP_SMD)
+Added Component: Designator=U27(TP_SMD)
+Added Pin To Net: NetName=TP1 Pin=U14-1
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U19 SMD_PIN1
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U20 SMD_PIN1
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U21 SMD_PIN1
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U22 Rotary Encoder Module
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U23 27899
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U24 LM35DZ
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U25 PCF8574ADWR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U26 DS1307-Tiny RTC Modul
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component U27 SMD_PIN1
