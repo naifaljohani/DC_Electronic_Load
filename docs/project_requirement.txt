@@ -1,0 +1,88 @@
+The final project is to be a USB controlled Electronic DC load, with the following features:
+1. Current range of "5A -15mA".( to be verified)
+2. Voltage range of "50V-1mV".( to be verified)
+3. Connecting to a USB port as a serial device.
+4. Controlled via an application GUI throw the serial port.
+5. Powered via USB. (to be verified)
+6. Has the four basic modes: CC, CV, CR, and CW.
+7. Data logging in any mode.
+8. External triggering.
+9. Output functions, initially square wave.
+
+Communications of data internally between functions and externally:
+1. Static 
+a. Average rate
+b. Maximum rate 
+c. Peak rate 
+2. Dynamic(FIFO):
+a. Average rate
+b. Maximum rate 
+c. Peak rate 
+
+Timing:
+1. Total execution time of the main function.
+2. Rate of execution with a tolerance of ….+-. (to be added to the function list)
+3. Response time with a tolerance of ….+- .  (to be added to the function list)
+Preliminary list of system modes with short description:
+1. Powered down:
+2. Idle:
+3. Constant current:
+4. Constant voltage:
+5. Constant resistance:
+6. Constant power:
+7. External triggering:
+8. Output functions:
+9. Error :
+Priority list: (for function execution)
+1. Powered down:
+2. Idle mode:
+a. High priority:
+i. …….
+ii. ………
+b. Medium priority:
+i. …….
+c. Low priority:
+i. …….
+3. Constant current:
+4. Constant voltage:
+5. Constant resistance:
+6. Constant power:
+7. External triggering:
+8. Output functions:
+9. Error :
+Mode execution based on the following triggering events table:
+Original ModeNext Mode Triggering EventPowered down ErrorInitial power up
+
+Housekeeping functions (has no particular priority and execution time)
+
+Error handling : ( a list with how it will be detected and how the system should respond to it)
+1. Soft errors.
+a. Fault ……
+i. Test:
+ii. Response:
+2. Recoverable errors.
+a. Fault ……
+i. Test:
+ii. Response:
+3. Unrecoverable errors.
+a. Fault ……
+i. Test:
+ii. Response:
+4. Hard errors:
+a. Watch dog timer 
+b. Brownout reset 
+c. Program data corruption
+d. Fault ……
+i. Test:
+ii. Response:
+
+
+
+
+
+
+
+	
+1
+
+
