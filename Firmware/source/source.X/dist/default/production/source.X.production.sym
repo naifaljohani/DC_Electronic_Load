@@ -1,3 +1,4 @@
+__CFG_PLLEN$ON 0 0 ABS 0
 __CFG_WRT$OFF 0 0 ABS 0
 __S0 8009 0 ABS 0
 __S1 0 0 ABS 0
@@ -234,7 +235,6 @@ __Hbank17 10008 0 ABS 0
 __Lbank17 10008 0 ABS 0
 __Hbank27 10008 0 BANK27 1
 __Lbank27 10008 0 BANK27 1
-__CFG_PLLEN$OFF 0 0 ABS 0
 __Hbank18 10008 0 ABS 0
 __Lbank18 10008 0 ABS 0
 __Hbank28 10008 0 BANK28 1
@@ -288,7 +288,7 @@ maintext F52 F59 CODE F52 0
 text2 F4A F51 CODE F4A 0
 %locals
 dist/default/production\source.X.production.obj
-C:\Users\Naifj\AppData\Local\Temp\s5k8.
+C:\Users\Naifj\AppData\Local\Temp\s8ic.
 4181 7FD 0 CODE 0
 4184 7FD 0 CODE 0
 4190 7FD 0 CODE 0

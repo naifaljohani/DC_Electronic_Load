@@ -16544,9 +16544,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;mcc.c: 59: {
 [e :U _OSCILLATOR_Initialize ]
 [f ]
-[; ;mcc.c: 61: OSCCON = 0x7A;
+[; ;mcc.c: 61: OSCCON = 0x72;
 "61
-[e = _OSCCON -> -> 122 `i `uc ]
+[e = _OSCCON -> -> 114 `i `uc ]
 [; ;mcc.c: 63: OSCSTAT = 0x80;
 "63
 [e = _OSCSTAT -> -> 128 `i `uc ]

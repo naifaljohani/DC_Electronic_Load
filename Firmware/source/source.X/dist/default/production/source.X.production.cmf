@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
+$C:\Users\Naifj\AppData\Local\Temp\s8ic.obj
 idloc IDLOC 0 8000 8000 4 2
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
@@ -140,11 +140,11 @@ STRING 800-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\source.X.production.obj
-7FD cinit CODE >4181:C:\Users\Naifj\AppData\Local\Temp\s5k8.
-7FD cinit CODE >4184:C:\Users\Naifj\AppData\Local\Temp\s5k8.
-7FD cinit CODE >4190:C:\Users\Naifj\AppData\Local\Temp\s5k8.
-7FD cinit CODE >4192:C:\Users\Naifj\AppData\Local\Temp\s5k8.
-7FE cinit CODE >4193:C:\Users\Naifj\AppData\Local\Temp\s5k8.
+7FD cinit CODE >4181:C:\Users\Naifj\AppData\Local\Temp\s8ic.
+7FD cinit CODE >4184:C:\Users\Naifj\AppData\Local\Temp\s8ic.
+7FD cinit CODE >4190:C:\Users\Naifj\AppData\Local\Temp\s8ic.
+7FD cinit CODE >4192:C:\Users\Naifj\AppData\Local\Temp\s8ic.
+7FE cinit CODE >4193:C:\Users\Naifj\AppData\Local\Temp\s8ic.
 7AD text4 CODE >58:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
 7AD text4 CODE >61:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
 7B0 text4 CODE >63:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
@@ -230,20 +230,20 @@ _WPUB 20D 0 ABS 0 - dist/default/production\source.X.production.obj
 _WPUC 20E 0 ABS 0 - dist/default/production\source.X.production.obj
 _WPUD 20F 0 ABS 0 - dist/default/production\source.X.production.obj
 _WPUE 210 0 ABS 0 - dist/default/production\source.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
+___sp 0 0 STACK 2 stack C:\Users\Naifj\AppData\Local\Temp\s8ic.obj
 _main F52 0 CODE 0 maintext dist/default/production\source.X.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\source.X.production.obj
-start 4 0 CODE 0 init C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
+start 4 0 CODE 0 init C:\Users\Naifj\AppData\Local\Temp\s8ic.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\source.X.production.obj
 _OPTION_REGbits 97 0 ABS 0 - dist/default/production\source.X.production.obj
 __Hpowerup 0 0 CODE 0 powerup -
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\source.X.production.obj
-intlevel0 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
-intlevel1 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
-intlevel2 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
-intlevel3 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
-intlevel4 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
-intlevel5 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\s8ic.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\s8ic.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\s8ic.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\s8ic.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\s8ic.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\s8ic.obj
 wtemp0 7E 0 ABS 0 - dist/default/production\source.X.production.obj
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 10008 0 ABS 0 clrtext -
@@ -268,7 +268,7 @@ _ODCONE 290 0 ABS 0 - dist/default/production\source.X.production.obj
 _OSCCON 9B 0 ABS 0 - dist/default/production\source.X.production.obj
 __end_of_SYSTEM_Initialize F7C 0 CODE 0 text1 dist/default/production\source.X.production.obj
 _WDTCON 99 0 ABS 0 - dist/default/production\source.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Naifj\AppData\Local\Temp\s8ic.obj
 __Hbank0 10008 0 ABS 0 bank0 -
 __Hbank1 10008 0 ABS 0 bank1 -
 __Hbank2 10008 0 ABS 0 bank2 -
@@ -400,10 +400,11 @@ __size_of_WDT_Initialize 0 0 ABS 0 - dist/default/production\source.X.production
 __S0 8009 0 ABS 0 - -
 __S1 0 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
+__CFG_PLLEN$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
 _SYSTEM_Initialize F6A 0 CODE 0 text1 dist/default/production\source.X.production.obj
 __CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Naifj\AppData\Local\Temp\s8ic.obj
 __CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __end_of_PIN_MANAGER_Initialize FFA 0 CODE 0 text3 dist/default/production\source.X.production.obj
 __Lbank10 10008 0 ABS 0 bank10 -
@@ -436,8 +437,8 @@ __Lconfig 1000E 0 CONFIG 0 config -
 __CFG_CP$OFF 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __CFG_IESO$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\source.X.production.obj
-stackhi 27EF 0 ABS 0 - C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
-stacklo 2000 0 ABS 0 - C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
+stackhi 27EF 0 ABS 0 - C:\Users\Naifj\AppData\Local\Temp\s8ic.obj
+stacklo 2000 0 ABS 0 - C:\Users\Naifj\AppData\Local\Temp\s8ic.obj
 _OSCSTAT 9C 0 ABS 0 - dist/default/production\source.X.production.obj
 _OSCTUNE 9A 0 ABS 0 - dist/default/production\source.X.production.obj
 __Lspace_0 0 0 ABS 0 - -
@@ -470,7 +471,6 @@ __CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __end_of__initialization FFA 0 CODE 0 cinit dist/default/production\source.X.production.obj
 __Lfunctab 0 0 ENTRY 0 functab -
 __Lclrtext 10008 0 ABS 0 clrtext -
-__CFG_PLLEN$OFF 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __pcstackCOMMON 0 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
 __Hend_init 8 0 CODE 0 end_init -
 __end_of_main F5A 0 CODE 0 maintext dist/default/production\source.X.production.obj

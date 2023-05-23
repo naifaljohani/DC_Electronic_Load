@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC LITE Macro Assembler V1.45 build -152302408 
-                                                                                               Thu May 18 14:18:54 2023
+                                                                                               Tue May 23 11:37:24 2023
 
 Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160504
      1                           	processor	16F1779
@@ -2126,32 +2126,32 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   2112                           
   2113                           	psect	cstackCOMMON
   2114  0000                     __pcstackCOMMON:	
-  2115  0000                     ?_SYSTEM_Initialize:	
-  2116  0000                     ??_SYSTEM_Initialize:	
+  2115  0000                     ?_OSCILLATOR_Initialize:	
+  2116  0000                     ??_OSCILLATOR_Initialize:	
   2117                           ; 1 bytes @ 0x0
   2118                           
-  2119  0000                     ?_OSCILLATOR_Initialize:	
+  2119  0000                     ?_WDT_Initialize:	
   2120                           ; 1 bytes @ 0x0
   2121                           
-  2122  0000                     ??_OSCILLATOR_Initialize:	
+  2122  0000                     ??_WDT_Initialize:	
   2123                           ; 1 bytes @ 0x0
   2124                           
-  2125  0000                     ?_WDT_Initialize:	
+  2125  0000                     ?_PIN_MANAGER_Initialize:	
   2126                           ; 1 bytes @ 0x0
   2127                           
-  2128  0000                     ??_WDT_Initialize:	
+  2128  0000                     ??_PIN_MANAGER_Initialize:	
   2129                           ; 1 bytes @ 0x0
   2130                           
-  2131  0000                     ?_main:	
+  2131  0000                     ?_SYSTEM_Initialize:	
   2132                           ; 1 bytes @ 0x0
   2133                           
-  2134  0000                     ??_main:	
+  2134  0000                     ??_SYSTEM_Initialize:	
   2135                           ; 1 bytes @ 0x0
   2136                           
-  2137  0000                     ?_PIN_MANAGER_Initialize:	
+  2137  0000                     ?_main:	
   2138                           ; 1 bytes @ 0x0
   2139                           
-  2140  0000                     ??_PIN_MANAGER_Initialize:	
+  2140  0000                     ??_main:	
   2141                           ; 1 bytes @ 0x0
   2142                           
   2143                           
@@ -2204,12 +2204,12 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   2185                           ;incstack = 0
   2186                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
   2187  07A9  3187  27B5  3187   	fcall	_SYSTEM_Initialize
-  2188  07AC                     l7:	
+  2188  07AC                     l108:	
   2189                           ;main.c: 69: while (1)
   2190                           
   2191                           
   2192                           ;main.c: 70: {
-  2193  07AC  2FAC               	goto	l7
+  2193  07AC  2FAC               	goto	l108
   2194  07AD                     __end_of_main:	
   2195                           
   2196                           	psect	text1
@@ -2536,11 +2536,11 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   2497                           ;psect for function _OSCILLATOR_Initialize
   2498  07AD                     _OSCILLATOR_Initialize:	
   2499                           
-  2500                           ;mcc.c: 61: OSCCON = 0x7A;
+  2500                           ;mcc.c: 61: OSCCON = 0x72;
   2501                           
   2502                           ;incstack = 0
   2503                           ; Regs used in _OSCILLATOR_Initialize: [wreg+status,2]
-  2504  07AD  307A               	movlw	122
+  2504  07AD  3072               	movlw	114
   2505  07AE  0021               	movlb	1	; select bank1
   2506  07AF  009B               	movwf	27	;volatile
   2507                           
@@ -2868,21 +2868,21 @@ BANK25              20      0       0      57        0.0%
 
 
 Microchip Technology PIC Macro Assembler V1.45 build -152302408 
-Symbol Table                                                                                   Thu May 18 14:18:54 2023
+Symbol Table                                                                                   Tue May 23 11:37:24 2023
 
-                              l7 07AC                      __CFG_CP$OFF 0000                      __CFG_LVP$ON 0000  
+                    __CFG_CP$OFF 0000                      __CFG_LVP$ON 0000                              l108 07AC  
                    __CFG_BORV$LO 0000                     __CFG_IESO$ON 0000                     __CFG_ZCD$OFF 0000  
                            _LATA 010C                             _LATB 010D                             _LATC 010E  
                            _LATD 010F                             _LATE 0110                             _WPUA 020C  
                            _WPUB 020D                             _WPUC 020E                             _WPUD 020F  
                            _WPUE 0210                     __CFG_WRT$OFF 0000                    __CFG_FCMEN$ON 0000  
                            _main 07A9                             btemp 007E                    __CFG_BOREN$ON 0000  
-                           start 0002                    __CFG_MCLRE$ON 0000   __size_of_OSCILLATOR_Initialize 0008  
-  __end_of_OSCILLATOR_Initialize 07B5                            ?_main 0000                    __CFG_WDTE$OFF 0000  
-                          _TRISA 008C                            _TRISB 008D                            _TRISC 008E  
-                          _TRISD 008F                            _TRISE 0090                   _WDT_Initialize 07A5  
-                          wtemp0 007E                  __initialization 07FD                     __end_of_main 07AD  
-                 __CFG_LPBOR$OFF 0000                           ??_main 0000                   __CFG_PLLEN$OFF 0000  
+                           start 0002                    __CFG_MCLRE$ON 0000                    __CFG_PLLEN$ON 0000  
+ __size_of_OSCILLATOR_Initialize 0008    __end_of_OSCILLATOR_Initialize 07B5                            ?_main 0000  
+                  __CFG_WDTE$OFF 0000                            _TRISA 008C                            _TRISB 008D  
+                          _TRISC 008E                            _TRISD 008F                            _TRISE 0090  
+                 _WDT_Initialize 07A5                            wtemp0 007E                  __initialization 07FD  
+                   __end_of_main 07AD                   __CFG_LPBOR$OFF 0000                           ??_main 0000  
          __end_of_WDT_Initialize 07A9                           _ANSELA 018C                           _ANSELB 018D  
                          _ANSELC 018E                           _ANSELD 018F                           _ANSELE 0190  
                          _BORCON 009D                           _ODCONA 028C                           _ODCONB 028D  

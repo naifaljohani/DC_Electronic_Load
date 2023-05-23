@@ -21374,7 +21374,7 @@ WDT_Initialize();
 void OSCILLATOR_Initialize(void)
 {
 
-OSCCON = 0x7A;
+OSCCON = 0x72;
 
 OSCSTAT = 0x80;
 

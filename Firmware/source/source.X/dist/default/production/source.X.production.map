@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.45\dat\en_msgs.txt -cs \
   -h+dist/default/production\source.X.production.sym \
   --cmf=dist/default/production\source.X.production.cmf -z -Q16F1779 \
-  -oC:\Users\Naifj\AppData\Local\Temp\s5k8.2 \
+  -oC:\Users\Naifj\AppData\Local\Temp\s8ic.2 \
   -Mdist/default/production/source.X.production.map -E1 -ver=XC8 \
   -ASTACK=02000h-027efh -pstack=STACK -ACODE=00h-07FFhx8 \
   -ASTRCODE=00h-03FFFh -ASTRING=00h-0FFhx64 -ACONST=00h-0FFhx64 \
@@ -35,7 +35,7 @@ Linker command line:
   -pcinit=CODE -pfunctab=ENTRY -ACONFIG=08007h-08008h -pconfig=CONFIG \
   -DCONFIG=2 -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 -DCODE=2 \
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\Naifj\AppData\Local\Temp\s5k8.obj \
+  C:\Users\Naifj\AppData\Local\Temp\s8ic.obj \
   dist/default/production\source.X.production.obj 
 
 Object code version is 3.11
@@ -45,7 +45,7 @@ Machine type is 16F1779
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
+C:\Users\Naifj\AppData\Local\Temp\s8ic.obj
                 end_init                              2        2        2        0       0
                 reset_vec                             0        0        2        0       0
                 idloc                              8000     8000        4    10000       0
@@ -396,7 +396,7 @@ __CFG_IESO$ON                    (abs)        00000
 __CFG_LPBOR$OFF                  (abs)        00000
 __CFG_LVP$ON                     (abs)        00000
 __CFG_MCLRE$ON                   (abs)        00000
-__CFG_PLLEN$OFF                  (abs)        00000
+__CFG_PLLEN$ON                   (abs)        00000
 __CFG_PPS1WAY$ON                 (abs)        00000
 __CFG_PWRTE$OFF                  (abs)        00000
 __CFG_STVREN$ON                  (abs)        00000
