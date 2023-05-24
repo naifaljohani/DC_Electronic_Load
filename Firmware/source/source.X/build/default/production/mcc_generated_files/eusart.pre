@@ -1,5 +1,5 @@
 
-# 1 "mcc_generated_files/mcc.c"
+# 1 "mcc_generated_files/eusart.c"
 
 # 26 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
@@ -21237,11 +21237,8 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 
-# 150 "mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
-
-# 162
-void PIN_MANAGER_IOC(void);
+# 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdbool.h"
+typedef unsigned char bool;
 
 # 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdint.h"
 typedef signed char int8_t;
@@ -21333,82 +21330,6 @@ typedef int16_t intptr_t;
 
 typedef uint16_t uintptr_t;
 
-# 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdbool.h"
-typedef unsigned char bool;
-
-# 29 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\errno.h"
-extern int errno;
-
-# 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\conio.h"
-extern void init_uart(void);
-
-extern char getch(void);
-extern char getche(void);
-extern void putch(char);
-extern void ungetch(char);
-
-extern __bit kbhit(void);
-
-# 23
-extern char * cgets(char *);
-extern void cputs(const char *);
-
-# 93 "mcc_generated_files/fvr.h"
-void FVR_Initialize(void);
-
-# 127
-bool FVR_IsOutputReady(void);
-
-# 72 "mcc_generated_files/adc.h"
-typedef uint16_t adc_result_t;
-
-# 77
-typedef struct
-{
-adc_result_t adcResult1;
-adc_result_t adcResult2;
-} adc_sync_double_result_t;
-
-# 95
-typedef enum
-{
-channel_AN0 = 0x0,
-channel_Switched_AN1 = 0x21,
-channel_Switched_AN10 = 0x2A,
-channel_Switched_AN18 = 0x32,
-channel_DAC8_Output = 0x36,
-channel_DAC7_Output = 0x37,
-channel_DAC6_Output = 0x38,
-channel_DAC5_Output = 0x39,
-channel_DAC4_Output = 0x3A,
-channel_DAC3_Output = 0x3B,
-channel_DAC2_Output = 0x3C,
-channel_Temp = 0x3D,
-channel_DAC1_Output = 0x3E,
-channel_FVRBuffer1 = 0x3F
-} adc_channel_t;
-
-# 146
-void ADC_Initialize(void);
-
-# 176
-void ADC_SelectChannel(adc_channel_t channel);
-
-# 203
-void ADC_StartConversion(void);
-
-# 235
-bool ADC_IsConversionDone(void);
-
-# 268
-adc_result_t ADC_GetConversionResult(void);
-
-# 298
-adc_result_t ADC_GetConversion(adc_channel_t channel);
-
-# 326
-void ADC_TemperatureAcquisitionDelay(void);
-
 # 75 "mcc_generated_files/eusart.h"
 typedef union {
 struct {
@@ -21450,42 +21371,118 @@ void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void));
 # 397
 void EUSART_SetErrorHandler(void (* interruptHandler)(void));
 
-# 72 "mcc_generated_files/mcc.h"
-void SYSTEM_Initialize(void);
+# 52 "mcc_generated_files/eusart.c"
+volatile eusart_status_t eusartRxLastError;
 
-# 85
-void OSCILLATOR_Initialize(void);
+# 58
+void (*EUSART_FramingErrorHandler)(void);
+void (*EUSART_OverrunErrorHandler)(void);
+void (*EUSART_ErrorHandler)(void);
 
-# 97
-void WDT_Initialize(void);
+void EUSART_DefaultFramingErrorHandler(void);
+void EUSART_DefaultOverrunErrorHandler(void);
+void EUSART_DefaultErrorHandler(void);
 
-# 50 "mcc_generated_files/mcc.c"
-void SYSTEM_Initialize(void)
+void EUSART_Initialize(void)
 {
 
-PIN_MANAGER_Initialize();
-OSCILLATOR_Initialize();
-WDT_Initialize();
-FVR_Initialize();
-ADC_Initialize();
-EUSART_Initialize();
+
+
+BAUD1CON = 0x08;
+
+
+RC1STA = 0x90;
+
+
+TX1STA = 0x24;
+
+
+SP1BRGL = 0xCF;
+
+
+SP1BRGH = 0x00;
+
+
+EUSART_SetFramingErrorHandler(EUSART_DefaultFramingErrorHandler);
+EUSART_SetOverrunErrorHandler(EUSART_DefaultOverrunErrorHandler);
+EUSART_SetErrorHandler(EUSART_DefaultErrorHandler);
+
+eusartRxLastError.status = 0;
+
 }
 
-void OSCILLATOR_Initialize(void)
+bool EUSART_is_tx_ready(void)
 {
-
-OSCCON = 0x72;
-
-OSCSTAT = 0x80;
-
-OSCTUNE = 0x00;
-
-BORCON = 0x00;
+return (bool)(PIR1bits.TXIF && TX1STAbits.TXEN);
 }
 
-void WDT_Initialize(void)
+bool EUSART_is_rx_ready(void)
+{
+return (bool)(PIR1bits.RCIF);
+}
+
+bool EUSART_is_tx_done(void)
+{
+return TX1STAbits.TRMT;
+}
+
+eusart_status_t EUSART_get_last_status(void){
+return eusartRxLastError;
+}
+
+uint8_t EUSART_Read(void)
+{
+while(!PIR1bits.RCIF)
+{
+}
+
+eusartRxLastError.status = 0;
+
+if(1 == RC1STAbits.OERR)
 {
 
-WDTCON = 0x16;
+
+RC1STAbits.CREN = 0;
+RC1STAbits.CREN = 1;
+}
+
+return RC1REG;
+}
+
+void EUSART_Write(uint8_t txData)
+{
+while(0 == PIR1bits.TXIF)
+{
+}
+
+TX1REG = txData;
+}
+
+
+
+
+void EUSART_DefaultFramingErrorHandler(void){}
+
+void EUSART_DefaultOverrunErrorHandler(void){
+
+
+RC1STAbits.CREN = 0;
+RC1STAbits.CREN = 1;
+
+}
+
+void EUSART_DefaultErrorHandler(void){
+}
+
+void EUSART_SetFramingErrorHandler(void (* interruptHandler)(void)){
+EUSART_FramingErrorHandler = interruptHandler;
+}
+
+void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void)){
+EUSART_OverrunErrorHandler = interruptHandler;
+}
+
+void EUSART_SetErrorHandler(void (* interruptHandler)(void)){
+EUSART_ErrorHandler = interruptHandler;
 }
 

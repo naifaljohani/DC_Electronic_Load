@@ -53,6 +53,9 @@ void SYSTEM_Initialize(void)
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
     WDT_Initialize();
+    FVR_Initialize();
+    ADC_Initialize();
+    EUSART_Initialize();
 }
 
 void OSCILLATOR_Initialize(void)

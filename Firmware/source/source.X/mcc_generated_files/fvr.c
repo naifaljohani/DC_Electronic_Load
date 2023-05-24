@@ -1,21 +1,24 @@
 /**
-  Generated Main Source File
+  FVR Generated Driver File
 
-  Company:
+  @Company
     Microchip Technology Inc.
 
-  File Name:
-    main.c
+  @File Name
+    fvr.c
 
-  Summary:
-    This is the main file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+  @Summary
+    This is the generated driver implementation file for the FVR driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
-  Description:
-    This header file provides implementations for driver APIs for all modules selected in the GUI.
+  @Description
+    This source file provides APIs for FVR.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.8
         Device            :  PIC16F1779
-        Driver Version    :  2.00
+        Driver Version    :  2.01
+    The generated drivers are tested against the following:
+        Compiler          :  XC8 2.36 and above
+        MPLAB             :  MPLAB X 6.00
 */
 
 /*
@@ -41,57 +44,28 @@
     SOFTWARE.
 */
 
-#include "mcc_generated_files/mcc.h"
+/**
+  Section: Included Files
+*/
 
-/*
-                         Main application
- */ 
-uint16_t convertedValue;
-adc_channel_t  ADC_select = channel_AN0 ;
- 
-volatile uint16_t txData;
+#include <xc.h>
+#include "fvr.h"
 
+/**
+  Section: FVR APIs
+*/
 
-void main(void)
+void FVR_Initialize(void)
 {
- 
-    // initialize the device
-    SYSTEM_Initialize();
-    
-    ADC_SelectChannel(ADC_select);
+    // CDAFVR off; FVREN enabled; TSRNG Lo_range; ADFVR 4x; TSEN disabled; 
+    FVRCON = 0x83;
+}
 
-    // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
-    // Use the following macros to:
-
-    // Enable the Global Interrupts
-    //INTERRUPT_GlobalInterruptEnable();
-
-    // Enable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptEnable();
-
-    // Disable the Global Interrupts
-    //INTERRUPT_GlobalInterruptDisable();
-
-    // Disable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptDisable();
-    
-    
-    
-    
-    while (1)
-    {
-//       if (EUSART_is_tx_ready){
-//           
-//       }
-        
-        ADC_StartConversion();
-        convertedValue = ADC_GetConversionResult();
-        
-        EUSART_Write((convertedValue >> 8 ));
-        __delay_ms(100);
-       
-    }
+bool FVR_IsOutputReady(void)
+{
+    return (FVRCONbits.FVRRDY);
 }
 /**
  End of File
 */
+
