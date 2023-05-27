@@ -11,25 +11,39 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
+$C:\Users\Naifj\AppData\Local\Temp\sf78.obj
 idloc IDLOC 0 8000 8000 4 2
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 config CONFIG 0 8007 8007 2 2
 $dist/default/production\source.X.production.obj
-cinit CODE 0 7FD 7FD 3 2
-text1 CODE 0 7B5 7B5 9 2
-text2 CODE 0 7A5 7A5 4 2
-text3 CODE 0 7BE 7BE 3F 2
-text4 CODE 0 7AD 7AD 8 2
-maintext CODE 0 7A9 7A9 4 2
+cinit CODE 0 7F7 7F7 9 2
+text1 CODE 0 75B 75B 12 2
+text2 CODE 0 71A 71A 4 2
+text3 CODE 0 7AF 7AF 48 2
+text4 CODE 0 73D 73D 8 2
+text5 CODE 0 716 716 4 2
+text6 CODE 0 76D 76D 20 2
+text7 CODE 0 72F 72F 6 2
+text8 CODE 0 71E 71E 5 2
+text9 CODE 0 729 729 6 2
+nvCOMMON COMMON 1 76 76 4 1
+text10 CODE 0 745 745 9 2
+text11 CODE 0 735 735 8 2
+text12 CODE 0 713 713 3 2
+text13 CODE 0 74E 74E D 2
+text14 CODE 0 723 723 6 2
+nvBANK0 BANK0 1 20 20 4 1
+maintext CODE 0 78D 78D 22 2
+cstackCOMMON COMMON 1 7A 7A 4 1
+bssCOMMON COMMON 1 70 70 6 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 20-6F 1
+RAM 24-6F 1
 RAM A0-EF 1
 RAM 120-16F 1
 RAM 1A0-1EF 1
@@ -55,7 +69,7 @@ RAM B20-B6F 1
 RAM BA0-BEF 1
 RAM C20-C6F 1
 RAM CA0-CBF 1
-BANK0 20-6F 1
+BANK0 24-6F 1
 BANK1 A0-EF 1
 BANK2 120-16F 1
 BANK3 1A0-1EF 1
@@ -65,9 +79,9 @@ BANK6 320-36F 1
 BANK7 3A0-3EF 1
 BANK8 420-46F 1
 BANK9 4A0-4EF 1
-CONST 4-7A4 2
+CONST 4-712 2
 CONST 800-3FFF 2
-ENTRY 4-7A4 2
+ENTRY 4-712 2
 ENTRY 800-3FFF 2
 SFR10 500-51F 1
 SFR11 580-59F 1
@@ -91,8 +105,8 @@ SFR28 E00-E6F 1
 SFR29 E80-EEF 1
 SFR30 F00-F6F 1
 SFR31 F80-FEF 1
-STACK 2000-27EF 1
-CODE 4-7A4 2
+STACK 2004-27EF 1
+CODE 4-712 2
 CODE 800-3FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -121,10 +135,9 @@ BANK23 BA0-BEF 1
 BANK24 C20-C6F 1
 BANK25 CA0-CBF 1
 BIGRAM 2000-27EF 1
-COMMON 70-7D 1
-STRCODE 4-7A4 2
+STRCODE 4-712 2
 STRCODE 800-3FFF 2
-STRING 4-7A4 2
+STRING 4-712 2
 STRING 800-3FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -140,65 +153,126 @@ STRING 800-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\source.X.production.obj
-7FD cinit CODE >4181:C:\Users\Naifj\AppData\Local\Temp\s5k8.
-7FD cinit CODE >4184:C:\Users\Naifj\AppData\Local\Temp\s5k8.
-7FD cinit CODE >4190:C:\Users\Naifj\AppData\Local\Temp\s5k8.
-7FD cinit CODE >4192:C:\Users\Naifj\AppData\Local\Temp\s5k8.
-7FE cinit CODE >4193:C:\Users\Naifj\AppData\Local\Temp\s5k8.
-7AD text4 CODE >58:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-7AD text4 CODE >61:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-7B0 text4 CODE >63:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-7B2 text4 CODE >65:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-7B3 text4 CODE >67:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-7B4 text4 CODE >68:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-7BE text3 CODE >55:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7BE text3 CODE >60:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7C0 text3 CODE >61:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7C1 text3 CODE >62:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7C2 text3 CODE >63:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7C3 text3 CODE >64:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7C4 text3 CODE >69:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7C7 text3 CODE >70:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7C9 text3 CODE >71:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7CB text3 CODE >72:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7CD text3 CODE >73:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7CF text3 CODE >78:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7D2 text3 CODE >79:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7D4 text3 CODE >80:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7D6 text3 CODE >81:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7D8 text3 CODE >82:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7DA text3 CODE >87:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7DC text3 CODE >88:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7DD text3 CODE >89:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7DE text3 CODE >90:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7DF text3 CODE >91:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7E0 text3 CODE >92:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7E2 text3 CODE >97:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7E4 text3 CODE >98:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7E5 text3 CODE >99:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7E6 text3 CODE >100:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7E7 text3 CODE >101:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7E8 text3 CODE >106:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7EB text3 CODE >107:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7ED text3 CODE >108:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7EF text3 CODE >109:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7F1 text3 CODE >110:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7F3 text3 CODE >115:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7F6 text3 CODE >116:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7F8 text3 CODE >117:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7FA text3 CODE >118:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7FC text3 CODE >126:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-7A5 text2 CODE >70:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-7A5 text2 CODE >73:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-7A8 text2 CODE >74:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-7B5 text1 CODE >50:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-7B5 text1 CODE >53:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-7B8 text1 CODE >54:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-7BB text1 CODE >55:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-7BD text1 CODE >56:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-7A9 maintext CODE >49:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\main.c
-7A9 maintext CODE >52:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\main.c
-7AC maintext CODE >69:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\main.c
+7F7 cinit CODE >8293:C:\Users\Naifj\AppData\Local\Temp\sf78.
+7F7 cinit CODE >8296:C:\Users\Naifj\AppData\Local\Temp\sf78.
+7F7 cinit CODE >8317:C:\Users\Naifj\AppData\Local\Temp\sf78.
+7F8 cinit CODE >8318:C:\Users\Naifj\AppData\Local\Temp\sf78.
+7F9 cinit CODE >8319:C:\Users\Naifj\AppData\Local\Temp\sf78.
+7FA cinit CODE >8320:C:\Users\Naifj\AppData\Local\Temp\sf78.
+7FB cinit CODE >8321:C:\Users\Naifj\AppData\Local\Temp\sf78.
+7FC cinit CODE >8322:C:\Users\Naifj\AppData\Local\Temp\sf78.
+7FD cinit CODE >8328:C:\Users\Naifj\AppData\Local\Temp\sf78.
+7FD cinit CODE >8330:C:\Users\Naifj\AppData\Local\Temp\sf78.
+7FE cinit CODE >8331:C:\Users\Naifj\AppData\Local\Temp\sf78.
+723 text14 CODE >109:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+723 text14 CODE >112:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+74E text13 CODE >88:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+74F text13 CODE >91:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+759 text13 CODE >93:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+75A text13 CODE >94:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+713 text12 CODE >96:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+713 text12 CODE >99:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+715 text12 CODE >100:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+735 text11 CODE >132:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+736 text11 CODE >134:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+736 text11 CODE >136:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+739 text11 CODE >138:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+73C text11 CODE >139:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+745 text10 CODE >67:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+745 text10 CODE >72:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+748 text10 CODE >75:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+749 text10 CODE >78:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+74A text10 CODE >81:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+74B text10 CODE >84:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+74D text10 CODE >86:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+729 text9 CODE >165:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+729 text9 CODE >166:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+72E text9 CODE >167:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+71E text8 CODE >157:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+71E text8 CODE >158:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+722 text8 CODE >159:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+72F text7 CODE >161:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+72F text7 CODE >162:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+734 text7 CODE >163:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+76D text6 CODE >66:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+76D text6 CODE >71:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+770 text6 CODE >74:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+772 text6 CODE >77:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+774 text6 CODE >80:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+776 text6 CODE >83:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+777 text6 CODE >86:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+77E text6 CODE >87:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+785 text6 CODE >88:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+78B text6 CODE >90:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+78C text6 CODE >92:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
+716 text5 CODE >58:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/fvr.c
+716 text5 CODE >61:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/fvr.c
+719 text5 CODE >62:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/fvr.c
+73D text4 CODE >61:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+73D text4 CODE >64:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+740 text4 CODE >66:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+742 text4 CODE >68:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+743 text4 CODE >70:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+744 text4 CODE >71:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+7AF text3 CODE >55:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7AF text3 CODE >60:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7B1 text3 CODE >61:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7B2 text3 CODE >62:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7B3 text3 CODE >63:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7B4 text3 CODE >64:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7B5 text3 CODE >69:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7B8 text3 CODE >70:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7BA text3 CODE >71:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7BC text3 CODE >72:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7BE text3 CODE >73:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7C0 text3 CODE >78:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7C3 text3 CODE >79:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7C5 text3 CODE >80:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7C7 text3 CODE >81:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7C9 text3 CODE >82:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7CB text3 CODE >87:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7CD text3 CODE >88:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7CE text3 CODE >89:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7CF text3 CODE >90:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7D0 text3 CODE >91:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7D1 text3 CODE >92:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7D3 text3 CODE >97:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7D5 text3 CODE >98:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7D6 text3 CODE >99:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7D7 text3 CODE >100:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7D8 text3 CODE >101:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7D9 text3 CODE >106:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7DC text3 CODE >107:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7DE text3 CODE >108:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7E0 text3 CODE >109:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7E2 text3 CODE >110:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7E4 text3 CODE >115:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7E7 text3 CODE >116:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7E9 text3 CODE >117:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7EB text3 CODE >118:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7ED text3 CODE >127:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7F0 text3 CODE >128:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7F3 text3 CODE >129:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+7F6 text3 CODE >130:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+71A text2 CODE >73:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+71A text2 CODE >76:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+71D text2 CODE >77:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+75B text1 CODE >50:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+75B text1 CODE >53:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+75E text1 CODE >54:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+761 text1 CODE >55:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+764 text1 CODE >56:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+767 text1 CODE >57:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+76A text1 CODE >58:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+76C text1 CODE >59:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+78D maintext CODE >55:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\main.c
+78D maintext CODE >59:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\main.c
+790 maintext CODE >61:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\main.c
+794 maintext CODE >87:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\main.c
+797 maintext CODE >88:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\main.c
+79E maintext CODE >90:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\main.c
+7A2 maintext CODE >91:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\main.c
+7AE maintext CODE >81:C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -216,9 +290,11 @@ __Hspace_0 10008 0 ABS 0 - -
 __Hspace_1 10008 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 8004 0 ABS 0 - -
+__size_of_ADC_StartConversion 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __Heeprom_data 10008 0 EEDATA 3 eeprom_data -
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
-__end_of_WDT_Initialize F52 0 CODE 0 text2 dist/default/production\source.X.production.obj
+__size_of_ADC_GetConversionResult 0 0 ABS 0 - dist/default/production\source.X.production.obj
+__end_of_WDT_Initialize E3C 0 CODE 0 text2 dist/default/production\source.X.production.obj
 __Hstrings 10008 0 ABS 0 strings -
 _LATA 10C 0 ABS 0 - dist/default/production\source.X.production.obj
 _LATB 10D 0 ABS 0 - dist/default/production\source.X.production.obj
@@ -230,45 +306,83 @@ _WPUB 20D 0 ABS 0 - dist/default/production\source.X.production.obj
 _WPUC 20E 0 ABS 0 - dist/default/production\source.X.production.obj
 _WPUD 20F 0 ABS 0 - dist/default/production\source.X.production.obj
 _WPUE 210 0 ABS 0 - dist/default/production\source.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
-_main F52 0 CODE 0 maintext dist/default/production\source.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Naifj\AppData\Local\Temp\sf78.obj
+_main F1A 0 CODE 0 maintext dist/default/production\source.X.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\source.X.production.obj
-start 4 0 CODE 0 init C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
+start 4 0 CODE 0 init C:\Users\Naifj\AppData\Local\Temp\sf78.obj
+_EUSART_Write E6A 0 CODE 0 text11 dist/default/production\source.X.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\source.X.production.obj
+__HbssCOMMON 10008 0 ABS 0 bssCOMMON -
+__end_of_EUSART_SetFramingErrorHandler E46 0 CODE 0 text8 dist/default/production\source.X.production.obj
+__end_of_EUSART_SetOverrunErrorHandler E6A 0 CODE 0 text7 dist/default/production\source.X.production.obj
 _OPTION_REGbits 97 0 ABS 0 - dist/default/production\source.X.production.obj
+_ADC_SelectChannel E9C 0 CODE 0 text13 dist/default/production\source.X.production.obj
+__end_of_EUSART_Initialize F1A 0 CODE 0 text6 dist/default/production\source.X.production.obj
 __Hpowerup 0 0 CODE 0 powerup -
+_ADC_StartConversion E26 0 CODE 0 text12 dist/default/production\source.X.production.obj
+__LnvCOMMON 10008 0 ABS 0 nvCOMMON -
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\source.X.production.obj
-intlevel0 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
-intlevel1 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
-intlevel2 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
-intlevel3 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
-intlevel4 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
-intlevel5 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\sf78.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\sf78.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\sf78.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\sf78.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\sf78.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\Naifj\AppData\Local\Temp\sf78.obj
+__LbssCOMMON 10008 0 ABS 0 bssCOMMON -
+__size_of_ADC_Initialize 0 0 ABS 0 - dist/default/production\source.X.production.obj
 wtemp0 7E 0 ABS 0 - dist/default/production\source.X.production.obj
 __Hfunctab 0 0 ENTRY 0 functab -
+_RC1STAbits 19D 0 ABS 0 - dist/default/production\source.X.production.obj
+_EUSART_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production\source.X.production.obj
+_EUSART_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production\source.X.production.obj
+__size_of_EUSART_Write 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __Hclrtext 10008 0 ABS 0 clrtext -
+_ADCON0 490 0 ABS 0 - dist/default/production\source.X.production.obj
+_ADCON1 491 0 ABS 0 - dist/default/production\source.X.production.obj
+_ADCON2 492 0 ABS 0 - dist/default/production\source.X.production.obj
+_ADRESH 48F 0 ABS 0 - dist/default/production\source.X.production.obj
+_ADRESL 48E 0 ABS 0 - dist/default/production\source.X.production.obj
 _ANSELA 18C 0 ABS 0 - dist/default/production\source.X.production.obj
 _ANSELB 18D 0 ABS 0 - dist/default/production\source.X.production.obj
 _ANSELC 18E 0 ABS 0 - dist/default/production\source.X.production.obj
 _ANSELD 18F 0 ABS 0 - dist/default/production\source.X.production.obj
 _ANSELE 190 0 ABS 0 - dist/default/production\source.X.production.obj
+_FVR_Initialize E2C 0 CODE 0 text5 dist/default/production\source.X.production.obj
 _BORCON 9D 0 ABS 0 - dist/default/production\source.X.production.obj
+_FVRCONbits 9E 0 ABS 0 - dist/default/production\source.X.production.obj
+__end_of_EUSART_Write E7A 0 CODE 0 text11 dist/default/production\source.X.production.obj
 __Lmaintext 10008 0 ABS 0 maintext -
+_FVRCON 9E 0 ABS 0 - dist/default/production\source.X.production.obj
+__LnvBANK0 10008 0 ABS 0 nvBANK0 -
 _INLVLA 38C 0 ABS 0 - dist/default/production\source.X.production.obj
 _INLVLB 38D 0 ABS 0 - dist/default/production\source.X.production.obj
 _INLVLC 38E 0 ABS 0 - dist/default/production\source.X.production.obj
 _INLVLD 38F 0 ABS 0 - dist/default/production\source.X.production.obj
-_PIN_MANAGER_Initialize F7C 0 CODE 0 text3 dist/default/production\source.X.production.obj
-start_initialization FFA 0 CODE 0 cinit dist/default/production\source.X.production.obj
+_EUSART_Initialize EDA 0 CODE 0 text6 dist/default/production\source.X.production.obj
+__HnvCOMMON 10008 0 ABS 0 nvCOMMON -
+_PIN_MANAGER_Initialize F5E 0 CODE 0 text3 dist/default/production\source.X.production.obj
+?_ADC_GetConversionResult 7A 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
+__end_of_FVR_Initialize E34 0 CODE 0 text5 dist/default/production\source.X.production.obj
+start_initialization FEE 0 CODE 0 cinit dist/default/production\source.X.production.obj
 _ODCONA 28C 0 ABS 0 - dist/default/production\source.X.production.obj
 _ODCONB 28D 0 ABS 0 - dist/default/production\source.X.production.obj
 _ODCONC 28E 0 ABS 0 - dist/default/production\source.X.production.obj
 _ODCOND 28F 0 ABS 0 - dist/default/production\source.X.production.obj
 _ODCONE 290 0 ABS 0 - dist/default/production\source.X.production.obj
+__end_of_ADC_StartConversion E2C 0 CODE 0 text12 dist/default/production\source.X.production.obj
+_EUSART_SetErrorHandler E52 0 CODE 0 text9 dist/default/production\source.X.production.obj
 _OSCCON 9B 0 ABS 0 - dist/default/production\source.X.production.obj
-__end_of_SYSTEM_Initialize F7C 0 CODE 0 text1 dist/default/production\source.X.production.obj
+EUSART_SetOverrunErrorHandler@interruptHandler 7A 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
+_RB6PPS E9E 0 ABS 0 - dist/default/production\source.X.production.obj
+_RC1REG 199 0 ABS 0 - dist/default/production\source.X.production.obj
+_RC1STA 19D 0 ABS 0 - dist/default/production\source.X.production.obj
+__size_of_EUSART_SetFramingErrorHandler 0 0 ABS 0 - dist/default/production\source.X.production.obj
+__size_of_EUSART_SetOverrunErrorHandler 0 0 ABS 0 - dist/default/production\source.X.production.obj
+__end_of_SYSTEM_Initialize EDA 0 CODE 0 text1 dist/default/production\source.X.production.obj
+_TX1REG 19A 0 ABS 0 - dist/default/production\source.X.production.obj
+_TX1STA 19E 0 ABS 0 - dist/default/production\source.X.production.obj
 _WDTCON 99 0 ABS 0 - dist/default/production\source.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Naifj\AppData\Local\Temp\sf78.obj
 __Hbank0 10008 0 ABS 0 bank0 -
 __Hbank1 10008 0 ABS 0 bank1 -
 __Hbank2 10008 0 ABS 0 bank2 -
@@ -329,6 +443,7 @@ __Hbank30 10008 0 BANK30 1 bank30 -
 __Hbank31 10008 0 BANK31 1 bank31 -
 __Hbigram 10008 0 ABS 0 bigram -
 __Hmaintext 10008 0 ABS 0 maintext -
+_BAUD1CON 19F 0 ABS 0 - dist/default/production\source.X.production.obj
 __CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __Hcommon 10008 0 ABS 0 common -
 __Hconfig 10012 0 CONFIG 0 config -
@@ -342,8 +457,9 @@ __Lbank6 10008 0 ABS 0 bank6 -
 __Lbank7 10008 0 ABS 0 bank7 -
 __Lbank8 10008 0 ABS 0 bank8 -
 __Lbank9 10008 0 ABS 0 bank9 -
-__Lcinit FFA 0 CODE 0 cinit -
+__Lcinit FEE 0 CODE 0 cinit -
 __Lidloc 10000 0 IDLOC 0 idloc -
+EUSART_SetErrorHandler@interruptHandler 7A 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
 __Lsfr10 10008 0 ABS 0 sfr10 -
 __Lsfr11 10008 0 ABS 0 sfr11 -
 __Lsfr12 10008 0 ABS 0 sfr12 -
@@ -395,17 +511,30 @@ __Lsfr7 10008 0 ABS 0 sfr7 -
 __Lsfr8 10008 0 ABS 0 sfr8 -
 __Lsfr9 10008 0 ABS 0 sfr9 -
 __Ltext 10008 0 ABS 0 text -
+__pnvBANK0 20 0 BANK0 1 nvBANK0 dist/default/production\source.X.production.obj
 __HcstackCOMMON 10008 0 ABS 0 cstackCOMMON -
 __size_of_WDT_Initialize 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __S0 8009 0 ABS 0 - -
-__S1 0 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
-_SYSTEM_Initialize F6A 0 CODE 0 text1 dist/default/production\source.X.production.obj
+__pnvCOMMON 76 0 COMMON 1 nvCOMMON dist/default/production\source.X.production.obj
+__CFG_PLLEN$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
+_SYSTEM_Initialize EB6 0 CODE 0 text1 dist/default/production\source.X.production.obj
 __CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
+_ADC_GetConversionResult E46 0 CODE 0 text14 dist/default/production\source.X.production.obj
+__HnvBANK0 10008 0 ABS 0 nvBANK0 -
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Naifj\AppData\Local\Temp\sf78.obj
+__end_of_ADC_GetConversionResult E52 0 CODE 0 text14 dist/default/production\source.X.production.obj
 __CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
-__end_of_PIN_MANAGER_Initialize FFA 0 CODE 0 text3 dist/default/production\source.X.production.obj
+_ADC_Initialize E8A 0 CODE 0 text10 dist/default/production\source.X.production.obj
+EUSART_SetFramingErrorHandler@interruptHandler 7A 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
+__ptext10 E8A 0 CODE 0 text10 dist/default/production\source.X.production.obj
+__ptext11 E6A 0 CODE 0 text11 dist/default/production\source.X.production.obj
+__ptext12 E26 0 CODE 0 text12 dist/default/production\source.X.production.obj
+__ptext13 E9C 0 CODE 0 text13 dist/default/production\source.X.production.obj
+__ptext14 E46 0 CODE 0 text14 dist/default/production\source.X.production.obj
+__end_of_PIN_MANAGER_Initialize FEE 0 CODE 0 text3 dist/default/production\source.X.production.obj
 __Lbank10 10008 0 ABS 0 bank10 -
 __Lbank11 10008 0 ABS 0 bank11 -
 __Lbank12 10008 0 ABS 0 bank12 -
@@ -428,52 +557,81 @@ __Lbank28 10008 0 BANK28 1 bank28 -
 __Lbank29 10008 0 BANK29 1 bank29 -
 __Lbank30 10008 0 BANK30 1 bank30 -
 __Lbank31 10008 0 BANK31 1 bank31 -
-__pmaintext F52 0 CODE 0 maintext dist/default/production\source.X.production.obj
+__pmaintext F1A 0 CODE 0 maintext dist/default/production\source.X.production.obj
 __Lbigram 10008 0 ABS 0 bigram -
 __CFG_BORV$LO 0 0 ABS 0 - dist/default/production\source.X.production.obj
+__end_of_EUSART_SetErrorHandler E5E 0 CODE 0 text9 dist/default/production\source.X.production.obj
 __Lcommon 10008 0 ABS 0 common -
 __Lconfig 1000E 0 CONFIG 0 config -
 __CFG_CP$OFF 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __CFG_IESO$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\source.X.production.obj
-stackhi 27EF 0 ABS 0 - C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
-stacklo 2000 0 ABS 0 - C:\Users\Naifj\AppData\Local\Temp\s5k8.obj
+_txData 72 0 COMMON 1 bssCOMMON dist/default/production\source.X.production.obj
+_EUSART_FramingErrorHandler 76 0 COMMON 1 nvCOMMON dist/default/production\source.X.production.obj
+_EUSART_OverrunErrorHandler 22 0 BANK0 1 nvBANK0 dist/default/production\source.X.production.obj
+stackhi 27EF 0 ABS 0 - C:\Users\Naifj\AppData\Local\Temp\sf78.obj
+stacklo 2004 0 ABS 0 - C:\Users\Naifj\AppData\Local\Temp\sf78.obj
+__size_of_ADC_SelectChannel 0 0 ABS 0 - dist/default/production\source.X.production.obj
 _OSCSTAT 9C 0 ABS 0 - dist/default/production\source.X.production.obj
 _OSCTUNE 9A 0 ABS 0 - dist/default/production\source.X.production.obj
+_ADCON0bits 490 0 ABS 0 - dist/default/production\source.X.production.obj
+_EUSART_ErrorHandler 20 0 BANK0 1 nvBANK0 dist/default/production\source.X.production.obj
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
+__pbssCOMMON 70 0 COMMON 1 bssCOMMON dist/default/production\source.X.production.obj
+__end_of_ADC_Initialize E9C 0 CODE 0 text10 dist/default/production\source.X.production.obj
+_PIR1bits 11 0 ABS 0 - dist/default/production\source.X.production.obj
 __Lend_init 4 0 CODE 0 end_init -
+_EUSART_DefaultErrorHandler 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __CFG_LVP$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __LcstackCOMMON 10008 0 ABS 0 cstackCOMMON -
+_EUSART_SetFramingErrorHandler E3C 0 CODE 0 text8 dist/default/production\source.X.production.obj
 __CFG_ZCD$OFF 0 0 ABS 0 - dist/default/production\source.X.production.obj
+_EUSART_SetOverrunErrorHandler E5E 0 CODE 0 text7 dist/default/production\source.X.production.obj
 end_of_initialization FFA 0 CODE 0 cinit dist/default/production\source.X.production.obj
 __Hintentry 4 0 CODE 0 intentry -
 __CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
+_TX1STAbits 19E 0 ABS 0 - dist/default/production\source.X.production.obj
 __Lstrings 10008 0 ABS 0 strings -
+__size_of_FVR_Initialize 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __Hreset_vec 4 0 CODE 0 reset_vec -
-__ptext1 F6A 0 CODE 0 text1 dist/default/production\source.X.production.obj
-__ptext2 F4A 0 CODE 0 text2 dist/default/production\source.X.production.obj
-__ptext3 F7C 0 CODE 0 text3 dist/default/production\source.X.production.obj
-__ptext4 F5A 0 CODE 0 text4 dist/default/production\source.X.production.obj
+__ptext1 EB6 0 CODE 0 text1 dist/default/production\source.X.production.obj
+__ptext2 E34 0 CODE 0 text2 dist/default/production\source.X.production.obj
+__ptext3 F5E 0 CODE 0 text3 dist/default/production\source.X.production.obj
+__ptext4 E7A 0 CODE 0 text4 dist/default/production\source.X.production.obj
+__ptext5 E2C 0 CODE 0 text5 dist/default/production\source.X.production.obj
+__ptext6 EDA 0 CODE 0 text6 dist/default/production\source.X.production.obj
+__ptext7 E5E 0 CODE 0 text7 dist/default/production\source.X.production.obj
+__ptext8 E3C 0 CODE 0 text8 dist/default/production\source.X.production.obj
+__ptext9 E52 0 CODE 0 text9 dist/default/production\source.X.production.obj
 __Lpowerup 0 0 CODE 0 powerup -
+_ADCACTPPS E39 0 ABS 0 - dist/default/production\source.X.production.obj
 __Leeprom_data 10008 0 EEDATA 3 eeprom_data -
 __Lreset_vec 0 0 CODE 0 reset_vec -
 __CFG_LPBOR$OFF 0 0 ABS 0 - dist/default/production\source.X.production.obj
+ADC_SelectChannel@channel 7B 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
 _SLRCONA 30C 0 ABS 0 - dist/default/production\source.X.production.obj
 _SLRCONB 30D 0 ABS 0 - dist/default/production\source.X.production.obj
 _SLRCONC 30E 0 ABS 0 - dist/default/production\source.X.production.obj
 _SLRCOND 30F 0 ABS 0 - dist/default/production\source.X.production.obj
 _SLRCONE 310 0 ABS 0 - dist/default/production\source.X.production.obj
 __CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\source.X.production.obj
+EUSART_Write@txData 7A 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
 __end_of__initialization FFA 0 CODE 0 cinit dist/default/production\source.X.production.obj
 __Lfunctab 0 0 ENTRY 0 functab -
+_convertedValue 78 0 COMMON 1 nvCOMMON dist/default/production\source.X.production.obj
+_ADC_select 75 0 COMMON 1 bssCOMMON dist/default/production\source.X.production.obj
+_SP1BRGH 19C 0 ABS 0 - dist/default/production\source.X.production.obj
+_SP1BRGL 19B 0 ABS 0 - dist/default/production\source.X.production.obj
 __Lclrtext 10008 0 ABS 0 clrtext -
-__CFG_PLLEN$OFF 0 0 ABS 0 - dist/default/production\source.X.production.obj
-__pcstackCOMMON 0 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
+__size_of_EUSART_Initialize 0 0 ABS 0 - dist/default/production\source.X.production.obj
+__pcstackCOMMON 7A 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
 __Hend_init 8 0 CODE 0 end_init -
-__end_of_main F5A 0 CODE 0 maintext dist/default/production\source.X.production.obj
+__end_of_main F5E 0 CODE 0 maintext dist/default/production\source.X.production.obj
+__end_of_ADC_SelectChannel EB6 0 CODE 0 text13 dist/default/production\source.X.production.obj
+_RXPPS E3D 0 ABS 0 - dist/default/production\source.X.production.obj
 _TRISA 8C 0 ABS 0 - dist/default/production\source.X.production.obj
 _TRISB 8D 0 ABS 0 - dist/default/production\source.X.production.obj
 _TRISC 8E 0 ABS 0 - dist/default/production\source.X.production.obj
@@ -482,13 +640,15 @@ _TRISE 90 0 ABS 0 - dist/default/production\source.X.production.obj
 __Hram 10008 0 ABS 0 ram -
 __Lram 10008 0 ABS 0 ram -
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\source.X.production.obj
-_WDT_Initialize F4A 0 CODE 0 text2 dist/default/production\source.X.production.obj
-__end_of_OSCILLATOR_Initialize F6A 0 CODE 0 text4 dist/default/production\source.X.production.obj
+_eusartRxLastError 74 0 COMMON 1 bssCOMMON dist/default/production\source.X.production.obj
+_WDT_Initialize E34 0 CODE 0 text2 dist/default/production\source.X.production.obj
+__size_of_EUSART_SetErrorHandler 0 0 ABS 0 - dist/default/production\source.X.production.obj
+__end_of_OSCILLATOR_Initialize E8A 0 CODE 0 text4 dist/default/production\source.X.production.obj
 __CFG_PPS1WAY$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
-__initialization FFA 0 CODE 0 cinit dist/default/production\source.X.production.obj
+__initialization FEE 0 CODE 0 cinit dist/default/production\source.X.production.obj
 __CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\source.X.production.obj
-_OSCILLATOR_Initialize F5A 0 CODE 0 text4 dist/default/production\source.X.production.obj
+_OSCILLATOR_Initialize E7A 0 CODE 0 text4 dist/default/production\source.X.production.obj
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -514,12 +674,24 @@ _OSCILLATOR_Initialize F5A 0 CODE 0 text4 dist/default/production\source.X.produ
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-cinit 0 7FD FFA 3 2
+cinit 0 7F7 FEE 9 2
 idloc 0 8000 10000 4 2
-text1 0 7B5 F6A 9 2
-text2 0 7A5 F4A 4 2
-text3 0 7BE F7C 3F 2
-text4 0 7AD F5A 8 2
-maintext 0 7A9 F52 4 2
+text1 0 75B EB6 12 2
+text2 0 71A E34 4 2
+text3 0 7AF F5E 48 2
+text4 0 73D E7A 8 2
+text5 0 716 E2C 4 2
+text6 0 76D EDA 20 2
+text7 0 72F E5E 6 2
+text8 0 71E E3C 5 2
+text9 0 729 E52 6 2
+text10 0 745 E8A 9 2
+text11 0 735 E6A 8 2
+text12 0 713 E26 3 2
+text13 0 74E E9C D 2
+text14 0 723 E46 6 2
+nvBANK0 1 20 20 4 1
+maintext 0 78D F1A 22 2
 reset_vec 0 0 0 4 2
+bssCOMMON 1 70 70 E 1
 config 0 8007 1000E 2 2

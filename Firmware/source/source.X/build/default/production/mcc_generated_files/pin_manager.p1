@@ -78,6 +78,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _INLVLC `Vuc ~T0 @X0 0 e@910 ]
 "10149
 [v _INLVLD `Vuc ~T0 @X0 0 e@911 ]
+"40958
+[v _RXPPS `Vuc ~T0 @X0 0 e@3645 ]
+"41278
+[v _RB6PPS `Vuc ~T0 @X0 0 e@3742 ]
+"40878
+[v _ADCACTPPS `Vuc ~T0 @X0 0 e@3641 ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -16535,8 +16541,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 193: extern __bank0 unsigned char __resetbits;
 [; ;pic.h: 194: extern __bank0 __bit __powerdown;
 [; ;pic.h: 195: extern __bank0 __bit __timeout;
-[; ;pin_manager.h: 78: void PIN_MANAGER_Initialize (void);
-[; ;pin_manager.h: 90: void PIN_MANAGER_IOC(void);
+[; ;pin_manager.h: 150: void PIN_MANAGER_Initialize (void);
+[; ;pin_manager.h: 162: void PIN_MANAGER_IOC(void);
 "55 mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize `(v ~T0 @X0 1 ef ]
 "56
@@ -16563,12 +16569,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pin_manager.c: 69: TRISE = 0x07;
 "69
 [e = _TRISE -> -> 7 `i `uc ]
-[; ;pin_manager.c: 70: TRISA = 0xFF;
+[; ;pin_manager.c: 70: TRISA = 0xDF;
 "70
-[e = _TRISA -> -> 255 `i `uc ]
-[; ;pin_manager.c: 71: TRISB = 0xFF;
+[e = _TRISA -> -> 223 `i `uc ]
+[; ;pin_manager.c: 71: TRISB = 0xBF;
 "71
-[e = _TRISB -> -> 255 `i `uc ]
+[e = _TRISB -> -> 191 `i `uc ]
 [; ;pin_manager.c: 72: TRISC = 0xFF;
 "72
 [e = _TRISC -> -> 255 `i `uc ]
@@ -16581,9 +16587,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pin_manager.c: 79: ANSELC = 0xFC;
 "79
 [e = _ANSELC -> -> 252 `i `uc ]
-[; ;pin_manager.c: 80: ANSELB = 0x3F;
+[; ;pin_manager.c: 80: ANSELB = 0x2F;
 "80
-[e = _ANSELB -> -> 63 `i `uc ]
+[e = _ANSELB -> -> 47 `i `uc ]
 [; ;pin_manager.c: 81: ANSELE = 0x07;
 "81
 [e = _ANSELE -> -> 7 `i `uc ]
@@ -16650,19 +16656,28 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pin_manager.c: 118: INLVLD = 0xFF;
 "118
 [e = _INLVLD -> -> 255 `i `uc ]
-[; ;pin_manager.c: 126: }
-"126
-[e :UE 2092 ]
-}
+[; ;pin_manager.c: 127: RXPPS = 0x0F;
+"127
+[e = _RXPPS -> -> 15 `i `uc ]
+[; ;pin_manager.c: 128: RB6PPS = 0x24;
 "128
-[v _PIN_MANAGER_IOC `(v ~T0 @X0 1 ef ]
+[e = _RB6PPS -> -> 36 `i `uc ]
+[; ;pin_manager.c: 129: ADCACTPPS = 0x0C;
 "129
-{
-[; ;pin_manager.c: 128: void PIN_MANAGER_IOC(void)
-[; ;pin_manager.c: 129: {
-[e :U _PIN_MANAGER_IOC ]
-[f ]
+[e = _ADCACTPPS -> -> 12 `i `uc ]
 [; ;pin_manager.c: 130: }
 "130
+[e :UE 2092 ]
+}
+"132
+[v _PIN_MANAGER_IOC `(v ~T0 @X0 1 ef ]
+"133
+{
+[; ;pin_manager.c: 132: void PIN_MANAGER_IOC(void)
+[; ;pin_manager.c: 133: {
+[e :U _PIN_MANAGER_IOC ]
+[f ]
+[; ;pin_manager.c: 134: }
+"134
 [e :UE 2093 ]
 }

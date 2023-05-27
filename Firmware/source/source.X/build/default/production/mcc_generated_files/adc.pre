@@ -1,5 +1,5 @@
 
-# 1 "mcc_generated_files/mcc.c"
+# 1 "mcc_generated_files/adc.c"
 
 # 26 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
@@ -21237,12 +21237,6 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 
-# 150 "mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
-
-# 162
-void PIN_MANAGER_IOC(void);
-
 # 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdint.h"
 typedef signed char int8_t;
 
@@ -21336,29 +21330,6 @@ typedef uint16_t uintptr_t;
 # 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdbool.h"
 typedef unsigned char bool;
 
-# 29 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\errno.h"
-extern int errno;
-
-# 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\conio.h"
-extern void init_uart(void);
-
-extern char getch(void);
-extern char getche(void);
-extern void putch(char);
-extern void ungetch(char);
-
-extern __bit kbhit(void);
-
-# 23
-extern char * cgets(char *);
-extern void cputs(const char *);
-
-# 93 "mcc_generated_files/fvr.h"
-void FVR_Initialize(void);
-
-# 127
-bool FVR_IsOutputReady(void);
-
 # 72 "mcc_generated_files/adc.h"
 typedef uint16_t adc_result_t;
 
@@ -21409,83 +21380,83 @@ adc_result_t ADC_GetConversion(adc_channel_t channel);
 # 326
 void ADC_TemperatureAcquisitionDelay(void);
 
-# 75 "mcc_generated_files/eusart.h"
-typedef union {
-struct {
-unsigned perr : 1;
-unsigned ferr : 1;
-unsigned oerr : 1;
-unsigned reserved : 5;
-};
-uint8_t status;
-}eusart_status_t;
+# 61 "mcc_generated_files/adc.c"
+void (*ADC_InterruptHandler)(void);
 
-# 110
-void EUSART_Initialize(void);
-
-# 158
-bool EUSART_is_tx_ready(void);
-
-# 206
-bool EUSART_is_rx_ready(void);
-
-# 253
-bool EUSART_is_tx_done(void);
-
-# 301
-eusart_status_t EUSART_get_last_status(void);
-
-# 321
-uint8_t EUSART_Read(void);
-
-# 341
-void EUSART_Write(uint8_t txData);
-
-# 361
-void EUSART_SetFramingErrorHandler(void (* interruptHandler)(void));
-
-# 379
-void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void));
-
-# 397
-void EUSART_SetErrorHandler(void (* interruptHandler)(void));
-
-# 72 "mcc_generated_files/mcc.h"
-void SYSTEM_Initialize(void);
-
-# 85
-void OSCILLATOR_Initialize(void);
-
-# 97
-void WDT_Initialize(void);
-
-# 50 "mcc_generated_files/mcc.c"
-void SYSTEM_Initialize(void)
+# 67
+void ADC_Initialize(void)
 {
 
-PIN_MANAGER_Initialize();
-OSCILLATOR_Initialize();
-WDT_Initialize();
-FVR_Initialize();
-ADC_Initialize();
-EUSART_Initialize();
+
+
+ADCON1 = 0x73;
+
+
+ADCON2 = 0x00;
+
+
+ADRESL = 0x00;
+
+
+ADRESH = 0x00;
+
+
+ADCON0 = 0x01;
+
 }
 
-void OSCILLATOR_Initialize(void)
+void ADC_SelectChannel(adc_channel_t channel)
 {
 
-OSCCON = 0x72;
+ADCON0bits.CHS = channel;
 
-OSCSTAT = 0x80;
-
-OSCTUNE = 0x00;
-
-BORCON = 0x00;
+ADCON0bits.ADON = 1;
 }
 
-void WDT_Initialize(void)
+void ADC_StartConversion(void)
 {
 
-WDTCON = 0x16;
+ADCON0bits.GO = 1;
+}
+
+
+bool ADC_IsConversionDone(void)
+{
+
+return ((bool)(!ADCON0bits.GO));
+}
+
+adc_result_t ADC_GetConversionResult(void)
+{
+
+return ((adc_result_t)((ADRESH << 8) + ADRESL));
+}
+
+adc_result_t ADC_GetConversion(adc_channel_t channel)
+{
+
+ADCON0bits.CHS = channel;
+
+
+ADCON0bits.ADON = 1;
+
+
+_delay((unsigned long)((5)*(8000000/4000000.0)));
+
+
+ADCON0bits.GO = 1;
+
+
+while (ADCON0bits.GO)
+{
+}
+
+
+return ((adc_result_t)((ADRESH << 8) + ADRESL));
+}
+
+void ADC_TemperatureAcquisitionDelay(void)
+{
+_delay((unsigned long)((200)*(8000000/4000000.0)));
 }
 

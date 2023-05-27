@@ -53,12 +53,15 @@ void SYSTEM_Initialize(void)
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
     WDT_Initialize();
+    FVR_Initialize();
+    ADC_Initialize();
+    EUSART_Initialize();
 }
 
 void OSCILLATOR_Initialize(void)
 {
-    // SCS INTOSC; SPLLEN disabled; IRCF 16MHz_HF; 
-    OSCCON = 0x7A;
+    // SCS INTOSC; SPLLEN disabled; IRCF 8MHz_HF; 
+    OSCCON = 0x72;
     // SOSCR enabled; 
     OSCSTAT = 0x80;
     // TUN 0; 

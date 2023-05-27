@@ -52,6 +52,9 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <conio.h>
+#include "fvr.h"
+#include "adc.h"
+#include "eusart.h"
 
 
 
