@@ -16601,12 +16601,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;eusart.c: 77: TX1STA = 0x24;
 "77
 [e = _TX1STA -> -> 36 `i `uc ]
-[; ;eusart.c: 80: SP1BRGL = 0xCF;
+[; ;eusart.c: 80: SP1BRGL = 0xA0;
 "80
-[e = _SP1BRGL -> -> 207 `i `uc ]
-[; ;eusart.c: 83: SP1BRGH = 0x00;
+[e = _SP1BRGL -> -> 160 `i `uc ]
+[; ;eusart.c: 83: SP1BRGH = 0x01;
 "83
-[e = _SP1BRGH -> -> 0 `i `uc ]
+[e = _SP1BRGH -> -> 1 `i `uc ]
 [; ;eusart.c: 86: EUSART_SetFramingErrorHandler(EUSART_DefaultFramingErrorHandler);
 "86
 [e ( _EUSART_SetFramingErrorHandler (1 &U _EUSART_DefaultFramingErrorHandler ]
