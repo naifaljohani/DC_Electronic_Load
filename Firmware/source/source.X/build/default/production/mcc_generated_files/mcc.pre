@@ -21237,10 +21237,10 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 
-# 170 "mcc_generated_files/pin_manager.h"
+# 174 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
 
-# 182
+# 186
 void PIN_MANAGER_IOC(void);
 
 # 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdint.h"
@@ -21359,6 +21359,27 @@ void FVR_Initialize(void);
 # 127
 bool FVR_IsOutputReady(void);
 
+# 93 "mcc_generated_files/opa3.h"
+void OPA3_Initialize(void);
+
+# 94 "mcc_generated_files/dac1.h"
+void DAC1_Initialize(void);
+
+# 125
+void DAC1_Load16bitInputData(uint16_t input16BitData);
+
+# 156
+void DAC1_Load10bitInputData(uint16_t input10BitData);
+
+# 187
+void DAC1_Load8bitInputData(uint8_t input8BitData);
+
+# 215
+uint16_t DAC1_Read10BitInputData(void);
+
+# 93 "mcc_generated_files/opa2.h"
+void OPA2_Initialize(void);
+
 # 72 "mcc_generated_files/adc.h"
 typedef uint16_t adc_result_t;
 
@@ -21372,8 +21393,8 @@ adc_result_t adcResult2;
 # 95
 typedef enum
 {
-channel_AN0 = 0x0,
-channel_AN1 = 0x1,
+channel_AN5 = 0x5,
+channel_AN6 = 0x6,
 channel_Switched_AN1 = 0x21,
 channel_Switched_AN10 = 0x2A,
 channel_Switched_AN18 = 0x32,
@@ -21451,13 +21472,13 @@ void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void));
 # 397
 void EUSART_SetErrorHandler(void (* interruptHandler)(void));
 
-# 72 "mcc_generated_files/mcc.h"
+# 75 "mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
 
-# 85
+# 88
 void OSCILLATOR_Initialize(void);
 
-# 97
+# 100
 void WDT_Initialize(void);
 
 # 50 "mcc_generated_files/mcc.c"
@@ -21468,7 +21489,10 @@ PIN_MANAGER_Initialize();
 OSCILLATOR_Initialize();
 WDT_Initialize();
 FVR_Initialize();
+OPA3_Initialize();
 ADC_Initialize();
+OPA2_Initialize();
+DAC1_Initialize();
 EUSART_Initialize();
 }
 

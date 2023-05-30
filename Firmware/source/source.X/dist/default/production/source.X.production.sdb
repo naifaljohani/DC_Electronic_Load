@@ -5,8 +5,8 @@
 [d frameptr 6 ]
 "89 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
 [e E17242 . `uc
-channel_AN0 0
-channel_AN1 1
+channel_AN5 5
+channel_AN6 6
 channel_Switched_AN1 33
 channel_Switched_AN10 42
 channel_Switched_AN18 50
@@ -22,9 +22,9 @@ channel_DAC1_Output 62
 channel_FVRBuffer1 63
 ]
 "50 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\main.c
-[e E17267 . `uc
-channel_AN0 0
-channel_AN1 1
+[e E17281 . `uc
+channel_AN5 5
+channel_AN6 6
 channel_Switched_AN1 33
 channel_Switched_AN10 42
 channel_Switched_AN18 50
@@ -53,6 +53,10 @@ channel_FVRBuffer1 63
 [v _ADC_StartConversion ADC_StartConversion `(v  1 e 1 0 ]
 "109
 [v _ADC_GetConversionResult ADC_GetConversionResult `(ui  1 e 2 0 ]
+"68 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
+[v _DAC1_Initialize DAC1_Initialize `(v  1 e 1 0 ]
+"94
+[v _DAC1_Load10bitInputData DAC1_Load10bitInputData `(v  1 e 1 0 ]
 "66 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
 "132
@@ -73,13 +77,17 @@ channel_FVRBuffer1 63
 [v _FVR_Initialize FVR_Initialize `(v  1 e 1 0 ]
 "50 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
-"61
+"64
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"73
+"76
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"58 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa2.c
+[v _OPA2_Initialize OPA2_Initialize `(v  1 e 1 0 ]
+"58 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa3.c
+[v _OPA3_Initialize OPA3_Initialize `(v  1 e 1 0 ]
 "55 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-[s S250 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[s S262 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSP1IF 1 0 :1:3 
@@ -89,11 +97,11 @@ channel_FVRBuffer1 63
 `uc 1 TMR1GIF 1 0 :1:7 
 ]
 "734 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
-[s S259 . 1 `uc 1 . 1 0 :2:0 
+[s S271 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 CCPIF 1 0 :1:2 
 ]
-[u S262 . 1 `S250 1 . 1 0 `S259 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES262  1 e 1 @17 ]
+[u S274 . 1 `S262 1 . 1 0 `S271 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES274  1 e 1 @17 ]
 "1740
 [v _TRISA TRISA `VEuc  1 e 1 @140 ]
 "1802
@@ -133,7 +141,7 @@ channel_FVRBuffer1 63
 [v _BORCON BORCON `VEuc  1 e 1 @157 ]
 "2789
 [v _FVRCON FVRCON `VEuc  1 e 1 @158 ]
-[s S127 . 1 `uc 1 ADFVR 1 0 :2:0 
+[s S139 . 1 `uc 1 ADFVR 1 0 :2:0 
 `uc 1 CDAFVR 1 0 :2:2 
 `uc 1 TSRNG 1 0 :1:4 
 `uc 1 TSEN 1 0 :1:5 
@@ -141,8 +149,8 @@ channel_FVRBuffer1 63
 `uc 1 FVREN 1 0 :1:7 
 ]
 "2804
-[u S134 . 1 `S127 1 . 1 0 ]
-[v _FVRCONbits FVRCONbits `VES134  1 e 1 @158 ]
+[u S146 . 1 `S139 1 . 1 0 ]
+[v _FVRCONbits FVRCONbits `VES146  1 e 1 @158 ]
 "2885
 [v _LATA LATA `VEuc  1 e 1 @268 ]
 "2947
@@ -173,7 +181,7 @@ channel_FVRBuffer1 63
 [v _SP1BRGH SP1BRGH `VEuc  1 e 1 @412 ]
 "4715
 [v _RC1STA RC1STA `VEuc  1 e 1 @413 ]
-[s S299 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S311 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -183,11 +191,11 @@ channel_FVRBuffer1 63
 `uc 1 SPEN 1 0 :1:7 
 ]
 "4741
-[u S308 . 1 `S299 1 . 1 0 ]
-[v _RC1STAbits RC1STAbits `VES308  1 e 1 @413 ]
+[u S320 . 1 `S311 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES320  1 e 1 @413 ]
 "4895
 [v _TX1STA TX1STA `VEuc  1 e 1 @414 ]
-[s S278 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S290 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -197,8 +205,8 @@ channel_FVRBuffer1 63
 `uc 1 CSRC 1 0 :1:7 
 ]
 "4921
-[u S287 . 1 `S278 1 . 1 0 ]
-[v _TX1STAbits TX1STAbits `VES287  1 e 1 @414 ]
+[u S299 . 1 `S290 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES299  1 e 1 @414 ]
 "5075
 [v _BAUD1CON BAUD1CON `VEuc  1 e 1 @415 ]
 "5321
@@ -245,37 +253,111 @@ channel_FVRBuffer1 63
 [v _ADRESH ADRESH `VEuc  1 e 1 @1167 ]
 "12385
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @1168 ]
-[s S174 . 1 `uc 1 ADON 1 0 :1:0 
+[s S186 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 `uc 1 CHS 1 0 :6:2 
 ]
 "12397
-[u S178 . 1 `S174 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES178  1 e 1 @1168 ]
+[u S190 . 1 `S186 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES190  1 e 1 @1168 ]
 "12417
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @1169 ]
 "12456
 [v _ADCON2 ADCON2 `VEuc  1 e 1 @1170 ]
+"13756
+[v _OPA2NCHS OPA2NCHS `VEuc  1 e 1 @1299 ]
+"13784
+[v _OPA2PCHS OPA2PCHS `VEuc  1 e 1 @1300 ]
+"13812
+[v _OPA2CON OPA2CON `VEuc  1 e 1 @1301 ]
+"13908
+[v _OPA2ORS OPA2ORS `VEuc  1 e 1 @1302 ]
+"13928
+[v _OPA3NCHS OPA3NCHS `VEuc  1 e 1 @1303 ]
+"13956
+[v _OPA3PCHS OPA3PCHS `VEuc  1 e 1 @1304 ]
+"13984
+[v _OPA3CON OPA3CON `VEuc  1 e 1 @1305 ]
+"14092
+[v _OPA3ORS OPA3ORS `VEuc  1 e 1 @1306 ]
+[s S444 . 1 `uc 1 DAC1LD 1 0 :1:0 
+`uc 1 DAC2LD 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 DAC5LD 1 0 :1:4 
+`uc 1 DAC6LD 1 0 :1:5 
+]
+"14310
+[u S450 . 1 `S444 1 . 1 0 ]
+[v _DACLDbits DACLDbits `VES450  1 e 1 @1421 ]
+"14335
+[v _DAC1CON0 DAC1CON0 `VEuc  1 e 1 @1422 ]
+[s S459 . 1 `uc 1 NSS 1 0 :2:0 
+`uc 1 PSS 1 0 :2:2 
+`uc 1 OE2 1 0 :1:4 
+`uc 1 OE1 1 0 :1:5 
+`uc 1 FM 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"14388
+[s S466 . 1 `uc 1 NSS0 1 0 :1:0 
+`uc 1 NSS1 1 0 :1:1 
+`uc 1 PSS0 1 0 :1:2 
+`uc 1 PSS1 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 OE 1 0 :1:5 
+]
+[s S473 . 1 `uc 1 DACNSS 1 0 :2:0 
+`uc 1 DACPSS 1 0 :2:2 
+`uc 1 DACOE2 1 0 :1:4 
+`uc 1 DACOE1 1 0 :1:5 
+`uc 1 DACFM 1 0 :1:6 
+`uc 1 DACEN 1 0 :1:7 
+]
+[s S480 . 1 `uc 1 DACNSS0 1 0 :1:0 
+`uc 1 DACNSS1 1 0 :1:1 
+`uc 1 DACPSS0 1 0 :1:2 
+`uc 1 DACPSS1 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 DACOE 1 0 :1:5 
+]
+[s S487 . 1 `uc 1 DAC1NSS 1 0 :2:0 
+`uc 1 DAC1PSS 1 0 :2:2 
+`uc 1 DAC1OE2 1 0 :1:4 
+`uc 1 DAC1OE1 1 0 :1:5 
+`uc 1 DAC1FM 1 0 :1:6 
+`uc 1 DAC1EN 1 0 :1:7 
+]
+[s S494 . 1 `uc 1 DAC1NSS0 1 0 :1:0 
+`uc 1 DAC1NSS1 1 0 :1:1 
+`uc 1 DAC1PSS0 1 0 :1:2 
+`uc 1 DAC1PSS1 1 0 :1:3 
+]
+[u S499 . 1 `S459 1 . 1 0 `S466 1 . 1 0 `S473 1 . 1 0 `S480 1 . 1 0 `S487 1 . 1 0 `S494 1 . 1 0 ]
+[v _DAC1CON0bits DAC1CON0bits `VES499  1 e 1 @1422 ]
+"14560
+[v _DAC1REFL DAC1REFL `VEuc  1 e 1 @1423 ]
+"14982
+[v _DAC1REFH DAC1REFH `VEuc  1 e 1 @1424 ]
 "40878
 [v _ADCACTPPS ADCACTPPS `VEuc  1 e 1 @3641 ]
 "40958
 [v _RXPPS RXPPS `VEuc  1 e 1 @3645 ]
-"41278
-[v _RB6PPS RB6PPS `VEuc  1 e 1 @3742 ]
+"41338
+[v _RC1PPS RC1PPS `VEuc  1 e 1 @3745 ]
 "49 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\main.c
 [v _convertedValue convertedValue `ui  1 e 2 0 ]
 "50
-[v _ADC_select ADC_select `[2]E17267  1 e 2 0 ]
+[v _ADC_select ADC_select `[2]E17281  1 e 2 0 ]
 "52
 [v _txData txData `VEui  1 e 2 0 ]
-[s S204 . 1 `uc 1 perr 1 0 :1:0 
+[s S216 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "52 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
-[u S209 . 1 `S204 1 . 1 0 `uc 1 status 1 0 ]
-[v _eusartRxLastError eusartRxLastError `VES209  1 e 1 0 ]
+[u S221 . 1 `S216 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES221  1 e 1 0 ]
 "58
 [v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
 "59
@@ -285,27 +367,37 @@ channel_FVRBuffer1 63
 "55 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"97
+"98
 } 0
 "50 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
-"59
+"62
 } 0
-"73
+"76
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
 {
-"77
+"80
 } 0
 "55 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "130
 } 0
-"61 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+"64 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
-"71
+"74
+} 0
+"58 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa3.c
+[v _OPA3_Initialize OPA3_Initialize `(v  1 e 1 0 ]
+{
+"68
+} 0
+"58 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa2.c
+[v _OPA2_Initialize OPA2_Initialize `(v  1 e 1 0 ]
+{
+"68
 } 0
 "58 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/fvr.c
 [v _FVR_Initialize FVR_Initialize `(v  1 e 1 0 ]
@@ -335,6 +427,11 @@ channel_FVRBuffer1 63
 [v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
 "167
 } 0
+"68 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
+[v _DAC1_Initialize DAC1_Initialize `(v  1 e 1 0 ]
+{
+"78
+} 0
 "67 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
 {
@@ -347,6 +444,12 @@ channel_FVRBuffer1 63
 [v EUSART_Write@txData txData `uc  1 a 1 wreg ]
 [v EUSART_Write@txData txData `uc  1 a 1 0 ]
 "139
+} 0
+"94 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
+[v _DAC1_Load10bitInputData DAC1_Load10bitInputData `(v  1 e 1 0 ]
+{
+[v DAC1_Load10bitInputData@input10BitData input10BitData `ui  1 p 2 0 ]
+"105
 } 0
 "96 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
 [v _ADC_StartConversion ADC_StartConversion `(v  1 e 1 0 ]

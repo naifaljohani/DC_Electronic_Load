@@ -1,5 +1,5 @@
 
-# 1 "mcc_generated_files/adc.c"
+# 1 "mcc_generated_files/dac1.c"
 
 # 26 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
@@ -21237,6 +21237,9 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 
+# 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdbool.h"
+typedef unsigned char bool;
+
 # 13 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdint.h"
 typedef signed char int8_t;
 
@@ -21327,137 +21330,81 @@ typedef int16_t intptr_t;
 
 typedef uint16_t uintptr_t;
 
-# 12 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\stdbool.h"
-typedef unsigned char bool;
+# 94 "mcc_generated_files/dac1.h"
+void DAC1_Initialize(void);
 
-# 72 "mcc_generated_files/adc.h"
-typedef uint16_t adc_result_t;
+# 125
+void DAC1_Load16bitInputData(uint16_t input16BitData);
 
-# 77
-typedef struct
-{
-adc_result_t adcResult1;
-adc_result_t adcResult2;
-} adc_sync_double_result_t;
+# 156
+void DAC1_Load10bitInputData(uint16_t input10BitData);
 
-# 95
-typedef enum
-{
-channel_AN5 = 0x5,
-channel_AN6 = 0x6,
-channel_Switched_AN1 = 0x21,
-channel_Switched_AN10 = 0x2A,
-channel_Switched_AN18 = 0x32,
-channel_DAC8_Output = 0x36,
-channel_DAC7_Output = 0x37,
-channel_DAC6_Output = 0x38,
-channel_DAC5_Output = 0x39,
-channel_DAC4_Output = 0x3A,
-channel_DAC3_Output = 0x3B,
-channel_DAC2_Output = 0x3C,
-channel_Temp = 0x3D,
-channel_DAC1_Output = 0x3E,
-channel_FVRBuffer1 = 0x3F
-} adc_channel_t;
+# 187
+void DAC1_Load8bitInputData(uint8_t input8BitData);
 
-# 147
-void ADC_Initialize(void);
+# 215
+uint16_t DAC1_Read10BitInputData(void);
 
-# 177
-void ADC_SelectChannel(adc_channel_t channel);
-
-# 204
-void ADC_StartConversion(void);
-
-# 236
-bool ADC_IsConversionDone(void);
-
-# 269
-adc_result_t ADC_GetConversionResult(void);
-
-# 299
-adc_result_t ADC_GetConversion(adc_channel_t channel);
-
-# 327
-void ADC_TemperatureAcquisitionDelay(void);
-
-# 61 "mcc_generated_files/adc.c"
-void (*ADC_InterruptHandler)(void);
-
-# 67
-void ADC_Initialize(void)
+# 68 "mcc_generated_files/dac1.c"
+void DAC1_Initialize(void)
 {
 
+DAC1CON0 = 0x88;
 
+DAC1REFH = 0x00;
 
-ADCON1 = 0x73;
+DAC1REFL = 0xFA;
 
-
-ADCON2 = 0x00;
-
-
-ADRESL = 0x00;
-
-
-ADRESH = 0x00;
-
-
-ADCON0 = 0x01;
-
-}
-
-void ADC_SelectChannel(adc_channel_t channel)
-{
-
-ADCON0bits.CHS = channel;
-
-ADCON0bits.ADON = 1;
-}
-
-void ADC_StartConversion(void)
-{
-
-ADCON0bits.GO = 1;
+(DACLDbits.DAC1LD = 1);
 }
 
 
-bool ADC_IsConversionDone(void)
+void DAC1_Load16bitInputData(uint16_t input16BitData)
 {
 
-return ((bool)(!ADCON0bits.GO));
+
+DAC1CON0bits.DAC1FM = 1;
+
+
+DAC1REFL = (uint8_t) input16BitData;
+DAC1REFH = (uint8_t)(input16BitData >> 8);
+
+(DACLDbits.DAC1LD = 1);
 }
 
-adc_result_t ADC_GetConversionResult(void)
+void DAC1_Load10bitInputData(uint16_t input10BitData)
 {
 
-return ((adc_result_t)((ADRESH << 8) + ADRESL));
+
+DAC1CON0bits.DAC1FM = 0;
+
+
+DAC1REFL = (uint8_t) input10BitData;
+DAC1REFH = (uint8_t)(input10BitData >> 8);
+
+(DACLDbits.DAC1LD = 1);
 }
 
-adc_result_t ADC_GetConversion(adc_channel_t channel)
+void DAC1_Load8bitInputData(uint8_t input8BitData)
 {
 
-ADCON0bits.CHS = channel;
+
+DAC1CON0bits.DAC1FM = 0;
 
 
-ADCON0bits.ADON = 1;
+DAC1REFL = input8BitData;
 
-
-_delay((unsigned long)((5)*(16000000/4000000.0)));
-
-
-ADCON0bits.GO = 1;
-
-
-while (ADCON0bits.GO)
-{
+(DACLDbits.DAC1LD = 1);
 }
 
+uint16_t DAC1_Read10BitInputData(void) {
 
-return ((adc_result_t)((ADRESH << 8) + ADRESL));
-}
+DAC1CON0bits.DAC1FM = 0;
 
-void ADC_TemperatureAcquisitionDelay(void)
-{
-_delay((unsigned long)((200)*(16000000/4000000.0)));
+
+uint16_t data = ((uint16_t) DAC1REFH) << 8;
+data |= ((uint16_t) DAC1REFL);
+
+return data;
 }
 

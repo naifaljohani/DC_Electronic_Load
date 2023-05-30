@@ -1,30 +1,41 @@
 Version 3.2 HI-TECH Software Intermediate Code
-[v F17274 `(v ~T0 @X0 0 tf ]
-"12417 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
-[v _ADCON1 `Vuc ~T0 @X0 0 e@1169 ]
-"12456
-[v _ADCON2 `Vuc ~T0 @X0 0 e@1170 ]
-"12345
-[v _ADRESL `Vuc ~T0 @X0 0 e@1166 ]
-"12365
-[v _ADRESH `Vuc ~T0 @X0 0 e@1167 ]
-"12385
-[v _ADCON0 `Vuc ~T0 @X0 0 e@1168 ]
-"89 mcc_generated_files/adc.c
-[c E17242 5 6 33 42 50 54 55 56 57 58 59 60 61 62 63 .. ]
-[n E17242 . channel_AN5 channel_AN6 channel_Switched_AN1 channel_Switched_AN10 channel_Switched_AN18 channel_DAC8_Output channel_DAC7_Output channel_DAC6_Output channel_DAC5_Output channel_DAC4_Output channel_DAC3_Output channel_DAC2_Output channel_Temp channel_DAC1_Output channel_FVRBuffer1  ]
-"12391 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
-[s S587 :1 `uc 1 :1 `uc 1 :6 `uc 1 ]
-[n S587 . ADON GO CHS ]
-"12390
-[u S586 `S587 1 ]
-[n S586 . . ]
-"12397
-[v _ADCON0bits `VS586 ~T0 @X0 0 e@1168 ]
-[v F17198 `(v ~T0 @X0 1 tf1`ul ]
-"153 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic.h
-[v __delay `JF17198 ~T0 @X0 0 e ]
-[p i __delay ]
+"14335 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
+[v _DAC1CON0 `Vuc ~T0 @X0 0 e@1422 ]
+"14982
+[v _DAC1REFH `Vuc ~T0 @X0 0 e@1424 ]
+"14560
+[v _DAC1REFL `Vuc ~T0 @X0 0 e@1423 ]
+"14302
+[s S709 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S709 . DAC1LD DAC2LD . DAC5LD DAC6LD ]
+"14301
+[u S708 `S709 1 ]
+[n S708 . . ]
+"14310
+[v _DACLDbits `VS708 ~T0 @X0 0 e@1421 ]
+"14341
+[s S711 :2 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S711 . NSS PSS OE2 OE1 FM EN ]
+"14349
+[s S712 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S712 . NSS0 NSS1 PSS0 PSS1 . OE ]
+"14357
+[s S713 :2 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S713 . DACNSS DACPSS DACOE2 DACOE1 DACFM DACEN ]
+"14365
+[s S714 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S714 . DACNSS0 DACNSS1 DACPSS0 DACPSS1 . DACOE ]
+"14373
+[s S715 :2 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S715 . DAC1NSS DAC1PSS DAC1OE2 DAC1OE1 DAC1FM DAC1EN ]
+"14381
+[s S716 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S716 . DAC1NSS0 DAC1NSS1 DAC1PSS0 DAC1PSS1 ]
+"14340
+[u S710 `S711 1 `S712 1 `S713 1 `S714 1 `S715 1 `S716 1 ]
+[n S710 . . . . . . . ]
+"14388
+[v _DAC1CON0bits `VS710 ~T0 @X0 0 e@1422 ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -16482,6 +16493,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 193: extern __bank0 unsigned char __resetbits;
 [; ;pic.h: 194: extern __bank0 __bit __powerdown;
 [; ;pic.h: 195: extern __bank0 __bit __timeout;
+[; ;stdbool.h: 12: typedef unsigned char bool;
 [; ;stdint.h: 13: typedef signed char int8_t;
 [; ;stdint.h: 20: typedef signed int int16_t;
 [; ;stdint.h: 28: typedef signed short long int int24_t;
@@ -16510,193 +16522,134 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdint.h: 205: typedef uint32_t uintmax_t;
 [; ;stdint.h: 210: typedef int16_t intptr_t;
 [; ;stdint.h: 215: typedef uint16_t uintptr_t;
-[; ;stdbool.h: 12: typedef unsigned char bool;
-[; ;adc.h: 72: typedef uint16_t adc_result_t;
-[; ;adc.h: 77: typedef struct
-[; ;adc.h: 78: {
-[; ;adc.h: 79: adc_result_t adcResult1;
-[; ;adc.h: 80: adc_result_t adcResult2;
-[; ;adc.h: 81: } adc_sync_double_result_t;
-[; ;adc.h: 95: typedef enum
-[; ;adc.h: 96: {
-[; ;adc.h: 97: channel_AN5 = 0x5,
-[; ;adc.h: 98: channel_AN6 = 0x6,
-[; ;adc.h: 99: channel_Switched_AN1 = 0x21,
-[; ;adc.h: 100: channel_Switched_AN10 = 0x2A,
-[; ;adc.h: 101: channel_Switched_AN18 = 0x32,
-[; ;adc.h: 102: channel_DAC8_Output = 0x36,
-[; ;adc.h: 103: channel_DAC7_Output = 0x37,
-[; ;adc.h: 104: channel_DAC6_Output = 0x38,
-[; ;adc.h: 105: channel_DAC5_Output = 0x39,
-[; ;adc.h: 106: channel_DAC4_Output = 0x3A,
-[; ;adc.h: 107: channel_DAC3_Output = 0x3B,
-[; ;adc.h: 108: channel_DAC2_Output = 0x3C,
-[; ;adc.h: 109: channel_Temp = 0x3D,
-[; ;adc.h: 110: channel_DAC1_Output = 0x3E,
-[; ;adc.h: 111: channel_FVRBuffer1 = 0x3F
-[; ;adc.h: 112: } adc_channel_t;
-[; ;adc.h: 147: void ADC_Initialize(void);
-[; ;adc.h: 177: void ADC_SelectChannel(adc_channel_t channel);
-[; ;adc.h: 204: void ADC_StartConversion(void);
-[; ;adc.h: 236: bool ADC_IsConversionDone(void);
-[; ;adc.h: 269: adc_result_t ADC_GetConversionResult(void);
-[; ;adc.h: 299: adc_result_t ADC_GetConversion(adc_channel_t channel);
-[; ;adc.h: 327: void ADC_TemperatureAcquisitionDelay(void);
-"61 mcc_generated_files/adc.c
-[v _ADC_InterruptHandler `*F17274 ~T0 @X0 1 e ]
-[; ;adc.c: 61: void (*ADC_InterruptHandler)(void);
-"67
-[v _ADC_Initialize `(v ~T0 @X0 1 ef ]
-"68
+[; ;dac1.h: 94: void DAC1_Initialize(void);
+[; ;dac1.h: 125: void DAC1_Load16bitInputData(uint16_t input16BitData);
+[; ;dac1.h: 156: void DAC1_Load10bitInputData(uint16_t input10BitData);
+[; ;dac1.h: 187: void DAC1_Load8bitInputData(uint8_t input8BitData);
+[; ;dac1.h: 215: uint16_t DAC1_Read10BitInputData(void);
+"68 mcc_generated_files/dac1.c
+[v _DAC1_Initialize `(v ~T0 @X0 1 ef ]
+"69
 {
-[; ;adc.c: 67: void ADC_Initialize(void)
-[; ;adc.c: 68: {
-[e :U _ADC_Initialize ]
+[; ;dac1.c: 68: void DAC1_Initialize(void)
+[; ;dac1.c: 69: {
+[e :U _DAC1_Initialize ]
 [f ]
-[; ;adc.c: 72: ADCON1 = 0x73;
-"72
-[e = _ADCON1 -> -> 115 `i `uc ]
-[; ;adc.c: 75: ADCON2 = 0x00;
+[; ;dac1.c: 71: DAC1CON0 = 0x88;
+"71
+[e = _DAC1CON0 -> -> 136 `i `uc ]
+[; ;dac1.c: 73: DAC1REFH = 0x00;
+"73
+[e = _DAC1REFH -> -> 0 `i `uc ]
+[; ;dac1.c: 75: DAC1REFL = 0xFA;
 "75
-[e = _ADCON2 -> -> 0 `i `uc ]
-[; ;adc.c: 78: ADRESL = 0x00;
+[e = _DAC1REFL -> -> 250 `i `uc ]
+[; ;dac1.c: 77: (DACLDbits.DAC1LD = 1);
+"77
+[e = . . _DACLDbits 0 0 -> -> 1 `i `uc ]
+[; ;dac1.c: 78: }
 "78
-[e = _ADRESL -> -> 0 `i `uc ]
-[; ;adc.c: 81: ADRESH = 0x00;
+[e :UE 2092 ]
+}
 "81
-[e = _ADRESH -> -> 0 `i `uc ]
-[; ;adc.c: 84: ADCON0 = 0x01;
-"84
-[e = _ADCON0 -> -> 1 `i `uc ]
-[; ;adc.c: 86: }
-"86
+[v _DAC1_Load16bitInputData `(v ~T0 @X0 1 ef1`ui ]
+"82
+{
+[; ;dac1.c: 81: void DAC1_Load16bitInputData(uint16_t input16BitData)
+[; ;dac1.c: 82: {
+[e :U _DAC1_Load16bitInputData ]
+"81
+[v _input16BitData `ui ~T0 @X0 1 r1 ]
+"82
+[f ]
+[; ;dac1.c: 85: DAC1CON0bits.DAC1FM = 1;
+"85
+[e = . . _DAC1CON0bits 4 4 -> -> 1 `i `uc ]
+[; ;dac1.c: 88: DAC1REFL = (uint8_t) input16BitData;
+"88
+[e = _DAC1REFL -> _input16BitData `uc ]
+[; ;dac1.c: 89: DAC1REFH = (uint8_t)(input16BitData >> 8);
+"89
+[e = _DAC1REFH -> >> _input16BitData -> 8 `i `uc ]
+[; ;dac1.c: 91: (DACLDbits.DAC1LD = 1);
+"91
+[e = . . _DACLDbits 0 0 -> -> 1 `i `uc ]
+[; ;dac1.c: 92: }
+"92
 [e :UE 2093 ]
 }
-"88
-[v _ADC_SelectChannel `(v ~T0 @X0 1 ef1`E17242 ]
-"89
-{
-[; ;adc.c: 88: void ADC_SelectChannel(adc_channel_t channel)
-[; ;adc.c: 89: {
-[e :U _ADC_SelectChannel ]
-"88
-[v _channel `E17242 ~T0 @X0 1 r1 ]
-"89
-[f ]
-[; ;adc.c: 91: ADCON0bits.CHS = channel;
-"91
-[e = . . _ADCON0bits 0 2 -> _channel `uc ]
-[; ;adc.c: 93: ADCON0bits.ADON = 1;
-"93
-[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
-[; ;adc.c: 94: }
 "94
+[v _DAC1_Load10bitInputData `(v ~T0 @X0 1 ef1`ui ]
+"95
+{
+[; ;dac1.c: 94: void DAC1_Load10bitInputData(uint16_t input10BitData)
+[; ;dac1.c: 95: {
+[e :U _DAC1_Load10bitInputData ]
+"94
+[v _input10BitData `ui ~T0 @X0 1 r1 ]
+"95
+[f ]
+[; ;dac1.c: 98: DAC1CON0bits.DAC1FM = 0;
+"98
+[e = . . _DAC1CON0bits 4 4 -> -> 0 `i `uc ]
+[; ;dac1.c: 101: DAC1REFL = (uint8_t) input10BitData;
+"101
+[e = _DAC1REFL -> _input10BitData `uc ]
+[; ;dac1.c: 102: DAC1REFH = (uint8_t)(input10BitData >> 8);
+"102
+[e = _DAC1REFH -> >> _input10BitData -> 8 `i `uc ]
+[; ;dac1.c: 104: (DACLDbits.DAC1LD = 1);
+"104
+[e = . . _DACLDbits 0 0 -> -> 1 `i `uc ]
+[; ;dac1.c: 105: }
+"105
 [e :UE 2094 ]
 }
-"96
-[v _ADC_StartConversion `(v ~T0 @X0 1 ef ]
-"97
+"107
+[v _DAC1_Load8bitInputData `(v ~T0 @X0 1 ef1`uc ]
+"108
 {
-[; ;adc.c: 96: void ADC_StartConversion(void)
-[; ;adc.c: 97: {
-[e :U _ADC_StartConversion ]
+[; ;dac1.c: 107: void DAC1_Load8bitInputData(uint8_t input8BitData)
+[; ;dac1.c: 108: {
+[e :U _DAC1_Load8bitInputData ]
+"107
+[v _input8BitData `uc ~T0 @X0 1 r1 ]
+"108
 [f ]
-[; ;adc.c: 99: ADCON0bits.GO = 1;
-"99
-[e = . . _ADCON0bits 0 1 -> -> 1 `i `uc ]
-[; ;adc.c: 100: }
-"100
+[; ;dac1.c: 111: DAC1CON0bits.DAC1FM = 0;
+"111
+[e = . . _DAC1CON0bits 4 4 -> -> 0 `i `uc ]
+[; ;dac1.c: 114: DAC1REFL = input8BitData;
+"114
+[e = _DAC1REFL _input8BitData ]
+[; ;dac1.c: 116: (DACLDbits.DAC1LD = 1);
+"116
+[e = . . _DACLDbits 0 0 -> -> 1 `i `uc ]
+[; ;dac1.c: 117: }
+"117
 [e :UE 2095 ]
 }
-"103
-[v _ADC_IsConversionDone `(uc ~T0 @X0 1 ef ]
-"104
+"119
+[v _DAC1_Read10BitInputData `(ui ~T0 @X0 1 ef ]
 {
-[; ;adc.c: 103: bool ADC_IsConversionDone(void)
-[; ;adc.c: 104: {
-[e :U _ADC_IsConversionDone ]
+[; ;dac1.c: 119: uint16_t DAC1_Read10BitInputData(void) {
+[e :U _DAC1_Read10BitInputData ]
 [f ]
-[; ;adc.c: 106: return ((bool)(!ADCON0bits.GO));
-"106
-[e ) -> -> ! != -> . . _ADCON0bits 0 1 `i -> -> -> 0 `i `Vuc `i `i `uc ]
-[e $UE 2096  ]
-[; ;adc.c: 107: }
-"107
-[e :UE 2096 ]
-}
-"109
-[v _ADC_GetConversionResult `(ui ~T0 @X0 1 ef ]
-"110
-{
-[; ;adc.c: 109: adc_result_t ADC_GetConversionResult(void)
-[; ;adc.c: 110: {
-[e :U _ADC_GetConversionResult ]
-[f ]
-[; ;adc.c: 112: return ((adc_result_t)((ADRESH << 8) + ADRESL));
-"112
-[e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `ui ]
-[e $UE 2097  ]
-[; ;adc.c: 113: }
-"113
-[e :UE 2097 ]
-}
-"115
-[v _ADC_GetConversion `(ui ~T0 @X0 1 ef1`E17242 ]
-"116
-{
-[; ;adc.c: 115: adc_result_t ADC_GetConversion(adc_channel_t channel)
-[; ;adc.c: 116: {
-[e :U _ADC_GetConversion ]
-"115
-[v _channel `E17242 ~T0 @X0 1 r1 ]
-"116
-[f ]
-[; ;adc.c: 118: ADCON0bits.CHS = channel;
-"118
-[e = . . _ADCON0bits 0 2 -> _channel `uc ]
-[; ;adc.c: 121: ADCON0bits.ADON = 1;
+[; ;dac1.c: 121: DAC1CON0bits.DAC1FM = 0;
 "121
-[e = . . _ADCON0bits 0 0 -> -> 1 `i `uc ]
-[; ;adc.c: 124: _delay((unsigned long)((5)*(16000000/4000000.0)));
+[e = . . _DAC1CON0bits 4 4 -> -> 0 `i `uc ]
 "124
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
-[; ;adc.c: 127: ADCON0bits.GO = 1;
+[v _data `ui ~T0 @X0 1 a ]
+[; ;dac1.c: 124: uint16_t data = ((uint16_t) DAC1REFH) << 8;
+[e = _data << -> _DAC1REFH `ui -> 8 `i ]
+[; ;dac1.c: 125: data |= ((uint16_t) DAC1REFL);
+"125
+[e =| _data -> _DAC1REFL `ui ]
+[; ;dac1.c: 127: return data;
 "127
-[e = . . _ADCON0bits 0 1 -> -> 1 `i `uc ]
-[; ;adc.c: 130: while (ADCON0bits.GO)
-"130
-[e $U 2099  ]
-[e :U 2100 ]
-[; ;adc.c: 131: {
-"131
-{
-"132
-}
-[e :U 2099 ]
-"130
-[e $ != -> . . _ADCON0bits 0 1 `i -> -> -> 0 `i `Vuc `i 2100  ]
-[e :U 2101 ]
-[; ;adc.c: 132: }
-[; ;adc.c: 135: return ((adc_result_t)((ADRESH << 8) + ADRESL));
-"135
-[e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `ui ]
-[e $UE 2098  ]
-[; ;adc.c: 136: }
-"136
-[e :UE 2098 ]
-}
-"138
-[v _ADC_TemperatureAcquisitionDelay `(v ~T0 @X0 1 ef ]
-"139
-{
-[; ;adc.c: 138: void ADC_TemperatureAcquisitionDelay(void)
-[; ;adc.c: 139: {
-[e :U _ADC_TemperatureAcquisitionDelay ]
-[f ]
-[; ;adc.c: 140: _delay((unsigned long)((200)*(16000000/4000000.0)));
-"140
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
-[; ;adc.c: 141: }
-"141
-[e :UE 2102 ]
+[e ) _data ]
+[e $UE 2096  ]
+[; ;dac1.c: 128: }
+"128
+[e :UE 2096 ]
 }

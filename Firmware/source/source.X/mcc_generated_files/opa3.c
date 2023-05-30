@@ -1,23 +1,23 @@
 /**
-  @Generated PIC10 / PIC12 / PIC16 / PIC18 MCUs Header File
+  OPA3 Generated Driver File
 
-  @Company:
+  @Company
     Microchip Technology Inc.
 
-  @File Name:
-    mcc.h
+  @File Name
+    opa3.c
 
-  @Summary:
-    This is the mcc.h file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+  @Summary
+    This is the generated driver implementation file for the OPA3 driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
-  @Description:
-    This header file provides implementations for driver APIs for all modules selected in the GUI.
+  @Description
+    This source file provides implementations for driver APIs for OPA3.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.8
         Device            :  PIC16F1779
-        Driver Version    :  2.00
+        Driver Version    :  2.01
     The generated drivers are tested against the following:
-        Compiler          :  XC8 2.36 and above or later
+        Compiler          :  XC8 2.36 and above
         MPLAB             :  MPLAB X 6.00
 */
 
@@ -44,62 +44,28 @@
     SOFTWARE.
 */
 
-#ifndef MCC_H
-#define	MCC_H
+/**
+  Section: Included Files
+*/
+
 #include <xc.h>
-#include "device_config.h"
-#include "pin_manager.h"
-#include <stdint.h>
-#include <stdbool.h>
-#include <conio.h>
-#include "fvr.h"
 #include "opa3.h"
-#include "dac1.h"
-#include "opa2.h"
-#include "adc.h"
-#include "eusart.h"
-
-
 
 /**
- * @Param
-    none
- * @Returns
-    none
- * @Description
-    Initializes the device to the default states configured in the
- *                  MCC GUI
- * @Example
-    SYSTEM_Initialize(void);
- */
-void SYSTEM_Initialize(void);
+  Section: OPA3 APIs
+*/
 
-/**
- * @Param
-    none
- * @Returns
-    none
- * @Description
-    Initializes the oscillator to the default states configured in the
- *                  MCC GUI
- * @Example
-    OSCILLATOR_Initialize(void);
- */
-void OSCILLATOR_Initialize(void);
-/**
- * @Param
-    none
- * @Returns
-    none
- * @Description
-    Initializes the WDT module to the default states configured in the
- *                  MCC GUI
- * @Example
-    WDT_Initialize(void);
- */
-void WDT_Initialize(void);
-
-#endif	/* MCC_H */
+void OPA3_Initialize(void)
+{
+    // OPA3ORPOL not inverted; OPA3EN enabled; OPA3UG OPA_Output; OPA3ORM disabled; 
+    OPA3CON = 0x90;
+    // ORS CCP1_out; 
+    OPA3ORS = 0x00;
+    // NCH OPA3IN0-; 
+    OPA3NCHS = 0x00;
+    // PCH FVR_Buffer2; 
+    OPA3PCHS = 0x06;
+}
 /**
  End of File
 */
