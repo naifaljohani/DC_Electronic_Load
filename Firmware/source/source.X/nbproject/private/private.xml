@@ -5,6 +5,8 @@
         <group>
             <file>file:/C:/project_rebos/Electronic_DC_Load/Firmware/source/source.X/main.c</file>
             <file>file:/C:/project_rebos/Electronic_DC_Load/Firmware/source/source.X/mcc_generated_files/adc.h</file>
+            <file>file:/C:/project_rebos/Electronic_DC_Load/Firmware/source/source.X/mcc_generated_files/dac1.h</file>
+            <file>file:/C:/project_rebos/Electronic_DC_Load/Firmware/source/source.X/mcc_generated_files/opa2.h</file>
         </group>
     </open-files>
 </project-private>
