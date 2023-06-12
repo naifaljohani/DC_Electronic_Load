@@ -3,6 +3,9 @@
  main.c  \
 mcc_generated_files/fvr.h  \
 mcc_generated_files/mcc.h  \
+mcc_generated_files/opa2.h  \
+mcc_generated_files/opa3.h  \
+mcc_generated_files/dac1.h  \
 mcc_generated_files/adc.h  \
 mcc_generated_files/device_config.h  \
 mcc_generated_files/eusart.h  \

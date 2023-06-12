@@ -80,10 +80,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _INLVLD `Vuc ~T0 @X0 0 e@911 ]
 "40958
 [v _RXPPS `Vuc ~T0 @X0 0 e@3645 ]
-"41278
-[v _RB6PPS `Vuc ~T0 @X0 0 e@3742 ]
 "40878
 [v _ADCACTPPS `Vuc ~T0 @X0 0 e@3641 ]
+"41338
+[v _RC1PPS `Vuc ~T0 @X0 0 e@3745 ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -16541,8 +16541,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 193: extern __bank0 unsigned char __resetbits;
 [; ;pic.h: 194: extern __bank0 __bit __powerdown;
 [; ;pic.h: 195: extern __bank0 __bit __timeout;
-[; ;pin_manager.h: 150: void PIN_MANAGER_Initialize (void);
-[; ;pin_manager.h: 162: void PIN_MANAGER_IOC(void);
+[; ;pin_manager.h: 174: void PIN_MANAGER_Initialize (void);
+[; ;pin_manager.h: 186: void PIN_MANAGER_IOC(void);
 "55 mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize `(v ~T0 @X0 1 ef ]
 "56
@@ -16569,15 +16569,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pin_manager.c: 69: TRISE = 0x07;
 "69
 [e = _TRISE -> -> 7 `i `uc ]
-[; ;pin_manager.c: 70: TRISA = 0xDF;
+[; ;pin_manager.c: 70: TRISA = 0xFF;
 "70
-[e = _TRISA -> -> 223 `i `uc ]
-[; ;pin_manager.c: 71: TRISB = 0xBF;
+[e = _TRISA -> -> 255 `i `uc ]
+[; ;pin_manager.c: 71: TRISB = 0xFD;
 "71
-[e = _TRISB -> -> 191 `i `uc ]
-[; ;pin_manager.c: 72: TRISC = 0xFF;
+[e = _TRISB -> -> 253 `i `uc ]
+[; ;pin_manager.c: 72: TRISC = 0xBD;
 "72
-[e = _TRISC -> -> 255 `i `uc ]
+[e = _TRISC -> -> 189 `i `uc ]
 [; ;pin_manager.c: 73: TRISD = 0xFF;
 "73
 [e = _TRISD -> -> 255 `i `uc ]
@@ -16656,15 +16656,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pin_manager.c: 118: INLVLD = 0xFF;
 "118
 [e = _INLVLD -> -> 255 `i `uc ]
-[; ;pin_manager.c: 127: RXPPS = 0x0F;
+[; ;pin_manager.c: 127: RXPPS = 0x10;
 "127
-[e = _RXPPS -> -> 15 `i `uc ]
-[; ;pin_manager.c: 128: RB6PPS = 0x24;
+[e = _RXPPS -> -> 16 `i `uc ]
+[; ;pin_manager.c: 128: ADCACTPPS = 0x0C;
 "128
-[e = _RB6PPS -> -> 36 `i `uc ]
-[; ;pin_manager.c: 129: ADCACTPPS = 0x0C;
-"129
 [e = _ADCACTPPS -> -> 12 `i `uc ]
+[; ;pin_manager.c: 129: RC1PPS = 0x24;
+"129
+[e = _RC1PPS -> -> 36 `i `uc ]
 [; ;pin_manager.c: 130: }
 "130
 [e :UE 2092 ]

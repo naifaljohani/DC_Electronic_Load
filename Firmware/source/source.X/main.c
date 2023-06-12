@@ -47,7 +47,7 @@
                          Main application
  */ 
 uint16_t convertedValue;
-adc_channel_t  ADC_select = channel_AN0 ;
+adc_channel_t  ADC_select[2] = {channel_AN5,channel_AN6} ;
  
 volatile uint16_t txData;
 
@@ -58,7 +58,7 @@ void main(void)
     // initialize the device
     SYSTEM_Initialize();
     
-    ADC_SelectChannel(ADC_select);
+    ADC_SelectChannel(ADC_select[1]);
 
     // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
     // Use the following macros to:
@@ -80,15 +80,24 @@ void main(void)
     
     while (1)
     {
-//       if (EUSART_is_tx_ready){
-//           
-//       }
-        
         ADC_StartConversion();
         convertedValue = ADC_GetConversionResult();
+        DAC1_Load10bitInputData(1009);
+       if (EUSART_is_tx_ready){
+            EUSART_Write((convertedValue >> 8 ));
+           
+       __delay_ms(10);
+       
+       }
         
+        
+<<<<<<< HEAD
         EUSART_Write((0x55));
         __delay_ms(10);
+=======
+        
+       
+>>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
        
     }
 }

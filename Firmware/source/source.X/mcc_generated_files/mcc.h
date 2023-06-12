@@ -53,6 +53,9 @@
 #include <stdbool.h>
 #include <conio.h>
 #include "fvr.h"
+#include "opa3.h"
+#include "dac1.h"
+#include "opa2.h"
 #include "adc.h"
 #include "eusart.h"
 

@@ -67,9 +67,9 @@ void PIN_MANAGER_Initialize(void)
     TRISx registers
     */
     TRISE = 0x07;
-    TRISA = 0xDF;
-    TRISB = 0xBF;
-    TRISC = 0xFF;
+    TRISA = 0xFF;
+    TRISB = 0xFD;
+    TRISC = 0xBD;
     TRISD = 0xFF;
 
     /**
@@ -124,9 +124,9 @@ void PIN_MANAGER_Initialize(void)
    
     
 	
-    RXPPS = 0x0F;   //RB7->EUSART:RX;    
-    RB6PPS = 0x24;   //RB6->EUSART:TX;    
+    RXPPS = 0x10;   //RC0->EUSART:RX;    
     ADCACTPPS = 0x0C;   //RB4->ADC:ADCACT;    
+    RC1PPS = 0x24;   //RC1->EUSART:TX;    
 }
   
 void PIN_MANAGER_IOC(void)
