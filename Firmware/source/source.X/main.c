@@ -87,8 +87,8 @@ void main(void)
         ADC_StartConversion();
         convertedValue = ADC_GetConversionResult();
         
-        EUSART_Write((convertedValue >> 8 ));
-        __delay_ms(100);
+        EUSART_Write((0x55));
+        __delay_ms(10);
        
     }
 }

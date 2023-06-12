@@ -3,8 +3,8 @@
 [d edition pro ]
 [d chip 16F1779 ]
 [d frameptr 6 ]
-"50 C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\main.c
-[e E17267 . `uc
+"89 C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+[e E17242 . `uc
 channel_AN0 0
 channel_Switched_AN1 33
 channel_Switched_AN10 42
@@ -20,8 +20,8 @@ channel_Temp 61
 channel_DAC1_Output 62
 channel_FVRBuffer1 63
 ]
-"89 C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
-[e E17242 . `uc
+"50 C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\main.c
+[e E17267 . `uc
 channel_AN0 0
 channel_Switched_AN1 33
 channel_Switched_AN10 42
@@ -77,7 +77,7 @@ channel_FVRBuffer1 63
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
 "55 C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-[s S294 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[s S249 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSP1IF 1 0 :1:3 
@@ -87,11 +87,11 @@ channel_FVRBuffer1 63
 `uc 1 TMR1GIF 1 0 :1:7 
 ]
 "734 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
-[s S303 . 1 `uc 1 . 1 0 :2:0 
+[s S258 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 CCPIF 1 0 :1:2 
 ]
-[u S306 . 1 `S294 1 . 1 0 `S303 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES306  1 e 1 @17 ]
+[u S261 . 1 `S249 1 . 1 0 `S258 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES261  1 e 1 @17 ]
 "1740
 [v _TRISA TRISA `VEuc  1 e 1 @140 ]
 "1802
@@ -131,7 +131,7 @@ channel_FVRBuffer1 63
 [v _BORCON BORCON `VEuc  1 e 1 @157 ]
 "2789
 [v _FVRCON FVRCON `VEuc  1 e 1 @158 ]
-[s S176 . 1 `uc 1 ADFVR 1 0 :2:0 
+[s S127 . 1 `uc 1 ADFVR 1 0 :2:0 
 `uc 1 CDAFVR 1 0 :2:2 
 `uc 1 TSRNG 1 0 :1:4 
 `uc 1 TSEN 1 0 :1:5 
@@ -139,8 +139,8 @@ channel_FVRBuffer1 63
 `uc 1 FVREN 1 0 :1:7 
 ]
 "2804
-[u S183 . 1 `S176 1 . 1 0 ]
-[v _FVRCONbits FVRCONbits `VES183  1 e 1 @158 ]
+[u S134 . 1 `S127 1 . 1 0 ]
+[v _FVRCONbits FVRCONbits `VES134  1 e 1 @158 ]
 "2885
 [v _LATA LATA `VEuc  1 e 1 @268 ]
 "2947
@@ -171,7 +171,7 @@ channel_FVRBuffer1 63
 [v _SP1BRGH SP1BRGH `VEuc  1 e 1 @412 ]
 "4715
 [v _RC1STA RC1STA `VEuc  1 e 1 @413 ]
-[s S343 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S298 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -181,11 +181,11 @@ channel_FVRBuffer1 63
 `uc 1 SPEN 1 0 :1:7 
 ]
 "4741
-[u S352 . 1 `S343 1 . 1 0 ]
-[v _RC1STAbits RC1STAbits `VES352  1 e 1 @413 ]
+[u S307 . 1 `S298 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES307  1 e 1 @413 ]
 "4895
 [v _TX1STA TX1STA `VEuc  1 e 1 @414 ]
-[s S322 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S277 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -195,8 +195,8 @@ channel_FVRBuffer1 63
 `uc 1 CSRC 1 0 :1:7 
 ]
 "4921
-[u S331 . 1 `S322 1 . 1 0 ]
-[v _TX1STAbits TX1STAbits `VES331  1 e 1 @414 ]
+[u S286 . 1 `S277 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES286  1 e 1 @414 ]
 "5075
 [v _BAUD1CON BAUD1CON `VEuc  1 e 1 @415 ]
 "5321
@@ -243,13 +243,13 @@ channel_FVRBuffer1 63
 [v _ADRESH ADRESH `VEuc  1 e 1 @1167 ]
 "12385
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @1168 ]
-[s S222 . 1 `uc 1 ADON 1 0 :1:0 
+[s S173 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 `uc 1 CHS 1 0 :6:2 
 ]
 "12397
-[u S226 . 1 `S222 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES226  1 e 1 @1168 ]
+[u S177 . 1 `S173 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES177  1 e 1 @1168 ]
 "12417
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @1169 ]
 "12456
@@ -266,14 +266,14 @@ channel_FVRBuffer1 63
 [v _ADC_select ADC_select `E17267  1 e 1 0 ]
 "52
 [v _txData txData `VEui  1 e 2 0 ]
-[s S248 . 1 `uc 1 perr 1 0 :1:0 
+[s S203 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "52 C:\project_repositories\Electronic_DC_Load\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/eusart.c
-[u S253 . 1 `S248 1 . 1 0 `uc 1 status 1 0 ]
-[v _eusartRxLastError eusartRxLastError `VES253  1 e 1 0 ]
+[u S208 . 1 `S203 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES208  1 e 1 0 ]
 "58
 [v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
 "59

@@ -16607,12 +16607,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 88: convertedValue = ADC_GetConversionResult();
 "88
 [e = _convertedValue ( _ADC_GetConversionResult ..  ]
-[; ;main.c: 90: EUSART_Write((convertedValue >> 8 ));
+[; ;main.c: 90: EUSART_Write((0x55));
 "90
-[e ( _EUSART_Write (1 -> >> _convertedValue -> 8 `i `uc ]
-[; ;main.c: 91: _delay((unsigned long)((100)*(8000000/4000.0)));
+[e ( _EUSART_Write (1 -> -> 85 `i `uc ]
+[; ;main.c: 91: _delay((unsigned long)((10)*(16000000/4000.0)));
 "91
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
 "93
 }
 [e :U 2096 ]
