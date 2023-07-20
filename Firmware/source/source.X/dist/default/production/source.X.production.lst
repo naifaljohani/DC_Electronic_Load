@@ -1,7 +1,7 @@
 
 
 Microchip Technology PIC LITE Macro Assembler V1.45 build -152302408 
-                                                                                               Tue May 30 12:25:06 2023
+                                                                                               Sat Jun 17 15:12:22 2023
 
 Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160504
      1                           	processor	16F1779
@@ -6311,34 +6311,34 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   6297  0079                     ?_EUSART_SetErrorHandler:	
   6298                           ; 1 bytes @ 0x0
   6299                           
-  6300  0079                     ?_DAC1_Load10bitInputData:	
+  6300  0079                     ?_PIN_MANAGER_Initialize:	
   6301                           ; 1 bytes @ 0x0
   6302                           
-  6303  0079                     ?_PIN_MANAGER_Initialize:	
+  6303  0079                     ??_PIN_MANAGER_Initialize:	
   6304                           ; 1 bytes @ 0x0
   6305                           
-  6306  0079                     ??_PIN_MANAGER_Initialize:	
+  6306  0079                     ?_SYSTEM_Initialize:	
   6307                           ; 1 bytes @ 0x0
   6308                           
-  6309  0079                     ?_SYSTEM_Initialize:	
+  6309  0079                     ?_ADC_SelectChannel:	
   6310                           ; 1 bytes @ 0x0
   6311                           
-  6312  0079                     ?_ADC_SelectChannel:	
+  6312  0079                     ??_ADC_SelectChannel:	
   6313                           ; 1 bytes @ 0x0
   6314                           
-  6315  0079                     ??_ADC_SelectChannel:	
+  6315  0079                     ?_ADC_StartConversion:	
   6316                           ; 1 bytes @ 0x0
   6317                           
-  6318  0079                     ?_ADC_StartConversion:	
+  6318  0079                     ??_ADC_StartConversion:	
   6319                           ; 1 bytes @ 0x0
   6320                           
-  6321  0079                     ??_ADC_StartConversion:	
+  6321  0079                     ?_EUSART_Write:	
   6322                           ; 1 bytes @ 0x0
   6323                           
-  6324  0079                     ?_EUSART_Write:	
+  6324  0079                     ??_EUSART_Write:	
   6325                           ; 1 bytes @ 0x0
   6326                           
-  6327  0079                     ??_EUSART_Write:	
+  6327  0079                     ?_DAC1_Load10bitInputData:	
   6328                           ; 1 bytes @ 0x0
   6329                           
   6330  0079                     ?_main:	
@@ -6379,13 +6379,13 @@ Microchip Technology Omniscient Code Generator v1.45 (Free mode) build 201711160
   6365  007B                     ??_EUSART_SetErrorHandler:	
   6366                           ; 1 bytes @ 0x2
   6367                           
-  6368  007B                     ??_DAC1_Load10bitInputData:	
+  6368  007B                     ??_SYSTEM_Initialize:	
   6369                           ; 1 bytes @ 0x2
   6370                           
-  6371  007B                     ??_SYSTEM_Initialize:	
+  6371  007B                     ??_ADC_GetConversionResult:	
   6372                           ; 1 bytes @ 0x2
   6373                           
-  6374  007B                     ??_ADC_GetConversionResult:	
+  6374  007B                     ??_DAC1_Load10bitInputData:	
   6375                           ; 1 bytes @ 0x2
   6376                           
   6377  007B                     ??_main:	
@@ -8101,7 +8101,7 @@ BANK25              20      0       0      57        0.0%
 
 
 Microchip Technology PIC Macro Assembler V1.45 build -152302408 
-Symbol Table                                                                                   Tue May 30 12:25:06 2023
+Symbol Table                                                                                   Sat Jun 17 15:12:22 2023
 
                                   __CFG_CP$OFF 0000                                             u77 07A5  
                        __end_of_FVR_Initialize 06E9                                    __CFG_LVP$ON 0000  

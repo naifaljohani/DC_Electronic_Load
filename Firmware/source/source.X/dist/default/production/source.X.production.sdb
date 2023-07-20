@@ -280,18 +280,18 @@ channel_FVRBuffer1 63
 [v _OPA3CON OPA3CON `VEuc  1 e 1 @1305 ]
 "14092
 [v _OPA3ORS OPA3ORS `VEuc  1 e 1 @1306 ]
-[s S444 . 1 `uc 1 DAC1LD 1 0 :1:0 
+[s S397 . 1 `uc 1 DAC1LD 1 0 :1:0 
 `uc 1 DAC2LD 1 0 :1:1 
 `uc 1 . 1 0 :2:2 
 `uc 1 DAC5LD 1 0 :1:4 
 `uc 1 DAC6LD 1 0 :1:5 
 ]
 "14310
-[u S450 . 1 `S444 1 . 1 0 ]
-[v _DACLDbits DACLDbits `VES450  1 e 1 @1421 ]
+[u S403 . 1 `S397 1 . 1 0 ]
+[v _DACLDbits DACLDbits `VES403  1 e 1 @1421 ]
 "14335
 [v _DAC1CON0 DAC1CON0 `VEuc  1 e 1 @1422 ]
-[s S459 . 1 `uc 1 NSS 1 0 :2:0 
+[s S412 . 1 `uc 1 NSS 1 0 :2:0 
 `uc 1 PSS 1 0 :2:2 
 `uc 1 OE2 1 0 :1:4 
 `uc 1 OE1 1 0 :1:5 
@@ -299,41 +299,41 @@ channel_FVRBuffer1 63
 `uc 1 EN 1 0 :1:7 
 ]
 "14388
-[s S466 . 1 `uc 1 NSS0 1 0 :1:0 
+[s S419 . 1 `uc 1 NSS0 1 0 :1:0 
 `uc 1 NSS1 1 0 :1:1 
 `uc 1 PSS0 1 0 :1:2 
 `uc 1 PSS1 1 0 :1:3 
 `uc 1 . 1 0 :1:4 
 `uc 1 OE 1 0 :1:5 
 ]
-[s S473 . 1 `uc 1 DACNSS 1 0 :2:0 
+[s S426 . 1 `uc 1 DACNSS 1 0 :2:0 
 `uc 1 DACPSS 1 0 :2:2 
 `uc 1 DACOE2 1 0 :1:4 
 `uc 1 DACOE1 1 0 :1:5 
 `uc 1 DACFM 1 0 :1:6 
 `uc 1 DACEN 1 0 :1:7 
 ]
-[s S480 . 1 `uc 1 DACNSS0 1 0 :1:0 
+[s S433 . 1 `uc 1 DACNSS0 1 0 :1:0 
 `uc 1 DACNSS1 1 0 :1:1 
 `uc 1 DACPSS0 1 0 :1:2 
 `uc 1 DACPSS1 1 0 :1:3 
 `uc 1 . 1 0 :1:4 
 `uc 1 DACOE 1 0 :1:5 
 ]
-[s S487 . 1 `uc 1 DAC1NSS 1 0 :2:0 
+[s S440 . 1 `uc 1 DAC1NSS 1 0 :2:0 
 `uc 1 DAC1PSS 1 0 :2:2 
 `uc 1 DAC1OE2 1 0 :1:4 
 `uc 1 DAC1OE1 1 0 :1:5 
 `uc 1 DAC1FM 1 0 :1:6 
 `uc 1 DAC1EN 1 0 :1:7 
 ]
-[s S494 . 1 `uc 1 DAC1NSS0 1 0 :1:0 
+[s S447 . 1 `uc 1 DAC1NSS0 1 0 :1:0 
 `uc 1 DAC1NSS1 1 0 :1:1 
 `uc 1 DAC1PSS0 1 0 :1:2 
 `uc 1 DAC1PSS1 1 0 :1:3 
 ]
-[u S499 . 1 `S459 1 . 1 0 `S466 1 . 1 0 `S473 1 . 1 0 `S480 1 . 1 0 `S487 1 . 1 0 `S494 1 . 1 0 ]
-[v _DAC1CON0bits DAC1CON0bits `VES499  1 e 1 @1422 ]
+[u S452 . 1 `S412 1 . 1 0 `S419 1 . 1 0 `S426 1 . 1 0 `S433 1 . 1 0 `S440 1 . 1 0 `S447 1 . 1 0 ]
+[v _DAC1CON0bits DAC1CON0bits `VES452  1 e 1 @1422 ]
 "14560
 [v _DAC1REFL DAC1REFL `VEuc  1 e 1 @1423 ]
 "14982
