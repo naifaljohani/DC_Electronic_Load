@@ -16622,15 +16622,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 84: convertedValue = ADC_GetConversionResult();
 "84
 [e = _convertedValue ( _ADC_GetConversionResult ..  ]
-<<<<<<< HEAD
-[; ;main.c: 90: EUSART_Write((0x55));
-"90
-[e ( _EUSART_Write (1 -> -> 85 `i `uc ]
-[; ;main.c: 91: _delay((unsigned long)((10)*(16000000/4000.0)));
-"91
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
-"93
-=======
 [; ;main.c: 85: DAC1_Load10bitInputData(1009);
 "85
 [e ( _DAC1_Load10bitInputData (1 -> -> 1009 `i `ui ]
@@ -16648,16 +16639,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 "91
 }
 [e :U 2099 ]
-"97
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
+"96
 }
 [e :U 2096 ]
 "81
 [e $U 2097  ]
 [e :U 2098 ]
 [; ;main.c: 91: }
+[; ;main.c: 96: }
 [; ;main.c: 97: }
-[; ;main.c: 98: }
-"98
+"97
 [e :UE 2095 ]
 }

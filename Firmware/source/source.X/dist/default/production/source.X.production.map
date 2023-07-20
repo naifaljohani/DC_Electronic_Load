@@ -5,15 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files (x86)\Microchip\xc8\v1.45\dat\en_msgs.txt -cs \
   -h+dist/default/production\source.X.production.sym \
   --cmf=dist/default/production\source.X.production.cmf -z -Q16F1779 \
-<<<<<<< HEAD
-  -oC:\Users\user\AppData\Local\Temp\sduc.2 \
-=======
-<<<<<<< HEAD
-  -oC:\Users\Naifj\AppData\Local\Temp\s5d0.2 \
-=======
-  -oC:\Users\user\AppData\Local\Temp\sars.2 \
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
->>>>>>> 8201d604b2ef3465033430aa5a01e9757992dbba
+  -oC:\Users\user\AppData\Local\Temp\s6lk.2 \
   -Mdist/default/production/source.X.production.map -E1 -ver=XC8 \
   -ASTACK=02004h-027efh -pstack=STACK -ACODE=00h-07FFhx8 \
   -ASTRCODE=00h-03FFFh -ASTRING=00h-0FFhx64 -ACONST=00h-0FFhx64 \
@@ -43,15 +35,7 @@ Linker command line:
   -pcinit=CODE -pfunctab=ENTRY -ACONFIG=08007h-08008h -pconfig=CONFIG \
   -DCONFIG=2 -AIDLOC=08000h-08003h -pidloc=IDLOC -DIDLOC=2 -DCODE=2 \
   -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-<<<<<<< HEAD
-  C:\Users\user\AppData\Local\Temp\sduc.obj \
-=======
-<<<<<<< HEAD
-  C:\Users\Naifj\AppData\Local\Temp\s5d0.obj \
-=======
-  C:\Users\user\AppData\Local\Temp\sars.obj \
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
->>>>>>> 8201d604b2ef3465033430aa5a01e9757992dbba
+  C:\Users\user\AppData\Local\Temp\s6lk.obj \
   dist/default/production\source.X.production.obj 
 
 Object code version is 3.11
@@ -61,40 +45,12 @@ Machine type is 16F1779
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-<<<<<<< HEAD
-C:\Users\user\AppData\Local\Temp\sduc.obj
-=======
-<<<<<<< HEAD
-C:\Users\Naifj\AppData\Local\Temp\s5d0.obj
-=======
-C:\Users\user\AppData\Local\Temp\sars.obj
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
->>>>>>> 8201d604b2ef3465033430aa5a01e9757992dbba
+C:\Users\user\AppData\Local\Temp\s6lk.obj
                 end_init                              2        2        2        0       0
                 reset_vec                             0        0        2        0       0
                 idloc                              8000     8000        4    10000       0
                 config                             8007     8007        2    1000E       0
 dist/default/production\source.X.production.obj
-<<<<<<< HEAD
-                cinit                               7F7      7F7        9      FEE       0
-                text14                              72C      72C        6      E58       0
-                text13                              751      751        D      EA2       0
-                text12                              717      717        3      E2E       0
-                text11                              738      738        8      E70       0
-                text10                              748      748        9      E90       0
-                text9                               732      732        6      E64       0
-                text8                               722      722        5      E44       0
-                text7                               727      727        5      E4E       0
-                text6                               78E      78E       21      F1C       0
-                text5                               71A      71A        4      E34       0
-                text4                               740      740        8      E80       0
-                text3                               7AF      7AF       48      F5E       0
-                text2                               71E      71E        4      E3C       0
-                text1                               75E      75E       12      EBC       0
-                maintext                            770      770       1E      EE0       0
-                cstackCOMMON                         7A       7A        3       70       1
-                bssCOMMON                            70       70        6       70       1
-=======
                 cinit                               7F1      7F1        F      FE2       0
                 text18                              6F2      6F2        6      DE4       0
                 text17                              73D      73D        D      E7A       0
@@ -118,7 +74,6 @@ dist/default/production\source.X.production.obj
                 cstackCOMMON                         79       79        3       70       1
                 dataCOMMON                           7C       7C        2       70       1
                 bssCOMMON                            70       70        5       70       1
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
                 nvBANK0                              20       20        4       20       1
                 nvCOMMON                             75       75        4       70       1
                 idataCOMMON                         6E0      6E0        2      DC0       0
@@ -130,23 +85,6 @@ TOTAL           Name                               Link     Load   Length     Sp
                 end_init                              2        2        2         0
                 cinit                               7F1      7F1        F         0
                 reset_vec                             0        0        2         0
-<<<<<<< HEAD
-                text14                              72C      72C        6         0
-                text13                              751      751        D         0
-                text12                              717      717        3         0
-                text11                              738      738        8         0
-                text10                              748      748        9         0
-                text9                               732      732        6         0
-                text8                               722      722        5         0
-                text7                               727      727        5         0
-                text6                               78E      78E       21         0
-                text5                               71A      71A        4         0
-                text4                               740      740        8         0
-                text3                               7AF      7AF       48         0
-                text2                               71E      71E        4         0
-                text1                               75E      75E       12         0
-                maintext                            770      770       1E         0
-=======
                 text18                              6F2      6F2        6         0
                 text17                              73D      73D        D         0
                 text16                              6E2      6E2        3         0
@@ -167,7 +105,6 @@ TOTAL           Name                               Link     Load   Length     Sp
                 text1                               74A      74A       1B         0
                 maintext                            786      786       24         0
                 idataCOMMON                         6E0      6E0        2         0
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
 
         CLASS   STRCODE        
 
@@ -178,16 +115,10 @@ TOTAL           Name                               Link     Load   Length     Sp
         CLASS   ENTRY          
 
         CLASS   COMMON         
-<<<<<<< HEAD
-                cstackCOMMON                         7A       7A        3         1
-                bssCOMMON                            70       70        6         1
-                nvCOMMON                             76       76        4         1
-=======
                 cstackCOMMON                         79       79        3         1
                 dataCOMMON                           7C       7C        2         1
                 bssCOMMON                            70       70        5         1
                 nvCOMMON                             75       75        4         1
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
 
         CLASS   BANK0          
                 nvBANK0                              20       20        4         1
@@ -339,25 +270,6 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
 
                 reset_vec                      000000  000004  000004         0       0  CODE        2
                 nvBANK0                        000020  000004  000024        20       1  BANK0       1
-<<<<<<< HEAD
-                bssCOMMON                      000070  00000D  00007D        70       1  COMMON      1
-                text12                         000717  000003  00071A       E2E       0  CODE        2
-                text5                          00071A  000004  00071E       E34       0  CODE        2
-                text2                          00071E  000004  000722       E3C       0  CODE        2
-                text8                          000722  000005  000727       E44       0  CODE        2
-                text7                          000727  000005  00072C       E4E       0  CODE        2
-                text14                         00072C  000006  000732       E58       0  CODE        2
-                text9                          000732  000006  000738       E64       0  CODE        2
-                text11                         000738  000008  000740       E70       0  CODE        2
-                text4                          000740  000008  000748       E80       0  CODE        2
-                text10                         000748  000009  000751       E90       0  CODE        2
-                text13                         000751  00000D  00075E       EA2       0  CODE        2
-                text1                          00075E  000012  000770       EBC       0  CODE        2
-                maintext                       000770  00001E  00078E       EE0       0  CODE        2
-                text6                          00078E  000021  0007AF       F1C       0  CODE        2
-                text3                          0007AF  000048  0007F7       F5E       0  CODE        2
-                cinit                          0007F7  000009  000800       FEE       0  CODE        2
-=======
                 bssCOMMON                      000070  00000E  00007E        70       1  COMMON      1
                 idataCOMMON                    0006E0  000002  0006E2       DC0       0  CODE        2
                 text16                         0006E2  000003  0006E5       DC4       0  CODE        2
@@ -380,7 +292,6 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 maintext                       000786  000024  0007AA       F0C       0  CODE        2
                 text3                          0007AA  000047  0007F1       F54       0  CODE        2
                 cinit                          0007F1  00000F  000800       FE2       0  CODE        2
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
                 idloc                          008000  000004  008004     10000       0  IDLOC       2
                 config                         008007  000002  008009     1000E       0  CONFIG      2
 
@@ -415,20 +326,11 @@ UNUSED ADDRESS RANGES
         BANK8            00420-0046F              50           1
         BANK9            004A0-004EF              50           1
         BIGRAM           02000-027EF             7F0           1
-<<<<<<< HEAD
-        CODE             00004-00716             713           2
-                         00800-03FFF             800
-        COMMON           0007D-0007D               1           1
-        CONST            00004-00716             100           2
-                         00800-03FFF             100
-        ENTRY            00004-00716             100           2
-=======
         CODE             00004-006DF             6DC           2
                          00800-03FFF             800
         CONST            00004-006DF             100           2
                          00800-03FFF             100
         ENTRY            00004-006DF             100           2
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
                          00800-03FFF             100
         RAM              00024-0006F              4C           1
                          000A0-000EF              50
@@ -489,15 +391,9 @@ UNUSED ADDRESS RANGES
         SFR8             00400-0041F              20           1
         SFR9             00480-0049F              20           1
         STACK            02004-027EF             7EC           1
-<<<<<<< HEAD
-        STRCODE          00004-00716             713           2
-                         00800-03FFF            3800
-        STRING           00004-00716             100           2
-=======
         STRCODE          00004-006DF             6DC           2
                          00800-03FFF            3800
         STRING           00004-006DF             100           2
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
                          00800-03FFF             100
 
                                   Symbol Table
@@ -514,19 +410,11 @@ _ADCON0                                        (abs)        00490
 _ADCON0bits                                    (abs)        00490
 _ADCON1                                        (abs)        00491
 _ADCON2                                        (abs)        00492
-<<<<<<< HEAD
-_ADC_GetConversionResult                       text14       0072C
-_ADC_Initialize                                text10       00748
-_ADC_SelectChannel                             text13       00751
-_ADC_StartConversion                           text12       00717
-_ADC_select                                    bssCOMMON    00074
-=======
 _ADC_GetConversionResult                       text18       006F2
 _ADC_Initialize                                text13       00734
 _ADC_SelectChannel                             text17       0073D
 _ADC_StartConversion                           text16       006E2
 _ADC_select                                    dataCOMMON   0007C
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
 _ADRESH                                        (abs)        0048F
 _ADRESL                                        (abs)        0048E
 _ANSELA                                        (abs)        0018C
@@ -546,19 +434,6 @@ _DACLDbits                                     (abs)        0058D
 _EUSART_DefaultErrorHandler                    (abs)        00000
 _EUSART_DefaultFramingErrorHandler             (abs)        00000
 _EUSART_DefaultOverrunErrorHandler             (abs)        00000
-<<<<<<< HEAD
-_EUSART_ErrorHandler                           nvBANK0      00022
-_EUSART_FramingErrorHandler                    nvCOMMON     00078
-_EUSART_Initialize                             text6        0078E
-_EUSART_OverrunErrorHandler                    nvCOMMON     00076
-_EUSART_SetErrorHandler                        text9        00732
-_EUSART_SetFramingErrorHandler                 text8        00722
-_EUSART_SetOverrunErrorHandler                 text7        00727
-_EUSART_Write                                  text11       00738
-_FVRCON                                        (abs)        0009E
-_FVRCONbits                                    (abs)        0009E
-_FVR_Initialize                                text5        0071A
-=======
 _EUSART_ErrorHandler                           nvBANK0      00020
 _EUSART_FramingErrorHandler                    nvCOMMON     00077
 _EUSART_Initialize                             text8        00765
@@ -570,7 +445,6 @@ _EUSART_Write                                  text14       0070C
 _FVRCON                                        (abs)        0009E
 _FVRCONbits                                    (abs)        0009E
 _FVR_Initialize                                text7        006E5
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
 _INLVLA                                        (abs)        0038C
 _INLVLB                                        (abs)        0038D
 _INLVLC                                        (abs)        0038E
@@ -597,11 +471,7 @@ _OPA3PCHS                                      (abs)        00518
 _OPA3_Initialize                               text5        00724
 _OPTION_REGbits                                (abs)        00097
 _OSCCON                                        (abs)        0009B
-<<<<<<< HEAD
-_OSCILLATOR_Initialize                         text4        00740
-=======
 _OSCILLATOR_Initialize                         text4        0072C
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
 _OSCSTAT                                       (abs)        0009C
 _OSCTUNE                                       (abs)        0009A
 _PIN_MANAGER_Initialize                        text3        007AA
@@ -618,11 +488,7 @@ _SLRCOND                                       (abs)        0030F
 _SLRCONE                                       (abs)        00310
 _SP1BRGH                                       (abs)        0019C
 _SP1BRGL                                       (abs)        0019B
-<<<<<<< HEAD
-_SYSTEM_Initialize                             text1        0075E
-=======
 _SYSTEM_Initialize                             text1        0074A
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
 _TRISA                                         (abs)        0008C
 _TRISB                                         (abs)        0008D
 _TRISC                                         (abs)        0008E
@@ -632,11 +498,7 @@ _TX1REG                                        (abs)        0019A
 _TX1STA                                        (abs)        0019E
 _TX1STAbits                                    (abs)        0019E
 _WDTCON                                        (abs)        00099
-<<<<<<< HEAD
-_WDT_Initialize                                text2        0071E
-=======
 _WDT_Initialize                                text2        006E9
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
 _WPUA                                          (abs)        0020C
 _WPUB                                          (abs)        0020D
 _WPUC                                          (abs)        0020E
@@ -848,49 +710,11 @@ __Lstack                                       stack        00000
 __Lstrings                                     strings      10008
 __Ltext                                        text         10008
 __S0                                           (abs)        08009
-__S1                                           (abs)        0007D
+__S1                                           (abs)        0007E
 __S2                                           (abs)        00000
 ___int_sp                                      stack        00000
 ___latbits                                     (abs)        00003
 ___sp                                          stack        00000
-<<<<<<< HEAD
-__end_of_ADC_GetConversionResult               text14       00732
-__end_of_ADC_Initialize                        text10       00751
-__end_of_ADC_SelectChannel                     text13       0075E
-__end_of_ADC_StartConversion                   text12       0071A
-__end_of_EUSART_Initialize                     text6        007AF
-__end_of_EUSART_SetErrorHandler                text9        00738
-__end_of_EUSART_SetFramingErrorHandler         text8        00727
-__end_of_EUSART_SetOverrunErrorHandler         text7        0072C
-__end_of_EUSART_Write                          text11       00740
-__end_of_FVR_Initialize                        text5        0071E
-__end_of_OSCILLATOR_Initialize                 text4        00748
-__end_of_PIN_MANAGER_Initialize                text3        007F7
-__end_of_SYSTEM_Initialize                     text1        00770
-__end_of_WDT_Initialize                        text2        00722
-__end_of__initialization                       cinit        007FD
-__end_of_main                                  maintext     0078E
-__initialization                               cinit        007F7
-__pbssCOMMON                                   bssCOMMON    00070
-__pcstackCOMMON                                cstackCOMMON 0007A
-__pmaintext                                    maintext     00770
-__pnvBANK0                                     nvBANK0      00020
-__pnvCOMMON                                    nvCOMMON     00076
-__ptext1                                       text1        0075E
-__ptext10                                      text10       00748
-__ptext11                                      text11       00738
-__ptext12                                      text12       00717
-__ptext13                                      text13       00751
-__ptext14                                      text14       0072C
-__ptext2                                       text2        0071E
-__ptext3                                       text3        007AF
-__ptext4                                       text4        00740
-__ptext5                                       text5        0071A
-__ptext6                                       text6        0078E
-__ptext7                                       text7        00727
-__ptext8                                       text8        00722
-__ptext9                                       text9        00732
-=======
 __end_of_ADC_GetConversionResult               text18       006F8
 __end_of_ADC_Initialize                        text13       0073D
 __end_of_ADC_SelectChannel                     text17       0074A
@@ -937,7 +761,6 @@ __ptext6                                       text6        0071C
 __ptext7                                       text7        006E5
 __ptext8                                       text8        00765
 __ptext9                                       text9        006FE
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
 __size_of_ADC_GetConversionResult              (abs)        00000
 __size_of_ADC_Initialize                       (abs)        00000
 __size_of_ADC_SelectChannel                    (abs)        00000
@@ -957,15 +780,9 @@ __size_of_PIN_MANAGER_Initialize               (abs)        00000
 __size_of_SYSTEM_Initialize                    (abs)        00000
 __size_of_WDT_Initialize                       (abs)        00000
 __size_of_main                                 (abs)        00000
-<<<<<<< HEAD
-_convertedValue                                nvBANK0      00020
-_eusartRxLastError                             bssCOMMON    00075
-_main                                          maintext     00770
-=======
 _convertedValue                                nvCOMMON     00075
 _eusartRxLastError                             bssCOMMON    00074
 _main                                          maintext     00786
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
 _txData                                        bssCOMMON    00070
 btemp                                          (abs)        0007E
 end_of_initialization                          cinit        007FD
@@ -1566,11 +1383,7 @@ mcc_generated_files/opa2.c
 mcc_generated_files/opa2.c estimated size: 9
 
 mcc_generated_files/fvr.c
-<<<<<<< HEAD
-		_FVR_Initialize		CODE           	071A	0000	5
-=======
 		_FVR_Initialize		CODE           	06E5	0000	5
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
 
 mcc_generated_files/fvr.c estimated size: 5
 
@@ -1580,17 +1393,10 @@ mcc_generated_files/pin_manager.c
 mcc_generated_files/pin_manager.c estimated size: 72
 
 mcc_generated_files/adc.c
-<<<<<<< HEAD
-		_ADC_Initialize		CODE           	0748	0000	10
-		_ADC_GetConversionResult		CODE           	072C	0000	7
-		_ADC_StartConversion		CODE           	0717	0000	4
-		_ADC_SelectChannel		CODE           	0751	0000	14
-=======
 		_ADC_Initialize		CODE           	0734	0000	10
 		_ADC_GetConversionResult		CODE           	06F2	0000	7
 		_ADC_StartConversion		CODE           	06E2	0000	4
 		_ADC_SelectChannel		CODE           	073D	0000	14
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
 
 mcc_generated_files/adc.c estimated size: 35
 
@@ -1605,11 +1411,6 @@ shared
 shared estimated size: 13
 
 mcc_generated_files/mcc.c
-<<<<<<< HEAD
-		_WDT_Initialize		CODE           	071E	0000	5
-		_OSCILLATOR_Initialize		CODE           	0740	0000	9
-		_SYSTEM_Initialize		CODE           	075E	0000	19
-=======
 		_WDT_Initialize		CODE           	06E9	0000	5
 		_OSCILLATOR_Initialize		CODE           	072C	0000	9
 		_SYSTEM_Initialize		CODE           	074A	0000	28
@@ -1619,35 +1420,20 @@ mcc_generated_files/mcc.c estimated size: 42
 mcc_generated_files/dac1.c
 		_DAC1_Load10bitInputData		CODE           	0704	0000	9
 		_DAC1_Initialize		CODE           	0714	0000	9
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
 
 mcc_generated_files/dac1.c estimated size: 18
 
 mcc_generated_files/eusart.c
-<<<<<<< HEAD
-		_EUSART_Write  		CODE           	0738	0000	9
-		_EUSART_Initialize		CODE           	078E	0000	34
-		_EUSART_SetFramingErrorHandler		CODE           	0722	0000	6
-		_EUSART_SetErrorHandler		CODE           	0732	0000	7
-		_EUSART_SetOverrunErrorHandler		CODE           	0727	0000	6
-=======
 		_EUSART_Write  		CODE           	070C	0000	9
 		_EUSART_Initialize		CODE           	0765	0000	34
 		_EUSART_SetFramingErrorHandler		CODE           	06ED	0000	6
 		_EUSART_SetErrorHandler		CODE           	06F8	0000	7
 		_EUSART_SetOverrunErrorHandler		CODE           	06FE	0000	7
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
 
 mcc_generated_files/eusart.c estimated size: 63
 
 main.c
-<<<<<<< HEAD
-		_main          		CODE           	0770	0000	31
-
-main.c estimated size: 31
-=======
 		_main          		CODE           	0786	0000	37
 
 main.c estimated size: 37
->>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
 
