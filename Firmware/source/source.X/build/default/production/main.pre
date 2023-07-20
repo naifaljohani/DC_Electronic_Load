@@ -21501,9 +21501,15 @@ while (1)
 {
 ADC_StartConversion();
 convertedValue = ADC_GetConversionResult();
+<<<<<<< HEAD
+
+EUSART_Write((0x55));
+_delay((unsigned long)((10)*(16000000/4000.0)));
+=======
 DAC1_Load10bitInputData(1009);
 if (EUSART_is_tx_ready){
 EUSART_Write((convertedValue >> 8 ));
+>>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
 
 _delay((unsigned long)((10)*(16000000/4000.0)));
 

@@ -91,8 +91,13 @@ void main(void)
        }
         
         
+<<<<<<< HEAD
+        EUSART_Write((0x55));
+        __delay_ms(10);
+=======
         
        
+>>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
        
     }
 }

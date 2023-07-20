@@ -1268,7 +1268,11 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="FVR" name="cdafvrVoltage"/>
+<<<<<<< HEAD
+         <value/>
+=======
          <value>4.096 V</value>
+>>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="FVR" registerAlias="FVRCON" settingAlias="ADFVR" alias="1x"/>
@@ -1376,7 +1380,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="INTERNAL OSCILLATOR" name="CustomHardwarePll"/>
-         <value>enabled</value>
+         <value>disabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="INTERNAL OSCILLATOR" name="CustomIRFC"/>
@@ -2227,8 +2231,13 @@
          <value>16</value>
       </entry>
       <entry>
+<<<<<<< HEAD
+         <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="INTERNAL OSCILLATOR" registerAlias="OSCCON"/>
+         <value>122</value>
+=======
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="OPA3" registerAlias="OPAORS" settingAlias="OPAORS" alias="sync_C6OUT"/>
          <value>17</value>
+>>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="OPA3" registerAlias="OPAORS" settingAlias="OPAORS" alias="sync_C7OUT"/>
@@ -2251,8 +2260,13 @@
          <value>4</value>
       </entry>
       <entry>
+<<<<<<< HEAD
+         <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="INTERNAL OSCILLATOR" registerAlias="OSCCON" settingAlias="IRCF"/>
+         <value>16MHz_HF</value>
+=======
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="OPA3" registerAlias="OPAPCHS" settingAlias="OPAPCH" alias="DAC8_out"/>
          <value>5</value>
+>>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="OPA3" registerAlias="OPAPCHS" settingAlias="OPAPCH" alias="FVR_Buffer2"/>
@@ -8112,7 +8126,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="System Module" registerAlias="CONFIG2"/>
-         <value>12167</value>
+         <value>11911</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="CONFIG1" settingAlias="BOREN"/>
@@ -8164,7 +8178,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="CONFIG2" settingAlias="PLLEN"/>
-         <value>ON</value>
+         <value>OFF</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="CONFIG2" settingAlias="PPS1WAY"/>
@@ -8291,6 +8305,8 @@
       <entry>
          <file>mcc_generated_files\device_config.h</file>
          <hash>931b2a24817f51fc5e9a24a58fccf7317d789dd5420d92cca530078fb9df99c0</hash>
+<<<<<<< HEAD
+=======
       </entry>
       <entry>
          <file>mcc_generated_files\opa3.h</file>
@@ -8299,6 +8315,7 @@
       <entry>
          <file>mcc_generated_files\opa2.h</file>
          <hash>bfbaeecb95c684c3631d4eb52c05b9af4cc273dbf4f82b2eb30ea50c58dcc1ae</hash>
+>>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
       </entry>
       <entry>
          <file>main.c</file>
@@ -8306,7 +8323,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.c</file>
-         <hash>72e4e05a2db1714d17ae3200a200ca62ea1f777384ef1e5e7268891f5d7d9930</hash>
+         <hash>edb39d4f2a8d0168aca7ad920590f0594b0ce7424bcb9e514a6a3a7a71969801</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.h</file>
@@ -8358,7 +8375,11 @@
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>
+<<<<<<< HEAD
+         <hash>b27099e7fd0e2b42ba965f757c8b9a496328b09306f7d9775230f62788e1158e</hash>
+=======
          <hash>5f0ede30eeef6f5c7969b3c2945b2a8de3e8551c87cc32f721730feb41e5d0a2</hash>
+>>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
       </entry>
    </generatedFileHashHistoryMap>
 </config>

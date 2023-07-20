@@ -16633,11 +16633,19 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;mcc.c: 65: {
 [e :U _OSCILLATOR_Initialize ]
 [f ]
+<<<<<<< HEAD
+[; ;mcc.c: 64: OSCCON = 0x7A;
+"64
+[e = _OSCCON -> -> 122 `i `uc ]
+[; ;mcc.c: 66: OSCSTAT = 0x80;
+"66
+=======
 [; ;mcc.c: 67: OSCCON = 0x7A;
 "67
 [e = _OSCCON -> -> 122 `i `uc ]
 [; ;mcc.c: 69: OSCSTAT = 0x80;
 "69
+>>>>>>> fcda33602f32b28fc6a3ed1fdcef6f28b94af6ba
 [e = _OSCSTAT -> -> 128 `i `uc ]
 [; ;mcc.c: 71: OSCTUNE = 0x00;
 "71
