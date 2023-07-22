@@ -1,0 +1,154 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1779 ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"49 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"50 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"58
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"74
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"55 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"1740 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1802
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1864
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+"1926
+[v _TRISD TRISD `VEuc  1 e 1 @143 ]
+"1988
+[v _TRISE TRISE `VEuc  1 e 1 @144 ]
+[s S83 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"2388
+[s S90 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S97 . 1 `S83 1 . 1 0 `S90 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES97  1 e 1 @151 ]
+"2505
+[v _WDTCON WDTCON `VEuc  1 e 1 @153 ]
+"2564
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @154 ]
+"2622
+[v _OSCCON OSCCON `VEuc  1 e 1 @155 ]
+"2694
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @156 ]
+"2756
+[v _BORCON BORCON `VEuc  1 e 1 @157 ]
+"2885
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S23 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"2902
+[u S32 . 1 `S23 1 . 1 0 ]
+[v _LATAbits LATAbits `VES32  1 e 1 @268 ]
+"2947
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+"3009
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"3071
+[v _LATD LATD `VEuc  1 e 1 @271 ]
+"3133
+[v _LATE LATE `VEuc  1 e 1 @272 ]
+"4040
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"4090
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"4140
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"4191
+[v _ANSELD ANSELD `VEuc  1 e 1 @399 ]
+"4253
+[v _ANSELE ANSELE `VEuc  1 e 1 @400 ]
+"5321
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"5383
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"5445
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"5507
+[v _WPUD WPUD `VEuc  1 e 1 @527 ]
+"5569
+[v _WPUE WPUE `VEuc  1 e 1 @528 ]
+"7415
+[v _ODCONA ODCONA `VEuc  1 e 1 @652 ]
+"7477
+[v _ODCONB ODCONB `VEuc  1 e 1 @653 ]
+"7539
+[v _ODCONC ODCONC `VEuc  1 e 1 @654 ]
+"7601
+[v _ODCOND ODCOND `VEuc  1 e 1 @655 ]
+"7663
+[v _ODCONE ODCONE `VEuc  1 e 1 @656 ]
+"8609
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @780 ]
+"8671
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @781 ]
+"8733
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @782 ]
+"8795
+[v _SLRCOND SLRCOND `VEuc  1 e 1 @783 ]
+"8857
+[v _SLRCONE SLRCONE `VEuc  1 e 1 @784 ]
+"9963
+[v _INLVLA INLVLA `VEuc  1 e 1 @908 ]
+"10025
+[v _INLVLB INLVLB `VEuc  1 e 1 @909 ]
+"10087
+[v _INLVLC INLVLC `VEuc  1 e 1 @910 ]
+"10149
+[v _INLVLD INLVLD `VEuc  1 e 1 @911 ]
+"49647
+"49647
+[v _PLLR PLLR `VEb  1 e 0 @1254 ]
+"49 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"74
+} 0
+"50 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"56
+} 0
+"74
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"78
+} 0
+"55 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"126
+} 0
+"58 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"72
+} 0
