@@ -1,0 +1,13 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"10-26022015-109410";"";
+"REFERENCE";"M52-040023V0545";"";
+"TraceParts.PartTitle";"Header 5way SIL PCT MALE Pin";"";
+"TraceParts.InstanceId";"10-26022015-109410BB2IF3UD7GUNZ5FZU2JBCT687";"";
+"DESIGN";"Header 5way SIL PCT MALE Pin";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartStatusId";"";"";
+"SUPPLIER";"harwin";"";
+"TraceParts.PartVersion";"1.0.1";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.ClassPath";"HARWIN:/F_HARWIN/10-26022015-109410";"";

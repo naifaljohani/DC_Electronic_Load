@@ -1,0 +1,13 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"10-20122013-093719";"";
+"REFERENCE";"801-87-005-65-001101";"";
+"TraceParts.PartTitle";"Press-fit socket connector 2.54 mm, single row, compliant pin for PCB thickness 1.5 to 2.5 mm - Mating pin Ø 0.76 mm";"";
+"TraceParts.InstanceId";"10-20122013-0937193XV6ZG86OUMGCBDYINW9DIJ34";"";
+"DESIGN";"Press-fit socket connector 2.54 mm, single row, compliant pin for PCB thickness 1.5 to 2.5 mm, 5 contacts, Tin / Flash Gold";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartStatusId";"";"";
+"SUPPLIER";"preci-dip";"";
+"TraceParts.PartVersion";"1.0.9";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.ClassPath";"PRECIDIP:10-20122013-093719";"";

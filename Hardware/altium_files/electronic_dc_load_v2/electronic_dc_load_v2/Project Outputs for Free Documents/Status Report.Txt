@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [electronic_dc_load_v2.PcbDoc]
+   Generated File[electronic_dc_load_v2-RoundHoles.TXT]
+   Generated File[electronic_dc_load_v2-SlotHoles.TXT]
+   Generated File[electronic_dc_load_v2.LDP]
+   Generated File[electronic_dc_load_v2.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 3:54:00 PM On 8/15/2021

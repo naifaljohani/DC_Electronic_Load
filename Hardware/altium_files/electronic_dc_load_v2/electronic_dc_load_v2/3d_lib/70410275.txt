@@ -1,0 +1,14 @@
+﻿"Symbol";"Value";"Unit";
+"REFERENCE";"3296P-1-253LF";"";
+"TraceParts.PartVersion";"1.0.2";"";
+"SUPPLIER";"Bourns Electronics";"";
+"TraceParts.PartStatus";"Published";"";
+"ALLIED_STOCK_NUMBER";"70410275";"";
+"TraceParts.PartNumber";"10-12012018-125432";"";
+"TraceParts.PartLanguage";"en";"";
+"DESIGN";"3296P side adj cermet trimmer,25K 10mm";"";
+"TraceParts.InstanceId";"10-12012018-125432AEDYOZ14LUF6JFYDCX23PN08H";"";
+"TraceParts.PartTitle";"3296P side adj cermet trimmer,25K 10mm";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartStatusId";"";"";
+"TraceParts.ClassPath";"ALLIED_ELECTRONICS:10-12012018-125432";"";

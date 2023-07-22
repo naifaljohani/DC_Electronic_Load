@@ -1,0 +1,16 @@
+﻿"Symbol";"Value";"Unit";
+"SUPPLIER_NAME";"RS Components";"";
+"TraceParts.PartVersion";"1.0.8";"";
+"SUPPLIER";"Preci-Dip";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartNumber";"10-16112011-141808";"";
+"TraceParts.PartLanguage";"en";"";
+"DESIGN";"Preci-Dip 350, 2 Way, 1 Row, Straight Pin Header";"";
+"TraceParts.InstanceId";"10-16112011-14180879XJKIFQQDGRY71B72AUJY3OS";"";
+"TraceParts.PartTitle";"Preci-Dip 350, 2 Way, 1 Row, Straight Pin Header";"";
+"REFERENCE";"350-80-102-00-006101";"";
+"Buy_Now";"https://uk.rs-online.com/web/p/products/7020020P?cm_mmc=en-ds-_-mcad-_-traceparts-_-7020020P'";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartStatusId";"";"";
+"rs_stock_number";"7020020P";"";
+"TraceParts.ClassPath";"RS_COMPONENTS:10-16112011-141808";"";

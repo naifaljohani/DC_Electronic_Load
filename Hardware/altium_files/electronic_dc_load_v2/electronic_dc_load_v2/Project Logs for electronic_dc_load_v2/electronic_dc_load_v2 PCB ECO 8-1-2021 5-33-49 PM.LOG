@@ -1,0 +1,8 @@
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component Q3 STP55NF06L
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component Q6 BC846BWT1G
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R30 2.2KR
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R36 1R
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R48 10k
+Added Member To Class: ClassName=electronic_dc_load_v1 Member=Component R50 0.1R
+Added Rule: Name=Schematic Width Constraint_4
+Added Rule: Name=Schematic Width Constraint_5

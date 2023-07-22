@@ -1,0 +1,13 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"10-18112016-083255";"";
+"REFERENCE";"PWR220T-35-4R70F";"";
+"TraceParts.PartTitle";"PWR220T Thick film Resistor 4R7 35W 1%";"";
+"TraceParts.InstanceId";"10-18112016-0832551INJJJIZH4ISZR7XYJ1N0ABJP";"";
+"DESIGN";"PWR220T Thick film Resistor 4R7 35W 1%";"";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartStatusId";"";"";
+"SUPPLIER";"BOURNS";"";
+"TraceParts.PartVersion";"1.0.0";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.ClassPath";"BOURNS:10-18112016-083255";"";

@@ -1,0 +1,14 @@
+﻿"Symbol";"Value";"Unit";
+"REFERENCE";"61300811121";"";
+"TraceParts.PartVersion";"1.0.2";"";
+"SUPPLIER";"Wurth Elektronik";"";
+"TraceParts.PartStatus";"Published";"";
+"ALLIED_STOCK_NUMBER";"71071832";"";
+"TraceParts.PartNumber";"10-11012018-134329";"";
+"TraceParts.PartLanguage";"en";"";
+"DESIGN";"WR-PHD 2.54mm Pin Header THT Straight 8p";"";
+"TraceParts.InstanceId";"10-11012018-1343295AMSL5FQ7FG8OUZDIEAQ16H0N";"";
+"TraceParts.PartTitle";"WR-PHD 2.54mm Pin Header THT Straight 8p";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartStatusId";"";"";
+"TraceParts.ClassPath";"ALLIED_ELECTRONICS:/ALLIED_ELECTRONICS/PSSS_435563/PSS_435683/PSF_435704/10-11012018-134329";"";
