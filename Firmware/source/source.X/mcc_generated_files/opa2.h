@@ -1,23 +1,23 @@
 /**
-  @Generated PIC10 / PIC12 / PIC16 / PIC18 MCUs Source File
+  OPA2 Generated Driver File
 
-  @Company:
+  @Company
     Microchip Technology Inc.
 
-  @File Name:
-    mcc.c
+  @File Name
+    opa2.c
 
-  @Summary:
-    This is the mcc.c file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+  @Summary
+    This is the generated driver implementation file for the OPA2 driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
-  @Description:
-    This header file provides implementations for driver APIs for all modules selected in the GUI.
+  @Description
+    This source file provides implementations for driver APIs for OPA2.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.8
         Device            :  PIC16F1779
-        Driver Version    :  2.00
+        Driver Version    :  2.01
     The generated drivers are tested against the following:
-        Compiler          :  XC8 2.36 and above or later
+        Compiler          :  XC8 2.36 and above
         MPLAB             :  MPLAB X 6.00
 */
 
@@ -44,42 +44,62 @@
     SOFTWARE.
 */
 
-#include "mcc.h"
+#ifndef OPA2_H
+#define OPA2_H
 
+/**
+  Section: Included Files
+*/
 
-void SYSTEM_Initialize(void)
-{
+#include <stdbool.h>
+#include <stdint.h>
 
-    PIN_MANAGER_Initialize();
-    OSCILLATOR_Initialize();
-    WDT_Initialize();
-    FVR_Initialize();
+#ifdef __cplusplus  // Provide C++ Compatibility
+
+    extern "C" {
+
+#endif
+
+/**
+  Section: OPA2 APIs
+*/
+
+/**
+  @Summary
+    Initializes the OPA2
+
+  @Description
+    This routine initializes the OPA2.
+    This routine must be called before any other OPA2 routine is called.
+    This routine should only be called once during system initialization.
+
+  @Preconditions
+    None
+
+  @Param
+    None
+
+  @Returns
+    None
+
+  @Comment
+    Initialize
+
+  @Example
+    <code>
     OPA2_Initialize();
-    DAC1_Initialize();
-}
+    </code>
+*/
+void OPA2_Initialize(void);
 
-void OSCILLATOR_Initialize(void)
-{
-    // SCS FOSC; SPLLEN disabled; IRCF 8MHz_HF; 
-    OSCCON = 0x70;
-    // SOSCR enabled; 
-    OSCSTAT = 0x80;
-    // TUN 0; 
-    OSCTUNE = 0x00;
-    // SBOREN disabled; BORFS disabled; 
-    BORCON = 0x00;
-    // Wait for PLL to stabilize
-    while(PLLR == 0)
-    {
+#ifdef __cplusplus  // Provide C++ Compatibility
+
     }
-}
 
-void WDT_Initialize(void)
-{
-    // WDTPS 1:65536; SWDTEN OFF; 
-    WDTCON = 0x16;
-}
+#endif
 
+#endif // OPA2_H
 /**
  End of File
 */
+

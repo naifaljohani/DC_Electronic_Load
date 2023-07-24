@@ -65,25 +65,17 @@
 #define PULL_UP_ENABLED      1
 #define PULL_UP_DISABLED     0
 
-// get/set IO_RA5 aliases
-#define IO_RA5_TRIS                 TRISAbits.TRISA5
-#define IO_RA5_LAT                  LATAbits.LATA5
-#define IO_RA5_PORT                 PORTAbits.RA5
-#define IO_RA5_WPU                  WPUAbits.WPUA5
-#define IO_RA5_OD                   ODCONAbits.ODA5
-#define IO_RA5_ANS                  ANSELAbits.ANSA5
-#define IO_RA5_SetHigh()            do { LATAbits.LATA5 = 1; } while(0)
-#define IO_RA5_SetLow()             do { LATAbits.LATA5 = 0; } while(0)
-#define IO_RA5_Toggle()             do { LATAbits.LATA5 = ~LATAbits.LATA5; } while(0)
-#define IO_RA5_GetValue()           PORTAbits.RA5
-#define IO_RA5_SetDigitalInput()    do { TRISAbits.TRISA5 = 1; } while(0)
-#define IO_RA5_SetDigitalOutput()   do { TRISAbits.TRISA5 = 0; } while(0)
-#define IO_RA5_SetPullup()          do { WPUAbits.WPUA5 = 1; } while(0)
-#define IO_RA5_ResetPullup()        do { WPUAbits.WPUA5 = 0; } while(0)
-#define IO_RA5_SetPushPull()        do { ODCONAbits.ODA5 = 0; } while(0)
-#define IO_RA5_SetOpenDrain()       do { ODCONAbits.ODA5 = 1; } while(0)
-#define IO_RA5_SetAnalogMode()      do { ANSELAbits.ANSA5 = 1; } while(0)
-#define IO_RA5_SetDigitalMode()     do { ANSELAbits.ANSA5 = 0; } while(0)
+// get/set RB1 procedures
+#define RB1_SetHigh()            do { LATBbits.LATB1 = 1; } while(0)
+#define RB1_SetLow()             do { LATBbits.LATB1 = 0; } while(0)
+#define RB1_Toggle()             do { LATBbits.LATB1 = ~LATBbits.LATB1; } while(0)
+#define RB1_GetValue()              PORTBbits.RB1
+#define RB1_SetDigitalInput()    do { TRISBbits.TRISB1 = 1; } while(0)
+#define RB1_SetDigitalOutput()   do { TRISBbits.TRISB1 = 0; } while(0)
+#define RB1_SetPullup()             do { WPUBbits.WPUB1 = 1; } while(0)
+#define RB1_ResetPullup()           do { WPUBbits.WPUB1 = 0; } while(0)
+#define RB1_SetAnalogMode()         do { ANSELBbits.ANSB1 = 1; } while(0)
+#define RB1_SetDigitalMode()        do { ANSELBbits.ANSB1 = 0; } while(0)
 
 /**
    @Param

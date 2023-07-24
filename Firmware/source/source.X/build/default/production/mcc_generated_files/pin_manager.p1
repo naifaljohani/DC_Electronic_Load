@@ -16535,8 +16535,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 193: extern __bank0 unsigned char __resetbits;
 [; ;pic.h: 194: extern __bank0 __bit __powerdown;
 [; ;pic.h: 195: extern __bank0 __bit __timeout;
-[; ;pin_manager.h: 98: void PIN_MANAGER_Initialize (void);
-[; ;pin_manager.h: 110: void PIN_MANAGER_IOC(void);
+[; ;pin_manager.h: 90: void PIN_MANAGER_Initialize (void);
+[; ;pin_manager.h: 102: void PIN_MANAGER_IOC(void);
 "55 mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize `(v ~T0 @X0 1 ef ]
 "56
@@ -16563,12 +16563,12 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pin_manager.c: 69: TRISE = 0x07;
 "69
 [e = _TRISE -> -> 7 `i `uc ]
-[; ;pin_manager.c: 70: TRISA = 0xDF;
+[; ;pin_manager.c: 70: TRISA = 0xFF;
 "70
-[e = _TRISA -> -> 223 `i `uc ]
-[; ;pin_manager.c: 71: TRISB = 0xFF;
+[e = _TRISA -> -> 255 `i `uc ]
+[; ;pin_manager.c: 71: TRISB = 0xFD;
 "71
-[e = _TRISB -> -> 255 `i `uc ]
+[e = _TRISB -> -> 253 `i `uc ]
 [; ;pin_manager.c: 72: TRISC = 0xFF;
 "72
 [e = _TRISC -> -> 255 `i `uc ]

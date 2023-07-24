@@ -1,28 +1,12 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"90 mcc_generated_files/pin_manager.h
-[v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
-"85 mcc_generated_files/mcc.h
-[v _OSCILLATOR_Initialize `(v ~T0 @X0 0 ef ]
-"97
-[v _WDT_Initialize `(v ~T0 @X0 0 ef ]
-"93 mcc_generated_files/fvr.h
-[v _FVR_Initialize `(v ~T0 @X0 0 ef ]
-"93 mcc_generated_files/opa2.h
-[v _OPA2_Initialize `(v ~T0 @X0 0 ef ]
-"94 mcc_generated_files/dac1.h
-[v _DAC1_Initialize `(v ~T0 @X0 0 ef ]
-"2622 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
-[v _OSCCON `Vuc ~T0 @X0 0 e@155 ]
-"2694
-[v _OSCSTAT `Vuc ~T0 @X0 0 e@156 ]
-"2564
-[v _OSCTUNE `Vuc ~T0 @X0 0 e@154 ]
-"2756
-[v _BORCON `Vuc ~T0 @X0 0 e@157 ]
-"49647
-[v _PLLR `Vb ~T0 @X0 0 e@1254 ]
-"2505
-[v _WDTCON `Vuc ~T0 @X0 0 e@153 ]
+"13812 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
+[v _OPA2CON `Vuc ~T0 @X0 0 e@1301 ]
+"13908
+[v _OPA2ORS `Vuc ~T0 @X0 0 e@1302 ]
+"13756
+[v _OPA2NCHS `Vuc ~T0 @X0 0 e@1299 ]
+"13784
+[v _OPA2PCHS `Vuc ~T0 @X0 0 e@1300 ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -16480,8 +16464,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 193: extern __bank0 unsigned char __resetbits;
 [; ;pic.h: 194: extern __bank0 __bit __powerdown;
 [; ;pic.h: 195: extern __bank0 __bit __timeout;
-[; ;pin_manager.h: 90: void PIN_MANAGER_Initialize (void);
-[; ;pin_manager.h: 102: void PIN_MANAGER_IOC(void);
+[; ;stdbool.h: 12: typedef unsigned char bool;
 [; ;stdint.h: 13: typedef signed char int8_t;
 [; ;stdint.h: 20: typedef signed int int16_t;
 [; ;stdint.h: 28: typedef signed short long int int24_t;
@@ -16510,107 +16493,28 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;stdint.h: 205: typedef uint32_t uintmax_t;
 [; ;stdint.h: 210: typedef int16_t intptr_t;
 [; ;stdint.h: 215: typedef uint16_t uintptr_t;
-[; ;stdbool.h: 12: typedef unsigned char bool;
-[; ;errno.h: 29: extern int errno;
-[; ;conio.h: 12: extern void init_uart(void);
-[; ;conio.h: 14: extern char getch(void);
-[; ;conio.h: 15: extern char getche(void);
-[; ;conio.h: 16: extern void putch(char);
-[; ;conio.h: 17: extern void ungetch(char);
-[; ;conio.h: 19: extern __bit kbhit(void);
-[; ;conio.h: 23: extern char * cgets(char *);
-[; ;conio.h: 24: extern void cputs(const char *);
-[; ;dac1.h: 94: void DAC1_Initialize(void);
-[; ;dac1.h: 125: void DAC1_Load16bitInputData(uint16_t input16BitData);
-[; ;dac1.h: 156: void DAC1_Load10bitInputData(uint16_t input10BitData);
-[; ;dac1.h: 187: void DAC1_Load8bitInputData(uint8_t input8BitData);
-[; ;dac1.h: 215: uint16_t DAC1_Read10BitInputData(void);
-[; ;fvr.h: 93: void FVR_Initialize(void);
-[; ;fvr.h: 127: bool FVR_IsOutputReady(void);
 [; ;opa2.h: 93: void OPA2_Initialize(void);
-[; ;mcc.h: 72: void SYSTEM_Initialize(void);
-[; ;mcc.h: 85: void OSCILLATOR_Initialize(void);
-[; ;mcc.h: 97: void WDT_Initialize(void);
-"50 mcc_generated_files/mcc.c
-[v _SYSTEM_Initialize `(v ~T0 @X0 1 ef ]
-"51
-{
-[; ;mcc.c: 50: void SYSTEM_Initialize(void)
-[; ;mcc.c: 51: {
-[e :U _SYSTEM_Initialize ]
-[f ]
-[; ;mcc.c: 53: PIN_MANAGER_Initialize();
-"53
-[e ( _PIN_MANAGER_Initialize ..  ]
-[; ;mcc.c: 54: OSCILLATOR_Initialize();
-"54
-[e ( _OSCILLATOR_Initialize ..  ]
-[; ;mcc.c: 55: WDT_Initialize();
-"55
-[e ( _WDT_Initialize ..  ]
-[; ;mcc.c: 56: FVR_Initialize();
-"56
-[e ( _FVR_Initialize ..  ]
-[; ;mcc.c: 57: OPA2_Initialize();
-"57
-[e ( _OPA2_Initialize ..  ]
-[; ;mcc.c: 58: DAC1_Initialize();
-"58
-[e ( _DAC1_Initialize ..  ]
-[; ;mcc.c: 59: }
+"58 mcc_generated_files/opa2.c
+[v _OPA2_Initialize `(v ~T0 @X0 1 ef ]
 "59
-[e :UE 2092 ]
-}
+{
+[; ;opa2.c: 58: void OPA2_Initialize(void)
+[; ;opa2.c: 59: {
+[e :U _OPA2_Initialize ]
+[f ]
+[; ;opa2.c: 61: OPA2CON = 0x90;
 "61
-[v _OSCILLATOR_Initialize `(v ~T0 @X0 1 ef ]
-"62
-{
-[; ;mcc.c: 61: void OSCILLATOR_Initialize(void)
-[; ;mcc.c: 62: {
-[e :U _OSCILLATOR_Initialize ]
-[f ]
-[; ;mcc.c: 64: OSCCON = 0x70;
-"64
-[e = _OSCCON -> -> 112 `i `uc ]
-[; ;mcc.c: 66: OSCSTAT = 0x80;
-"66
-[e = _OSCSTAT -> -> 128 `i `uc ]
-[; ;mcc.c: 68: OSCTUNE = 0x00;
+[e = _OPA2CON -> -> 144 `i `uc ]
+[; ;opa2.c: 63: OPA2ORS = 0x00;
+"63
+[e = _OPA2ORS -> -> 0 `i `uc ]
+[; ;opa2.c: 65: OPA2NCHS = 0x00;
+"65
+[e = _OPA2NCHS -> -> 0 `i `uc ]
+[; ;opa2.c: 67: OPA2PCHS = 0x02;
+"67
+[e = _OPA2PCHS -> -> 2 `i `uc ]
+[; ;opa2.c: 68: }
 "68
-[e = _OSCTUNE -> -> 0 `i `uc ]
-[; ;mcc.c: 70: BORCON = 0x00;
-"70
-[e = _BORCON -> -> 0 `i `uc ]
-[; ;mcc.c: 72: while(PLLR == 0)
-"72
-[e $U 2094  ]
-[e :U 2095 ]
-[; ;mcc.c: 73: {
-"73
-{
-"74
-}
-[e :U 2094 ]
-"72
-[e $ == -> _PLLR `i -> 0 `i 2095  ]
-[e :U 2096 ]
-[; ;mcc.c: 74: }
-[; ;mcc.c: 75: }
-"75
-[e :UE 2093 ]
-}
-"77
-[v _WDT_Initialize `(v ~T0 @X0 1 ef ]
-"78
-{
-[; ;mcc.c: 77: void WDT_Initialize(void)
-[; ;mcc.c: 78: {
-[e :U _WDT_Initialize ]
-[f ]
-[; ;mcc.c: 80: WDTCON = 0x16;
-"80
-[e = _WDTCON -> -> 22 `i `uc ]
-[; ;mcc.c: 81: }
-"81
-[e :UE 2097 ]
+[e :UE 2092 ]
 }

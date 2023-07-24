@@ -9,12 +9,20 @@
 [v ___ftadd __ftadd `(f  1 e 3 0 ]
 "49 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\main.c
 [v _main main `(v  1 e 1 0 ]
+"68 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
+[v _DAC1_Initialize DAC1_Initialize `(v  1 e 1 0 ]
+"81
+[v _DAC1_Load16bitInputData DAC1_Load16bitInputData `(v  1 e 1 0 ]
+"58 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/fvr.c
+[v _FVR_Initialize FVR_Initialize `(v  1 e 1 0 ]
 "50 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
-"58
+"61
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"74
+"77
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"58 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa2.c
+[v _OPA2_Initialize OPA2_Initialize `(v  1 e 1 0 ]
 "55 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 "1740 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
@@ -27,7 +35,7 @@
 [v _TRISD TRISD `VEuc  1 e 1 @143 ]
 "1988
 [v _TRISE TRISE `VEuc  1 e 1 @144 ]
-[s S83 . 1 `uc 1 PS 1 0 :3:0 
+[s S39 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 TMR0SE 1 0 :1:4 
 `uc 1 TMR0CS 1 0 :1:5 
@@ -35,15 +43,15 @@
 `uc 1 nWPUEN 1 0 :1:7 
 ]
 "2388
-[s S90 . 1 `uc 1 PS0 1 0 :1:0 
+[s S46 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
 ]
-[u S97 . 1 `S83 1 . 1 0 `S90 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES97  1 e 1 @151 ]
+[u S53 . 1 `S39 1 . 1 0 `S46 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES53  1 e 1 @151 ]
 "2505
 [v _WDTCON WDTCON `VEuc  1 e 1 @153 ]
 "2564
@@ -54,20 +62,20 @@
 [v _OSCSTAT OSCSTAT `VEuc  1 e 1 @156 ]
 "2756
 [v _BORCON BORCON `VEuc  1 e 1 @157 ]
+"2789
+[v _FVRCON FVRCON `VEuc  1 e 1 @158 ]
+[s S269 . 1 `uc 1 ADFVR 1 0 :2:0 
+`uc 1 CDAFVR 1 0 :2:2 
+`uc 1 TSRNG 1 0 :1:4 
+`uc 1 TSEN 1 0 :1:5 
+`uc 1 FVRRDY 1 0 :1:6 
+`uc 1 FVREN 1 0 :1:7 
+]
+"2804
+[u S276 . 1 `S269 1 . 1 0 ]
+[v _FVRCONbits FVRCONbits `VES276  1 e 1 @158 ]
 "2885
 [v _LATA LATA `VEuc  1 e 1 @268 ]
-[s S23 . 1 `uc 1 LATA0 1 0 :1:0 
-`uc 1 LATA1 1 0 :1:1 
-`uc 1 LATA2 1 0 :1:2 
-`uc 1 LATA3 1 0 :1:3 
-`uc 1 LATA4 1 0 :1:4 
-`uc 1 LATA5 1 0 :1:5 
-`uc 1 LATA6 1 0 :1:6 
-`uc 1 LATA7 1 0 :1:7 
-]
-"2902
-[u S32 . 1 `S23 1 . 1 0 ]
-[v _LATAbits LATAbits `VES32  1 e 1 @268 ]
 "2947
 [v _LATB LATB `VEuc  1 e 1 @269 ]
 "3009
@@ -124,31 +132,120 @@
 [v _INLVLC INLVLC `VEuc  1 e 1 @910 ]
 "10149
 [v _INLVLD INLVLD `VEuc  1 e 1 @911 ]
+"13756
+[v _OPA2NCHS OPA2NCHS `VEuc  1 e 1 @1299 ]
+"13784
+[v _OPA2PCHS OPA2PCHS `VEuc  1 e 1 @1300 ]
+"13812
+[v _OPA2CON OPA2CON `VEuc  1 e 1 @1301 ]
+"13908
+[v _OPA2ORS OPA2ORS `VEuc  1 e 1 @1302 ]
+[s S140 . 1 `uc 1 DAC1LD 1 0 :1:0 
+`uc 1 DAC2LD 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 DAC5LD 1 0 :1:4 
+`uc 1 DAC6LD 1 0 :1:5 
+]
+"14310
+[u S146 . 1 `S140 1 . 1 0 ]
+[v _DACLDbits DACLDbits `VES146  1 e 1 @1421 ]
+"14335
+[v _DAC1CON0 DAC1CON0 `VEuc  1 e 1 @1422 ]
+[s S155 . 1 `uc 1 NSS 1 0 :2:0 
+`uc 1 PSS 1 0 :2:2 
+`uc 1 OE2 1 0 :1:4 
+`uc 1 OE1 1 0 :1:5 
+`uc 1 FM 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"14388
+[s S162 . 1 `uc 1 NSS0 1 0 :1:0 
+`uc 1 NSS1 1 0 :1:1 
+`uc 1 PSS0 1 0 :1:2 
+`uc 1 PSS1 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 OE 1 0 :1:5 
+]
+[s S169 . 1 `uc 1 DACNSS 1 0 :2:0 
+`uc 1 DACPSS 1 0 :2:2 
+`uc 1 DACOE2 1 0 :1:4 
+`uc 1 DACOE1 1 0 :1:5 
+`uc 1 DACFM 1 0 :1:6 
+`uc 1 DACEN 1 0 :1:7 
+]
+[s S176 . 1 `uc 1 DACNSS0 1 0 :1:0 
+`uc 1 DACNSS1 1 0 :1:1 
+`uc 1 DACPSS0 1 0 :1:2 
+`uc 1 DACPSS1 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 DACOE 1 0 :1:5 
+]
+[s S183 . 1 `uc 1 DAC1NSS 1 0 :2:0 
+`uc 1 DAC1PSS 1 0 :2:2 
+`uc 1 DAC1OE2 1 0 :1:4 
+`uc 1 DAC1OE1 1 0 :1:5 
+`uc 1 DAC1FM 1 0 :1:6 
+`uc 1 DAC1EN 1 0 :1:7 
+]
+[s S190 . 1 `uc 1 DAC1NSS0 1 0 :1:0 
+`uc 1 DAC1NSS1 1 0 :1:1 
+`uc 1 DAC1PSS0 1 0 :1:2 
+`uc 1 DAC1PSS1 1 0 :1:3 
+]
+[u S195 . 1 `S155 1 . 1 0 `S162 1 . 1 0 `S169 1 . 1 0 `S176 1 . 1 0 `S183 1 . 1 0 `S190 1 . 1 0 ]
+[v _DAC1CON0bits DAC1CON0bits `VES195  1 e 1 @1422 ]
+"14560
+[v _DAC1REFL DAC1REFL `VEuc  1 e 1 @1423 ]
+"14982
+[v _DAC1REFH DAC1REFH `VEuc  1 e 1 @1424 ]
 "49647
 "49647
 [v _PLLR PLLR `VEb  1 e 0 @1254 ]
 "49 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"74
+"68
+[v main@count count `ui  1 a 2 2 ]
+"79
 } 0
 "50 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
-"56
+"59
 } 0
-"74
+"77
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
 {
-"78
+"81
 } 0
 "55 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "126
 } 0
-"58 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+"61 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
-"72
+"75
+} 0
+"58 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa2.c
+[v _OPA2_Initialize OPA2_Initialize `(v  1 e 1 0 ]
+{
+"68
+} 0
+"58 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/fvr.c
+[v _FVR_Initialize FVR_Initialize `(v  1 e 1 0 ]
+{
+"62
+} 0
+"68 C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
+[v _DAC1_Initialize DAC1_Initialize `(v  1 e 1 0 ]
+{
+"78
+} 0
+"81
+[v _DAC1_Load16bitInputData DAC1_Load16bitInputData `(v  1 e 1 0 ]
+{
+[v DAC1_Load16bitInputData@input16BitData input16BitData `ui  1 p 2 0 ]
+"92
 } 0

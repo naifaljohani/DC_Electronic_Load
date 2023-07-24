@@ -1,23 +1,23 @@
 /**
-  @Generated PIC10 / PIC12 / PIC16 / PIC18 MCUs Source File
+  OPA2 Generated Driver File
 
-  @Company:
+  @Company
     Microchip Technology Inc.
 
-  @File Name:
-    mcc.c
+  @File Name
+    opa2.c
 
-  @Summary:
-    This is the mcc.c file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+  @Summary
+    This is the generated driver implementation file for the OPA2 driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
-  @Description:
-    This header file provides implementations for driver APIs for all modules selected in the GUI.
+  @Description
+    This source file provides implementations for driver APIs for OPA2.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.8
         Device            :  PIC16F1779
-        Driver Version    :  2.00
+        Driver Version    :  2.01
     The generated drivers are tested against the following:
-        Compiler          :  XC8 2.36 and above or later
+        Compiler          :  XC8 2.36 and above
         MPLAB             :  MPLAB X 6.00
 */
 
@@ -44,42 +44,28 @@
     SOFTWARE.
 */
 
-#include "mcc.h"
+/**
+  Section: Included Files
+*/
 
+#include <xc.h>
+#include "opa2.h"
 
-void SYSTEM_Initialize(void)
+/**
+  Section: OPA2 APIs
+*/
+
+void OPA2_Initialize(void)
 {
-
-    PIN_MANAGER_Initialize();
-    OSCILLATOR_Initialize();
-    WDT_Initialize();
-    FVR_Initialize();
-    OPA2_Initialize();
-    DAC1_Initialize();
+    // OPA2ORPOL not inverted; OPA2EN enabled; OPA2UG OPA_Output; OPA2ORM disabled; 
+    OPA2CON = 0x90;
+    // ORS CCP1_out; 
+    OPA2ORS = 0x00;
+    // NCH OPA2IN0-; 
+    OPA2NCHS = 0x00;
+    // PCH DAC1_out; 
+    OPA2PCHS = 0x02;
 }
-
-void OSCILLATOR_Initialize(void)
-{
-    // SCS FOSC; SPLLEN disabled; IRCF 8MHz_HF; 
-    OSCCON = 0x70;
-    // SOSCR enabled; 
-    OSCSTAT = 0x80;
-    // TUN 0; 
-    OSCTUNE = 0x00;
-    // SBOREN disabled; BORFS disabled; 
-    BORCON = 0x00;
-    // Wait for PLL to stabilize
-    while(PLLR == 0)
-    {
-    }
-}
-
-void WDT_Initialize(void)
-{
-    // WDTPS 1:65536; SWDTEN OFF; 
-    WDTCON = 0x16;
-}
-
 /**
  End of File
 */

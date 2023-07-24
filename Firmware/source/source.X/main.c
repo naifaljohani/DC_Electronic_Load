@@ -65,11 +65,16 @@ void main(void)
 
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
-
+    uint16_t count= (64 *1023);
+    
+    
     while (1)
     {
-        IO_RA5_Toggle() ;
-        __delay_ms(500);
+    
+    
+    DAC1_Load16bitInputData(count); 
+      
+    
     }
 }
 /**

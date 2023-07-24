@@ -1,23 +1,23 @@
 /**
-  @Generated PIC10 / PIC12 / PIC16 / PIC18 MCUs Source File
+  FVR Generated Driver File
 
-  @Company:
+  @Company
     Microchip Technology Inc.
 
-  @File Name:
-    mcc.c
+  @File Name
+    fvr.c
 
-  @Summary:
-    This is the mcc.c file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+  @Summary
+    This is the generated driver implementation file for the FVR driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
-  @Description:
-    This header file provides implementations for driver APIs for all modules selected in the GUI.
+  @Description
+    This source file provides APIs for FVR.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.8
         Device            :  PIC16F1779
-        Driver Version    :  2.00
+        Driver Version    :  2.01
     The generated drivers are tested against the following:
-        Compiler          :  XC8 2.36 and above or later
+        Compiler          :  XC8 2.36 and above
         MPLAB             :  MPLAB X 6.00
 */
 
@@ -44,42 +44,28 @@
     SOFTWARE.
 */
 
-#include "mcc.h"
+/**
+  Section: Included Files
+*/
 
+#include <xc.h>
+#include "fvr.h"
 
-void SYSTEM_Initialize(void)
+/**
+  Section: FVR APIs
+*/
+
+void FVR_Initialize(void)
 {
-
-    PIN_MANAGER_Initialize();
-    OSCILLATOR_Initialize();
-    WDT_Initialize();
-    FVR_Initialize();
-    OPA2_Initialize();
-    DAC1_Initialize();
+    // CDAFVR 4x; FVREN enabled; TSRNG Lo_range; ADFVR off; TSEN disabled; 
+    FVRCON = 0x8C;
 }
 
-void OSCILLATOR_Initialize(void)
+bool FVR_IsOutputReady(void)
 {
-    // SCS FOSC; SPLLEN disabled; IRCF 8MHz_HF; 
-    OSCCON = 0x70;
-    // SOSCR enabled; 
-    OSCSTAT = 0x80;
-    // TUN 0; 
-    OSCTUNE = 0x00;
-    // SBOREN disabled; BORFS disabled; 
-    BORCON = 0x00;
-    // Wait for PLL to stabilize
-    while(PLLR == 0)
-    {
-    }
+    return (FVRCONbits.FVRRDY);
 }
-
-void WDT_Initialize(void)
-{
-    // WDTPS 1:65536; SWDTEN OFF; 
-    WDTCON = 0x16;
-}
-
 /**
  End of File
 */
+
