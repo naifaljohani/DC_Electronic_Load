@@ -42,7 +42,7 @@
 */
 
 #include "mcc_generated_files/mcc.h"
-
+#include "dac1_control.h"
 /*
                          Main application
  */
@@ -65,16 +65,15 @@ void main(void)
 
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
-    uint16_t count= (64 *1023);
+    
+    
     
     
     while (1)
     {
-    
-    
-    DAC1_Load16bitInputData(count); 
-      
-    
+        
+    dac1_voltage(0);    // setting voltage, max limit is 4.096v
+   
     }
 }
 /**

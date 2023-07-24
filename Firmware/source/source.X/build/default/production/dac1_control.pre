@@ -1,5 +1,5 @@
 
-# 1 "main.c"
+# 1 "dac1_control.c"
 
 # 26 "C:\Program Files (x86)\Microchip\xc8\v1.45\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
@@ -21389,18 +21389,25 @@ void WDT_Initialize(void);
 # 75 "dac1_control.h"
 void dac1_voltage(float volt) ;
 
-# 49 "main.c"
-void main(void)
-{
+# 14 "dac1_control.c"
+void dac1_voltage(float volt){
+const float volt_max = 4.096;
 
-SYSTEM_Initialize();
-
-# 72
-while (1)
-{
-
-dac1_voltage(0);
-
+if (volt > volt_max ){
+volt = volt_max;
 }
+if(volt < 0){
+volt = 0;
 }
 
+const uint8_t dac_mult = 64;
+const float offset = 0.03;
+volt = (volt - offset) ;
+
+double div = (volt /0.004) ;
+
+uint16_t count = (dac_mult * div );
+
+DAC1_Load16bitInputData(count);
+
+}

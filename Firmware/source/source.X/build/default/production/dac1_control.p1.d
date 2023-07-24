@@ -1,6 +1,6 @@
- build/default/production/main.d  \
- build/default/production/main.p1:  \
- main.c  \
+ build/default/production/dac1_control.d  \
+ build/default/production/dac1_control.p1:  \
+ dac1_control.c  \
 mcc_generated_files/fvr.h  \
 mcc_generated_files/mcc.h  \
 mcc_generated_files/opa2.h  \

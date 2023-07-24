@@ -1,9 +1,6 @@
 Version 3.2 HI-TECH Software Intermediate Code
-[p mainexit ]
-"72 mcc_generated_files/mcc.h
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"75 dac1_control.h
-[v _dac1_voltage `(v ~T0 @X0 0 ef1`f ]
+"125 mcc_generated_files/dac1.h
+[v _DAC1_Load16bitInputData `(v ~T0 @X0 0 ef1`ui ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -16513,35 +16510,68 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;mcc.h: 85: void OSCILLATOR_Initialize(void);
 [; ;mcc.h: 97: void WDT_Initialize(void);
 [; ;dac1_control.h: 75: void dac1_voltage(float volt) ;
-[v $root$_main `(v ~T0 @X0 0 e ]
-"49 main.c
-[v _main `(v ~T0 @X0 1 ef ]
-"50
+"14 dac1_control.c
+[v _dac1_voltage `(v ~T0 @X0 1 ef1`f ]
 {
-[; ;main.c: 49: void main(void)
-[; ;main.c: 50: {
-[e :U _main ]
+[; ;dac1_control.c: 14: void dac1_voltage(float volt){
+[e :U _dac1_voltage ]
+[v _volt `f ~T0 @X0 1 r1 ]
 [f ]
-[; ;main.c: 52: SYSTEM_Initialize();
-"52
-[e ( _SYSTEM_Initialize ..  ]
-[; ;main.c: 72: while (1)
-"72
-[e :U 2094 ]
-[; ;main.c: 73: {
-"73
+"15
+[v F17283 `Cf ~T0 @X0 1 s volt_max ]
+[i F17283
+-> .4.096 `f
+]
+[; ;dac1_control.c: 15: const float volt_max = 4.096;
+[; ;dac1_control.c: 17: if (volt > volt_max ){
+"17
+[e $ ! > _volt F17283 2093  ]
 {
-[; ;main.c: 75: dac1_voltage(0);
-"75
-[e ( _dac1_voltage (1 -> -> 0 `i `f ]
-"77
+[; ;dac1_control.c: 18: volt = volt_max;
+"18
+[e = _volt F17283 ]
+"19
 }
 [e :U 2093 ]
-"72
-[e $U 2094  ]
-[e :U 2095 ]
-[; ;main.c: 77: }
-[; ;main.c: 78: }
-"78
+[; ;dac1_control.c: 19: }
+[; ;dac1_control.c: 20: if(volt < 0){
+"20
+[e $ ! < _volt -> -> 0 `i `f 2094  ]
+{
+[; ;dac1_control.c: 21: volt = 0;
+"21
+[e = _volt -> -> 0 `i `f ]
+"22
+}
+[e :U 2094 ]
+"24
+[v F17284 `Cuc ~T0 @X0 1 s dac_mult ]
+[i F17284
+-> -> 64 `i `uc
+]
+"25
+[v F17285 `Cf ~T0 @X0 1 s offset ]
+[i F17285
+-> .0.03 `f
+]
+[; ;dac1_control.c: 22: }
+[; ;dac1_control.c: 24: const uint8_t dac_mult = 64;
+[; ;dac1_control.c: 25: const float offset = 0.03;
+[; ;dac1_control.c: 26: volt = (volt - offset) ;
+"26
+[e = _volt - _volt F17285 ]
+"28
+[v _div `d ~T0 @X0 1 a ]
+[; ;dac1_control.c: 28: double div = (volt /0.004) ;
+[e = _div / -> _volt `d .0.004 ]
+"30
+[v _count `ui ~T0 @X0 1 a ]
+[; ;dac1_control.c: 30: uint16_t count = (dac_mult * div );
+[e = _count -> * -> F17284 `d _div `ui ]
+[; ;dac1_control.c: 32: DAC1_Load16bitInputData(count);
+"32
+[e ( _DAC1_Load16bitInputData (1 _count ]
+[; ;dac1_control.c: 34: }
+"34
 [e :UE 2092 ]
 }

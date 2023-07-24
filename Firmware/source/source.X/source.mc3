@@ -176,7 +176,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="FVR" name="adfvrVoltage"/>
-         <value></value>
+         <value/>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="FVR" name="cdafvrVoltage"/>
@@ -640,7 +640,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="OPA2" name="dependentModuleKey"/>
-         <value>1</value>
+         <value>3</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="OPA2" name="opaPinHiderKey"/>
@@ -6871,58 +6871,58 @@
          <value>OFF</value>
       </entry>
    </tokenMap>
-   <generatedFileHashHistoryMap class="java.util.HashMap">
-      <entry>
-         <file>mcc_generated_files\mcc.h</file>
-         <hash>3e03388a1fe870c94d1e7af174b8578c1a7580aece73c074ab87475b992ea8f3</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\device_config.h</file>
-         <hash>0430447d1c3a0bc8f7698799145ba44d68dcfd9ebdfc701043e794f9ef362f82</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\opa2.h</file>
-         <hash>bfbaeecb95c684c3631d4eb52c05b9af4cc273dbf4f82b2eb30ea50c58dcc1ae</hash>
-      </entry>
+   <generatedFileHashHistoryMap class="java.util.TreeMap">
       <entry>
          <file>main.c</file>
          <hash>af2d8c6e6944de378505c833fdbec7ca3aa0e61292d4e46583da1ce8259bd3e1</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\device_config.c</file>
-         <hash>72e4e05a2db1714d17ae3200a200ca62ea1f777384ef1e5e7268891f5d7d9930</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pin_manager.h</file>
-         <hash>e072f80a7bef90ba93ca937d4dec39615a480f8233f3cf512ecb1fa01879901e</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\pin_manager.c</file>
-         <hash>7dc49456524c8e58a91548a66bf79d653e7a11ada0314633f550f60ab14c3145</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\dac1.h</file>
-         <hash>d300db996b32cdb4a88d72ea98989e93b2b97da7102fb5baafedcaa02463bbd4</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\fvr.h</file>
-         <hash>aa4eb8d397ccdbf7f7af53812de94f0cdfe6e5b5c0e4afc03a9a9a742740cea6</hash>
-      </entry>
-      <entry>
-         <file>mcc_generated_files\fvr.c</file>
-         <hash>8c883abe79c7942e1c8ec68807a5b9067bd2bf87d39a59944a272d24a961b692</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\dac1.c</file>
          <hash>f1329071dd519820a63f6ad98942c1a4c7f8047440c69156f014386f786f576b</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\opa2.c</file>
-         <hash>03da3ad7db187affec04cdc7c9a455477c4e3c789acbd0de47a93b232aa3061d</hash>
+         <file>mcc_generated_files\dac1.h</file>
+         <hash>d300db996b32cdb4a88d72ea98989e93b2b97da7102fb5baafedcaa02463bbd4</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\device_config.c</file>
+         <hash>72e4e05a2db1714d17ae3200a200ca62ea1f777384ef1e5e7268891f5d7d9930</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\device_config.h</file>
+         <hash>0430447d1c3a0bc8f7698799145ba44d68dcfd9ebdfc701043e794f9ef362f82</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\fvr.c</file>
+         <hash>8c883abe79c7942e1c8ec68807a5b9067bd2bf87d39a59944a272d24a961b692</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\fvr.h</file>
+         <hash>aa4eb8d397ccdbf7f7af53812de94f0cdfe6e5b5c0e4afc03a9a9a742740cea6</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>
          <hash>f62a7016088b23a9a2ac56f5edb625f7d8c9d73a54d6002e663d188476edd851</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.h</file>
+         <hash>3e03388a1fe870c94d1e7af174b8578c1a7580aece73c074ab87475b992ea8f3</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\opa2.c</file>
+         <hash>03da3ad7db187affec04cdc7c9a455477c4e3c789acbd0de47a93b232aa3061d</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\opa2.h</file>
+         <hash>bfbaeecb95c684c3631d4eb52c05b9af4cc273dbf4f82b2eb30ea50c58dcc1ae</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.c</file>
+         <hash>7dc49456524c8e58a91548a66bf79d653e7a11ada0314633f550f60ab14c3145</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\pin_manager.h</file>
+         <hash>e072f80a7bef90ba93ca937d4dec39615a480f8233f3cf512ecb1fa01879901e</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>
