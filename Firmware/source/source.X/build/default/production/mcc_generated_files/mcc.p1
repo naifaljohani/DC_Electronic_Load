@@ -1,12 +1,16 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"90 mcc_generated_files/pin_manager.h
+"146 mcc_generated_files/pin_manager.h
 [v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
-"85 mcc_generated_files/mcc.h
+"87 mcc_generated_files/mcc.h
 [v _OSCILLATOR_Initialize `(v ~T0 @X0 0 ef ]
-"97
+"99
 [v _WDT_Initialize `(v ~T0 @X0 0 ef ]
 "93 mcc_generated_files/fvr.h
 [v _FVR_Initialize `(v ~T0 @X0 0 ef ]
+"93 mcc_generated_files/opa3.h
+[v _OPA3_Initialize `(v ~T0 @X0 0 ef ]
+"146 mcc_generated_files/adc.h
+[v _ADC_Initialize `(v ~T0 @X0 0 ef ]
 "93 mcc_generated_files/opa2.h
 [v _OPA2_Initialize `(v ~T0 @X0 0 ef ]
 "94 mcc_generated_files/dac1.h
@@ -16480,8 +16484,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 193: extern __bank0 unsigned char __resetbits;
 [; ;pic.h: 194: extern __bank0 __bit __powerdown;
 [; ;pic.h: 195: extern __bank0 __bit __timeout;
-[; ;pin_manager.h: 90: void PIN_MANAGER_Initialize (void);
-[; ;pin_manager.h: 102: void PIN_MANAGER_IOC(void);
+[; ;pin_manager.h: 146: void PIN_MANAGER_Initialize (void);
+[; ;pin_manager.h: 158: void PIN_MANAGER_IOC(void);
 [; ;stdint.h: 13: typedef signed char int8_t;
 [; ;stdint.h: 20: typedef signed int int16_t;
 [; ;stdint.h: 28: typedef signed short long int int24_t;
@@ -16520,17 +16524,48 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;conio.h: 19: extern __bit kbhit(void);
 [; ;conio.h: 23: extern char * cgets(char *);
 [; ;conio.h: 24: extern void cputs(const char *);
+[; ;fvr.h: 93: void FVR_Initialize(void);
+[; ;fvr.h: 127: bool FVR_IsOutputReady(void);
 [; ;dac1.h: 94: void DAC1_Initialize(void);
 [; ;dac1.h: 125: void DAC1_Load16bitInputData(uint16_t input16BitData);
 [; ;dac1.h: 156: void DAC1_Load10bitInputData(uint16_t input10BitData);
 [; ;dac1.h: 187: void DAC1_Load8bitInputData(uint8_t input8BitData);
 [; ;dac1.h: 215: uint16_t DAC1_Read10BitInputData(void);
-[; ;fvr.h: 93: void FVR_Initialize(void);
-[; ;fvr.h: 127: bool FVR_IsOutputReady(void);
+[; ;opa3.h: 93: void OPA3_Initialize(void);
 [; ;opa2.h: 93: void OPA2_Initialize(void);
-[; ;mcc.h: 72: void SYSTEM_Initialize(void);
-[; ;mcc.h: 85: void OSCILLATOR_Initialize(void);
-[; ;mcc.h: 97: void WDT_Initialize(void);
+[; ;adc.h: 72: typedef uint16_t adc_result_t;
+[; ;adc.h: 77: typedef struct
+[; ;adc.h: 78: {
+[; ;adc.h: 79: adc_result_t adcResult1;
+[; ;adc.h: 80: adc_result_t adcResult2;
+[; ;adc.h: 81: } adc_sync_double_result_t;
+[; ;adc.h: 95: typedef enum
+[; ;adc.h: 96: {
+[; ;adc.h: 97: channel_AN5 = 0x5,
+[; ;adc.h: 98: channel_Switched_AN1 = 0x21,
+[; ;adc.h: 99: channel_Switched_AN10 = 0x2A,
+[; ;adc.h: 100: channel_Switched_AN18 = 0x32,
+[; ;adc.h: 101: channel_DAC8_Output = 0x36,
+[; ;adc.h: 102: channel_DAC7_Output = 0x37,
+[; ;adc.h: 103: channel_DAC6_Output = 0x38,
+[; ;adc.h: 104: channel_DAC5_Output = 0x39,
+[; ;adc.h: 105: channel_DAC4_Output = 0x3A,
+[; ;adc.h: 106: channel_DAC3_Output = 0x3B,
+[; ;adc.h: 107: channel_DAC2_Output = 0x3C,
+[; ;adc.h: 108: channel_Temp = 0x3D,
+[; ;adc.h: 109: channel_DAC1_Output = 0x3E,
+[; ;adc.h: 110: channel_FVRBuffer1 = 0x3F
+[; ;adc.h: 111: } adc_channel_t;
+[; ;adc.h: 146: void ADC_Initialize(void);
+[; ;adc.h: 176: void ADC_SelectChannel(adc_channel_t channel);
+[; ;adc.h: 203: void ADC_StartConversion(void);
+[; ;adc.h: 235: bool ADC_IsConversionDone(void);
+[; ;adc.h: 268: adc_result_t ADC_GetConversionResult(void);
+[; ;adc.h: 298: adc_result_t ADC_GetConversion(adc_channel_t channel);
+[; ;adc.h: 326: void ADC_TemperatureAcquisitionDelay(void);
+[; ;mcc.h: 74: void SYSTEM_Initialize(void);
+[; ;mcc.h: 87: void OSCILLATOR_Initialize(void);
+[; ;mcc.h: 99: void WDT_Initialize(void);
 "50 mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize `(v ~T0 @X0 1 ef ]
 "51
@@ -16551,66 +16586,72 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;mcc.c: 56: FVR_Initialize();
 "56
 [e ( _FVR_Initialize ..  ]
-[; ;mcc.c: 57: OPA2_Initialize();
+[; ;mcc.c: 57: OPA3_Initialize();
 "57
-[e ( _OPA2_Initialize ..  ]
-[; ;mcc.c: 58: DAC1_Initialize();
+[e ( _OPA3_Initialize ..  ]
+[; ;mcc.c: 58: ADC_Initialize();
 "58
-[e ( _DAC1_Initialize ..  ]
-[; ;mcc.c: 59: }
+[e ( _ADC_Initialize ..  ]
+[; ;mcc.c: 59: OPA2_Initialize();
 "59
-[e :UE 2092 ]
-}
+[e ( _OPA2_Initialize ..  ]
+[; ;mcc.c: 60: DAC1_Initialize();
+"60
+[e ( _DAC1_Initialize ..  ]
+[; ;mcc.c: 61: }
 "61
-[v _OSCILLATOR_Initialize `(v ~T0 @X0 1 ef ]
-"62
-{
-[; ;mcc.c: 61: void OSCILLATOR_Initialize(void)
-[; ;mcc.c: 62: {
-[e :U _OSCILLATOR_Initialize ]
-[f ]
-[; ;mcc.c: 64: OSCCON = 0x70;
-"64
-[e = _OSCCON -> -> 112 `i `uc ]
-[; ;mcc.c: 66: OSCSTAT = 0x80;
-"66
-[e = _OSCSTAT -> -> 128 `i `uc ]
-[; ;mcc.c: 68: OSCTUNE = 0x00;
-"68
-[e = _OSCTUNE -> -> 0 `i `uc ]
-[; ;mcc.c: 70: BORCON = 0x00;
-"70
-[e = _BORCON -> -> 0 `i `uc ]
-[; ;mcc.c: 72: while(PLLR == 0)
-"72
-[e $U 2094  ]
-[e :U 2095 ]
-[; ;mcc.c: 73: {
-"73
-{
-"74
-}
-[e :U 2094 ]
-"72
-[e $ == -> _PLLR `i -> 0 `i 2095  ]
-[e :U 2096 ]
-[; ;mcc.c: 74: }
-[; ;mcc.c: 75: }
-"75
 [e :UE 2093 ]
 }
-"77
-[v _WDT_Initialize `(v ~T0 @X0 1 ef ]
-"78
+"63
+[v _OSCILLATOR_Initialize `(v ~T0 @X0 1 ef ]
+"64
 {
-[; ;mcc.c: 77: void WDT_Initialize(void)
-[; ;mcc.c: 78: {
+[; ;mcc.c: 63: void OSCILLATOR_Initialize(void)
+[; ;mcc.c: 64: {
+[e :U _OSCILLATOR_Initialize ]
+[f ]
+[; ;mcc.c: 66: OSCCON = 0x70;
+"66
+[e = _OSCCON -> -> 112 `i `uc ]
+[; ;mcc.c: 68: OSCSTAT = 0x80;
+"68
+[e = _OSCSTAT -> -> 128 `i `uc ]
+[; ;mcc.c: 70: OSCTUNE = 0x00;
+"70
+[e = _OSCTUNE -> -> 0 `i `uc ]
+[; ;mcc.c: 72: BORCON = 0x00;
+"72
+[e = _BORCON -> -> 0 `i `uc ]
+[; ;mcc.c: 74: while(PLLR == 0)
+"74
+[e $U 2095  ]
+[e :U 2096 ]
+[; ;mcc.c: 75: {
+"75
+{
+"76
+}
+[e :U 2095 ]
+"74
+[e $ == -> _PLLR `i -> 0 `i 2096  ]
+[e :U 2097 ]
+[; ;mcc.c: 76: }
+[; ;mcc.c: 77: }
+"77
+[e :UE 2094 ]
+}
+"79
+[v _WDT_Initialize `(v ~T0 @X0 1 ef ]
+"80
+{
+[; ;mcc.c: 79: void WDT_Initialize(void)
+[; ;mcc.c: 80: {
 [e :U _WDT_Initialize ]
 [f ]
-[; ;mcc.c: 80: WDTCON = 0x16;
-"80
+[; ;mcc.c: 82: WDTCON = 0x16;
+"82
 [e = _WDTCON -> -> 22 `i `uc ]
-[; ;mcc.c: 81: }
-"81
-[e :UE 2097 ]
+[; ;mcc.c: 83: }
+"83
+[e :UE 2098 ]
 }

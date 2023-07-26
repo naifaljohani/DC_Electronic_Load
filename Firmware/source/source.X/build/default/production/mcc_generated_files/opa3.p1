@@ -1,85 +1,12 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"3133 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
-[v _LATE `Vuc ~T0 @X0 0 e@272 ]
-"3071
-[v _LATD `Vuc ~T0 @X0 0 e@271 ]
-"2885
-[v _LATA `Vuc ~T0 @X0 0 e@268 ]
-"2947
-[v _LATB `Vuc ~T0 @X0 0 e@269 ]
-"3009
-[v _LATC `Vuc ~T0 @X0 0 e@270 ]
-"1988
-[v _TRISE `Vuc ~T0 @X0 0 e@144 ]
-"1740
-[v _TRISA `Vuc ~T0 @X0 0 e@140 ]
-"1802
-[v _TRISB `Vuc ~T0 @X0 0 e@141 ]
-"1864
-[v _TRISC `Vuc ~T0 @X0 0 e@142 ]
-"1926
-[v _TRISD `Vuc ~T0 @X0 0 e@143 ]
-"4191
-[v _ANSELD `Vuc ~T0 @X0 0 e@399 ]
-"4140
-[v _ANSELC `Vuc ~T0 @X0 0 e@398 ]
-"4090
-[v _ANSELB `Vuc ~T0 @X0 0 e@397 ]
-"4253
-[v _ANSELE `Vuc ~T0 @X0 0 e@400 ]
-"4040
-[v _ANSELA `Vuc ~T0 @X0 0 e@396 ]
-"5507
-[v _WPUD `Vuc ~T0 @X0 0 e@527 ]
-"5569
-[v _WPUE `Vuc ~T0 @X0 0 e@528 ]
-"5383
-[v _WPUB `Vuc ~T0 @X0 0 e@525 ]
-"5321
-[v _WPUA `Vuc ~T0 @X0 0 e@524 ]
-"5445
-[v _WPUC `Vuc ~T0 @X0 0 e@526 ]
-"2371
-[s S105 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S105 . PS PSA TMR0SE TMR0CS INTEDG nWPUEN ]
-"2379
-[s S106 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S106 . PS0 PS1 PS2 . T0SE T0CS ]
-"2370
-[u S104 `S105 1 `S106 1 ]
-[n S104 . . . ]
-"2388
-[v _OPTION_REGbits `VS104 ~T0 @X0 0 e@151 ]
-"7663
-[v _ODCONE `Vuc ~T0 @X0 0 e@656 ]
-"7415
-[v _ODCONA `Vuc ~T0 @X0 0 e@652 ]
-"7477
-[v _ODCONB `Vuc ~T0 @X0 0 e@653 ]
-"7539
-[v _ODCONC `Vuc ~T0 @X0 0 e@654 ]
-"7601
-[v _ODCOND `Vuc ~T0 @X0 0 e@655 ]
-"8609
-[v _SLRCONA `Vuc ~T0 @X0 0 e@780 ]
-"8671
-[v _SLRCONB `Vuc ~T0 @X0 0 e@781 ]
-"8733
-[v _SLRCONC `Vuc ~T0 @X0 0 e@782 ]
-"8795
-[v _SLRCOND `Vuc ~T0 @X0 0 e@783 ]
-"8857
-[v _SLRCONE `Vuc ~T0 @X0 0 e@784 ]
-"9963
-[v _INLVLA `Vuc ~T0 @X0 0 e@908 ]
-"10025
-[v _INLVLB `Vuc ~T0 @X0 0 e@909 ]
-"10087
-[v _INLVLC `Vuc ~T0 @X0 0 e@910 ]
-"10149
-[v _INLVLD `Vuc ~T0 @X0 0 e@911 ]
-"40878
-[v _ADCACTPPS `Vuc ~T0 @X0 0 e@3641 ]
+"13984 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1779.h
+[v _OPA3CON `Vuc ~T0 @X0 0 e@1305 ]
+"14092
+[v _OPA3ORS `Vuc ~T0 @X0 0 e@1306 ]
+"13928
+[v _OPA3NCHS `Vuc ~T0 @X0 0 e@1303 ]
+"13956
+[v _OPA3PCHS `Vuc ~T0 @X0 0 e@1304 ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -16537,137 +16464,57 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 193: extern __bank0 unsigned char __resetbits;
 [; ;pic.h: 194: extern __bank0 __bit __powerdown;
 [; ;pic.h: 195: extern __bank0 __bit __timeout;
-[; ;pin_manager.h: 146: void PIN_MANAGER_Initialize (void);
-[; ;pin_manager.h: 158: void PIN_MANAGER_IOC(void);
-"55 mcc_generated_files/pin_manager.c
-[v _PIN_MANAGER_Initialize `(v ~T0 @X0 1 ef ]
-"56
+[; ;stdbool.h: 12: typedef unsigned char bool;
+[; ;stdint.h: 13: typedef signed char int8_t;
+[; ;stdint.h: 20: typedef signed int int16_t;
+[; ;stdint.h: 28: typedef signed short long int int24_t;
+[; ;stdint.h: 36: typedef signed long int int32_t;
+[; ;stdint.h: 43: typedef unsigned char uint8_t;
+[; ;stdint.h: 49: typedef unsigned int uint16_t;
+[; ;stdint.h: 56: typedef unsigned short long int uint24_t;
+[; ;stdint.h: 63: typedef unsigned long int uint32_t;
+[; ;stdint.h: 71: typedef signed char int_least8_t;
+[; ;stdint.h: 78: typedef signed int int_least16_t;
+[; ;stdint.h: 90: typedef signed short long int int_least24_t;
+[; ;stdint.h: 98: typedef signed long int int_least32_t;
+[; ;stdint.h: 105: typedef unsigned char uint_least8_t;
+[; ;stdint.h: 111: typedef unsigned int uint_least16_t;
+[; ;stdint.h: 121: typedef unsigned short long int uint_least24_t;
+[; ;stdint.h: 128: typedef unsigned long int uint_least32_t;
+[; ;stdint.h: 137: typedef signed char int_fast8_t;
+[; ;stdint.h: 144: typedef signed int int_fast16_t;
+[; ;stdint.h: 156: typedef signed short long int int_fast24_t;
+[; ;stdint.h: 164: typedef signed long int int_fast32_t;
+[; ;stdint.h: 171: typedef unsigned char uint_fast8_t;
+[; ;stdint.h: 177: typedef unsigned int uint_fast16_t;
+[; ;stdint.h: 187: typedef unsigned short long int uint_fast24_t;
+[; ;stdint.h: 194: typedef unsigned long int uint_fast32_t;
+[; ;stdint.h: 200: typedef int32_t intmax_t;
+[; ;stdint.h: 205: typedef uint32_t uintmax_t;
+[; ;stdint.h: 210: typedef int16_t intptr_t;
+[; ;stdint.h: 215: typedef uint16_t uintptr_t;
+[; ;opa3.h: 93: void OPA3_Initialize(void);
+"58 mcc_generated_files/opa3.c
+[v _OPA3_Initialize `(v ~T0 @X0 1 ef ]
+"59
 {
-[; ;pin_manager.c: 55: void PIN_MANAGER_Initialize(void)
-[; ;pin_manager.c: 56: {
-[e :U _PIN_MANAGER_Initialize ]
+[; ;opa3.c: 58: void OPA3_Initialize(void)
+[; ;opa3.c: 59: {
+[e :U _OPA3_Initialize ]
 [f ]
-[; ;pin_manager.c: 60: LATE = 0x00;
-"60
-[e = _LATE -> -> 0 `i `uc ]
-[; ;pin_manager.c: 61: LATD = 0x00;
+[; ;opa3.c: 61: OPA3CON = 0x90;
 "61
-[e = _LATD -> -> 0 `i `uc ]
-[; ;pin_manager.c: 62: LATA = 0x00;
-"62
-[e = _LATA -> -> 0 `i `uc ]
-[; ;pin_manager.c: 63: LATB = 0x00;
+[e = _OPA3CON -> -> 144 `i `uc ]
+[; ;opa3.c: 63: OPA3ORS = 0x00;
 "63
-[e = _LATB -> -> 0 `i `uc ]
-[; ;pin_manager.c: 64: LATC = 0x00;
-"64
-[e = _LATC -> -> 0 `i `uc ]
-[; ;pin_manager.c: 69: TRISE = 0x07;
-"69
-[e = _TRISE -> -> 7 `i `uc ]
-[; ;pin_manager.c: 70: TRISA = 0xFF;
-"70
-[e = _TRISA -> -> 255 `i `uc ]
-[; ;pin_manager.c: 71: TRISB = 0xFD;
-"71
-[e = _TRISB -> -> 253 `i `uc ]
-[; ;pin_manager.c: 72: TRISC = 0xBF;
-"72
-[e = _TRISC -> -> 191 `i `uc ]
-[; ;pin_manager.c: 73: TRISD = 0xFF;
-"73
-[e = _TRISD -> -> 255 `i `uc ]
-[; ;pin_manager.c: 78: ANSELD = 0xFF;
-"78
-[e = _ANSELD -> -> 255 `i `uc ]
-[; ;pin_manager.c: 79: ANSELC = 0xFC;
-"79
-[e = _ANSELC -> -> 252 `i `uc ]
-[; ;pin_manager.c: 80: ANSELB = 0x2F;
-"80
-[e = _ANSELB -> -> 47 `i `uc ]
-[; ;pin_manager.c: 81: ANSELE = 0x07;
-"81
-[e = _ANSELE -> -> 7 `i `uc ]
-[; ;pin_manager.c: 82: ANSELA = 0x3F;
-"82
-[e = _ANSELA -> -> 63 `i `uc ]
-[; ;pin_manager.c: 87: WPUD = 0x00;
-"87
-[e = _WPUD -> -> 0 `i `uc ]
-[; ;pin_manager.c: 88: WPUE = 0x00;
-"88
-[e = _WPUE -> -> 0 `i `uc ]
-[; ;pin_manager.c: 89: WPUB = 0x00;
-"89
-[e = _WPUB -> -> 0 `i `uc ]
-[; ;pin_manager.c: 90: WPUA = 0x00;
-"90
-[e = _WPUA -> -> 0 `i `uc ]
-[; ;pin_manager.c: 91: WPUC = 0x00;
-"91
-[e = _WPUC -> -> 0 `i `uc ]
-[; ;pin_manager.c: 92: OPTION_REGbits.nWPUEN = 1;
-"92
-[e = . . _OPTION_REGbits 0 5 -> -> 1 `i `uc ]
-[; ;pin_manager.c: 97: ODCONE = 0x00;
-"97
-[e = _ODCONE -> -> 0 `i `uc ]
-[; ;pin_manager.c: 98: ODCONA = 0x00;
-"98
-[e = _ODCONA -> -> 0 `i `uc ]
-[; ;pin_manager.c: 99: ODCONB = 0x00;
-"99
-[e = _ODCONB -> -> 0 `i `uc ]
-[; ;pin_manager.c: 100: ODCONC = 0x00;
-"100
-[e = _ODCONC -> -> 0 `i `uc ]
-[; ;pin_manager.c: 101: ODCOND = 0x00;
-"101
-[e = _ODCOND -> -> 0 `i `uc ]
-[; ;pin_manager.c: 106: SLRCONA = 0xFF;
-"106
-[e = _SLRCONA -> -> 255 `i `uc ]
-[; ;pin_manager.c: 107: SLRCONB = 0xFF;
-"107
-[e = _SLRCONB -> -> 255 `i `uc ]
-[; ;pin_manager.c: 108: SLRCONC = 0xFF;
-"108
-[e = _SLRCONC -> -> 255 `i `uc ]
-[; ;pin_manager.c: 109: SLRCOND = 0xFF;
-"109
-[e = _SLRCOND -> -> 255 `i `uc ]
-[; ;pin_manager.c: 110: SLRCONE = 0x07;
-"110
-[e = _SLRCONE -> -> 7 `i `uc ]
-[; ;pin_manager.c: 115: INLVLA = 0x3F;
-"115
-[e = _INLVLA -> -> 63 `i `uc ]
-[; ;pin_manager.c: 116: INLVLB = 0xF0;
-"116
-[e = _INLVLB -> -> 240 `i `uc ]
-[; ;pin_manager.c: 117: INLVLC = 0xFF;
-"117
-[e = _INLVLC -> -> 255 `i `uc ]
-[; ;pin_manager.c: 118: INLVLD = 0xFF;
-"118
-[e = _INLVLD -> -> 255 `i `uc ]
-[; ;pin_manager.c: 127: ADCACTPPS = 0x0C;
-"127
-[e = _ADCACTPPS -> -> 12 `i `uc ]
-[; ;pin_manager.c: 128: }
-"128
+[e = _OPA3ORS -> -> 0 `i `uc ]
+[; ;opa3.c: 65: OPA3NCHS = 0x00;
+"65
+[e = _OPA3NCHS -> -> 0 `i `uc ]
+[; ;opa3.c: 67: OPA3PCHS = 0x06;
+"67
+[e = _OPA3PCHS -> -> 6 `i `uc ]
+[; ;opa3.c: 68: }
+"68
 [e :UE 2092 ]
-}
-"130
-[v _PIN_MANAGER_IOC `(v ~T0 @X0 1 ef ]
-"131
-{
-[; ;pin_manager.c: 130: void PIN_MANAGER_IOC(void)
-[; ;pin_manager.c: 131: {
-[e :U _PIN_MANAGER_IOC ]
-[f ]
-[; ;pin_manager.c: 132: }
-"132
-[e :UE 2093 ]
 }

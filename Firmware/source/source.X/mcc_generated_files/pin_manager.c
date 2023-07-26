@@ -69,7 +69,7 @@ void PIN_MANAGER_Initialize(void)
     TRISE = 0x07;
     TRISA = 0xFF;
     TRISB = 0xFD;
-    TRISC = 0xFF;
+    TRISC = 0xBF;
     TRISD = 0xFF;
 
     /**
@@ -77,7 +77,7 @@ void PIN_MANAGER_Initialize(void)
     */
     ANSELD = 0xFF;
     ANSELC = 0xFC;
-    ANSELB = 0x3F;
+    ANSELB = 0x2F;
     ANSELE = 0x07;
     ANSELA = 0x3F;
 
@@ -123,6 +123,8 @@ void PIN_MANAGER_Initialize(void)
 
    
     
+	
+    ADCACTPPS = 0x0C;   //RB4->ADC:ADCACT;    
 }
   
 void PIN_MANAGER_IOC(void)

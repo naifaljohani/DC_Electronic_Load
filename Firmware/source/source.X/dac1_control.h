@@ -71,8 +71,8 @@ extern "C" {
   
   
 
-  
-  void dac1_voltage(float volt) ;
+  void dac1_voltage_close_loop(float volt);  
+  void dac1_voltage_open_loop(float volt) ;
 
 #ifdef	__cplusplus
 }

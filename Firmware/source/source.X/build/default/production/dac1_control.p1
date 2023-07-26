@@ -1,4 +1,15 @@
 Version 3.2 HI-TECH Software Intermediate Code
+"146 mcc_generated_files/adc.h
+[v _ADC_Initialize `(v ~T0 @X0 0 ef ]
+"20 dac1_control.c
+[c E17281 5 33 42 50 54 55 56 57 58 59 60 61 62 63 .. ]
+[n E17281 . channel_AN5 channel_Switched_AN1 channel_Switched_AN10 channel_Switched_AN18 channel_DAC8_Output channel_DAC7_Output channel_DAC6_Output channel_DAC5_Output channel_DAC4_Output channel_DAC3_Output channel_DAC2_Output channel_Temp channel_DAC1_Output channel_FVRBuffer1  ]
+"176 mcc_generated_files/adc.h
+[v _ADC_SelectChannel `(v ~T0 @X0 0 ef1`E17281 ]
+"203
+[v _ADC_StartConversion `(v ~T0 @X0 0 ef ]
+"268
+[v _ADC_GetConversionResult `(ui ~T0 @X0 0 ef ]
 "125 mcc_generated_files/dac1.h
 [v _DAC1_Load16bitInputData `(v ~T0 @X0 0 ef1`ui ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
@@ -16458,8 +16469,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 193: extern __bank0 unsigned char __resetbits;
 [; ;pic.h: 194: extern __bank0 __bit __powerdown;
 [; ;pic.h: 195: extern __bank0 __bit __timeout;
-[; ;pin_manager.h: 90: void PIN_MANAGER_Initialize (void);
-[; ;pin_manager.h: 102: void PIN_MANAGER_IOC(void);
+[; ;pin_manager.h: 146: void PIN_MANAGER_Initialize (void);
+[; ;pin_manager.h: 158: void PIN_MANAGER_IOC(void);
 [; ;stdint.h: 13: typedef signed char int8_t;
 [; ;stdint.h: 20: typedef signed int int16_t;
 [; ;stdint.h: 28: typedef signed short long int int24_t;
@@ -16498,80 +16509,149 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;conio.h: 19: extern __bit kbhit(void);
 [; ;conio.h: 23: extern char * cgets(char *);
 [; ;conio.h: 24: extern void cputs(const char *);
+[; ;fvr.h: 93: void FVR_Initialize(void);
+[; ;fvr.h: 127: bool FVR_IsOutputReady(void);
 [; ;dac1.h: 94: void DAC1_Initialize(void);
 [; ;dac1.h: 125: void DAC1_Load16bitInputData(uint16_t input16BitData);
 [; ;dac1.h: 156: void DAC1_Load10bitInputData(uint16_t input10BitData);
 [; ;dac1.h: 187: void DAC1_Load8bitInputData(uint8_t input8BitData);
 [; ;dac1.h: 215: uint16_t DAC1_Read10BitInputData(void);
-[; ;fvr.h: 93: void FVR_Initialize(void);
-[; ;fvr.h: 127: bool FVR_IsOutputReady(void);
+[; ;opa3.h: 93: void OPA3_Initialize(void);
 [; ;opa2.h: 93: void OPA2_Initialize(void);
-[; ;mcc.h: 72: void SYSTEM_Initialize(void);
-[; ;mcc.h: 85: void OSCILLATOR_Initialize(void);
-[; ;mcc.h: 97: void WDT_Initialize(void);
-[; ;dac1_control.h: 75: void dac1_voltage(float volt) ;
-"14 dac1_control.c
-[v _dac1_voltage `(v ~T0 @X0 1 ef1`f ]
+[; ;adc.h: 72: typedef uint16_t adc_result_t;
+[; ;adc.h: 77: typedef struct
+[; ;adc.h: 78: {
+[; ;adc.h: 79: adc_result_t adcResult1;
+[; ;adc.h: 80: adc_result_t adcResult2;
+[; ;adc.h: 81: } adc_sync_double_result_t;
+[; ;adc.h: 95: typedef enum
+[; ;adc.h: 96: {
+[; ;adc.h: 97: channel_AN5 = 0x5,
+[; ;adc.h: 98: channel_Switched_AN1 = 0x21,
+[; ;adc.h: 99: channel_Switched_AN10 = 0x2A,
+[; ;adc.h: 100: channel_Switched_AN18 = 0x32,
+[; ;adc.h: 101: channel_DAC8_Output = 0x36,
+[; ;adc.h: 102: channel_DAC7_Output = 0x37,
+[; ;adc.h: 103: channel_DAC6_Output = 0x38,
+[; ;adc.h: 104: channel_DAC5_Output = 0x39,
+[; ;adc.h: 105: channel_DAC4_Output = 0x3A,
+[; ;adc.h: 106: channel_DAC3_Output = 0x3B,
+[; ;adc.h: 107: channel_DAC2_Output = 0x3C,
+[; ;adc.h: 108: channel_Temp = 0x3D,
+[; ;adc.h: 109: channel_DAC1_Output = 0x3E,
+[; ;adc.h: 110: channel_FVRBuffer1 = 0x3F
+[; ;adc.h: 111: } adc_channel_t;
+[; ;adc.h: 146: void ADC_Initialize(void);
+[; ;adc.h: 176: void ADC_SelectChannel(adc_channel_t channel);
+[; ;adc.h: 203: void ADC_StartConversion(void);
+[; ;adc.h: 235: bool ADC_IsConversionDone(void);
+[; ;adc.h: 268: adc_result_t ADC_GetConversionResult(void);
+[; ;adc.h: 298: adc_result_t ADC_GetConversion(adc_channel_t channel);
+[; ;adc.h: 326: void ADC_TemperatureAcquisitionDelay(void);
+[; ;mcc.h: 74: void SYSTEM_Initialize(void);
+[; ;mcc.h: 87: void OSCILLATOR_Initialize(void);
+[; ;mcc.h: 99: void WDT_Initialize(void);
+[; ;dac1_control.h: 74: void dac1_voltage_close_loop(float volt);
+[; ;dac1_control.h: 75: void dac1_voltage_open_loop(float volt) ;
+"16 dac1_control.c
+[v _dac1_voltage_close_loop `(v ~T0 @X0 1 ef1`f ]
 {
-[; ;dac1_control.c: 14: void dac1_voltage(float volt){
-[e :U _dac1_voltage ]
+[; ;dac1_control.c: 16: void dac1_voltage_close_loop(float volt){
+[e :U _dac1_voltage_close_loop ]
 [v _volt `f ~T0 @X0 1 r1 ]
 [f ]
-"15
-[v F17283 `Cf ~T0 @X0 1 s volt_max ]
-[i F17283
+"17
+[v _convertedValue `ui ~T0 @X0 1 a ]
+[; ;dac1_control.c: 17: uint16_t convertedValue;
+[; ;dac1_control.c: 19: ADC_Initialize();
+"19
+[e ( _ADC_Initialize ..  ]
+[; ;dac1_control.c: 20: ADC_SelectChannel(0x3E);
+"20
+[e ( _ADC_SelectChannel (1 -> -> 62 `i `E17281 ]
+[; ;dac1_control.c: 21: ADC_StartConversion();
+"21
+[e ( _ADC_StartConversion ..  ]
+[; ;dac1_control.c: 22: convertedValue = ADC_GetConversionResult();
+"22
+[e = _convertedValue ( _ADC_GetConversionResult ..  ]
+[; ;dac1_control.c: 24: }
+"24
+[e :UE 2093 ]
+}
+"27
+[v _dac1_voltage_open_loop `(v ~T0 @X0 1 ef1`f ]
+{
+[; ;dac1_control.c: 27: void dac1_voltage_open_loop(float volt){
+[e :U _dac1_voltage_open_loop ]
+[v _volt `f ~T0 @X0 1 r1 ]
+[f ]
+"28
+[v F17324 `Cf ~T0 @X0 1 s volt_max ]
+[i F17324
 -> .4.096 `f
 ]
-[; ;dac1_control.c: 15: const float volt_max = 4.096;
-[; ;dac1_control.c: 17: if (volt > volt_max ){
-"17
-[e $ ! > _volt F17283 2093  ]
+[; ;dac1_control.c: 28: const float volt_max = 4.096;
+[; ;dac1_control.c: 30: if (volt > volt_max ){
+"30
+[e $ ! > _volt F17324 2095  ]
 {
-[; ;dac1_control.c: 18: volt = volt_max;
-"18
-[e = _volt F17283 ]
-"19
+[; ;dac1_control.c: 31: volt = volt_max;
+"31
+[e = _volt F17324 ]
+"32
 }
-[e :U 2093 ]
-[; ;dac1_control.c: 19: }
-[; ;dac1_control.c: 20: if(volt < 0){
-"20
-[e $ ! < _volt -> -> 0 `i `f 2094  ]
+[e :U 2095 ]
+[; ;dac1_control.c: 32: }
+[; ;dac1_control.c: 33: if(volt <= 0){
+"33
+[e $ ! <= _volt -> -> 0 `i `f 2096  ]
 {
-[; ;dac1_control.c: 21: volt = 0;
-"21
+[; ;dac1_control.c: 34: volt = 0;
+"34
 [e = _volt -> -> 0 `i `f ]
-"22
+"35
 }
-[e :U 2094 ]
-"24
-[v F17284 `Cuc ~T0 @X0 1 s dac_mult ]
-[i F17284
+[e :U 2096 ]
+"37
+[v F17325 `Cuc ~T0 @X0 1 s dac_mult ]
+[i F17325
 -> -> 64 `i `uc
 ]
-"25
-[v F17285 `Cf ~T0 @X0 1 s offset ]
-[i F17285
+"38
+[v F17326 `Cf ~T0 @X0 1 s offset ]
+[i F17326
 -> .0.03 `f
 ]
-[; ;dac1_control.c: 22: }
-[; ;dac1_control.c: 24: const uint8_t dac_mult = 64;
-[; ;dac1_control.c: 25: const float offset = 0.03;
-[; ;dac1_control.c: 26: volt = (volt - offset) ;
-"26
-[e = _volt - _volt F17285 ]
-"28
+[; ;dac1_control.c: 35: }
+[; ;dac1_control.c: 37: const uint8_t dac_mult = 64;
+[; ;dac1_control.c: 38: const float offset = 0.03;
+[; ;dac1_control.c: 39: volt = (volt - offset) ;
+"39
+[e = _volt - _volt F17326 ]
+[; ;dac1_control.c: 40: if(volt<0){
+"40
+[e $ ! < _volt -> -> 0 `i `f 2097  ]
+{
+[; ;dac1_control.c: 41: volt = 0;
+"41
+[e = _volt -> -> 0 `i `f ]
+"42
+}
+[e :U 2097 ]
+"43
 [v _div `d ~T0 @X0 1 a ]
-[; ;dac1_control.c: 28: double div = (volt /0.004) ;
+[; ;dac1_control.c: 42: }
+[; ;dac1_control.c: 43: double div = (volt /0.004) ;
 [e = _div / -> _volt `d .0.004 ]
-"30
+"45
 [v _count `ui ~T0 @X0 1 a ]
-[; ;dac1_control.c: 30: uint16_t count = (dac_mult * div );
-[e = _count -> * -> F17284 `d _div `ui ]
-[; ;dac1_control.c: 32: DAC1_Load16bitInputData(count);
-"32
+[; ;dac1_control.c: 45: uint16_t count = (dac_mult * div );
+[e = _count -> * -> F17325 `d _div `ui ]
+[; ;dac1_control.c: 47: DAC1_Load16bitInputData(count);
+"47
 [e ( _DAC1_Load16bitInputData (1 _count ]
-[; ;dac1_control.c: 34: }
-"34
-[e :UE 2092 ]
+[; ;dac1_control.c: 49: }
+"49
+[e :UE 2094 ]
 }

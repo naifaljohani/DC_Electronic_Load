@@ -1,21 +1,24 @@
 /**
-  Generated Main Source File
+  OPA3 Generated Driver File
 
-  Company:
+  @Company
     Microchip Technology Inc.
 
-  File Name:
-    main.c
+  @File Name
+    opa3.c
 
-  Summary:
-    This is the main file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+  @Summary
+    This is the generated driver implementation file for the OPA3 driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
-  Description:
-    This header file provides implementations for driver APIs for all modules selected in the GUI.
+  @Description
+    This source file provides implementations for driver APIs for OPA3.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.8
         Device            :  PIC16F1779
-        Driver Version    :  2.00
+        Driver Version    :  2.01
+    The generated drivers are tested against the following:
+        Compiler          :  XC8 2.36 and above
+        MPLAB             :  MPLAB X 6.00
 */
 
 /*
@@ -41,39 +44,27 @@
     SOFTWARE.
 */
 
-#include "mcc_generated_files/mcc.h"
-#include "dac1_control.h"
-/*
-                         Main application
- */
-void main(void)
+/**
+  Section: Included Files
+*/
+
+#include <xc.h>
+#include "opa3.h"
+
+/**
+  Section: OPA3 APIs
+*/
+
+void OPA3_Initialize(void)
 {
-    // initialize the device
-    SYSTEM_Initialize();
-
-    // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
-    // Use the following macros to:
-
-    // Enable the Global Interrupts
-    //INTERRUPT_GlobalInterruptEnable();
-
-    // Enable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptEnable();
-
-    // Disable the Global Interrupts
-    //INTERRUPT_GlobalInterruptDisable();
-
-    // Disable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptDisable();
-    
-    
-    
-    
-    while (1)
-    {
-        dac1_voltage_open_loop(5);
-   
-    }
+    // OPA3ORPOL not inverted; OPA3EN enabled; OPA3UG OPA_Output; OPA3ORM disabled; 
+    OPA3CON = 0x90;
+    // ORS CCP1_out; 
+    OPA3ORS = 0x00;
+    // NCH OPA3IN0-; 
+    OPA3NCHS = 0x00;
+    // PCH FVR_Buffer2; 
+    OPA3PCHS = 0x06;
 }
 /**
  End of File

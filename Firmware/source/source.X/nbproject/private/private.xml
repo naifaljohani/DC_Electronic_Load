@@ -4,8 +4,8 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/project_rebos/Electronic_DC_Load/Firmware/source/source.X/main.c</file>
-            <file>file:/C:/project_rebos/Electronic_DC_Load/Firmware/source/source.X/mcc_generated_files/pin_manager.h</file>
-            <file>file:/C:/project_rebos/Electronic_DC_Load/Firmware/source/source.X/mcc_generated_files/dac1.h</file>
+            <file>file:/C:/project_rebos/Electronic_DC_Load/Firmware/source/source.X/dac1_control.c</file>
+            <file>file:/C:/project_rebos/Electronic_DC_Load/Firmware/source/source.X/dac1_control.h</file>
         </group>
     </open-files>
 </project-private>

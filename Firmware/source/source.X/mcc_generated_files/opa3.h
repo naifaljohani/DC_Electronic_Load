@@ -1,21 +1,24 @@
 /**
-  Generated Main Source File
+  OPA3 Generated Driver File
 
-  Company:
+  @Company
     Microchip Technology Inc.
 
-  File Name:
-    main.c
+  @File Name
+    opa3.c
 
-  Summary:
-    This is the main file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+  @Summary
+    This is the generated driver implementation file for the OPA3 driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
-  Description:
-    This header file provides implementations for driver APIs for all modules selected in the GUI.
+  @Description
+    This source file provides implementations for driver APIs for OPA3.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.8
         Device            :  PIC16F1779
-        Driver Version    :  2.00
+        Driver Version    :  2.01
+    The generated drivers are tested against the following:
+        Compiler          :  XC8 2.36 and above
+        MPLAB             :  MPLAB X 6.00
 */
 
 /*
@@ -41,40 +44,62 @@
     SOFTWARE.
 */
 
-#include "mcc_generated_files/mcc.h"
-#include "dac1_control.h"
-/*
-                         Main application
- */
-void main(void)
-{
-    // initialize the device
-    SYSTEM_Initialize();
+#ifndef OPA3_H
+#define OPA3_H
 
-    // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
-    // Use the following macros to:
+/**
+  Section: Included Files
+*/
 
-    // Enable the Global Interrupts
-    //INTERRUPT_GlobalInterruptEnable();
+#include <stdbool.h>
+#include <stdint.h>
 
-    // Enable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptEnable();
+#ifdef __cplusplus  // Provide C++ Compatibility
 
-    // Disable the Global Interrupts
-    //INTERRUPT_GlobalInterruptDisable();
+    extern "C" {
 
-    // Disable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptDisable();
-    
-    
-    
-    
-    while (1)
-    {
-        dac1_voltage_open_loop(5);
-   
+#endif
+
+/**
+  Section: OPA3 APIs
+*/
+
+/**
+  @Summary
+    Initializes the OPA3
+
+  @Description
+    This routine initializes the OPA3.
+    This routine must be called before any other OPA3 routine is called.
+    This routine should only be called once during system initialization.
+
+  @Preconditions
+    None
+
+  @Param
+    None
+
+  @Returns
+    None
+
+  @Comment
+    Initialize
+
+  @Example
+    <code>
+    OPA3_Initialize();
+    </code>
+*/
+void OPA3_Initialize(void);
+
+#ifdef __cplusplus  // Provide C++ Compatibility
+
     }
-}
+
+#endif
+
+#endif // OPA3_H
 /**
  End of File
 */
+

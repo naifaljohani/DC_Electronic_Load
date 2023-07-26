@@ -52,9 +52,11 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <conio.h>
-#include "dac1.h"
 #include "fvr.h"
+#include "dac1.h"
+#include "opa3.h"
 #include "opa2.h"
+#include "adc.h"
 
 
 

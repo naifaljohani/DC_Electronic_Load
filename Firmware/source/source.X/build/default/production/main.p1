@@ -1,9 +1,9 @@
 Version 3.2 HI-TECH Software Intermediate Code
 [p mainexit ]
-"72 mcc_generated_files/mcc.h
+"74 mcc_generated_files/mcc.h
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
 "75 dac1_control.h
-[v _dac1_voltage `(v ~T0 @X0 0 ef1`f ]
+[v _dac1_voltage_open_loop `(v ~T0 @X0 0 ef1`f ]
 [; ;htc.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -16461,8 +16461,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 193: extern __bank0 unsigned char __resetbits;
 [; ;pic.h: 194: extern __bank0 __bit __powerdown;
 [; ;pic.h: 195: extern __bank0 __bit __timeout;
-[; ;pin_manager.h: 90: void PIN_MANAGER_Initialize (void);
-[; ;pin_manager.h: 102: void PIN_MANAGER_IOC(void);
+[; ;pin_manager.h: 146: void PIN_MANAGER_Initialize (void);
+[; ;pin_manager.h: 158: void PIN_MANAGER_IOC(void);
 [; ;stdint.h: 13: typedef signed char int8_t;
 [; ;stdint.h: 20: typedef signed int int16_t;
 [; ;stdint.h: 28: typedef signed short long int int24_t;
@@ -16501,18 +16501,50 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;conio.h: 19: extern __bit kbhit(void);
 [; ;conio.h: 23: extern char * cgets(char *);
 [; ;conio.h: 24: extern void cputs(const char *);
+[; ;fvr.h: 93: void FVR_Initialize(void);
+[; ;fvr.h: 127: bool FVR_IsOutputReady(void);
 [; ;dac1.h: 94: void DAC1_Initialize(void);
 [; ;dac1.h: 125: void DAC1_Load16bitInputData(uint16_t input16BitData);
 [; ;dac1.h: 156: void DAC1_Load10bitInputData(uint16_t input10BitData);
 [; ;dac1.h: 187: void DAC1_Load8bitInputData(uint8_t input8BitData);
 [; ;dac1.h: 215: uint16_t DAC1_Read10BitInputData(void);
-[; ;fvr.h: 93: void FVR_Initialize(void);
-[; ;fvr.h: 127: bool FVR_IsOutputReady(void);
+[; ;opa3.h: 93: void OPA3_Initialize(void);
 [; ;opa2.h: 93: void OPA2_Initialize(void);
-[; ;mcc.h: 72: void SYSTEM_Initialize(void);
-[; ;mcc.h: 85: void OSCILLATOR_Initialize(void);
-[; ;mcc.h: 97: void WDT_Initialize(void);
-[; ;dac1_control.h: 75: void dac1_voltage(float volt) ;
+[; ;adc.h: 72: typedef uint16_t adc_result_t;
+[; ;adc.h: 77: typedef struct
+[; ;adc.h: 78: {
+[; ;adc.h: 79: adc_result_t adcResult1;
+[; ;adc.h: 80: adc_result_t adcResult2;
+[; ;adc.h: 81: } adc_sync_double_result_t;
+[; ;adc.h: 95: typedef enum
+[; ;adc.h: 96: {
+[; ;adc.h: 97: channel_AN5 = 0x5,
+[; ;adc.h: 98: channel_Switched_AN1 = 0x21,
+[; ;adc.h: 99: channel_Switched_AN10 = 0x2A,
+[; ;adc.h: 100: channel_Switched_AN18 = 0x32,
+[; ;adc.h: 101: channel_DAC8_Output = 0x36,
+[; ;adc.h: 102: channel_DAC7_Output = 0x37,
+[; ;adc.h: 103: channel_DAC6_Output = 0x38,
+[; ;adc.h: 104: channel_DAC5_Output = 0x39,
+[; ;adc.h: 105: channel_DAC4_Output = 0x3A,
+[; ;adc.h: 106: channel_DAC3_Output = 0x3B,
+[; ;adc.h: 107: channel_DAC2_Output = 0x3C,
+[; ;adc.h: 108: channel_Temp = 0x3D,
+[; ;adc.h: 109: channel_DAC1_Output = 0x3E,
+[; ;adc.h: 110: channel_FVRBuffer1 = 0x3F
+[; ;adc.h: 111: } adc_channel_t;
+[; ;adc.h: 146: void ADC_Initialize(void);
+[; ;adc.h: 176: void ADC_SelectChannel(adc_channel_t channel);
+[; ;adc.h: 203: void ADC_StartConversion(void);
+[; ;adc.h: 235: bool ADC_IsConversionDone(void);
+[; ;adc.h: 268: adc_result_t ADC_GetConversionResult(void);
+[; ;adc.h: 298: adc_result_t ADC_GetConversion(adc_channel_t channel);
+[; ;adc.h: 326: void ADC_TemperatureAcquisitionDelay(void);
+[; ;mcc.h: 74: void SYSTEM_Initialize(void);
+[; ;mcc.h: 87: void OSCILLATOR_Initialize(void);
+[; ;mcc.h: 99: void WDT_Initialize(void);
+[; ;dac1_control.h: 74: void dac1_voltage_close_loop(float volt);
+[; ;dac1_control.h: 75: void dac1_voltage_open_loop(float volt) ;
 [v $root$_main `(v ~T0 @X0 0 e ]
 "49 main.c
 [v _main `(v ~T0 @X0 1 ef ]
@@ -16527,21 +16559,21 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e ( _SYSTEM_Initialize ..  ]
 [; ;main.c: 72: while (1)
 "72
-[e :U 2094 ]
+[e :U 2095 ]
 [; ;main.c: 73: {
 "73
 {
-[; ;main.c: 75: dac1_voltage(0);
-"75
-[e ( _dac1_voltage (1 -> -> 0 `i `f ]
-"77
+[; ;main.c: 74: dac1_voltage_open_loop(5);
+"74
+[e ( _dac1_voltage_open_loop (1 -> -> 5 `i `f ]
+"76
 }
-[e :U 2093 ]
+[e :U 2094 ]
 "72
-[e $U 2094  ]
-[e :U 2095 ]
+[e $U 2095  ]
+[e :U 2096 ]
+[; ;main.c: 76: }
 [; ;main.c: 77: }
-[; ;main.c: 78: }
-"78
-[e :UE 2092 ]
+"77
+[e :UE 2093 ]
 }

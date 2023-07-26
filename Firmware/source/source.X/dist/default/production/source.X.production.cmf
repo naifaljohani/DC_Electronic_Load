@@ -11,43 +11,46 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\user\AppData\Local\Temp\sc2c.obj
+$C:\Users\user\AppData\Local\Temp\skvs.obj
 idloc IDLOC 0 8000 8000 4 2
 reset_vec CODE 0 0 0 2 2
 end_init CODE 0 2 2 2 2
 config CONFIG 0 8007 8007 2 2
 $dist/default/production\source.X.production.obj
-cinit CODE 0 7FD 7FD 3 2
-text1 CODE 0 50A 50A A2 2
-text2 CODE 0 38B 38B 1A 2
-text3 CODE 0 483 483 87 2
-text4 CODE 0 359 359 8 2
-text5 CODE 0 654 654 B4 2
-text6 CODE 0 3A5 3A5 3B 2
-text7 CODE 0 5AC 5AC A8 2
-text8 CODE 0 708 708 F5 2
-text9 CODE 0 41F 41F 64 2
-text10 CODE 0 351 351 8 2
-text11 CODE 0 379 379 12 2
-text12 CODE 0 33D 33D 4 2
-text13 CODE 0 3E0 3E0 3F 2
-text14 CODE 0 361 361 A 2
-text15 CODE 0 349 349 8 2
-text16 CODE 0 339 339 4 2
-text17 CODE 0 341 341 8 2
-maintext CODE 0 36B 36B E 2
+cinit CODE 0 7FA 7FA 6 2
+text1 CODE 0 64A 64A BB 2
+text2 CODE 0 36C 36C 1A 2
+text3 CODE 0 467 467 87 2
+text4 CODE 0 32B 32B 8 2
+text5 CODE 0 596 596 B4 2
+text6 CODE 0 386 386 3B 2
+text7 CODE 0 4EE 4EE A8 2
+text8 CODE 0 705 705 F5 2
+text9 CODE 0 403 403 64 2
+text10 CODE 0 323 323 8 2
+text11 CODE 0 354 354 18 2
+text12 CODE 0 307 307 4 2
+text13 CODE 0 3C1 3C1 42 2
+text14 CODE 0 33C 33C A 2
+text15 CODE 0 31B 31B 8 2
+text16 CODE 0 313 313 8 2
+text17 CODE 0 303 303 4 2
+text18 CODE 0 30B 30B 8 2
+text19 CODE 0 333 333 9 2
+maintext CODE 0 346 346 E 2
 cstackCOMMON COMMON 1 70 70 E 1
 cstackBANK0 BANK0 1 20 20 2A 1
 stringtext1 STRCODE 0 800 800 3 2
 stringtext2 STRCODE 0 803 803 3 2
 stringtext3 STRCODE 0 806 806 1 2
+bssBANK0 BANK0 1 4A 4A 2 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 4A-6F 1
+RAM 4C-6F 1
 RAM A0-EF 1
 RAM 120-16F 1
 RAM 1A0-1EF 1
@@ -73,7 +76,7 @@ RAM B20-B6F 1
 RAM BA0-BEF 1
 RAM C20-C6F 1
 RAM CA0-CBF 1
-BANK0 4A-6F 1
+BANK0 4C-6F 1
 BANK1 A0-EF 1
 BANK2 120-16F 1
 BANK3 1A0-1EF 1
@@ -83,9 +86,9 @@ BANK6 320-36F 1
 BANK7 3A0-3EF 1
 BANK8 420-46F 1
 BANK9 4A0-4EF 1
-CONST 4-338 2
+CONST 4-302 2
 CONST 807-3FFF 2
-ENTRY 4-338 2
+ENTRY 4-302 2
 ENTRY 807-3FFF 2
 SFR10 500-51F 1
 SFR11 580-59F 1
@@ -109,8 +112,8 @@ SFR28 E00-E6F 1
 SFR29 E80-EEF 1
 SFR30 F00-F6F 1
 SFR31 F80-FEF 1
-STACK 202A-27EF 1
-CODE 4-338 2
+STACK 202C-27EF 1
+CODE 4-302 2
 CODE 807-3FFF 2
 SFR0 0-1F 1
 SFR1 80-9F 1
@@ -139,9 +142,9 @@ BANK23 BA0-BEF 1
 BANK24 C20-C6F 1
 BANK25 CA0-CBF 1
 BIGRAM 2000-27EF 1
-STRCODE 4-338 2
+STRCODE 4-302 2
 STRCODE 807-3FFF 2
-STRING 4-338 2
+STRING 4-302 2
 STRING 807-3FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
@@ -157,247 +160,268 @@ STRING 807-3FFF 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\source.X.production.obj
-7FD cinit CODE >9628:C:\Users\user\AppData\Local\Temp\sc2c.
-7FD cinit CODE >9631:C:\Users\user\AppData\Local\Temp\sc2c.
-7FD cinit CODE >9637:C:\Users\user\AppData\Local\Temp\sc2c.
-7FD cinit CODE >9639:C:\Users\user\AppData\Local\Temp\sc2c.
-7FE cinit CODE >9640:C:\Users\user\AppData\Local\Temp\sc2c.
-341 text17 CODE >68:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
-341 text17 CODE >71:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
-344 text17 CODE >73:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
-345 text17 CODE >75:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
-347 text17 CODE >77:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
-348 text17 CODE >78:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
-339 text16 CODE >58:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/fvr.c
-339 text16 CODE >61:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/fvr.c
-33C text16 CODE >62:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/fvr.c
-349 text15 CODE >58:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa2.c
-349 text15 CODE >61:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa2.c
-34C text15 CODE >63:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa2.c
-34D text15 CODE >65:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa2.c
-34E text15 CODE >67:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa2.c
-350 text15 CODE >68:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa2.c
-361 text14 CODE >61:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-361 text14 CODE >64:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-364 text14 CODE >66:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-366 text14 CODE >68:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-367 text14 CODE >70:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-368 text14 CODE >72:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-368 text14 CODE >74:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-3E0 text13 CODE >55:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-3E0 text13 CODE >60:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-3E2 text13 CODE >61:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-3E3 text13 CODE >62:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-3E4 text13 CODE >63:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-3E5 text13 CODE >64:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-3E6 text13 CODE >69:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-3E9 text13 CODE >70:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-3EB text13 CODE >71:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-3ED text13 CODE >72:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-3EF text13 CODE >73:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-3F1 text13 CODE >78:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-3F4 text13 CODE >79:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-3F6 text13 CODE >80:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-3F8 text13 CODE >81:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-3FA text13 CODE >82:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-3FC text13 CODE >87:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-3FE text13 CODE >88:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-3FF text13 CODE >89:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-400 text13 CODE >90:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-401 text13 CODE >91:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-402 text13 CODE >92:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-404 text13 CODE >97:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-406 text13 CODE >98:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-407 text13 CODE >99:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-408 text13 CODE >100:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-409 text13 CODE >101:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-40A text13 CODE >106:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-40D text13 CODE >107:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-40F text13 CODE >108:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-411 text13 CODE >109:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-413 text13 CODE >110:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-415 text13 CODE >115:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-418 text13 CODE >116:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-41A text13 CODE >117:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-41C text13 CODE >118:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-41E text13 CODE >126:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
-33D text12 CODE >77:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-33D text12 CODE >80:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-340 text12 CODE >81:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-379 text11 CODE >50:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-379 text11 CODE >53:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-37C text11 CODE >54:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-37F text11 CODE >55:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-382 text11 CODE >56:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-385 text11 CODE >57:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-388 text11 CODE >58:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-38A text11 CODE >59:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
-351 text10 CODE >81:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
-351 text10 CODE >85:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
-353 text10 CODE >88:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
-355 text10 CODE >89:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
-357 text10 CODE >91:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
-358 text10 CODE >92:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
-41F text9 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-41F text9 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-427 text9 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-42E text9 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-432 text9 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-438 text9 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-43D text9 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-441 text9 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-44B text9 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-451 text9 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-451 text9 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-456 text9 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-458 text9 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-45E text9 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-464 text9 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-466 text9 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-46C text9 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-46E text9 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-47E text9 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-481 text9 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-482 text9 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
-708 text8 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-708 text8 CODE >90:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-715 text8 CODE >91:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-721 text8 CODE >92:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-730 text8 CODE >93:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-737 text8 CODE >94:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-746 text8 CODE >96:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-74A text8 CODE >97:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-74B text8 CODE >98:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-74C text8 CODE >99:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-74D text8 CODE >100:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-74E text8 CODE >101:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-74F text8 CODE >102:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-755 text8 CODE >103:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-756 text8 CODE >104:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-75C text8 CODE >106:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-760 text8 CODE >110:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-766 text8 CODE >111:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-768 text8 CODE >112:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-773 text8 CODE >114:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-779 text8 CODE >115:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-77D text8 CODE >113:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-782 text8 CODE >117:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-786 text8 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-78C text8 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-78E text8 CODE >123:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-799 text8 CODE >125:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-79F text8 CODE >126:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-7A3 text8 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-7A7 text8 CODE >129:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-7A9 text8 CODE >131:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-7AF text8 CODE >132:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-7B9 text8 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-7BB text8 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-7C1 text8 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-7CB text8 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-7CC text8 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-7D2 text8 CODE >141:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-7D4 text8 CODE >142:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-7DA text8 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-7E4 text8 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-7E6 text8 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
-5AC text7 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-5AC text7 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-5BC text7 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-5C3 text7 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-5D2 text7 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-5D9 text7 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-5DF text7 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-5E4 text7 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-5F4 text7 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-604 text7 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-608 text7 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-609 text7 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-60F text7 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-610 text7 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-616 text7 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-61A text7 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-620 text7 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-62C text7 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-632 text7 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-633 text7 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-639 text7 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-63D text7 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
-3A5 text6 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
-3A5 text6 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
-3A7 text6 CODE >7:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
-3BB text6 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
-3BD text6 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
-3D1 text6 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
-3D3 text6 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
-3D5 text6 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
-654 text5 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-654 text5 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-664 text5 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-66B text5 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-67A text5 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-681 text5 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-686 text5 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-696 text5 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6A6 text5 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6AA text5 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6AB text5 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6AC text5 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6B2 text5 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6B8 text5 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6BC text5 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6BE text5 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6C4 text5 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6CA text5 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6D0 text5 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6D4 text5 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6D8 text5 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6DA text5 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6E0 text5 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6E6 text5 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6EC text5 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-6F0 text5 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
-359 text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
-359 text4 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
-35E text4 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
-483 text3 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-483 text3 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-493 text3 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-49C text3 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-4AC text3 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-4AD text3 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-4B3 text3 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-4BA text3 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-4BC text3 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-4BE text3 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-4C3 text3 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-4CC text3 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-4D3 text3 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-4DA text3 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-4DE text3 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-4E7 text3 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-4EE text3 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-4F0 text3 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-4F0 text3 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-4F3 text3 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-4F6 text3 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-501 text3 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
-38B text2 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lbtoft.c
-38C text2 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lbtoft.c
-50A text1 CODE >14:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
-50A text1 CODE >17:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
-520 text1 CODE >18:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
-52B text1 CODE >20:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
-53D text1 CODE >21:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
-544 text1 CODE >26:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
-568 text1 CODE >28:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
-57E text1 CODE >30:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
-5A5 text1 CODE >32:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
-5AB text1 CODE >34:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
-36B maintext CODE >49:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\main.c
-36B maintext CODE >52:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\main.c
-36E maintext CODE >75:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\main.c
-378 maintext CODE >72:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\main.c
+7FA cinit CODE >12336:C:\Users\user\AppData\Local\Temp\skvs.
+7FA cinit CODE >12339:C:\Users\user\AppData\Local\Temp\skvs.
+7FA cinit CODE >12351:C:\Users\user\AppData\Local\Temp\skvs.
+7FB cinit CODE >12352:C:\Users\user\AppData\Local\Temp\skvs.
+7FC cinit CODE >12353:C:\Users\user\AppData\Local\Temp\skvs.
+7FD cinit CODE >12359:C:\Users\user\AppData\Local\Temp\skvs.
+7FD cinit CODE >12361:C:\Users\user\AppData\Local\Temp\skvs.
+7FE cinit CODE >12362:C:\Users\user\AppData\Local\Temp\skvs.
+333 text19 CODE >67:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+333 text19 CODE >72:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+336 text19 CODE >75:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+337 text19 CODE >78:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+338 text19 CODE >81:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+339 text19 CODE >84:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+33B text19 CODE >86:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/adc.c
+30B text18 CODE >68:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
+30B text18 CODE >71:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
+30E text18 CODE >73:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
+30F text18 CODE >75:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
+311 text18 CODE >77:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
+312 text18 CODE >78:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
+303 text17 CODE >58:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/fvr.c
+303 text17 CODE >61:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/fvr.c
+306 text17 CODE >62:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/fvr.c
+313 text16 CODE >58:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa2.c
+313 text16 CODE >61:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa2.c
+316 text16 CODE >63:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa2.c
+317 text16 CODE >65:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa2.c
+318 text16 CODE >67:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa2.c
+31A text16 CODE >68:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa2.c
+31B text15 CODE >58:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa3.c
+31B text15 CODE >61:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa3.c
+31E text15 CODE >63:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa3.c
+31F text15 CODE >65:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa3.c
+320 text15 CODE >67:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa3.c
+322 text15 CODE >68:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/opa3.c
+33C text14 CODE >63:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+33C text14 CODE >66:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+33F text14 CODE >68:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+341 text14 CODE >70:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+342 text14 CODE >72:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+343 text14 CODE >74:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+343 text14 CODE >76:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+3C1 text13 CODE >55:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3C1 text13 CODE >60:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3C3 text13 CODE >61:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3C4 text13 CODE >62:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3C5 text13 CODE >63:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3C6 text13 CODE >64:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3C7 text13 CODE >69:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3CA text13 CODE >70:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3CC text13 CODE >71:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3CE text13 CODE >72:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3D0 text13 CODE >73:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3D2 text13 CODE >78:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3D5 text13 CODE >79:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3D7 text13 CODE >80:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3D9 text13 CODE >81:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3DB text13 CODE >82:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3DD text13 CODE >87:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3DF text13 CODE >88:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3E0 text13 CODE >89:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3E1 text13 CODE >90:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3E2 text13 CODE >91:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3E3 text13 CODE >92:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3E5 text13 CODE >97:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3E7 text13 CODE >98:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3E8 text13 CODE >99:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3E9 text13 CODE >100:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3EA text13 CODE >101:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3EB text13 CODE >106:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3EE text13 CODE >107:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3F0 text13 CODE >108:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3F2 text13 CODE >109:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3F4 text13 CODE >110:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3F6 text13 CODE >115:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3F9 text13 CODE >116:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3FB text13 CODE >117:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3FD text13 CODE >118:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+3FF text13 CODE >127:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+402 text13 CODE >128:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/pin_manager.c
+307 text12 CODE >79:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+307 text12 CODE >82:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+30A text12 CODE >83:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+354 text11 CODE >50:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+354 text11 CODE >53:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+357 text11 CODE >54:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+35A text11 CODE >55:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+35D text11 CODE >56:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+360 text11 CODE >57:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+363 text11 CODE >58:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+366 text11 CODE >59:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+369 text11 CODE >60:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+36B text11 CODE >61:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/mcc.c
+323 text10 CODE >81:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
+323 text10 CODE >85:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
+325 text10 CODE >88:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
+327 text10 CODE >89:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
+329 text10 CODE >91:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
+32A text10 CODE >92:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\mcc_generated_files/dac1.c
+403 text9 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+403 text9 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+40B text9 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+412 text9 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+416 text9 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+41C text9 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+421 text9 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+425 text9 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+42F text9 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+435 text9 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+435 text9 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+43A text9 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+43C text9 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+442 text9 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+448 text9 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+44A text9 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+450 text9 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+452 text9 CODE >82:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+462 text9 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+465 text9 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+466 text9 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+705 text8 CODE >86:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+705 text8 CODE >90:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+712 text8 CODE >91:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+71E text8 CODE >92:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+72D text8 CODE >93:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+734 text8 CODE >94:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+743 text8 CODE >96:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+747 text8 CODE >97:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+748 text8 CODE >98:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+749 text8 CODE >99:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+74A text8 CODE >100:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+74B text8 CODE >101:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+74C text8 CODE >102:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+752 text8 CODE >103:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+753 text8 CODE >104:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+759 text8 CODE >106:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+75D text8 CODE >110:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+763 text8 CODE >111:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+765 text8 CODE >112:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+770 text8 CODE >114:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+776 text8 CODE >115:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+77A text8 CODE >113:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+77F text8 CODE >117:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+783 text8 CODE >121:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+789 text8 CODE >122:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+78B text8 CODE >123:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+796 text8 CODE >125:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+79C text8 CODE >126:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+7A0 text8 CODE >124:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+7A4 text8 CODE >129:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+7A6 text8 CODE >131:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+7AC text8 CODE >132:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+7B6 text8 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+7B8 text8 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+7BE text8 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+7C8 text8 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+7C9 text8 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+7CF text8 CODE >141:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+7D1 text8 CODE >142:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+7D7 text8 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+7E1 text8 CODE >144:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+7E3 text8 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+4EE text7 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+4EE text7 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+4FE text7 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+505 text7 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+514 text7 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+51B text7 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+521 text7 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+526 text7 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+536 text7 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+546 text7 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+54A text7 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+54B text7 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+551 text7 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+552 text7 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+558 text7 CODE >76:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+55C text7 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+562 text7 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+56E text7 CODE >80:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+574 text7 CODE >81:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+575 text7 CODE >83:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+57B text7 CODE >84:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+57F text7 CODE >85:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftdiv.c
+386 text6 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+386 text6 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+388 text6 CODE >7:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+39C text6 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+39E text6 CODE >9:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+3B2 text6 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+3B4 text6 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+3B6 text6 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftge.c
+596 text5 CODE >62:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+596 text5 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5A6 text5 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5AD text5 CODE >69:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5BC text5 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5C3 text5 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5C8 text5 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5D8 text5 CODE >73:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5E8 text5 CODE >74:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5EC text5 CODE >75:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5ED text5 CODE >77:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5EE text5 CODE >78:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5F4 text5 CODE >79:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5FA text5 CODE >134:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+5FE text5 CODE >136:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+600 text5 CODE >137:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+606 text5 CODE >138:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+60C text5 CODE >139:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+612 text5 CODE >140:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+616 text5 CODE >143:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+61A text5 CODE >145:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+61C text5 CODE >146:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+622 text5 CODE >147:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+628 text5 CODE >148:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+62E text5 CODE >149:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+632 text5 CODE >156:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftmul.c
+32B text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
+32B text4 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
+330 text4 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftneg.c
+467 text3 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+467 text3 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+477 text3 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+480 text3 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+490 text3 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+491 text3 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+497 text3 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+49E text3 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4A0 text3 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4A2 text3 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4A7 text3 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4B0 text3 CODE >60:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4B7 text3 CODE >61:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4BE text3 CODE >63:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4C2 text3 CODE >64:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4CB text3 CODE >66:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4D2 text3 CODE >67:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4D4 text3 CODE >65:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4D4 text3 CODE >68:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4D7 text3 CODE >70:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4DA text3 CODE >71:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+4E5 text3 CODE >72:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\fttol.c
+36C text2 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lbtoft.c
+36D text2 CODE >29:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lbtoft.c
+64A text1 CODE >27:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
+64A text1 CODE >30:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
+660 text1 CODE >31:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
+66B text1 CODE >33:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
+67D text1 CODE >34:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
+684 text1 CODE >39:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
+6A8 text1 CODE >40:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
+6B9 text1 CODE >41:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
+6C0 text1 CODE >43:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
+6D7 text1 CODE >45:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
+6FE text1 CODE >47:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
+704 text1 CODE >49:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\dac1_control.c
+346 maintext CODE >49:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\main.c
+346 maintext CODE >52:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\main.c
+349 maintext CODE >74:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\main.c
+353 maintext CODE >72:C:\project_rebos\Electronic_DC_Load\Firmware\source\source.X\main.c
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -415,13 +439,12 @@ __Hspace_0 10008 0 ABS 0 - -
 __Hspace_1 10008 0 ABS 0 - -
 __Hspace_2 0 0 ABS 0 - -
 __Hspace_3 8004 0 ABS 0 - -
-__end_ofdac1_voltage@volt_max 100C 0 STRCODE 0 stringtext2 dist/default/production\source.X.production.obj
+_dac1_voltage_open_loop C94 0 CODE 0 text1 dist/default/production\source.X.production.obj
 ___ftdiv@exp 28 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
 __Heeprom_data 10008 0 EEDATA 3 eeprom_data -
 __CFG_MCLRE$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
-__end_of_WDT_Initialize 682 0 CODE 0 text12 dist/default/production\source.X.production.obj
+__end_of_WDT_Initialize 616 0 CODE 0 text12 dist/default/production\source.X.production.obj
 __Hstrings 10008 0 ABS 0 strings -
-dac1_voltage@count 48 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
 _LATA 10C 0 ABS 0 - dist/default/production\source.X.production.obj
 _LATB 10D 0 ABS 0 - dist/default/production\source.X.production.obj
 _LATC 10E 0 ABS 0 - dist/default/production\source.X.production.obj
@@ -433,12 +456,12 @@ _WPUB 20D 0 ABS 0 - dist/default/production\source.X.production.obj
 _WPUC 20E 0 ABS 0 - dist/default/production\source.X.production.obj
 _WPUD 20F 0 ABS 0 - dist/default/production\source.X.production.obj
 _WPUE 210 0 ABS 0 - dist/default/production\source.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\sc2c.obj
-_main 6D6 0 CODE 0 maintext dist/default/production\source.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\skvs.obj
+_main 68C 0 CODE 0 maintext dist/default/production\source.X.production.obj
 btemp 7E 0 ABS 0 - dist/default/production\source.X.production.obj
 ___ftadd@f1 78 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
 ___ftadd@f2 7B 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
-start 4 0 CODE 0 init C:\Users\user\AppData\Local\Temp\sc2c.obj
+start 4 0 CODE 0 init C:\Users\user\AppData\Local\Temp\skvs.obj
 __size_of___ftadd 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __size_of___ftdiv 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __size_of___ftmul 0 0 ABS 0 - dist/default/production\source.X.production.obj
@@ -453,70 +476,77 @@ _DAC1CON0 58E 0 ABS 0 - dist/default/production\source.X.production.obj
 _DAC1REFH 590 0 ABS 0 - dist/default/production\source.X.production.obj
 _DAC1REFL 58F 0 ABS 0 - dist/default/production\source.X.production.obj
 __Hpowerup 0 0 CODE 0 powerup -
-__end_ofdac1_voltage@dac_mult 100E 0 STRCODE 0 stringtext3 dist/default/production\source.X.production.obj
 ___ftge@ff1 70 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
 ___ftge@ff2 73 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\source.X.production.obj
-intlevel0 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\sc2c.obj
-intlevel1 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\sc2c.obj
-intlevel2 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\sc2c.obj
-intlevel3 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\sc2c.obj
-intlevel4 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\sc2c.obj
-intlevel5 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\sc2c.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\skvs.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\skvs.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\skvs.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\skvs.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\skvs.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\user\AppData\Local\Temp\skvs.obj
+__size_of_ADC_Initialize 0 0 ABS 0 - dist/default/production\source.X.production.obj
 wtemp0 7E 0 ABS 0 - dist/default/production\source.X.production.obj
 __Hfunctab 0 0 ENTRY 0 functab -
 __Hclrtext 10008 0 ABS 0 clrtext -
-__end_of_DAC1_Initialize 692 0 CODE 0 text17 dist/default/production\source.X.production.obj
+__end_of_DAC1_Initialize 626 0 CODE 0 text18 dist/default/production\source.X.production.obj
 ___ftmul@f1 24 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
 ___ftmul@f2 27 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
 ___ftneg@f1 70 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
+_ADCON0 490 0 ABS 0 - dist/default/production\source.X.production.obj
+_ADCON1 491 0 ABS 0 - dist/default/production\source.X.production.obj
+_ADCON2 492 0 ABS 0 - dist/default/production\source.X.production.obj
+_ADRESH 48F 0 ABS 0 - dist/default/production\source.X.production.obj
+_ADRESL 48E 0 ABS 0 - dist/default/production\source.X.production.obj
 _ANSELA 18C 0 ABS 0 - dist/default/production\source.X.production.obj
 _ANSELB 18D 0 ABS 0 - dist/default/production\source.X.production.obj
 _ANSELC 18E 0 ABS 0 - dist/default/production\source.X.production.obj
 _ANSELD 18F 0 ABS 0 - dist/default/production\source.X.production.obj
 _ANSELE 190 0 ABS 0 - dist/default/production\source.X.production.obj
-_FVR_Initialize 672 0 CODE 0 text16 dist/default/production\source.X.production.obj
-dac1_voltage@div 45 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
+_FVR_Initialize 606 0 CODE 0 text17 dist/default/production\source.X.production.obj
+__end_ofdac1_voltage_open_loop@offset 1006 0 STRCODE 0 stringtext1 dist/default/production\source.X.production.obj
 _BORCON 9D 0 ABS 0 - dist/default/production\source.X.production.obj
 _FVRCONbits 9E 0 ABS 0 - dist/default/production\source.X.production.obj
-__end_of___ftge 7C0 0 CODE 0 text6 dist/default/production\source.X.production.obj
-__end_of_OPA2_Initialize 6A2 0 CODE 0 text15 dist/default/production\source.X.production.obj
+__end_of___ftge 782 0 CODE 0 text6 dist/default/production\source.X.production.obj
+__end_of_OPA2_Initialize 636 0 CODE 0 text16 dist/default/production\source.X.production.obj
 ___fttol@f1 34 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
 __Lmaintext 10008 0 ABS 0 maintext -
 _FVRCON 9E 0 ABS 0 - dist/default/production\source.X.production.obj
 __size_of___ftpack 0 0 ABS 0 - dist/default/production\source.X.production.obj
-__end_of___ftadd FFA 0 CODE 0 text8 dist/default/production\source.X.production.obj
-__end_of___ftdiv CA8 0 CODE 0 text7 dist/default/production\source.X.production.obj
-__end_of___ftmul E10 0 CODE 0 text5 dist/default/production\source.X.production.obj
-__end_of___ftneg 6C2 0 CODE 0 text4 dist/default/production\source.X.production.obj
-__end_of___fttol A14 0 CODE 0 text3 dist/default/production\source.X.production.obj
+__end_of___ftadd FF4 0 CODE 0 text8 dist/default/production\source.X.production.obj
+__end_of___ftdiv B2C 0 CODE 0 text7 dist/default/production\source.X.production.obj
+__end_of___ftmul C94 0 CODE 0 text5 dist/default/production\source.X.production.obj
+__end_of___ftneg 666 0 CODE 0 text4 dist/default/production\source.X.production.obj
+__end_of___fttol 9DC 0 CODE 0 text3 dist/default/production\source.X.production.obj
 _INLVLA 38C 0 ABS 0 - dist/default/production\source.X.production.obj
 _INLVLB 38D 0 ABS 0 - dist/default/production\source.X.production.obj
 _INLVLC 38E 0 ABS 0 - dist/default/production\source.X.production.obj
 _INLVLD 38F 0 ABS 0 - dist/default/production\source.X.production.obj
-_DAC1_Initialize 682 0 CODE 0 text17 dist/default/production\source.X.production.obj
+_DAC1_Initialize 616 0 CODE 0 text18 dist/default/production\source.X.production.obj
+dac1_voltage_open_loop@count 48 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
 __size_of___lbtoft 0 0 ABS 0 - dist/default/production\source.X.production.obj
-_PIN_MANAGER_Initialize 7C0 0 CODE 0 text13 dist/default/production\source.X.production.obj
-__end_of_FVR_Initialize 67A 0 CODE 0 text16 dist/default/production\source.X.production.obj
-start_initialization FFA 0 CODE 0 cinit dist/default/production\source.X.production.obj
+_PIN_MANAGER_Initialize 782 0 CODE 0 text13 dist/default/production\source.X.production.obj
+__end_of_FVR_Initialize 60E 0 CODE 0 text17 dist/default/production\source.X.production.obj
+start_initialization FF4 0 CODE 0 cinit dist/default/production\source.X.production.obj
+__end_of_dac1_voltage_open_loop E0A 0 CODE 0 text1 dist/default/production\source.X.production.obj
 _ODCONA 28C 0 ABS 0 - dist/default/production\source.X.production.obj
 _ODCONB 28D 0 ABS 0 - dist/default/production\source.X.production.obj
 _ODCONC 28E 0 ABS 0 - dist/default/production\source.X.production.obj
 _ODCOND 28F 0 ABS 0 - dist/default/production\source.X.production.obj
 _ODCONE 290 0 ABS 0 - dist/default/production\source.X.production.obj
 _OSCCON 9B 0 ABS 0 - dist/default/production\source.X.production.obj
-_OPA2_Initialize 692 0 CODE 0 text15 dist/default/production\source.X.production.obj
-__end_of_SYSTEM_Initialize 716 0 CODE 0 text11 dist/default/production\source.X.production.obj
+_OPA2_Initialize 626 0 CODE 0 text16 dist/default/production\source.X.production.obj
+__end_of_SYSTEM_Initialize 6D8 0 CODE 0 text11 dist/default/production\source.X.production.obj
 __pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
 ___fttol@exp1 41 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
 ___fttol@lval 3D 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
 ___lbtoft@c 7B 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
-___ftpack 83E 0 CODE 0 text9 dist/default/production\source.X.production.obj
+___ftpack 806 0 CODE 0 text9 dist/default/production\source.X.production.obj
 ___ftpack@arg 70 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
 ___ftpack@exp 73 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
 _WDTCON 99 0 ABS 0 - dist/default/production\source.X.production.obj
-___int_sp 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\sc2c.obj
-__end_of___ftpack 906 0 CODE 0 text9 dist/default/production\source.X.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\user\AppData\Local\Temp\skvs.obj
+__end_of___ftpack 8CE 0 CODE 0 text9 dist/default/production\source.X.production.obj
 __Hbank0 10008 0 ABS 0 bank0 -
 __Hbank1 10008 0 ABS 0 bank1 -
 __Hbank2 10008 0 ABS 0 bank2 -
@@ -578,7 +608,8 @@ __Hbank30 10008 0 BANK30 1 bank30 -
 __Hbank31 10008 0 BANK31 1 bank31 -
 __Hbigram 10008 0 ABS 0 bigram -
 __Hmaintext 10008 0 ABS 0 maintext -
-___lbtoft 716 0 CODE 0 text2 dist/default/production\source.X.production.obj
+___lbtoft 6D8 0 CODE 0 text2 dist/default/production\source.X.production.obj
+__end_of_OPA3_Initialize 646 0 CODE 0 text15 dist/default/production\source.X.production.obj
 __CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __Hcommon 10008 0 ABS 0 common -
 __Hconfig 10012 0 CONFIG 0 config -
@@ -592,12 +623,11 @@ __Lbank6 10008 0 ABS 0 bank6 -
 __Lbank7 10008 0 ABS 0 bank7 -
 __Lbank8 10008 0 ABS 0 bank8 -
 __Lbank9 10008 0 ABS 0 bank9 -
-__Lcinit FFA 0 CODE 0 cinit -
+__Lcinit FF4 0 CODE 0 cinit -
 __Lidloc 10000 0 IDLOC 0 idloc -
 ___ftadd@exp1 26 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
 ___ftadd@exp2 25 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
 ___ftadd@sign 24 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
-dac1_voltage@volt_max 1006 0 STRCODE 0 stringtext2 dist/default/production\source.X.production.obj
 __Lsfr10 10008 0 ABS 0 sfr10 -
 __Lsfr11 10008 0 ABS 0 sfr11 -
 __Lsfr12 10008 0 ABS 0 sfr12 -
@@ -621,7 +651,7 @@ __Lsfr29 10008 0 ABS 0 sfr29 -
 __Lsfr30 10008 0 ABS 0 sfr30 -
 __Lsfr31 10008 0 ABS 0 sfr31 -
 __Lstack 0 0 STACK 2 stack -
-__end_of___lbtoft 74A 0 CODE 0 text2 dist/default/production\source.X.production.obj
+__end_of___lbtoft 70C 0 CODE 0 text2 dist/default/production\source.X.production.obj
 __Habs1 10008 0 ABS 0 abs1 -
 __Hcode 10008 0 ABS 0 code -
 __Hinit 4 0 CODE 0 init -
@@ -654,7 +684,7 @@ __pstringtext1 1000 0 STRCODE 0 stringtext1 dist/default/production\source.X.pro
 __pstringtext2 1006 0 STRCODE 0 stringtext2 dist/default/production\source.X.production.obj
 __pstringtext3 100C 0 STRCODE 0 stringtext3 dist/default/production\source.X.production.obj
 __size_of_DAC1_Load16bitInputData 0 0 ABS 0 - dist/default/production\source.X.production.obj
-___ftge 74A 0 CODE 0 text6 dist/default/production\source.X.production.obj
+___ftge 70C 0 CODE 0 text6 dist/default/production\source.X.production.obj
 __LcstackBANK0 10008 0 ABS 0 cstackBANK0 -
 __size_of_DAC1_Initialize 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __HcstackCOMMON 10008 0 ABS 0 cstackCOMMON -
@@ -662,34 +692,39 @@ __size_of_WDT_Initialize 0 0 ABS 0 - dist/default/production\source.X.production
 __S0 8009 0 ABS 0 - -
 __S1 7E 0 ABS 0 - -
 __S2 0 0 ABS 0 - -
+__end_ofdac1_voltage_open_loop@volt_max 100C 0 STRCODE 0 stringtext2 dist/default/production\source.X.production.obj
 _DACLDbits 58D 0 ABS 0 - dist/default/production\source.X.production.obj
 __CFG_PLLEN$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
-_SYSTEM_Initialize 6F2 0 CODE 0 text11 dist/default/production\source.X.production.obj
+_SYSTEM_Initialize 6A8 0 CODE 0 text11 dist/default/production\source.X.production.obj
 __size_of_OPA2_Initialize 0 0 ABS 0 - dist/default/production\source.X.production.obj
-dac1_voltage@dac_mult 100C 0 STRCODE 0 stringtext3 dist/default/production\source.X.production.obj
+_OPA3_Initialize 636 0 CODE 0 text15 dist/default/production\source.X.production.obj
 __CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __Lintentry 4 0 CODE 0 intentry -
-reset_vec 0 0 CODE 0 reset_vec C:\Users\user\AppData\Local\Temp\sc2c.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\user\AppData\Local\Temp\skvs.obj
 __size_of___ftge 0 0 ABS 0 - dist/default/production\source.X.production.obj
+__LbssBANK0 10008 0 ABS 0 bssBANK0 -
 __CFG_FCMEN$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __Lstringtext1 10008 0 ABS 0 stringtext1 -
 __Lstringtext2 10008 0 ABS 0 stringtext2 -
 __Lstringtext3 10008 0 ABS 0 stringtext3 -
-_dac1_voltage A14 0 CODE 0 text1 dist/default/production\source.X.production.obj
-__ptext10 6A2 0 CODE 0 text10 dist/default/production\source.X.production.obj
-__ptext11 6F2 0 CODE 0 text11 dist/default/production\source.X.production.obj
-__ptext12 67A 0 CODE 0 text12 dist/default/production\source.X.production.obj
-__ptext13 7C0 0 CODE 0 text13 dist/default/production\source.X.production.obj
-__ptext14 6C2 0 CODE 0 text14 dist/default/production\source.X.production.obj
-__ptext15 692 0 CODE 0 text15 dist/default/production\source.X.production.obj
-__ptext16 672 0 CODE 0 text16 dist/default/production\source.X.production.obj
-__ptext17 682 0 CODE 0 text17 dist/default/production\source.X.production.obj
-__end_of_PIN_MANAGER_Initialize 83E 0 CODE 0 text13 dist/default/production\source.X.production.obj
-___ftadd E10 0 CODE 0 text8 dist/default/production\source.X.production.obj
-___ftdiv B58 0 CODE 0 text7 dist/default/production\source.X.production.obj
-___ftmul CA8 0 CODE 0 text5 dist/default/production\source.X.production.obj
-___ftneg 6B2 0 CODE 0 text4 dist/default/production\source.X.production.obj
-___fttol 906 0 CODE 0 text3 dist/default/production\source.X.production.obj
+__end_ofdac1_voltage_open_loop@dac_mult 100E 0 STRCODE 0 stringtext3 dist/default/production\source.X.production.obj
+_ADC_Initialize 666 0 CODE 0 text19 dist/default/production\source.X.production.obj
+__ptext10 646 0 CODE 0 text10 dist/default/production\source.X.production.obj
+__ptext11 6A8 0 CODE 0 text11 dist/default/production\source.X.production.obj
+__ptext12 60E 0 CODE 0 text12 dist/default/production\source.X.production.obj
+__ptext13 782 0 CODE 0 text13 dist/default/production\source.X.production.obj
+__ptext14 678 0 CODE 0 text14 dist/default/production\source.X.production.obj
+__ptext15 636 0 CODE 0 text15 dist/default/production\source.X.production.obj
+__ptext16 626 0 CODE 0 text16 dist/default/production\source.X.production.obj
+__ptext17 606 0 CODE 0 text17 dist/default/production\source.X.production.obj
+__ptext18 616 0 CODE 0 text18 dist/default/production\source.X.production.obj
+__ptext19 666 0 CODE 0 text19 dist/default/production\source.X.production.obj
+__end_of_PIN_MANAGER_Initialize 806 0 CODE 0 text13 dist/default/production\source.X.production.obj
+___ftadd E0A 0 CODE 0 text8 dist/default/production\source.X.production.obj
+___ftdiv 9DC 0 CODE 0 text7 dist/default/production\source.X.production.obj
+___ftmul B2C 0 CODE 0 text5 dist/default/production\source.X.production.obj
+___ftneg 656 0 CODE 0 text4 dist/default/production\source.X.production.obj
+___fttol 8CE 0 CODE 0 text3 dist/default/production\source.X.production.obj
 __Lbank10 10008 0 ABS 0 bank10 -
 __Lbank11 10008 0 ABS 0 bank11 -
 __Lbank12 10008 0 ABS 0 bank12 -
@@ -712,40 +747,48 @@ __Lbank28 10008 0 BANK28 1 bank28 -
 __Lbank29 10008 0 BANK29 1 bank29 -
 __Lbank30 10008 0 BANK30 1 bank30 -
 __Lbank31 10008 0 BANK31 1 bank31 -
-__pmaintext 6D6 0 CODE 0 maintext dist/default/production\source.X.production.obj
+__pmaintext 68C 0 CODE 0 maintext dist/default/production\source.X.production.obj
 __Lbigram 10008 0 ABS 0 bigram -
 __CFG_BORV$LO 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __Lcommon 10008 0 ABS 0 common -
 __Lconfig 1000E 0 CONFIG 0 config -
 ?___ftpack 70 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
 __CFG_CP$OFF 0 0 ABS 0 - dist/default/production\source.X.production.obj
+__size_of_dac1_voltage_open_loop 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __CFG_IESO$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
 __CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\source.X.production.obj
 _OPA2CON 515 0 ABS 0 - dist/default/production\source.X.production.obj
 _OPA2ORS 516 0 ABS 0 - dist/default/production\source.X.production.obj
-stackhi 27EF 0 ABS 0 - C:\Users\user\AppData\Local\Temp\sc2c.obj
-stacklo 202A 0 ABS 0 - C:\Users\user\AppData\Local\Temp\sc2c.obj
+_OPA3CON 519 0 ABS 0 - dist/default/production\source.X.production.obj
+_OPA3ORS 51A 0 ABS 0 - dist/default/production\source.X.production.obj
+dac1_voltage_open_loop@div 45 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
+stackhi 27EF 0 ABS 0 - C:\Users\user\AppData\Local\Temp\skvs.obj
+stacklo 202C 0 ABS 0 - C:\Users\user\AppData\Local\Temp\skvs.obj
 ?___lbtoft 78 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
-__size_of_dac1_voltage 0 0 ABS 0 - dist/default/production\source.X.production.obj
 _OSCSTAT 9C 0 ABS 0 - dist/default/production\source.X.production.obj
 _OSCTUNE 9A 0 ABS 0 - dist/default/production\source.X.production.obj
-dac1_voltage@volt 42 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
+_ADCON0bits 490 0 ABS 0 - dist/default/production\source.X.production.obj
 __Lspace_0 0 0 ABS 0 - -
 __Lspace_1 0 0 ABS 0 - -
 __Lspace_2 0 0 ABS 0 - -
 __Lspace_3 0 0 ABS 0 - -
 ___ftmul@cntr 32 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
 ___ftmul@sign 33 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
+__end_of_ADC_Initialize 678 0 CODE 0 text19 dist/default/production\source.X.production.obj
 __HcstackBANK0 10008 0 ABS 0 cstackBANK0 -
 __Lend_init 4 0 CODE 0 end_init -
 __CFG_LVP$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
+dac1_voltage_open_loop@volt_max 1006 0 STRCODE 0 stringtext2 dist/default/production\source.X.production.obj
 __LcstackCOMMON 10008 0 ABS 0 cstackCOMMON -
 __CFG_ZCD$OFF 0 0 ABS 0 - dist/default/production\source.X.production.obj
+__size_of_OPA3_Initialize 0 0 ABS 0 - dist/default/production\source.X.production.obj
 end_of_initialization FFA 0 CODE 0 cinit dist/default/production\source.X.production.obj
 __Hintentry 4 0 CODE 0 intentry -
 __CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
 _OPA2NCHS 513 0 ABS 0 - dist/default/production\source.X.production.obj
 _OPA2PCHS 514 0 ABS 0 - dist/default/production\source.X.production.obj
+_OPA3NCHS 517 0 ABS 0 - dist/default/production\source.X.production.obj
+_OPA3PCHS 518 0 ABS 0 - dist/default/production\source.X.production.obj
 __Lstrings 10008 0 ABS 0 strings -
 ?___ftadd 78 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
 ?___ftdiv 78 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
@@ -753,19 +796,22 @@ __Lstrings 10008 0 ABS 0 strings -
 ?___ftneg 70 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
 ?___fttol 34 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
 __size_of_FVR_Initialize 0 0 ABS 0 - dist/default/production\source.X.production.obj
-__end_of_dac1_voltage B58 0 CODE 0 text1 dist/default/production\source.X.production.obj
 __Hreset_vec 4 0 CODE 0 reset_vec -
-__ptext1 A14 0 CODE 0 text1 dist/default/production\source.X.production.obj
-__ptext2 716 0 CODE 0 text2 dist/default/production\source.X.production.obj
-__ptext3 906 0 CODE 0 text3 dist/default/production\source.X.production.obj
-__ptext4 6B2 0 CODE 0 text4 dist/default/production\source.X.production.obj
-__ptext5 CA8 0 CODE 0 text5 dist/default/production\source.X.production.obj
-__ptext6 74A 0 CODE 0 text6 dist/default/production\source.X.production.obj
-__ptext7 B58 0 CODE 0 text7 dist/default/production\source.X.production.obj
-__ptext8 E10 0 CODE 0 text8 dist/default/production\source.X.production.obj
-__ptext9 83E 0 CODE 0 text9 dist/default/production\source.X.production.obj
+__HbssBANK0 10008 0 ABS 0 bssBANK0 -
+dac1_voltage_open_loop@volt 42 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
+__ptext1 C94 0 CODE 0 text1 dist/default/production\source.X.production.obj
+__ptext2 6D8 0 CODE 0 text2 dist/default/production\source.X.production.obj
+__ptext3 8CE 0 CODE 0 text3 dist/default/production\source.X.production.obj
+__ptext4 656 0 CODE 0 text4 dist/default/production\source.X.production.obj
+__ptext5 B2C 0 CODE 0 text5 dist/default/production\source.X.production.obj
+__ptext6 70C 0 CODE 0 text6 dist/default/production\source.X.production.obj
+__ptext7 9DC 0 CODE 0 text7 dist/default/production\source.X.production.obj
+__ptext8 E0A 0 CODE 0 text8 dist/default/production\source.X.production.obj
+__ptext9 806 0 CODE 0 text9 dist/default/production\source.X.production.obj
 __Lpowerup 0 0 CODE 0 powerup -
+_ADCACTPPS E39 0 ABS 0 - dist/default/production\source.X.production.obj
 __Leeprom_data 10008 0 EEDATA 3 eeprom_data -
+dac1_voltage_open_loop@dac_mult 100C 0 STRCODE 0 stringtext3 dist/default/production\source.X.production.obj
 __Lreset_vec 0 0 CODE 0 reset_vec -
 __Hstringtext1 10008 0 ABS 0 stringtext1 -
 __Hstringtext2 10008 0 ABS 0 stringtext2 -
@@ -776,7 +822,6 @@ _SLRCONB 30D 0 ABS 0 - dist/default/production\source.X.production.obj
 _SLRCONC 30E 0 ABS 0 - dist/default/production\source.X.production.obj
 _SLRCOND 30F 0 ABS 0 - dist/default/production\source.X.production.obj
 _SLRCONE 310 0 ABS 0 - dist/default/production\source.X.production.obj
-__end_ofdac1_voltage@offset 1006 0 STRCODE 0 stringtext1 dist/default/production\source.X.production.obj
 __CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\source.X.production.obj
 DAC1_Load16bitInputData@input16BitData 70 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
 ___ftmul@exp 2E 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
@@ -787,9 +832,9 @@ ___ftpack@sign 74 0 COMMON 1 cstackCOMMON dist/default/production\source.X.produ
 __pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\source.X.production.obj
 ___ftdiv@cntr 24 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
 ___ftdiv@sign 29 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
+dac1_voltage_open_loop@offset 1000 0 STRCODE 0 stringtext1 dist/default/production\source.X.production.obj
 __Hend_init 8 0 CODE 0 end_init -
-__end_of_main 6F2 0 CODE 0 maintext dist/default/production\source.X.production.obj
-dac1_voltage@offset 1000 0 STRCODE 0 stringtext1 dist/default/production\source.X.production.obj
+__end_of_main 6A8 0 CODE 0 maintext dist/default/production\source.X.production.obj
 _TRISA 8C 0 ABS 0 - dist/default/production\source.X.production.obj
 _TRISB 8D 0 ABS 0 - dist/default/production\source.X.production.obj
 _TRISC 8E 0 ABS 0 - dist/default/production\source.X.production.obj
@@ -798,17 +843,18 @@ _TRISE 90 0 ABS 0 - dist/default/production\source.X.production.obj
 __Hram 10008 0 ABS 0 ram -
 __Lram 10008 0 ABS 0 ram -
 __size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\source.X.production.obj
-_WDT_Initialize 67A 0 CODE 0 text12 dist/default/production\source.X.production.obj
+_WDT_Initialize 60E 0 CODE 0 text12 dist/default/production\source.X.production.obj
 ___fttol@sign1 3C 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
-__end_of_OSCILLATOR_Initialize 6D6 0 CODE 0 text14 dist/default/production\source.X.production.obj
+__end_of_OSCILLATOR_Initialize 68C 0 CODE 0 text14 dist/default/production\source.X.production.obj
 __CFG_PPS1WAY$ON 0 0 ABS 0 - dist/default/production\source.X.production.obj
-__initialization FFA 0 CODE 0 cinit dist/default/production\source.X.production.obj
+__initialization FF4 0 CODE 0 cinit dist/default/production\source.X.production.obj
 __CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\source.X.production.obj
+__pbssBANK0 4A 0 BANK0 1 bssBANK0 dist/default/production\source.X.production.obj
 __CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\source.X.production.obj
-_DAC1_Load16bitInputData 6A2 0 CODE 0 text10 dist/default/production\source.X.production.obj
-__end_of_DAC1_Load16bitInputData 6B2 0 CODE 0 text10 dist/default/production\source.X.production.obj
+_DAC1_Load16bitInputData 646 0 CODE 0 text10 dist/default/production\source.X.production.obj
+__end_of_DAC1_Load16bitInputData 656 0 CODE 0 text10 dist/default/production\source.X.production.obj
 ___ftmul@f3_as_product 2F 0 BANK0 1 cstackBANK0 dist/default/production\source.X.production.obj
-_OSCILLATOR_Initialize 6C2 0 CODE 0 text14 dist/default/production\source.X.production.obj
+_OSCILLATOR_Initialize 678 0 CODE 0 text14 dist/default/production\source.X.production.obj
 # %SPLITSTAB Section
 # This section enumerates all the psect splits performed by the assembler.
 # The beginning of the section is indicated by %SPLITSTAB.
@@ -834,28 +880,30 @@ _OSCILLATOR_Initialize 6C2 0 CODE 0 text14 dist/default/production\source.X.prod
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-cinit 0 7FD FFA 3 2
+cinit 0 7FA FF4 6 2
 idloc 0 8000 10000 4 2
-text1 0 50A A14 A2 2
-text2 0 38B 716 1A 2
-text3 0 483 906 87 2
-text4 0 359 6B2 8 2
-text5 0 654 CA8 B4 2
-text6 0 3A5 74A 3B 2
-text7 0 5AC B58 A8 2
-text8 0 708 E10 F5 2
-text9 0 41F 83E 64 2
-text10 0 351 6A2 8 2
-text11 0 379 6F2 12 2
-text12 0 33D 67A 4 2
-text13 0 3E0 7C0 3F 2
-text14 0 361 6C2 A 2
-text15 0 349 692 8 2
-text16 0 339 672 4 2
-text17 0 341 682 8 2
-maintext 0 36B 6D6 E 2
+text1 0 64A C94 BB 2
+text2 0 36C 6D8 1A 2
+text3 0 467 8CE 87 2
+text4 0 32B 656 8 2
+text5 0 596 B2C B4 2
+text6 0 386 70C 3B 2
+text7 0 4EE 9DC A8 2
+text8 0 705 E0A F5 2
+text9 0 403 806 64 2
+text10 0 323 646 8 2
+text11 0 354 6A8 18 2
+text12 0 307 60E 4 2
+text13 0 3C1 782 42 2
+text14 0 33C 678 A 2
+text15 0 31B 636 8 2
+text16 0 313 626 8 2
+text17 0 303 606 4 2
+text18 0 30B 616 8 2
+text19 0 333 666 9 2
+maintext 0 346 68C E 2
 cstackCOMMON 1 70 70 E 1
-cstackBANK0 1 20 20 2A 1
+cstackBANK0 1 20 20 2C 1
 stringtext1 0 800 1000 7 2
 reset_vec 0 0 0 4 2
 config 0 8007 1000E 2 2
